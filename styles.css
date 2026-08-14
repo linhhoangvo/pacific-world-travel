@@ -302,3 +302,5 @@ footer{
   .management-grid,.specialty-grid,.why-grid,.destination-grid{grid-template-columns:1fr}
   footer{grid-template-columns:1fr}
 }
+
+/* Refresh destination images deployment */
