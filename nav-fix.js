@@ -14,6 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   if (viewAllDestinations) viewAllDestinations.setAttribute("href", "destinations.html");
 
+  /* Homepage Hanoi card */
+  const homepageHanoi = document.querySelector(".destination.d1");
+  if (homepageHanoi && !homepageHanoi.dataset.detailLinked) {
+    homepageHanoi.dataset.detailLinked = "true";
+    homepageHanoi.setAttribute("role", "link");
+    homepageHanoi.setAttribute("tabindex", "0");
+    homepageHanoi.setAttribute("aria-label", "Explore Hanoi");
+    homepageHanoi.style.cursor = "pointer";
+    homepageHanoi.addEventListener("click", () => { window.location.href = "hanoi.html"; });
+    homepageHanoi.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.location.href = "hanoi.html";
+      }
+    });
+  }
+
   /* MOVING TRUST BAR BELOW HERO */
   const benefitBar = document.querySelector(".hero-benefits");
   if (benefitBar && !benefitBar.classList.contains("trust-marquee")) {
