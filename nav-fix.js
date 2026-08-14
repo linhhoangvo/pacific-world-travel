@@ -135,6 +135,70 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(trustStyle);
   }
 
+  /* Real Hanoi hotel photos — keep hotel clicks inside Pacific World */
+  if (!document.getElementById("real-hotel-photo-style")) {
+    const hotelPhotoStyle = document.createElement("style");
+    hotelPhotoStyle.id = "real-hotel-photo-style";
+    hotelPhotoStyle.textContent = `
+      .stay-grid.real-hotels .hotel-property {
+        overflow: hidden !important;
+        padding: 0 24px 26px !important;
+      }
+      .stay-grid.real-hotels .hotel-property::before {
+        content: "";
+        display: block;
+        height: 210px;
+        margin: 0 -24px 22px;
+        background-size: cover;
+        background-position: center;
+        transition: transform .3s ease;
+      }
+      .stay-grid.real-hotels .hotel-property:nth-child(1)::before {
+        background-image: url("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1340020.jpg");
+        background-position: center 52%;
+      }
+      .stay-grid.real-hotels .hotel-property:nth-child(2)::before {
+        background-image: url("https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/680045164-14c37d50ef085549e23d6c45501bc4f1.png?_src=imagekit&tr=dpr-3");
+        background-position: center 54%;
+      }
+      .stay-grid.real-hotels .hotel-property:nth-child(3)::before {
+        background-image: url("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1496122.jpg");
+        background-position: center 50%;
+      }
+      .stay-grid.real-hotels .hotel-property:hover::before { transform: scale(1.025); }
+
+      .hotel-collection .hotel-card {
+        overflow: hidden !important;
+        padding: 0 28px 28px !important;
+      }
+      .hotel-collection .hotel-card::before {
+        content: "";
+        display: block;
+        height: 220px;
+        margin: 0 -28px 22px;
+        background-size: cover;
+        background-position: center;
+      }
+      .hotel-collection .hotel-card:nth-child(1)::before {
+        background-image: url("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1340020.jpg");
+        background-position: center 52%;
+      }
+      .hotel-collection .hotel-card:nth-child(2)::before {
+        background-image: url("https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/680045164-14c37d50ef085549e23d6c45501bc4f1.png?_src=imagekit&tr=dpr-3");
+        background-position: center 54%;
+      }
+      .hotel-collection .hotel-card:nth-child(3)::before {
+        background-image: url("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1496122.jpg");
+        background-position: center 50%;
+      }
+      @media (max-width: 760px) {
+        .stay-grid.real-hotels .hotel-property::before { height: 190px; }
+        .hotel-collection .hotel-card::before { height: 205px; }
+      }
+    `;
+    document.head.appendChild(hotelPhotoStyle);
+  }
+
   /* Client Experience review cards */
   const whySection = document.querySelector(".why");
   if (whySection && !document.querySelector(".client-experience")) {
