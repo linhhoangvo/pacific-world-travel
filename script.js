@@ -105,6 +105,18 @@ paletteStyle.textContent = `
 
 body { background: #F7F4ED; color: #263C32; }
 .site-header { background: rgba(38, 60, 50, .96); }
+.desktop-nav {
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+.desktop-nav > a {
+  display: inline-flex;
+  align-items: center;
+  height: 72px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
 .desktop-nav > a:hover { color: #D4C5AD; }
 
 /* Header About dropdown */
@@ -113,6 +125,7 @@ body { background: #F7F4ED; color: #263C32; }
   display: flex;
   align-items: center;
   height: 72px;
+  flex: 0 0 auto;
 }
 .nav-dropdown-toggle {
   display: inline-flex;
@@ -124,6 +137,7 @@ body { background: #F7F4ED; color: #263C32; }
   color: #fff;
   font: inherit;
   font-weight: 500;
+  white-space: nowrap;
   cursor: pointer;
 }
 .dropdown-chevron {
