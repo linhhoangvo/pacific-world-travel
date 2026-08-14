@@ -11,7 +11,7 @@ if (aboutLink) {
   dropdown.className = "nav-dropdown";
   dropdown.innerHTML = `
     <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
-      <span>About</span><span class="dropdown-chevron">⌄</span>
+      <span>About</span>
     </button>
     <div class="nav-dropdown-menu">
       <a href="#who-we-are">Who We Are</a>
@@ -130,7 +130,6 @@ body { background: #F7F4ED; color: #263C32; }
 .nav-dropdown-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -139,11 +138,6 @@ body { background: #F7F4ED; color: #263C32; }
   font-weight: 500;
   white-space: nowrap;
   cursor: pointer;
-}
-.dropdown-chevron {
-  font-size: 13px;
-  line-height: 1;
-  transition: transform .2s ease;
 }
 .nav-dropdown-menu {
   position: absolute;
@@ -181,10 +175,6 @@ body { background: #F7F4ED; color: #263C32; }
   visibility: visible;
   pointer-events: auto;
   transform: translate(-50%, 0);
-}
-.nav-dropdown:hover .dropdown-chevron,
-.nav-dropdown.open .dropdown-chevron {
-  transform: rotate(180deg);
 }
 
 .hero-overlay {
@@ -242,7 +232,7 @@ footer { background: #263C32; }
   }
   .nav-dropdown-toggle {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 8px 0;
     text-align: left;
   }
