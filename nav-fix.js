@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (contactLink) {
-      contactLink.href = "mailto:rosie.pacificworld@gmail.com";
+      contactLink.href = "contact.html";
     }
 
     if (!companyColumn.querySelector(".footer-contact-details")) {
