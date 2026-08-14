@@ -55,6 +55,18 @@ buildNavDropdown(businessLink, "Business Travel", [
   { label: "Private Aviation & Yachts", href: "private-aviation-yachts.html" }
 ]);
 
+/* MICE & EVENTS DROPDOWN */
+const miceLink = nav ? [...nav.children].find((item) =>
+  item.tagName === "A" && item.textContent.trim() === "MICE & Events"
+) : null;
+
+buildNavDropdown(miceLink, "MICE & Events", [
+  { label: "Meetings & Conferences", href: "meetings-conferences.html" },
+  { label: "Incentives & Corporate Events", href: "incentives-corporate-events.html" },
+  { label: "Executive & Leadership Retreats", href: "executive-leadership-retreats.html" },
+  { label: "Wellness & Team Retreats", href: "wellness-team-retreats.html" }
+]);
+
 /* ABOUT DROPDOWN */
 const aboutLink = nav ? [...nav.children].find((item) =>
   item.tagName === "A" && ["About Us", "About"].includes(item.textContent.trim())
@@ -161,7 +173,7 @@ body { background: #F7F4ED; color: #263C32; }
   z-index: 80;
   top: 72px;
   left: 50%;
-  width: 250px;
+  width: 270px;
   padding: 18px 0 22px;
   background: #F7F4ED;
   color: #263C32;
