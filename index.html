@@ -11,7 +11,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260814-golf1" />
+  <link rel="stylesheet" href="styles.css?v=20260814-journeys1" />
+  <style>
+    .signature-journeys{background:#E8DFD0;padding:90px 6.4vw}
+    .signature-journeys .journey-intro{max-width:720px;margin:0 auto 44px;text-align:center}
+    .signature-journeys .journey-intro h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,4.4vw,62px);line-height:1.02;font-weight:500;letter-spacing:-.03em;color:#263C32}
+    .signature-journeys .journey-intro p:last-child{max-width:620px;margin:18px auto 0;font-size:14px;line-height:1.65;color:#68735A}
+    .journey-teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .journey-teaser{position:relative;min-height:390px;overflow:hidden;border-radius:4px;color:#fff;background-position:center;background-size:cover}
+    .journey-teaser::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,60,50,.05) 28%,rgba(38,60,50,.92) 100%)}
+    .journey-teaser-content{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:28px}
+    .journey-teaser small{display:block;margin-bottom:9px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#D4C5AD}
+    .journey-teaser h3{margin:0 0 9px;font-family:"Playfair Display",Georgia,serif;font-size:30px;line-height:1.05;font-weight:500}
+    .journey-teaser p{margin:0 0 18px;max-width:320px;font-size:12px;line-height:1.55;color:rgba(255,255,255,.82)}
+    .journey-teaser a{display:inline-flex;gap:12px;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+    .journey-vietnam{background-image:url("halong-bay.jpg")}
+    .journey-golf{background-image:url("golf-travel.jpg");background-position:center 52%}
+    .journey-retreat{background-image:url("final-cta-lounge.jpg");background-position:center}
+    .journey-all{display:flex;justify-content:center;margin-top:28px}
+    .journey-all a{display:inline-flex;gap:14px;text-transform:uppercase;font-size:9px;font-weight:700;letter-spacing:.09em;color:#263C32}
+    @media(max-width:900px){.journey-teaser-grid{grid-template-columns:1fr 1fr}.journey-teaser:last-child{grid-column:1/-1}}
+    @media(max-width:620px){.signature-journeys{padding:70px 20px}.journey-teaser-grid{grid-template-columns:1fr}.journey-teaser:last-child{grid-column:auto}.journey-teaser{min-height:340px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -19,7 +40,7 @@
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="corporate-executive-travel.html">Business Travel</a>
       <a href="golf-holidays-journeys.html">Golf Travel</a>
-      <a href="#destinations">Destinations</a>
+      <a href="destinations.html">Destinations</a>
       <a href="meetings-conferences.html">MICE & Events</a>
       <a href="who-we-are.html">About</a>
     </nav>
@@ -41,12 +62,23 @@
     <section class="management section" id="management"><div class="center-heading"><p class="eyebrow">BUSINESS TRAVEL MANAGEMENT</p><h2>Travel that works for your business.</h2></div><div class="management-grid"><article><span>▦</span><h3>Plan & Book</h3><p>Flights, hotels, visas, transport and more—managed in one place with preferred rates.</p></article><article><span>♙</span><h3>Personalise</h3><p>Tailored itineraries for executives, teams and groups, aligned with your travel policy.</p></article><article><span>◉</span><h3>Support</h3><p>24/7 assistance before, during and after your trip.</p></article><article><span>✈</span><h3>Extend the Journey</h3><p>Bleisure options and curated experiences to make every trip more rewarding.</p></article></div></section>
     <section class="corporate-golf" id="corporate-golf"><div class="cg-image"></div><div class="cg-shade"></div><div class="cg-copy"><p class="eyebrow light">GOLF & INCENTIVES</p><h2>Take the conversation<br>beyond the meeting room.</h2><p>Reward, inspire and connect with curated golf experiences and incentive journeys in the region’s most stunning destinations.</p><ul><li>Championship courses</li><li>Luxury resorts</li><li>Seamless logistics</li><li>Memorable experiences</li></ul><a class="lime-button" href="meetings-conferences.html">Explore MICE & Events <span>→</span></a></div></section>
     <section class="specialties section"><div class="center-heading"><p class="eyebrow">OUR SPECIALTIES</p><h2>Journeys designed around your goals.</h2></div><div class="specialty-grid"><article><span>▣</span><h3>Executive Travel</h3><p>Efficient, productive and stress-free business trips.</p></article><article><span>♧</span><h3>Client & Partner Golf</h3><p>Build stronger relationships on world-class courses.</p></article><article><span>♙♙</span><h3>Leadership Retreats</h3><p>Bring your team together to align and inspire.</p></article><article><span>□</span><h3>Incentive Journeys</h3><p>Motivate your people with extraordinary experiences.</p></article></div></section>
-    <section class="destinations section" id="destinations"><div class="center-heading"><p class="eyebrow">DESTINATIONS</p><h2>Vietnam & Southeast Asia.<br>Extraordinary, accessible, unforgettable.</h2></div><div class="destination-grid"><article class="destination d1"><div><strong>Hanoi</strong><span>Culture, cuisine & business</span></div></article><article class="destination d2"><div><strong>Ha Long Bay</strong><span>Iconic landscapes</span></div></article><article class="destination d3"><div><strong>Da Nang & Hoi An</strong><span>Coastline & golf</span></div></article><article class="destination d4"><div><strong>Ho Chi Minh City</strong><span>Dynamic & connected</span></div></article><article class="destination d5"><div><strong>Cam Ranh</strong><span>Championship golf</span></div></article><article class="destination d6"><div><strong>Phu Quoc</strong><span>Island retreat</span></div></article></div><a class="view-link" href="#contact">View all destinations <span>→</span></a></section>
+
+    <section class="signature-journeys" id="signature-journeys">
+      <div class="journey-intro"><p class="eyebrow">SIGNATURE JOURNEYS</p><h2>A starting point for something personal.</h2><p>Explore a few of the journeys we can tailor around your travellers, goals and preferred pace.</p></div>
+      <div class="journey-teaser-grid">
+        <article class="journey-teaser journey-vietnam"><div class="journey-teaser-content"><small>Vietnam Journey</small><h3>Vietnam Highlights</h3><p>A curated journey connecting Vietnam’s most iconic cities, landscapes and local experiences.</p><a href="destinations.html">Explore journey <span>→</span></a></div></article>
+        <article class="journey-teaser journey-golf"><div class="journey-teaser-content"><small>Golf Journey</small><h3>Vietnam Golf Journey</h3><p>Championship courses, luxury stays and seamless logistics shaped into one memorable golf escape.</p><a href="golf-holidays-journeys.html">Explore journey <span>→</span></a></div></article>
+        <article class="journey-teaser journey-retreat"><div class="journey-teaser-content"><small>Corporate Retreat</small><h3>Executive Retreat Vietnam</h3><p>Leadership time, restorative settings and thoughtfully designed experiences for teams that need space to reconnect.</p><a href="executive-leadership-retreats.html">Explore journey <span>→</span></a></div></article>
+      </div>
+      <div class="journey-all"><a href="destinations.html">Explore all journeys <span>→</span></a></div>
+    </section>
+
+    <section class="destinations section" id="destinations"><div class="center-heading"><p class="eyebrow">DESTINATIONS</p><h2>Vietnam & Southeast Asia.<br>Extraordinary, accessible, unforgettable.</h2></div><div class="destination-grid"><article class="destination d1"><div><strong>Hanoi</strong></div></article><article class="destination d2"><div><strong>Ha Long Bay</strong></div></article><article class="destination d3"><div><strong>Da Nang & Hoi An</strong></div></article><article class="destination d4"><div><strong>Ho Chi Minh City</strong></div></article><article class="destination d5"><div><strong>Cam Ranh</strong></div></article><article class="destination d6"><div><strong>Phu Quoc</strong></div></article></div><a class="view-link" href="destinations.html">View all destinations <span>→</span></a></section>
     <section class="why section" id="why"><div class="center-heading"><p class="eyebrow">WHY PACIFIC WORLD</p><h2>Experience. Connections. Commitment.</h2></div><div class="why-grid"><article><span>▣</span><h3>Dedicated Specialist</h3><p>One point of contact for all your travel needs.</p></article><article><span>◉</span><h3>24/7 Support</h3><p>We are here whenever you need us.</p></article><article><span>♙♙</span><h3>Local Access</h3><p>Strong local partners, better experiences.</p></article><article><span>◈</span><h3>One Seamless Plan</h3><p>Business and golf, perfectly planned together.</p></article></div></section>
     <section class="final-cta" id="contact"><div class="final-copy"><h2>Ready to plan<br>your next journey?</h2><p>Let’s create a travel experience that drives results and leaves a lasting impression.</p></div><div class="final-actions"><a class="lime-button" href="mailto:info@pacificworldtravel.com">Talk to an expert <span>→</span></a><a class="outline-btn light-outline" href="mailto:info@pacificworldtravel.com?subject=Pacific%20World%20Travel%20Proposal">Request a proposal <span>→</span></a></div><div class="final-photo"></div></section>
   </main>
-  <footer><div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="#contact">Careers</a><a href="#contact">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="#destinations">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="#contact">Traveller Support</a><a href="#contact">FAQs</a><a href="#contact">Travel Resources</a><a href="#contact">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260814-golf1"></script>
-  <script src="nav-fix.js?v=20260814-golf1"></script>
+  <footer><div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="#contact">Careers</a><a href="#contact">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="#contact">Traveller Support</a><a href="#contact">FAQs</a><a href="#contact">Travel Resources</a><a href="#contact">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
+  <script src="script.js?v=20260814-journeys1"></script>
+  <script src="nav-fix.js?v=20260814-journeys1"></script>
 </body>
 </html>
