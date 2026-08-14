@@ -156,6 +156,54 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(clientStyle);
   }
 
+  /* Real names + Google review profiles for the rotating homepage client card */
+  const realClientProfiles = {
+    "Business Traveller": {
+      name: "Irene Juarez O'Connell",
+      initial: "I",
+      url: "https://www.google.com/maps/contrib/102385862973990856404/reviews?hl=en-GB"
+    },
+    "Golf Traveller": {
+      name: "Alyssa Jones",
+      initial: "A",
+      url: "https://www.google.com/maps/contrib/109798992282280910379/reviews?hl=en-GB"
+    },
+    "Corporate Group": {
+      name: "Anina Monteforte",
+      initial: "A",
+      url: "https://www.google.com/maps/contrib/103283086171953943390/reviews?hl=en-GB"
+    }
+  };
+
+  const rotatingClientName = document.getElementById("client-persona");
+  const rotatingClientIcon = document.getElementById("client-icon");
+
+  function replaceClientPersonaWithRealName() {
+    if (!rotatingClientName) return;
+    const current = rotatingClientName.textContent.trim();
+    const profile = realClientProfiles[current];
+    if (!profile) return;
+    rotatingClientName.innerHTML = `<a href="${profile.url}" target="_blank" rel="noopener noreferrer">${profile.name}</a>`;
+    if (rotatingClientIcon) rotatingClientIcon.textContent = profile.initial;
+  }
+
+  replaceClientPersonaWithRealName();
+
+  if (rotatingClientName) {
+    const observer = new MutationObserver(() => replaceClientPersonaWithRealName());
+    observer.observe(rotatingClientName, { childList: true, subtree: true, characterData: true });
+  }
+
+  if (!document.getElementById("real-client-name-style")) {
+    const clientNameStyle = document.createElement("style");
+    clientNameStyle.id = "real-client-name-style";
+    clientNameStyle.textContent = `
+      #client-persona a { color: #566255; text-decoration: none; }
+      #client-persona a:hover { color: #263C32; text-decoration: underline; text-underline-offset: 3px; }
+    `;
+    document.head.appendChild(clientNameStyle);
+  }
+
   /* Footer contact details */
   document.querySelectorAll("footer").forEach((footer) => {
     const companyColumn = [...footer.querySelectorAll(".footer-column")].find((column) =>
