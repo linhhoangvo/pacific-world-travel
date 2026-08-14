@@ -32,3 +32,11 @@ if (golfTravelPhoto) {
   golfTravelPhoto.style.backgroundSize = "cover";
   golfTravelPhoto.style.backgroundRepeat = "no-repeat";
 }
+
+const finalCtaPhoto = document.querySelector(".final-photo");
+if (finalCtaPhoto) {
+  finalCtaPhoto.style.backgroundImage = 'url("final-cta-lounge.jpg")';
+  finalCtaPhoto.style.backgroundPosition = "center 50%";
+  finalCtaPhoto.style.backgroundSize = "cover";
+  finalCtaPhoto.style.backgroundRepeat = "no-repeat";
+}
