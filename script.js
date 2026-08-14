@@ -107,19 +107,32 @@ document.querySelectorAll("footer a").forEach((link) => {
   if (link.textContent.trim() === "About Us") link.textContent = "About";
 });
 
-/* LINKEDIN */
-const linkedinUrl = "https://www.linkedin.com/company/pacific-world-travel/about/?viewAsMember=true";
-document.querySelectorAll("footer .socials").forEach((socials) => {
-  const linkedinMark = [...socials.children].find((item) => item.textContent.trim() === "in");
-  if (linkedinMark && linkedinMark.tagName !== "A") {
-    const linkedinLink = document.createElement("a");
-    linkedinLink.href = linkedinUrl;
-    linkedinLink.target = "_blank";
-    linkedinLink.rel = "noopener noreferrer";
-    linkedinLink.setAttribute("aria-label", "Pacific World Travel on LinkedIn");
-    linkedinLink.textContent = "in";
-    linkedinMark.replaceWith(linkedinLink);
+/* SOCIAL LINKS */
+const socialLinks = {
+  in: {
+    href: "https://www.linkedin.com/company/pacific-world-travel/about/?viewAsMember=true",
+    label: "Pacific World Travel on LinkedIn"
+  },
+  f: {
+    href: "https://www.facebook.com/profile.php?id=61593539661203",
+    label: "Pacific World Travel on Facebook"
   }
+};
+
+document.querySelectorAll("footer .socials").forEach((socials) => {
+  [...socials.children].forEach((item) => {
+    const key = item.textContent.trim();
+    const config = socialLinks[key];
+    if (config && item.tagName !== "A") {
+      const link = document.createElement("a");
+      link.href = config.href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.setAttribute("aria-label", config.label);
+      link.textContent = key;
+      item.replaceWith(link);
+    }
+  });
 });
 
 /* MOBILE MAIN MENU */
