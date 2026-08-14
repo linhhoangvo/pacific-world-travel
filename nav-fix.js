@@ -134,6 +134,32 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(gatewayStyle);
   }
 
+  /* Signature Journey cards: open dedicated detail pages. */
+  const journeyLinks = [
+    [".journey-vietnam", "vietnam-highlights.html"],
+    [".journey-golf", "vietnam-golf-journey.html"],
+    [".journey-retreat", "executive-retreat-vietnam.html"]
+  ];
+  journeyLinks.forEach(([selector, href]) => {
+    const card = document.querySelector(selector);
+    if (!card) return;
+    const link = card.querySelector("a");
+    if (link) link.setAttribute("href", href);
+    card.setAttribute("role", "link");
+    card.setAttribute("tabindex", "0");
+    card.style.cursor = "pointer";
+    card.addEventListener("click", (event) => {
+      if (event.target.closest("a")) return;
+      window.location.href = href;
+    });
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.location.href = href;
+      }
+    });
+  });
+
   /* Team page: go straight to the team rather than repeating two large intro statements. */
   if (document.body.classList.contains("team-page")) {
     document.querySelector(".team-hero")?.remove();
