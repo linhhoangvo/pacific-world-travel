@@ -1,6 +1,72 @@
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".desktop-nav");
 
+/* ABOUT DROPDOWN */
+const aboutLink = nav ? [...nav.children].find((item) =>
+  item.tagName === "A" && ["About Us", "About"].includes(item.textContent.trim())
+) : null;
+
+if (aboutLink) {
+  const dropdown = document.createElement("div");
+  dropdown.className = "nav-dropdown";
+  dropdown.innerHTML = `
+    <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+      <span>About</span><span class="dropdown-chevron">⌄</span>
+    </button>
+    <div class="nav-dropdown-menu">
+      <a href="#who-we-are">Who We Are</a>
+      <a href="#our-philosophy">Our Philosophy</a>
+      <a href="#why">Why Us</a>
+      <a href="#our-team">Our Team</a>
+      <a href="#sustainability">Sustainability</a>
+      <a href="#local-expertise">Local Expertise</a>
+    </div>
+  `;
+  aboutLink.replaceWith(dropdown);
+
+  const aboutIds = [
+    "who-we-are",
+    "our-philosophy",
+    "why-us-about",
+    "our-team",
+    "sustainability",
+    "local-expertise"
+  ];
+  document.querySelectorAll(".about-grid article").forEach((article, index) => {
+    if (aboutIds[index]) {
+      article.id = aboutIds[index];
+      article.style.scrollMarginTop = "110px";
+    }
+  });
+
+  const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+  toggle?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const open = dropdown.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
+  dropdown.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      dropdown.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
+    }
+  });
+}
+
+/* Footer wording */
+document.querySelectorAll("footer a").forEach((link) => {
+  if (link.textContent.trim() === "About Us") link.textContent = "About";
+});
+
+/* MOBILE MAIN MENU */
 menuButton?.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
   menuButton.setAttribute("aria-expanded", String(open));
@@ -39,7 +105,73 @@ paletteStyle.textContent = `
 
 body { background: #F7F4ED; color: #263C32; }
 .site-header { background: rgba(38, 60, 50, .96); }
-.desktop-nav a:hover { color: #D4C5AD; }
+.desktop-nav > a:hover { color: #D4C5AD; }
+
+/* Header About dropdown */
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+.nav-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dropdown-chevron {
+  font-size: 13px;
+  line-height: 1;
+  transition: transform .2s ease;
+}
+.nav-dropdown-menu {
+  position: absolute;
+  z-index: 80;
+  top: 72px;
+  left: 50%;
+  width: 220px;
+  padding: 18px 0 22px;
+  background: #F7F4ED;
+  color: #263C32;
+  border-radius: 0 0 22px 22px;
+  box-shadow: 0 18px 40px rgba(38,60,50,.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(-50%, -8px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+.nav-dropdown-menu a {
+  display: block;
+  padding: 10px 28px;
+  color: #263C32;
+  font-size: 13px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.nav-dropdown-menu a:hover {
+  background: #E8DFD0;
+  color: #263C32;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+.nav-dropdown:hover .dropdown-chevron,
+.nav-dropdown.open .dropdown-chevron {
+  transform: rotate(180deg);
+}
 
 .hero-overlay {
   background:
@@ -80,7 +212,7 @@ body { background: #F7F4ED; color: #263C32; }
   background: linear-gradient(180deg, rgba(38,60,50,.03), rgba(38,60,50,.78));
 }
 
-/* ABOUT */
+/* ABOUT CONTENT */
 .about-section {
   background: #E8DFD0;
   color: #263C32;
@@ -121,14 +253,10 @@ body { background: #F7F4ED; color: #263C32; }
   padding: 34px 30px 38px;
   border-right: 1px solid rgba(38,60,50,.18);
   border-bottom: 1px solid rgba(38,60,50,.18);
-  transition: background .25s ease, transform .25s ease;
+  transition: background .25s ease;
 }
-.about-grid article:nth-child(-n+3) {
-  border-top: 1px solid rgba(38,60,50,.18);
-}
-.about-grid article:hover {
-  background: #F7F4ED;
-}
+.about-grid article:nth-child(-n+3) { border-top: 1px solid rgba(38,60,50,.18); }
+.about-grid article:hover { background: #F7F4ED; }
 .about-number {
   display: inline-block;
   margin-bottom: 44px;
@@ -159,6 +287,33 @@ footer { background: #263C32; }
 
 @media (max-width: 1080px) {
   .desktop-nav.open { background: #263C32; }
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .nav-dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px 0;
+    text-align: left;
+  }
+  .nav-dropdown-menu {
+    position: static;
+    width: 100%;
+    margin: 6px 0 2px;
+    padding: 8px 0;
+    border-radius: 12px;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    display: none;
+  }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
+  .nav-dropdown:hover .nav-dropdown-menu:not(:focus-within) { transform: none; }
+  .nav-dropdown-menu a { padding: 10px 16px; }
   .about-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid article:nth-child(3) { border-top: 0; }
   .about-grid article:nth-child(-n+2) { border-top: 1px solid rgba(38,60,50,.18); }
@@ -175,6 +330,7 @@ footer { background: #263C32; }
 `;
 document.head.appendChild(paletteStyle);
 
+/* Updated imagery */
 const businessTravelPhoto = document.querySelector(".business-feature .feature-photo");
 if (businessTravelPhoto) {
   businessTravelPhoto.style.backgroundImage = 'url("business-travel.jpg")';
