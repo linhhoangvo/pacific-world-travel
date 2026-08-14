@@ -3,6 +3,57 @@ document.addEventListener("DOMContentLoaded", () => {
     link.setAttribute("href", "team.html");
   });
 
+  /* FOOTER CONTACT DETAILS */
+  document.querySelectorAll("footer").forEach((footer) => {
+    const companyColumn = [...footer.querySelectorAll(".footer-column")].find((column) =>
+      column.querySelector("strong")?.textContent.trim() === "COMPANY"
+    );
+
+    if (!companyColumn) return;
+
+    const contactLink = [...companyColumn.querySelectorAll("a")].find((link) =>
+      link.textContent.trim() === "Contact Us"
+    );
+
+    if (contactLink) {
+      contactLink.href = "mailto:rosie.pacificworld@gmail.com";
+    }
+
+    if (!companyColumn.querySelector(".footer-contact-details")) {
+      const details = document.createElement("div");
+      details.className = "footer-contact-details";
+      details.innerHTML = `
+        <a href="tel:+84388855913" title="Zalo +84388855913">+84 388 855 913</a>
+        <a href="mailto:rosie.pacificworld@gmail.com">rosie.pacificworld@gmail.com</a>
+      `;
+      companyColumn.appendChild(details);
+    }
+  });
+
+  if (!document.getElementById("footer-contact-style")) {
+    const style = document.createElement("style");
+    style.id = "footer-contact-style";
+    style.textContent = `
+      .footer-contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 8px;
+      }
+      .footer-contact-details a {
+        font-size: 12px;
+        line-height: 1.4;
+        opacity: .9;
+        overflow-wrap: anywhere;
+      }
+      .footer-contact-details a:hover {
+        color: #D4C5AD;
+        opacity: 1;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
   const nav = document.querySelector(".desktop-nav");
   if (!nav || nav.querySelector(".business-nav-dropdown")) return;
 
