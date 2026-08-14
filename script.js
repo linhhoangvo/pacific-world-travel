@@ -20,30 +20,15 @@ if (aboutLink) {
       <span>About</span>
     </button>
     <div class="nav-dropdown-menu">
-      <a href="#who-we-are">Who We Are</a>
-      <a href="#our-philosophy">Our Philosophy</a>
-      <a href="#why">Why Us</a>
-      <a href="#our-team">Our Team</a>
-      <a href="#sustainability">Sustainability</a>
-      <a href="#local-expertise">Local Expertise</a>
+      <a href="who-we-are.html">Who We Are</a>
+      <a href="our-philosophy.html">Our Philosophy</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="local-expertise.html">Local Expertise</a>
     </div>
   `;
   aboutLink.replaceWith(dropdown);
-
-  const aboutIds = [
-    "who-we-are",
-    "our-philosophy",
-    "why-us-about",
-    "our-team",
-    "sustainability",
-    "local-expertise"
-  ];
-  document.querySelectorAll(".about-grid article").forEach((article, index) => {
-    if (aboutIds[index]) {
-      article.id = aboutIds[index];
-      article.style.scrollMarginTop = "110px";
-    }
-  });
 
   const toggle = dropdown.querySelector(".nav-dropdown-toggle");
   toggle?.addEventListener("click", (event) => {
