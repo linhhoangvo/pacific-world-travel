@@ -107,6 +107,21 @@ document.querySelectorAll("footer a").forEach((link) => {
   if (link.textContent.trim() === "About Us") link.textContent = "About";
 });
 
+/* LINKEDIN */
+const linkedinUrl = "https://www.linkedin.com/company/pacific-world-travel/about/?viewAsMember=true";
+document.querySelectorAll("footer .socials").forEach((socials) => {
+  const linkedinMark = [...socials.children].find((item) => item.textContent.trim() === "in");
+  if (linkedinMark && linkedinMark.tagName !== "A") {
+    const linkedinLink = document.createElement("a");
+    linkedinLink.href = linkedinUrl;
+    linkedinLink.target = "_blank";
+    linkedinLink.rel = "noopener noreferrer";
+    linkedinLink.setAttribute("aria-label", "Pacific World Travel on LinkedIn");
+    linkedinLink.textContent = "in";
+    linkedinMark.replaceWith(linkedinLink);
+  }
+});
+
 /* MOBILE MAIN MENU */
 menuButton?.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
@@ -263,6 +278,14 @@ body { background: #F7F4ED; color: #263C32; }
 .final-cta { background: #263C32; }
 footer { background: #263C32; }
 .footer-column > strong { color: #D4C5AD; }
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+}
+.socials a:hover { color: #D4C5AD; }
 
 @media (max-width: 1080px) {
   .desktop-nav.open { background: #263C32; }
