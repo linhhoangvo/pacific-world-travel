@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     viewAllDestinations.setAttribute("href", "destinations.html");
   }
 
-  /* CLIENT EXPERIENCE — testimonial-style without invented endorsements */
+  /* CLIENT EXPERIENCE — review-card style inspired by the supplied reference */
   const whySection = document.querySelector(".why");
   if (whySection && !document.querySelector(".client-experience")) {
     document.querySelector(".client-stories-shell")?.remove();
@@ -32,27 +32,48 @@ document.addEventListener("DOMContentLoaded", () => {
     clientSection.innerHTML = `
       <div class="client-experience-head">
         <p class="eyebrow">CLIENT EXPERIENCE</p>
-        <h2>What good travel management should feel like.</h2>
-        <p>Clear communication, thoughtful planning and dependable support — the standards we bring to every journey.</p>
+        <h2>The kind of travel experience we aim to deliver.</h2>
+        <p>Thoughtful planning, responsive support and local expertise — expressed through the moments that matter most to travellers.</p>
       </div>
-      <div class="client-experience-grid">
-        <article class="client-experience-card">
-          <span class="client-mark">“</span>
-          <h3>Responsive & reliable</h3>
-          <p>Fast answers, clear ownership and a team that stays close to the details from planning through travel.</p>
-          <small>DEDICATED SUPPORT</small>
+
+      <div class="client-review-grid">
+        <article class="client-review-card">
+          <div class="review-top">
+            <h3>Everything feels taken care of</h3>
+            <div class="review-stars" aria-label="Five stars">★★★★★</div>
+          </div>
+          <p class="review-copy">Clear communication, thoughtful coordination and support at the right moments make even complex business travel feel simple and well managed.</p>
+          <div class="review-footer">
+            <span class="review-avatar">B</span>
+            <span class="review-persona">Business Traveller</span>
+            <span class="review-tag">Corporate Travel</span>
+          </div>
         </article>
-        <article class="client-experience-card featured">
-          <span class="client-mark">“</span>
-          <h3>Seamless from end to end</h3>
-          <p>Hotels, transport, golf, meetings and experiences coordinated as one journey rather than separate bookings.</p>
-          <small>ONE CONNECTED PLAN</small>
+
+        <article class="client-review-card">
+          <div class="review-top">
+            <h3>Smooth from tee time to transfer</h3>
+            <div class="review-stars" aria-label="Five stars">★★★★★</div>
+          </div>
+          <p class="review-copy">Course bookings, hotels and transport are planned as one connected journey, leaving more time to enjoy the golf and the destination.</p>
+          <div class="review-footer">
+            <span class="review-avatar">G</span>
+            <span class="review-persona">Golf Traveller</span>
+            <span class="review-tag">Golf Journey</span>
+          </div>
         </article>
-        <article class="client-experience-card">
-          <span class="client-mark">“</span>
-          <h3>Local knowledge, personally delivered</h3>
-          <p>On-the-ground relationships and practical destination insight help make each programme feel considered and effortless.</p>
-          <small>LOCAL EXPERTISE</small>
+
+        <article class="client-review-card">
+          <div class="review-top">
+            <h3>A retreat that feels effortless</h3>
+            <div class="review-stars" aria-label="Five stars">★★★★★</div>
+          </div>
+          <p class="review-copy">A well-paced programme can balance productive time with local experiences, restorative moments and space for teams to reconnect.</p>
+          <div class="review-footer">
+            <span class="review-avatar">R</span>
+            <span class="review-persona">Corporate Group</span>
+            <span class="review-tag">Retreat</span>
+          </div>
         </article>
       </div>
     `;
@@ -63,99 +84,126 @@ document.addEventListener("DOMContentLoaded", () => {
       clientStyle.id = "client-experience-style";
       clientStyle.textContent = `
         .client-experience {
-          padding: 90px 6.4vw 96px;
-          background: #263C32;
-          color: #F7F4ED;
+          padding: 88px 6.4vw 96px;
+          background: #F2EEE5;
+          color: #263C32;
         }
         .client-experience-head {
-          max-width: 780px;
-          margin: 0 auto 46px;
+          max-width: 760px;
+          margin: 0 auto 44px;
           text-align: center;
         }
-        .client-experience-head .eyebrow { color: #D4C5AD; }
         .client-experience-head h2 {
           margin: 0;
           font-family: "Playfair Display", Georgia, serif;
-          font-size: clamp(40px, 4.7vw, 66px);
+          font-size: clamp(40px, 4.6vw, 64px);
           line-height: 1;
           font-weight: 500;
           letter-spacing: -.035em;
-          color: #F7F4ED;
+          color: #263C32;
         }
         .client-experience-head > p:last-child {
           max-width: 620px;
           margin: 18px auto 0;
           font-size: 14px;
           line-height: 1.65;
-          color: rgba(247,244,237,.68);
+          color: #68735A;
         }
-        .client-experience-grid {
+        .client-review-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 14px;
+          gap: 16px;
           max-width: 1450px;
           margin: 0 auto;
         }
-        .client-experience-card {
-          position: relative;
-          min-height: 315px;
-          padding: 30px 30px 28px;
+        .client-review-card {
+          min-height: 285px;
+          padding: 28px 28px 24px;
           display: flex;
           flex-direction: column;
-          border: 1px solid rgba(247,244,237,.18);
-          border-radius: 16px;
-          background: rgba(247,244,237,.045);
-          transition: transform .25s ease, background .25s ease, border-color .25s ease;
+          background: #FCFBF7;
+          border: 1px solid rgba(38,60,50,.13);
+          border-radius: 8px;
+          box-shadow: 0 10px 28px rgba(38,60,50,.045);
+          transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
         }
-        .client-experience-card:hover {
-          transform: translateY(-5px);
-          border-color: rgba(212,197,173,.55);
-          background: rgba(247,244,237,.075);
+        .client-review-card:hover {
+          transform: translateY(-4px);
+          border-color: rgba(104,115,90,.38);
+          box-shadow: 0 18px 38px rgba(38,60,50,.08);
         }
-        .client-experience-card.featured {
-          background: #E8DFD0;
-          color: #263C32;
-          border-color: #E8DFD0;
+        .review-top {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 18px;
+          padding-bottom: 18px;
+          border-bottom: 1px solid rgba(38,60,50,.11);
         }
-        .client-mark {
-          display: block;
-          margin-bottom: 44px;
+        .review-top h3 {
+          margin: 0;
+          max-width: 290px;
           font-family: "Playfair Display", Georgia, serif;
-          font-size: 54px;
-          line-height: .7;
-          color: #D4C5AD;
-        }
-        .client-experience-card.featured .client-mark { color: #68735A; }
-        .client-experience-card h3 {
-          margin: 0 0 14px;
-          font-family: "Playfair Display", Georgia, serif;
-          font-size: 29px;
-          line-height: 1.08;
+          font-size: 23px;
+          line-height: 1.12;
           font-weight: 500;
+          color: #263C32;
         }
-        .client-experience-card p {
-          margin: 0 0 26px;
+        .review-stars {
+          flex: 0 0 auto;
+          color: #84A957;
+          font-size: 15px;
+          letter-spacing: 2px;
+          line-height: 1.2;
+        }
+        .review-copy {
+          margin: 20px 0 25px;
           font-size: 13px;
           line-height: 1.7;
-          color: rgba(247,244,237,.72);
+          color: #5E695E;
         }
-        .client-experience-card.featured p { color: #566255; }
-        .client-experience-card small {
+        .review-footer {
           margin-top: auto;
-          font-size: 9px;
-          font-weight: 700;
-          letter-spacing: .12em;
-          color: #D4C5AD;
+          display: grid;
+          grid-template-columns: 34px 1fr auto;
+          align-items: center;
+          gap: 10px;
         }
-        .client-experience-card.featured small { color: #68735A; }
-        @media (max-width: 900px) {
-          .client-experience-grid { grid-template-columns: 1fr; }
-          .client-experience-card { min-height: 250px; }
+        .review-avatar {
+          width: 34px;
+          height: 34px;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          background: #263C32;
+          color: #F7F4ED;
+          font-family: "Playfair Display", Georgia, serif;
+          font-size: 14px;
+        }
+        .review-persona {
+          font-size: 11px;
+          font-weight: 500;
+          color: #566255;
+        }
+        .review-tag {
+          padding: 6px 9px;
+          border-radius: 5px;
+          background: #EDF3E4;
+          color: #688445;
+          font-size: 9px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+        @media (max-width: 980px) {
+          .client-review-grid { grid-template-columns: 1fr; }
+          .client-review-card { min-height: 240px; }
         }
         @media (max-width: 620px) {
-          .client-experience { padding: 70px 20px 76px; }
-          .client-experience-card { padding: 26px 24px; }
-          .client-mark { margin-bottom: 30px; }
+          .client-experience { padding: 68px 20px 74px; }
+          .client-review-card { padding: 24px 20px 21px; }
+          .review-top { flex-direction: column; gap: 10px; }
+          .review-footer { grid-template-columns: 34px 1fr; }
+          .review-tag { grid-column: 2; justify-self: start; }
         }
       `;
       document.head.appendChild(clientStyle);
