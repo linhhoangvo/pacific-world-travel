@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Homepage: the moving trust bar already communicates these proof points. */
   document.querySelector(".why.why-compact")?.remove();
 
+  /* Team page: go straight to the team rather than repeating two large intro statements. */
+  if (document.body.classList.contains("team-page")) {
+    document.querySelector(".team-hero")?.remove();
+    document.querySelector(".people-heading")?.remove();
+    const peopleSection = document.querySelector(".people-section");
+    if (peopleSection) peopleSection.style.paddingTop = "72px";
+  }
+
   /* Destination cards: destination name only */
   document.querySelectorAll(".destination span").forEach((subtitle) => subtitle.remove());
   document.querySelectorAll(".desktop-nav a, footer a").forEach((link) => {
