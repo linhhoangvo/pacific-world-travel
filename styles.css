@@ -64,7 +64,7 @@ a{text-decoration:none;color:inherit}
 }
 .hero-image{
   position:absolute;inset:0;
-  background:url("assets/hero-golf.jpg") center 53%/cover no-repeat;
+  background:url("hero-golf.jpg") center 53%/cover no-repeat;
   transform:scale(1.02);
 }
 .hero-overlay{
@@ -128,8 +128,8 @@ a{text-decoration:none;color:inherit}
   position:relative;min-height:350px;overflow:hidden;color:#fff;border-radius:4px;
 }
 .feature-photo,.feature-shade{position:absolute;inset:0}
-.business-feature .feature-photo{background:url("assets/business.webp") center/cover}
-.golf-feature .feature-photo{background:url("assets/golf.jpg") center/cover}
+.business-feature .feature-photo{background:url("business.webp") center/cover}
+.golf-feature .feature-photo{background:url("golf.jpg") center/cover}
 .feature-shade{background:linear-gradient(180deg,rgba(2,31,49,.03) 30%,rgba(2,31,49,.96) 100%)}
 .feature-copy{
   position:relative;z-index:2;height:100%;min-height:350px;padding:25px;
@@ -177,7 +177,7 @@ a{text-decoration:none;color:inherit}
 .corporate-golf{
   min-height:465px;position:relative;color:#fff;display:flex;align-items:center;overflow:hidden;
 }
-.cg-image{position:absolute;inset:0;background:url("assets/golf.jpg") center 58%/cover}
+.cg-image{position:absolute;inset:0;background:url("golf.jpg") center 58%/cover}
 .cg-shade{
   position:absolute;inset:0;
   background:linear-gradient(90deg,rgba(2,34,54,.98) 0%,rgba(2,34,54,.90) 37%,rgba(2,34,54,.25) 68%);
@@ -213,12 +213,12 @@ a{text-decoration:none;color:inherit}
 }
 .destination strong{display:block;font-size:13px}
 .destination span{display:block;margin-top:4px;font-size:9px;color:rgba(255,255,255,.77)}
-.d1{background-image:url("assets/business.webp")}
-.d2{background-image:url("assets/golf.jpg");background-position:20% center}
-.d3{background-image:url("assets/hero-golf.jpg")}
-.d4{background-image:url("assets/business.webp");background-position:70% center}
-.d5{background-image:url("assets/golf.jpg");background-position:80% center}
-.d6{background-image:url("assets/hero-golf.jpg");background-position:10% center}
+.d1{background-image:url("business.webp")}
+.d2{background-image:url("golf.jpg");background-position:20% center}
+.d3{background-image:url("hero-golf.jpg")}
+.d4{background-image:url("business.webp");background-position:70% center}
+.d5{background-image:url("golf.jpg");background-position:80% center}
+.d6{background-image:url("hero-golf.jpg");background-position:10% center}
 .view-link{
   display:inline-flex;gap:14px;margin-top:30px;text-transform:uppercase;font-size:9px;
   font-weight:700;letter-spacing:.09em;color:var(--navy-dark);
@@ -236,7 +236,7 @@ a{text-decoration:none;color:inherit}
 .final-copy p{font-size:12px;line-height:1.55;color:rgba(255,255,255,.72)}
 .final-actions{padding:20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
 .light-outline{border-color:rgba(255,255,255,.55);color:#fff}
-.final-photo{height:100%;min-height:320px;background:url("assets/business.webp") center/cover}
+.final-photo{height:100%;min-height:320px;background:url("business.webp") center/cover}
 
 footer{
   display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:35px;padding:55px 5vw 38px;
