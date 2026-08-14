@@ -11,88 +11,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260814-management2" />
+  <link rel="stylesheet" href="styles.css?v=20260814-streamlined1" />
   <style>
-    .signature-journeys{background:#E8DFD0;padding:90px 6.4vw}
-    .signature-journeys .journey-intro{max-width:720px;margin:0 auto 44px;text-align:center}
+    .signature-journeys{background:#E8DFD0;padding:82px 6.4vw}
+    .signature-journeys .journey-intro{max-width:720px;margin:0 auto 40px;text-align:center}
     .signature-journeys .journey-intro h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,4.4vw,62px);line-height:1.02;font-weight:500;letter-spacing:-.03em;color:#263C32}
-    .signature-journeys .journey-intro p:last-child{max-width:620px;margin:18px auto 0;font-size:14px;line-height:1.65;color:#68735A}
+    .signature-journeys .journey-intro p:last-child{max-width:620px;margin:16px auto 0;font-size:14px;line-height:1.65;color:#68735A}
     .journey-teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .journey-teaser{position:relative;min-height:390px;overflow:hidden;border-radius:4px;color:#fff;background-position:center;background-size:cover}
+    .journey-teaser{position:relative;min-height:365px;overflow:hidden;border-radius:4px;color:#fff;background-position:center;background-size:cover}
     .journey-teaser::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,60,50,.05) 28%,rgba(38,60,50,.92) 100%)}
-    .journey-teaser-content{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:28px}
-    .journey-teaser small{display:block;margin-bottom:9px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#D4C5AD}
-    .journey-teaser h3{margin:0 0 9px;font-family:"Playfair Display",Georgia,serif;font-size:30px;line-height:1.05;font-weight:500}
-    .journey-teaser p{margin:0 0 18px;max-width:320px;font-size:12px;line-height:1.55;color:rgba(255,255,255,.82)}
+    .journey-teaser-content{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:26px}
+    .journey-teaser small{display:block;margin-bottom:8px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#D4C5AD}
+    .journey-teaser h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:29px;line-height:1.05;font-weight:500}
+    .journey-teaser p{margin:0 0 16px;max-width:320px;font-size:12px;line-height:1.55;color:rgba(255,255,255,.82)}
     .journey-teaser a{display:inline-flex;gap:12px;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
     .journey-vietnam{background-image:url("halong-bay.jpg")}
     .journey-golf{background-image:url("golf-travel.jpg");background-position:center 52%}
     .journey-retreat{background-image:url("final-cta-lounge.jpg");background-position:center}
-    .journey-all{display:flex;justify-content:center;margin-top:28px}
+    .journey-all{display:flex;justify-content:center;margin-top:26px}
     .journey-all a{display:inline-flex;gap:14px;text-transform:uppercase;font-size:9px;font-weight:700;letter-spacing:.09em;color:#263C32}
 
-    /* Refined Business Travel Management */
-    .management.management-luxe{
-      padding:82px 6.4vw 96px;
-      background:linear-gradient(180deg,#F7F4ED 0%,#F2EEE5 100%);
-    }
-    .management-luxe .center-heading{max-width:800px;margin-bottom:42px}
-    .management-luxe .center-heading .eyebrow{margin-bottom:14px}
-    .management-luxe .center-heading h2{max-width:760px;margin:0 auto;font-size:clamp(42px,4.8vw,68px);line-height:.98}
-    .management-subtitle{max-width:610px;margin:20px auto 0;font-size:14px;line-height:1.65;color:#68735A}
-    .management-luxe .management-grid{
+    /* Compact How It Works + Client Experience */
+    .how-we-work.journey-process{
+      padding:72px 6.4vw 76px;
+      background:#F2EEE5;
       display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:14px;
-      border:0;
-      max-width:1500px;
-      margin:0 auto;
-    }
-    .management-luxe .management-grid article{
+      grid-template-columns:.9fr 1.1fr;
+      gap:clamp(42px,6vw,96px);
+      align-items:center;
       position:relative;
-      min-height:270px;
-      padding:34px 28px 32px;
-      text-align:left;
-      border:1px solid rgba(38,60,50,.11);
-      border-radius:16px;
-      background:rgba(247,244,237,.94);
-      box-shadow:0 12px 32px rgba(38,60,50,.045);
-      transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease,background .28s ease;
+      overflow:hidden;
     }
-    .management-luxe .management-grid article:hover{
-      transform:translateY(-6px);
-      border-color:rgba(38,60,50,.24);
-      background:#FCFAF5;
-      box-shadow:0 20px 44px rgba(38,60,50,.10);
-    }
-    .management-luxe .management-grid article>span{
-      width:54px;
-      height:54px;
-      margin:0 0 44px;
-      display:grid;
-      place-items:center;
-      border-radius:50%;
-      background:#E8DFD0;
-      color:#263C32;
-      font-size:22px;
-      line-height:1;
-      transition:background .28s ease,color .28s ease,transform .28s ease;
-    }
-    .management-luxe .management-grid article:hover>span{background:#263C32;color:#F7F4ED;transform:scale(1.04)}
-    .management-luxe .management-grid h3{
-      margin:0 0 12px;
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:25px;
-      line-height:1.05;
-      font-weight:500;
-      color:#263C32;
-    }
-    .management-luxe .management-grid p{margin:0;max-width:280px;font-size:13px;line-height:1.65;color:#68735A}
-    @media(max-width:1050px){.management-luxe .management-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:620px){.management.management-luxe{padding:68px 20px 76px}.management-luxe .management-grid{grid-template-columns:1fr}.management-luxe .management-grid article{min-height:235px}.management-luxe .management-grid article>span{margin-bottom:32px}}
+    .process-left{max-width:610px}
+    .process-left>h2{margin:0 0 34px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(40px,4.5vw,62px);line-height:1;font-weight:500;letter-spacing:-.035em;color:#263C32}
+    .process-list{display:flex;flex-direction:column;gap:24px;margin-bottom:30px}
+    .process-step{display:grid;grid-template-columns:34px 1fr;gap:16px;align-items:start}
+    .process-step-number{width:29px;height:29px;display:grid;place-items:center;border-radius:50%;background:#E5EED9;color:#688445;font-size:10px;font-weight:700}
+    .process-step h3{margin:1px 0 4px;font-size:15px;font-weight:600;color:#263C32}
+    .process-step p{margin:0;max-width:480px;font-size:12px;line-height:1.55;color:#68735A}
+    .process-cta{display:inline-flex;align-items:center;gap:18px;min-height:42px;padding:0 18px;border-radius:24px;background:#68735A;color:#F7F4ED;text-transform:uppercase;font-size:9px;font-weight:700;letter-spacing:.08em}
+    .client-panel{position:relative;min-height:390px;padding:34px 36px 30px;border-radius:20px;background:#FCFBF7;border:1px solid rgba(38,60,50,.10);box-shadow:0 18px 48px rgba(38,60,50,.08)}
+    .client-panel-top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:20px;border-bottom:1px solid rgba(38,60,50,.11)}
+    .client-panel-kicker{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#68735A}
+    .client-panel-tag{padding:6px 9px;border-radius:5px;background:#EDF3E4;color:#688445;font-size:9px;font-weight:600;white-space:nowrap}
+    .client-panel-body{padding:26px 0 18px}
+    .client-panel-body h3{margin:0 0 14px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.7vw,40px);line-height:1.06;font-weight:500;color:#263C32}
+    .client-panel-body p{margin:0;max-width:660px;font-size:13px;line-height:1.72;color:#5E695E}
+    .client-panel-footer{position:absolute;left:36px;right:36px;bottom:28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .client-persona{display:flex;align-items:center;gap:10px;font-size:11px;color:#566255}
+    .client-persona-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#263C32;color:#F7F4ED;font-family:"Playfair Display",Georgia,serif;font-size:13px}
+    .client-arrows{display:flex;gap:8px}
+    .client-arrow{width:40px;height:40px;border:0;border-radius:50%;background:#68735A;color:#fff;cursor:pointer;font-size:16px;transition:transform .2s ease,background .2s ease}
+    .client-arrow:hover{background:#263C32;transform:translateY(-2px)}
+    .client-panel.fade .client-panel-body,.client-panel.fade .client-persona{opacity:.15;transition:opacity .15s ease}
+    .client-panel .client-panel-body,.client-panel .client-persona{opacity:1;transition:opacity .22s ease}
 
-    @media(max-width:900px){.journey-teaser-grid{grid-template-columns:1fr 1fr}.journey-teaser:last-child{grid-column:1/-1}}
-    @media(max-width:620px){.signature-journeys{padding:70px 20px}.journey-teaser-grid{grid-template-columns:1fr}.journey-teaser:last-child{grid-column:auto}.journey-teaser{min-height:340px}}
+    /* Smaller Why Pacific World */
+    .why.why-compact{padding:58px 6.4vw;background:#F7F4ED;display:grid;grid-template-columns:.72fr 1.28fr;gap:50px;align-items:center;border-top:1px solid rgba(38,60,50,.10)}
+    .why-compact-heading .eyebrow{margin-bottom:10px}
+    .why-compact-heading h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,3.8vw,52px);line-height:1;font-weight:500;letter-spacing:-.035em;color:#263C32}
+    .why-compact-grid{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid rgba(38,60,50,.13)}
+    .why-compact-grid article{min-height:145px;padding:18px 24px;border-right:1px solid rgba(38,60,50,.13);display:flex;flex-direction:column;justify-content:center}
+    .why-compact-grid span{font-size:20px;color:#68735A;margin-bottom:14px}
+    .why-compact-grid h3{margin:0 0 7px;font-size:14px;color:#263C32}
+    .why-compact-grid p{margin:0;font-size:11px;line-height:1.5;color:#68735A}
+
+    @media(max-width:980px){
+      .journey-teaser-grid{grid-template-columns:1fr 1fr}.journey-teaser:last-child{grid-column:1/-1}
+      .how-we-work.journey-process{grid-template-columns:1fr;gap:46px}
+      .client-panel{min-height:350px}
+      .why.why-compact{grid-template-columns:1fr;gap:30px}.why-compact-grid{border-top:1px solid rgba(38,60,50,.13)}
+    }
+    @media(max-width:680px){
+      .signature-journeys{padding:66px 20px}.journey-teaser-grid{grid-template-columns:1fr}.journey-teaser:last-child{grid-column:auto}.journey-teaser{min-height:330px}
+      .how-we-work.journey-process{padding:60px 20px 64px}.client-panel{padding:28px 24px;min-height:390px}.client-panel-footer{left:24px;right:24px}
+      .why.why-compact{padding:48px 20px}.why-compact-grid{grid-template-columns:1fr;border-left:0}.why-compact-grid article{min-height:auto;border-right:0;border-bottom:1px solid rgba(38,60,50,.13);padding:18px 0}
+    }
   </style>
 </head>
 <body>
@@ -105,33 +99,30 @@
       <a href="meetings-conferences.html">MICE & Events</a>
       <a href="who-we-are.html">About</a>
     </nav>
-    <a class="outline-btn header-cta" href="#contact">Talk to us</a>
+    <a class="outline-btn header-cta" href="contact.html">Talk to us</a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   </header>
+
   <main id="top">
+    <!-- 1. HERO -->
     <section class="hero">
       <div class="hero-image"></div><div class="hero-overlay"></div>
       <div class="hero-inner"><h1>Business travel,<br><em>beautifully handled.</em></h1><p>Corporate travel management and world-class golf experiences across Vietnam and Southeast Asia.</p><div class="hero-actions"><a class="hero-btn dark" href="#business">Business Travel <span>→</span></a><a class="hero-btn lime" href="#golf">Golf Travel <span>→</span></a></div></div>
       <div class="hero-benefits"><div><span class="benefit-icon">♙</span><div><strong>Dedicated Specialist</strong><small>One expert. All your journeys.</small></div></div><div><span class="benefit-icon">◷</span><div><strong>24/7 Support</strong><small>We’re with you, anytime.</small></div></div><div><span class="benefit-icon">⌖</span><div><strong>Local Expertise</strong><small>On-the-ground, always.</small></div></div><div><span class="benefit-icon">▣</span><div><strong>Business + Golf</strong><small>One partner. Every detail.</small></div></div></div>
     </section>
+
+    <!-- 2. BUSINESS TRAVEL + GOLF TRAVEL -->
     <section class="promise section">
       <div class="promise-heading"><p class="eyebrow">OUR PROMISE</p><h2>From boardroom<br>to back nine.</h2></div>
       <div class="promise-copy"><p>Pacific World Travel is your trusted partner for business travel management and premium golf experiences.</p><p>We combine global standards with local knowledge to deliver journeys that inspire, connect and achieve more.</p></div>
       <div class="feature-card business-feature" id="business"><div class="feature-photo"></div><div class="feature-shade"></div><div class="feature-copy"><span class="square-icon">▣</span><div><h3>Business Travel</h3><p>Smart. Simple. Seamless.</p><small>From flights and hotels to ground transport and itineraries, we take care of every detail.</small><a href="corporate-executive-travel.html">Learn more <span>→</span></a></div></div></div>
       <div class="feature-card golf-feature" id="golf"><div class="feature-photo"></div><div class="feature-shade"></div><div class="feature-copy"><span class="square-icon green">⚑</span><div><h3>Golf Travel</h3><p>Play more. Experience more.</p><small>World-class courses, tee-time management, luxury stays and unforgettable golf journeys.</small><a href="golf-holidays-journeys.html">Learn more <span>→</span></a></div></div></div>
     </section>
-    <section class="management management-luxe section" id="management">
-      <div class="center-heading"><p class="eyebrow">BUSINESS TRAVEL MANAGEMENT</p><h2>Travel that works for your business.</h2><p class="management-subtitle">Seamless planning, tailored support and thoughtful experiences — all managed by one trusted travel partner.</p></div>
-      <div class="management-grid">
-        <article><span>✦</span><h3>Plan & Book</h3><p>Flights, stays, transport and logistics managed in one place.</p></article>
-        <article><span>◇</span><h3>Personalise</h3><p>Tailored itineraries for executives, teams and corporate groups.</p></article>
-        <article><span>◉</span><h3>Support</h3><p>24/7 assistance before, during and after every journey.</p></article>
-        <article><span>✈</span><h3>Extend the Journey</h3><p>Curated leisure experiences that make business travel more rewarding.</p></article>
-      </div>
-    </section>
-    <section class="corporate-golf" id="corporate-golf"><div class="cg-image"></div><div class="cg-shade"></div><div class="cg-copy"><p class="eyebrow light">GOLF & INCENTIVES</p><h2>Take the conversation<br>beyond the meeting room.</h2><p>Reward, inspire and connect with curated golf experiences and incentive journeys in the region’s most stunning destinations.</p><ul><li>Championship courses</li><li>Luxury resorts</li><li>Seamless logistics</li><li>Memorable experiences</li></ul><a class="lime-button" href="meetings-conferences.html">Explore MICE & Events <span>→</span></a></div></section>
-    <section class="specialties section"><div class="center-heading"><p class="eyebrow">OUR SPECIALTIES</p><h2>Journeys designed around your goals.</h2></div><div class="specialty-grid"><article><span>▣</span><h3>Executive Travel</h3><p>Efficient, productive and stress-free business trips.</p></article><article><span>♧</span><h3>Client & Partner Golf</h3><p>Build stronger relationships on world-class courses.</p></article><article><span>♙♙</span><h3>Leadership Retreats</h3><p>Bring your team together to align and inspire.</p></article><article><span>□</span><h3>Incentive Journeys</h3><p>Motivate your people with extraordinary experiences.</p></article></div></section>
 
+    <!-- 3. MICE / GOLF & INCENTIVES -->
+    <section class="corporate-golf" id="corporate-golf"><div class="cg-image"></div><div class="cg-shade"></div><div class="cg-copy"><p class="eyebrow light">GOLF & INCENTIVES</p><h2>Take the conversation<br>beyond the meeting room.</h2><p>Reward, inspire and connect with curated golf experiences and incentive journeys in the region’s most stunning destinations.</p><ul><li>Championship courses</li><li>Luxury resorts</li><li>Seamless logistics</li><li>Memorable experiences</li></ul><a class="lime-button" href="meetings-conferences.html">Explore MICE & Events <span>→</span></a></div></section>
+
+    <!-- 4. SIGNATURE JOURNEYS -->
     <section class="signature-journeys" id="signature-journeys">
       <div class="journey-intro"><p class="eyebrow">SIGNATURE JOURNEYS</p><h2>A starting point for something personal.</h2><p>Explore a few of the journeys we can tailor around your travellers, goals and preferred pace.</p></div>
       <div class="journey-teaser-grid">
@@ -142,12 +133,107 @@
       <div class="journey-all"><a href="destinations.html">Explore all journeys <span>→</span></a></div>
     </section>
 
+    <!-- 5. DESTINATIONS -->
     <section class="destinations section" id="destinations"><div class="center-heading"><p class="eyebrow">DESTINATIONS</p><h2>Vietnam & Southeast Asia.<br>Extraordinary, accessible, unforgettable.</h2></div><div class="destination-grid"><article class="destination d1"><div><strong>Hanoi</strong></div></article><article class="destination d2"><div><strong>Ha Long Bay</strong></div></article><article class="destination d3"><div><strong>Da Nang & Hoi An</strong></div></article><article class="destination d4"><div><strong>Ho Chi Minh City</strong></div></article><article class="destination d5"><div><strong>Cam Ranh</strong></div></article><article class="destination d6"><div><strong>Phu Quoc</strong></div></article></div><a class="view-link" href="destinations.html">View all destinations <span>→</span></a></section>
-    <section class="why section" id="why"><div class="center-heading"><p class="eyebrow">WHY PACIFIC WORLD</p><h2>Experience. Connections. Commitment.</h2></div><div class="why-grid"><article><span>▣</span><h3>Dedicated Specialist</h3><p>One point of contact for all your travel needs.</p></article><article><span>◉</span><h3>24/7 Support</h3><p>We are here whenever you need us.</p></article><article><span>♙♙</span><h3>Local Access</h3><p>Strong local partners, better experiences.</p></article><article><span>◈</span><h3>One Seamless Plan</h3><p>Business and golf, perfectly planned together.</p></article></div></section>
-    <section class="final-cta" id="contact"><div class="final-copy"><h2>Ready to plan<br>your next journey?</h2><p>Let’s create a travel experience that drives results and leaves a lasting impression.</p></div><div class="final-actions"><a class="lime-button" href="mailto:info@pacificworldtravel.com">Talk to an expert <span>→</span></a><a class="outline-btn light-outline" href="mailto:info@pacificworldtravel.com?subject=Pacific%20World%20Travel%20Proposal">Request a proposal <span>→</span></a></div><div class="final-photo"></div></section>
+
+    <!-- 6. HOW IT WORKS + CLIENT EXPERIENCE -->
+    <section class="how-we-work journey-process client-experience" id="how-it-works">
+      <div class="process-left">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Simple from the first brief.</h2>
+        <div class="process-list">
+          <article class="process-step"><span class="process-step-number">01</span><div><h3>Tell us what you need</h3><p>Share your dates, travellers, priorities and the outcome you want from the journey.</p></div></article>
+          <article class="process-step"><span class="process-step-number">02</span><div><h3>We tailor the plan</h3><p>We shape stays, transport, golf, meetings and experiences around your brief.</p></div></article>
+          <article class="process-step"><span class="process-step-number">03</span><div><h3>Travel with support</h3><p>Your dedicated team coordinates the details and stays available throughout.</p></div></article>
+        </div>
+        <a class="process-cta" href="contact.html">Get started <span>→</span></a>
+      </div>
+
+      <div class="client-panel" id="client-panel">
+        <div class="client-panel-top"><span class="client-panel-kicker">CLIENT EXPERIENCE</span><span class="client-panel-tag" id="client-tag">Corporate Travel</span></div>
+        <div class="client-panel-body"><h3 id="client-title">Everything feels taken care of.</h3><p id="client-copy">Clear communication, thoughtful coordination and support at the right moments can make even complex business travel feel simple and well managed.</p></div>
+        <div class="client-panel-footer">
+          <div class="client-persona"><span class="client-persona-icon" id="client-icon">B</span><span id="client-persona">Business Traveller</span></div>
+          <div class="client-arrows"><button class="client-arrow" type="button" id="client-prev" aria-label="Previous client experience">‹</button><button class="client-arrow" type="button" id="client-next" aria-label="Next client experience">›</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY PACIFIC WORLD -->
+    <section class="why why-compact" id="why">
+      <div class="why-compact-heading"><p class="eyebrow">WHY PACIFIC WORLD</p><h2>Local insight.<br>One accountable team.</h2></div>
+      <div class="why-compact-grid">
+        <article><span>◎</span><h3>One Point of Contact</h3><p>A dedicated specialist keeps every moving part connected.</p></article>
+        <article><span>⌖</span><h3>Local Access</h3><p>Trusted relationships and practical knowledge across Vietnam.</p></article>
+        <article><span>✦</span><h3>Built Around You</h3><p>Every programme is shaped around your people, goals and pace.</p></article>
+      </div>
+    </section>
+
+    <!-- 8. FINAL CTA -->
+    <section class="final-cta" id="contact"><div class="final-copy"><h2>Ready to plan<br>your next journey?</h2><p>Let’s create a travel experience that drives results and leaves a lasting impression.</p></div><div class="final-actions"><a class="lime-button" href="contact.html">Talk to an expert <span>→</span></a><a class="outline-btn light-outline" href="contact.html">Request a proposal <span>→</span></a></div><div class="final-photo"></div></section>
   </main>
-  <footer><div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="#contact">Careers</a><a href="#contact">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="#contact">Traveller Support</a><a href="#contact">FAQs</a><a href="#contact">Travel Resources</a><a href="#contact">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260814-management2"></script>
-  <script src="nav-fix.js?v=20260814-management2"></script>
+
+  <footer><div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="#contact">Careers</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">FAQs</a><a href="contact.html">Travel Resources</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
+
+  <script src="script.js?v=20260814-streamlined1"></script>
+  <script src="nav-fix.js?v=20260814-streamlined1"></script>
+  <script>
+    const clientExperiences = [
+      {
+        tag: "Corporate Travel",
+        title: "Everything feels taken care of.",
+        copy: "Clear communication, thoughtful coordination and support at the right moments can make even complex business travel feel simple and well managed.",
+        persona: "Business Traveller",
+        icon: "B"
+      },
+      {
+        tag: "Golf Journey",
+        title: "Smooth from tee time to transfer.",
+        copy: "Course bookings, hotels and transport are planned as one connected journey, leaving more time to enjoy the golf and the destination.",
+        persona: "Golf Traveller",
+        icon: "G"
+      },
+      {
+        tag: "Corporate Retreat",
+        title: "A programme that feels effortless.",
+        copy: "Productive time, local experiences and restorative moments can be balanced into one well-paced retreat that helps teams reconnect.",
+        persona: "Corporate Group",
+        icon: "R"
+      }
+    ];
+
+    let clientIndex = 0;
+    const clientPanel = document.getElementById("client-panel");
+    const clientTag = document.getElementById("client-tag");
+    const clientTitle = document.getElementById("client-title");
+    const clientCopy = document.getElementById("client-copy");
+    const clientPersona = document.getElementById("client-persona");
+    const clientIcon = document.getElementById("client-icon");
+
+    function showClientExperience(nextIndex) {
+      if (!clientPanel) return;
+      clientPanel.classList.add("fade");
+      setTimeout(() => {
+        clientIndex = (nextIndex + clientExperiences.length) % clientExperiences.length;
+        const item = clientExperiences[clientIndex];
+        clientTag.textContent = item.tag;
+        clientTitle.textContent = item.title;
+        clientCopy.textContent = item.copy;
+        clientPersona.textContent = item.persona;
+        clientIcon.textContent = item.icon;
+        clientPanel.classList.remove("fade");
+      }, 150);
+    }
+
+    document.getElementById("client-prev")?.addEventListener("click", () => showClientExperience(clientIndex - 1));
+    document.getElementById("client-next")?.addEventListener("click", () => showClientExperience(clientIndex + 1));
+
+    let clientTimer = setInterval(() => showClientExperience(clientIndex + 1), 6500);
+    clientPanel?.addEventListener("mouseenter", () => clearInterval(clientTimer));
+    clientPanel?.addEventListener("mouseleave", () => {
+      clearInterval(clientTimer);
+      clientTimer = setInterval(() => showClientExperience(clientIndex + 1), 6500);
+    });
+  </script>
 </body>
 </html>
