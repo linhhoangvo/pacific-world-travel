@@ -15,27 +15,26 @@ body.destination-detail-page{background:#F7F4ED;color:#263C32}
 
 /* CONTINUOUS EDITORIAL WIDTH */
 .destination-intro,.destination-section{width:min(100%,1500px);margin:0 auto}
-.destination-intro{display:grid;grid-template-columns:.82fr 1.18fr;gap:82px;padding:82px 6.4vw;border-bottom:1px solid rgba(38,60,50,.11)}
+.destination-intro{display:grid;grid-template-columns:.82fr 1.18fr;gap:82px;padding:88px 6.4vw 96px}
 .destination-intro h2,.section-heading h2,.local-shortlist h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(40px,4.5vw,64px);line-height:.99;font-weight:500;letter-spacing:-.04em;color:#263C32}
 .destination-intro-copy{max-width:760px;padding-top:18px}
 .destination-intro-copy p{margin:0 0 17px;font-size:14px;line-height:1.78;color:#637063}
 .destination-intro-copy p:last-child{margin-bottom:0}
-.destination-section{padding:74px 6.4vw 76px;border-bottom:1px solid rgba(38,60,50,.105)}
+.destination-section{padding:78px 6.4vw 88px}
 .destination-section.alt{background:transparent}
-.section-heading{max-width:790px;margin:0 0 38px;text-align:left}
+.section-heading{max-width:790px;margin:0 0 42px;text-align:left}
 .section-heading p:last-child{max-width:620px;margin:14px 0 0;font-size:13px;line-height:1.68;color:#68735A}
 
-/* EXPERIENCE HANOI — no cards, no decorative symbols */
-.experience-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(38,60,50,.14)}
-.experience-card{min-height:auto;padding:26px 52px 29px 0;border:0;border-bottom:1px solid rgba(38,60,50,.14);background:transparent;display:grid;grid-template-columns:1fr;align-content:start}
-.experience-card:nth-child(even){padding-left:52px;border-left:1px solid rgba(38,60,50,.14)}
+/* EXPERIENCE HANOI — open editorial layout */
+.experience-grid{display:grid;grid-template-columns:repeat(2,1fr);column-gap:84px;row-gap:48px}
+.experience-card{min-height:auto;padding:0;background:transparent;display:grid;grid-template-columns:1fr;align-content:start}
 .experience-card>span{display:none}
-.experience-card h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:27px;line-height:1.08;font-weight:500}
+.experience-card h3{margin:0 0 9px;font-family:"Playfair Display",Georgia,serif;font-size:27px;line-height:1.08;font-weight:500}
 .experience-card p{margin:0;max-width:520px;font-size:12px;line-height:1.68;color:#68735A}
 
 /* JOURNEYS — one intentional visual moment */
-.destination-section:has(.journey-detail-grid){width:100%;max-width:none;padding:78px 6.4vw 82px;background:#E8DFD0;border-bottom:0}
-.destination-section:has(.journey-detail-grid)>.section-heading{width:min(100%,1500px);margin:0 auto 36px}
+.destination-section:has(.journey-detail-grid){width:100%;max-width:none;padding:82px 6.4vw 88px;background:#E8DFD0}
+.destination-section:has(.journey-detail-grid)>.section-heading{width:min(100%,1500px);margin:0 auto 38px}
 .journey-detail-grid{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:1.25fr .875fr .875fr;gap:14px}
 .journey-detail-card{position:relative;min-height:390px;background-size:cover;background-position:center;overflow:hidden;color:#fff}
 .journey-detail-card:first-child{min-height:440px}
@@ -48,41 +47,39 @@ body.destination-detail-page{background:#F7F4ED;color:#263C32}
 .journey-detail-copy a{font-size:8px;font-weight:700;letter-spacing:.10em;text-transform:uppercase}
 
 /* ESSENTIALS — restrained information band */
-.essentials{display:grid;grid-template-columns:repeat(4,1fr);background:#263C32;color:#F7F4ED}
-.essential-item{padding:25px 26px;border-right:1px solid rgba(247,244,237,.14)}
-.essential-item:last-child{border-right:0}
+.essentials{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 6.4vw;background:#263C32;color:#F7F4ED}
+.essential-item{padding:27px 0}
 .essential-item span{display:block;margin-bottom:8px;font-size:8px;letter-spacing:.11em;text-transform:uppercase;color:#D4C5AD}
 .essential-item strong{font-family:"DM Sans",sans-serif;font-size:13px;font-weight:500;line-height:1.45}
 
-/* WHERE TO STAY — editorial columns, not cards */
-.stay-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(38,60,50,.14)}
-.stay-card{padding:28px 38px 28px 0;min-height:auto;border:0;border-right:1px solid rgba(38,60,50,.14);background:transparent}
-.stay-card:not(:first-child){padding-left:38px}
-.stay-card:last-child{border-right:0}
+/* WHERE TO STAY — open editorial columns */
+.stay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:64px}
+.stay-card{padding:0;min-height:auto;background:transparent}
 .stay-card>span{display:none}
-.stay-card h3{margin:0 0 9px;font-family:"Playfair Display",Georgia,serif;font-size:26px;font-weight:500}
+.stay-card h3{margin:0 0 10px;font-family:"Playfair Display",Georgia,serif;font-size:26px;font-weight:500}
 .stay-card p{margin:0;font-size:12px;line-height:1.65;color:#68735A}
 
-/* LOCAL NOTES — simple text list, no emoji decoration */
+/* LOCAL NOTES — whitespace instead of separators */
 .local-shortlist{display:grid;grid-template-columns:.82fr 1.18fr;gap:82px;align-items:start}
-.shortlist-list{border-top:1px solid rgba(38,60,50,.14)}
-.shortlist-item{display:block;padding:18px 0;border-bottom:1px solid rgba(38,60,50,.14)}
+.shortlist-list{display:grid;gap:28px;padding-top:4px}
+.shortlist-item{display:block;padding:0}
 .shortlist-item>span{display:none}
-.shortlist-item strong{display:block;margin-bottom:4px;font-family:"Playfair Display",Georgia,serif;font-size:21px;font-weight:500;color:#263C32}
+.shortlist-item strong{display:block;margin-bottom:5px;font-family:"Playfair Display",Georgia,serif;font-size:21px;font-weight:500;color:#263C32}
 .shortlist-item p{margin:0;max-width:580px;font-size:11px;line-height:1.55;color:#68735A}
 
-/* CONTINUE — quiet text navigation rather than another card grid */
-.continue-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(38,60,50,.14);border-bottom:1px solid rgba(38,60,50,.14)}
-.continue-card,.continue-card.photo{position:relative;min-height:142px;padding:24px;background:transparent!important;color:#263C32!important;display:flex;align-items:flex-end;overflow:hidden;border-right:1px solid rgba(38,60,50,.14);background-image:none!important}
-.continue-card:last-child{border-right:0}
+/* CONTINUE — simple text links, no boxes */
+.continue-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:42px}
+.continue-card,.continue-card.photo{position:relative;min-height:94px;padding:0 34px 0 0;background:transparent!important;color:#263C32!important;display:flex;align-items:flex-end;overflow:visible;background-image:none!important}
 .continue-card.photo::after{display:none}
-.continue-card strong{position:relative;z-index:2;font-family:"Playfair Display",Georgia,serif;font-size:25px;font-weight:500}
-.continue-card .arrow{position:absolute;z-index:2;right:20px;top:18px;font-size:15px;color:#68735A}
+.continue-card strong{position:relative;z-index:2;font-family:"Playfair Display",Georgia,serif;font-size:25px;font-weight:500;transition:color .2s ease}
+.continue-card .arrow{position:absolute;z-index:2;right:0;top:3px;font-size:14px;color:#68735A;transition:transform .2s ease}
+.continue-card:hover strong{color:#68735A}
+.continue-card:hover .arrow{transform:translate(3px,-3px)}
 
-/* FAQ */
+/* FAQ — dividers stay here because they help scanning */
 .faq-wrap{max-width:980px;margin:0}
-.faq-wrap details{border-top:1px solid rgba(38,60,50,.15);padding:18px 0}
-.faq-wrap details:last-child{border-bottom:1px solid rgba(38,60,50,.15)}
+.faq-wrap details{border-top:1px solid rgba(38,60,50,.13);padding:18px 0}
+.faq-wrap details:last-child{border-bottom:1px solid rgba(38,60,50,.13)}
 .faq-wrap summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:14px;font-weight:500;color:#263C32}
 .faq-wrap summary::-webkit-details-marker{display:none}
 .faq-wrap summary::after{content:"+";font-size:18px;font-weight:400;color:#68735A}
@@ -97,13 +94,14 @@ body.destination-detail-page{background:#F7F4ED;color:#263C32}
 
 @media(max-width:1050px){
   .journey-detail-grid{grid-template-columns:1fr 1fr}.journey-detail-card:first-child{grid-column:1/-1;min-height:390px}
-  .essentials{grid-template-columns:1fr 1fr}.stay-grid{grid-template-columns:1fr}.stay-card,.stay-card:not(:first-child){padding:24px 0;border-right:0;border-bottom:1px solid rgba(38,60,50,.14)}.continue-grid{grid-template-columns:1fr 1fr}.continue-card:nth-child(2){border-right:0}.continue-card:nth-child(-n+2){border-bottom:1px solid rgba(38,60,50,.14)}
+  .essentials{grid-template-columns:1fr 1fr;gap:0 40px}.stay-grid{grid-template-columns:1fr;gap:34px}.continue-grid{grid-template-columns:1fr 1fr;gap:30px 54px}
 }
 @media(max-width:760px){
-  .destination-hero{min-height:64vh}.destination-hero-inner{padding:56px 22px 40px}.destination-hero-copy,.destination-intro,.local-shortlist{grid-template-columns:1fr;gap:28px}.destination-hero-tags{justify-content:flex-start}.destination-intro,.destination-section{padding:58px 22px 60px}.destination-intro-copy{padding-top:0}
-  .experience-grid{grid-template-columns:1fr}.experience-card,.experience-card:nth-child(even){padding:22px 0;border-left:0}
+  .destination-hero{min-height:64vh}.destination-hero-inner{padding:56px 22px 40px}.destination-hero-copy,.destination-intro,.local-shortlist{grid-template-columns:1fr;gap:28px}.destination-hero-tags{justify-content:flex-start}.destination-intro,.destination-section{padding:60px 22px 66px}.destination-intro-copy{padding-top:0}
+  .experience-grid{grid-template-columns:1fr;gap:30px}.experience-card{padding:0}
   .journey-detail-grid{grid-template-columns:1fr}.journey-detail-card:first-child{grid-column:auto;min-height:350px}.journey-detail-card{min-height:330px}
-  .essentials{grid-template-columns:1fr}.essential-item{border-right:0;border-bottom:1px solid rgba(247,244,237,.14)}
-  .continue-grid{grid-template-columns:1fr}.continue-card{border-right:0;border-bottom:1px solid rgba(38,60,50,.14);min-height:100px}.continue-card:nth-child(2){border-right:0}
+  .essentials{grid-template-columns:1fr;padding:12px 22px;gap:0}.essential-item{padding:15px 0}
+  .stay-grid{grid-template-columns:1fr;gap:30px}.shortlist-list{gap:24px}
+  .continue-grid{grid-template-columns:1fr;gap:24px}.continue-card{min-height:62px;padding-right:30px}
   .destination-final{grid-template-columns:1fr;padding:48px 22px}.destination-final a{justify-self:start}
 }
