@@ -8,6 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
     subtitle.remove();
   });
 
+  /* DESTINATIONS PAGE LINKS */
+  document.querySelectorAll(".desktop-nav a, footer a").forEach((link) => {
+    if (link.textContent.trim() === "Destinations") {
+      link.setAttribute("href", "destinations.html");
+    }
+  });
+
+  const viewAllDestinations = [...document.querySelectorAll("a")].find((link) =>
+    link.textContent.trim().toLowerCase().startsWith("view all destinations")
+  );
+  if (viewAllDestinations) {
+    viewAllDestinations.setAttribute("href", "destinations.html");
+  }
+
   /* FOOTER CONTACT DETAILS */
   document.querySelectorAll("footer").forEach((footer) => {
     const companyColumn = [...footer.querySelectorAll(".footer-column")].find((column) =>
