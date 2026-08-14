@@ -1,6 +1,12 @@
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".desktop-nav");
 
+/* Remove standalone Why Us from top navigation; keep it inside About dropdown */
+const topLevelWhyUs = nav ? [...nav.children].find((item) =>
+  item.tagName === "A" && item.textContent.trim() === "Why Us"
+) : null;
+topLevelWhyUs?.remove();
+
 /* ABOUT DROPDOWN */
 const aboutLink = nav ? [...nav.children].find((item) =>
   item.tagName === "A" && ["About Us", "About"].includes(item.textContent.trim())
