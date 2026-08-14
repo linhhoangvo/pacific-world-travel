@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     link.setAttribute("href", "team.html");
   });
 
+  /* DESTINATION CARDS: NAME ONLY */
+  document.querySelectorAll(".destination span").forEach((subtitle) => {
+    subtitle.remove();
+  });
+
   /* FOOTER CONTACT DETAILS */
   document.querySelectorAll("footer").forEach((footer) => {
     const companyColumn = [...footer.querySelectorAll(".footer-column")].find((column) =>
