@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     link.setAttribute("href", "team.html");
   });
 
+  /* Homepage: the moving trust bar already communicates these proof points. */
+  document.querySelector(".why.why-compact")?.remove();
+
   /* Destination cards: destination name only */
   document.querySelectorAll(".destination span").forEach((subtitle) => subtitle.remove());
   document.querySelectorAll(".desktop-nav a, footer a").forEach((link) => {
