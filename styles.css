@@ -213,12 +213,12 @@ a{text-decoration:none;color:inherit}
 }
 .destination strong{display:block;font-size:13px}
 .destination span{display:block;margin-top:4px;font-size:9px;color:rgba(255,255,255,.77)}
-.d1{background-image:url("business.webp")}
-.d2{background-image:url("golf.jpg");background-position:20% center}
-.d3{background-image:url("hero-golf.jpg")}
-.d4{background-image:url("business.webp");background-position:70% center}
-.d5{background-image:url("golf.jpg");background-position:80% center}
-.d6{background-image:url("hero-golf.jpg");background-position:10% center}
+.d1{background-image:url("hanoi.jpg");background-position:center}
+.d2{background-image:url("halong-bay.jpg");background-position:center}
+.d3{background-image:url("danang-hoian.jpg");background-position:center}
+.d4{background-image:url("ho-chi-minh-city.jpg");background-position:center}
+.d5{background-image:url("cam-ranh.jpg");background-position:center}
+.d6{background-image:url("phu-quoc.jpg");background-position:center}
 .view-link{
   display:inline-flex;gap:14px;margin-top:30px;text-transform:uppercase;font-size:9px;
   font-weight:700;letter-spacing:.09em;color:var(--navy-dark);
