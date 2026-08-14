@@ -7,32 +7,28 @@ const topLevelWhyUs = nav ? [...nav.children].find((item) =>
 ) : null;
 topLevelWhyUs?.remove();
 
-/* ABOUT DROPDOWN */
-const aboutLink = nav ? [...nav.children].find((item) =>
-  item.tagName === "A" && ["About Us", "About"].includes(item.textContent.trim())
-) : null;
+function buildNavDropdown(sourceLink, label, items) {
+  if (!sourceLink) return null;
 
-if (aboutLink) {
   const dropdown = document.createElement("div");
   dropdown.className = "nav-dropdown";
   dropdown.innerHTML = `
     <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
-      <span>About</span>
+      <span>${label}</span>
     </button>
     <div class="nav-dropdown-menu">
-      <a href="who-we-are.html">Who We Are</a>
-      <a href="our-philosophy.html">Our Philosophy</a>
-      <a href="why-us.html">Why Us</a>
-      <a href="our-team.html">Our Team</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="local-expertise.html">Local Expertise</a>
+      ${items.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
     </div>
   `;
-  aboutLink.replaceWith(dropdown);
+
+  sourceLink.replaceWith(dropdown);
 
   const toggle = dropdown.querySelector(".nav-dropdown-toggle");
   toggle?.addEventListener("click", (event) => {
     event.stopPropagation();
+    document.querySelectorAll(".nav-dropdown.open").forEach((openDropdown) => {
+      if (openDropdown !== dropdown) openDropdown.classList.remove("open");
+    });
     const open = dropdown.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(open));
   });
@@ -44,13 +40,43 @@ if (aboutLink) {
     });
   });
 
-  document.addEventListener("click", (event) => {
+  return dropdown;
+}
+
+/* BUSINESS TRAVEL DROPDOWN */
+const businessLink = nav ? [...nav.children].find((item) =>
+  item.tagName === "A" && item.textContent.trim() === "Business Travel"
+) : null;
+
+buildNavDropdown(businessLink, "Business Travel", [
+  { label: "Corporate & Executive Travel", href: "corporate-executive-travel.html" },
+  { label: "Ground Transportation", href: "ground-transportation.html" },
+  { label: "Hotels & Resorts", href: "hotels-resorts.html" },
+  { label: "Private Aviation & Yachts", href: "private-aviation-yachts.html" }
+]);
+
+/* ABOUT DROPDOWN */
+const aboutLink = nav ? [...nav.children].find((item) =>
+  item.tagName === "A" && ["About Us", "About"].includes(item.textContent.trim())
+) : null;
+
+buildNavDropdown(aboutLink, "About", [
+  { label: "Who We Are", href: "who-we-are.html" },
+  { label: "Our Philosophy", href: "our-philosophy.html" },
+  { label: "Why Us", href: "why-us.html" },
+  { label: "Our Team", href: "team.html" },
+  { label: "Sustainability", href: "sustainability.html" },
+  { label: "Local Expertise", href: "local-expertise.html" }
+]);
+
+document.addEventListener("click", (event) => {
+  document.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
     if (!dropdown.contains(event.target)) {
       dropdown.classList.remove("open");
-      toggle?.setAttribute("aria-expanded", "false");
+      dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
     }
   });
-}
+});
 
 /* Footer wording */
 document.querySelectorAll("footer a").forEach((link) => {
@@ -110,7 +136,7 @@ body { background: #F7F4ED; color: #263C32; }
 }
 .desktop-nav > a:hover { color: #D4C5AD; }
 
-/* Header About dropdown */
+/* Header dropdowns */
 .nav-dropdown {
   position: relative;
   display: flex;
@@ -135,7 +161,7 @@ body { background: #F7F4ED; color: #263C32; }
   z-index: 80;
   top: 72px;
   left: 50%;
-  width: 220px;
+  width: 250px;
   padding: 18px 0 22px;
   background: #F7F4ED;
   color: #263C32;
