@@ -11,80 +11,122 @@ body.destination-detail-page{background:#F7F4ED;color:#263C32}
 .destination-hero-copy{display:grid;grid-template-columns:minmax(0,680px) 1fr;gap:60px;align-items:end;margin-top:27px}
 .destination-hero-copy p{margin:0;font-size:14px;line-height:1.72;color:rgba(255,255,255,.88)}
 .destination-hero-tags{display:flex;justify-content:flex-end;gap:16px;flex-wrap:wrap}
-.destination-hero-tags span{padding:0;border:0;border-radius:0;background:none;font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.destination-hero-tags span{font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.78)}
 
-/* CONTINUOUS EDITORIAL WIDTH */
-.destination-intro,.destination-section{width:min(100%,1500px);margin:0 auto}
-.destination-intro{display:grid;grid-template-columns:.82fr 1.18fr;gap:82px;padding:88px 6.4vw 96px}
-.destination-intro h2,.section-heading h2,.local-shortlist h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(40px,4.5vw,64px);line-height:.99;font-weight:500;letter-spacing:-.04em;color:#263C32}
+/* EDITORIAL INTRO */
+.destination-intro,.destination-section,.hanoi-snapshot,.hanoi-programmes,.north-section,.travel-notes,.planning-block,.faq-section{width:min(100%,1500px);margin:0 auto}
+.destination-intro{display:grid;grid-template-columns:.82fr 1.18fr;gap:82px;padding:88px 6.4vw 90px}
+.destination-intro h2,.section-heading h2,.snapshot-copy h2,.programme-heading h2,.north-heading h2,.travel-notes-head h2,.planning-copy h2,.faq-heading h2,.local-shortlist h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(40px,4.5vw,64px);line-height:.99;font-weight:500;letter-spacing:-.04em;color:#263C32}
 .destination-intro-copy{max-width:760px;padding-top:18px}
 .destination-intro-copy p{margin:0 0 17px;font-size:14px;line-height:1.78;color:#637063}
 .destination-intro-copy p:last-child{margin-bottom:0}
-.destination-section{padding:78px 6.4vw 88px}
-.destination-section.alt{background:transparent}
-.section-heading{max-width:790px;margin:0 0 42px;text-align:left}
-.section-heading p:last-child{max-width:620px;margin:14px 0 0;font-size:13px;line-height:1.68;color:#68735A}
 
-/* EXPERIENCE HANOI — open editorial layout */
-.experience-grid{display:grid;grid-template-columns:repeat(2,1fr);column-gap:84px;row-gap:48px}
-.experience-card{min-height:auto;padding:0;background:transparent;display:grid;grid-template-columns:1fr;align-content:start}
-.experience-card>span{display:none}
-.experience-card h3{margin:0 0 9px;font-family:"Playfair Display",Georgia,serif;font-size:27px;line-height:1.08;font-weight:500}
-.experience-card p{margin:0;max-width:520px;font-size:12px;line-height:1.68;color:#68735A}
+/* BUSINESS + GOLF SNAPSHOT */
+.hanoi-snapshot{padding:20px 6.4vw 92px;display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(50px,7vw,110px);align-items:center}
+.snapshot-copy{max-width:680px}
+.snapshot-copy>p:not(.eyebrow){margin:20px 0 22px;font-size:13px;line-height:1.72;color:#68735A}
+.snapshot-copy>a,.section-text-link{display:inline-flex;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#263C32}
+.snapshot-copy>a:hover,.section-text-link:hover{color:#68735A}
+.snapshot-panel{padding:28px 30px 20px;border-radius:22px;background:#EDF3E8}
+.snapshot-label{display:block;margin-bottom:20px;font-family:"Playfair Display",Georgia,serif;font-size:20px;color:#516950}
+.snapshot-item{display:grid;grid-template-columns:12px 1fr;gap:14px;align-items:start;padding:12px 0}
+.snapshot-item i{width:7px;height:7px;margin-top:6px;border:1px solid #68735A;border-radius:50%}
+.snapshot-item strong{display:block;margin-bottom:3px;font-size:12px;font-weight:600;color:#263C32}
+.snapshot-item small{display:block;font-size:10px;line-height:1.5;color:#68735A}
 
-/* JOURNEYS — one intentional visual moment */
-.destination-section:has(.journey-detail-grid){width:100%;max-width:none;padding:82px 6.4vw 88px;background:#E8DFD0}
-.destination-section:has(.journey-detail-grid)>.section-heading{width:min(100%,1500px);margin:0 auto 38px}
-.journey-detail-grid{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:1.25fr .875fr .875fr;gap:14px}
-.journey-detail-card{position:relative;min-height:390px;background-size:cover;background-position:center;overflow:hidden;color:#fff}
-.journey-detail-card:first-child{min-height:440px}
-.journey-detail-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,60,50,.03) 20%,rgba(38,60,50,.91) 100%)}
-.journey-detail-copy{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:28px}
-.journey-detail-copy small{display:block;margin-bottom:8px;font-size:8px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#D4C5AD}
-.journey-detail-copy h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:29px;font-weight:500;line-height:1.05}
-.journey-detail-card:first-child .journey-detail-copy h3{font-size:34px}
-.journey-detail-copy p{margin:0 0 16px;max-width:390px;font-size:12px;line-height:1.58;color:rgba(255,255,255,.80)}
-.journey-detail-copy a{font-size:8px;font-weight:700;letter-spacing:.10em;text-transform:uppercase}
+/* HANOI PROGRAMMES — product cards, not generic service cards */
+.hanoi-programmes{padding:82px 6.4vw 92px;background:#fff}
+.programme-heading{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:34px}
+.programme-heading>p{max-width:430px;margin:0 0 5px;font-size:11px;line-height:1.6;color:#68735A;text-align:right}
+.programme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.programme-card{overflow:hidden;border-radius:18px;background:#FCFBF8;box-shadow:0 13px 34px rgba(38,60,50,.08);transition:transform .25s ease,box-shadow .25s ease}
+.programme-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(38,60,50,.12)}
+.programme-image{position:relative;height:205px;background-size:cover;background-position:center}
+.programme-image::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,60,50,.02),rgba(38,60,50,.28))}
+.programme-image>span{position:absolute;z-index:2;left:18px;bottom:15px;color:#fff;font-size:9px;font-weight:600}
+.programme-body{padding:20px 20px 22px}
+.programme-body small{display:block;margin-bottom:8px;font-size:8px;letter-spacing:.08em;color:#68735A}
+.programme-body h3{margin:0 0 9px;font-family:"Playfair Display",Georgia,serif;font-size:24px;line-height:1.06;font-weight:500;color:#263C32}
+.programme-body p{margin:0 0 17px;min-height:58px;font-size:10.5px;line-height:1.58;color:#68735A}
+.programme-body a{font-size:9px;font-weight:700;color:#263C32}
+.programme-body a:hover{color:#68735A}
 
-/* ESSENTIALS — restrained information band */
+/* ESSENTIALS */
 .essentials{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 6.4vw;background:#263C32;color:#F7F4ED}
 .essential-item{padding:27px 0}
 .essential-item span{display:block;margin-bottom:8px;font-size:8px;letter-spacing:.11em;text-transform:uppercase;color:#D4C5AD}
 .essential-item strong{font-family:"DM Sans",sans-serif;font-size:13px;font-weight:500;line-height:1.45}
 
-/* WHERE TO STAY — open editorial columns */
+/* GENERAL SECTIONS */
+.destination-section{padding:82px 6.4vw 90px}
+.section-heading{max-width:790px;margin:0 0 38px;text-align:left}
+.section-heading p:last-child{max-width:620px;margin:14px 0 0;font-size:13px;line-height:1.68;color:#68735A}
+.section-text-link{margin-top:28px}
+
+/* WHERE TO STAY */
 .stay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:64px}
 .stay-card{padding:0;min-height:auto;background:transparent}
-.stay-card>span{display:none}
 .stay-card h3{margin:0 0 10px;font-family:"Playfair Display",Georgia,serif;font-size:26px;font-weight:500}
 .stay-card p{margin:0;font-size:12px;line-height:1.65;color:#68735A}
 
-/* LOCAL NOTES — whitespace instead of separators */
+/* HANOI BETWEEN MEETINGS */
 .local-shortlist{display:grid;grid-template-columns:.82fr 1.18fr;gap:82px;align-items:start}
-.shortlist-list{display:grid;gap:28px;padding-top:4px}
-.shortlist-item{display:block;padding:0}
-.shortlist-item>span{display:none}
+.shortlist-list{display:grid;grid-template-columns:1fr 1fr;gap:32px 54px;padding-top:4px}
 .shortlist-item strong{display:block;margin-bottom:5px;font-family:"Playfair Display",Georgia,serif;font-size:21px;font-weight:500;color:#263C32}
-.shortlist-item p{margin:0;max-width:580px;font-size:11px;line-height:1.55;color:#68735A}
+.shortlist-item p{margin:0;max-width:500px;font-size:11px;line-height:1.55;color:#68735A}
 
-/* CONTINUE — simple text links, no boxes */
-.continue-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:42px}
-.continue-card,.continue-card.photo{position:relative;min-height:94px;padding:0 34px 0 0;background:transparent!important;color:#263C32!important;display:flex;align-items:flex-end;overflow:visible;background-image:none!important}
-.continue-card.photo::after{display:none}
-.continue-card strong{position:relative;z-index:2;font-family:"Playfair Display",Georgia,serif;font-size:25px;font-weight:500;transition:color .2s ease}
-.continue-card .arrow{position:absolute;z-index:2;right:0;top:3px;font-size:14px;color:#68735A;transition:transform .2s ease}
-.continue-card:hover strong{color:#68735A}
-.continue-card:hover .arrow{transform:translate(3px,-3px)}
+/* NORTH — visual destination rail */
+.north-section{padding:76px 6.4vw 88px;background:#F1F4F1}
+.north-heading{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:32px}
+.north-heading>p{max-width:400px;margin:0 0 5px;font-size:11px;line-height:1.55;color:#68735A;text-align:right}
+.north-track{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.north-card{position:relative;min-height:205px;padding:18px;border-radius:18px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;box-shadow:0 10px 28px rgba(38,60,50,.08);transition:transform .25s ease}
+.north-card:hover{transform:translateY(-4px)}
+.north-card.photo{background-size:cover;background-position:center}
+.north-card.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,60,50,.06),rgba(38,60,50,.67))}
+.north-card span,.north-card small,.north-card b{position:relative;z-index:2}
+.north-card span{font-family:"Playfair Display",Georgia,serif;font-size:24px;font-weight:500}
+.north-card b{position:absolute;right:18px;top:16px;font-size:14px;font-weight:400}
+.north-card.editorial{display:block;color:#263C32}
+.north-card.editorial small{display:block;font-size:8px;letter-spacing:.1em;text-transform:uppercase;opacity:.65}
+.north-card.editorial span{position:absolute;left:18px;bottom:18px}
+.north-card.editorial.sand{background:#E8DFD0}
+.north-card.editorial.green{background:#68735A;color:#F7F4ED}
 
-/* FAQ — dividers stay here because they help scanning */
-.faq-wrap{max-width:980px;margin:0}
-.faq-wrap details{border-top:1px solid rgba(38,60,50,.13);padding:18px 0}
-.faq-wrap details:last-child{border-bottom:1px solid rgba(38,60,50,.13)}
-.faq-wrap summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:14px;font-weight:500;color:#263C32}
+/* TRAVEL NOTES */
+.travel-notes{padding:82px 6.4vw 92px}
+.travel-notes-head{margin-bottom:32px}
+.travel-notes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.travel-note{display:block;color:#263C32}
+.travel-note-image{height:220px;border-radius:18px;background-size:cover;background-position:center;box-shadow:0 12px 28px rgba(38,60,50,.07)}
+.travel-note>div:last-child{padding:17px 2px 0}
+.travel-note small{font-size:8px;letter-spacing:.08em;color:#68735A}
+.travel-note h3{margin:8px 0 7px;font-family:"Playfair Display",Georgia,serif;font-size:25px;line-height:1.06;font-weight:500}
+.travel-note p{margin:0 0 13px;max-width:430px;font-size:11px;line-height:1.55;color:#68735A}
+.travel-note span{font-size:9px;font-weight:700}
+.travel-note:hover h3{color:#68735A}
+
+/* HUMAN PLANNING BLOCK */
+.planning-block{padding:82px 6.4vw 90px;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(55px,8vw,120px);align-items:start;background:#fff}
+.planning-copy{max-width:720px}
+.planning-copy>p:not(.eyebrow){margin:20px 0 23px;font-size:13px;line-height:1.72;color:#68735A}
+.planning-copy>a{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#263C32}
+.planning-mini{padding:28px 30px;border-radius:22px;background:#EDF3E8}
+.planning-mini>span{display:block;margin-bottom:16px;font-family:"Playfair Display",Georgia,serif;font-size:20px;color:#516950}
+.planning-mini ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.planning-mini li{font-size:11px;color:#506050}
+
+/* FAQ — soft cards */
+.faq-section{padding:78px 6.4vw 88px;background:#F7F7F4}
+.faq-heading{text-align:center;margin:0 auto 32px}
+.faq-heading h2{font-size:clamp(36px,4vw,54px)}
+.faq-wrap{max-width:880px;margin:0 auto;display:grid;gap:12px}
+.faq-wrap details{padding:0;border:0;border-radius:9px;background:#EDF3E8;overflow:hidden}
+.faq-wrap summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:17px 20px;font-size:12px;font-weight:500;color:#263C32}
 .faq-wrap summary::-webkit-details-marker{display:none}
 .faq-wrap summary::after{content:"+";font-size:18px;font-weight:400;color:#68735A}
 .faq-wrap details[open] summary::after{content:"–"}
-.faq-wrap details p{max-width:760px;margin:14px 0 2px;font-size:12px;line-height:1.68;color:#68735A}
+.faq-wrap details p{max-width:760px;margin:0;padding:0 20px 18px;font-size:11px;line-height:1.65;color:#68735A}
 
 /* CTA */
 .destination-final{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center;padding:58px 6.4vw;background:#263C32;color:#F7F4ED}
@@ -92,16 +134,18 @@ body.destination-detail-page{background:#F7F4ED;color:#263C32}
 .destination-final p{max-width:620px;margin:13px 0 0;font-size:13px;line-height:1.62;color:rgba(247,244,237,.68)}
 .destination-final a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;background:#68735A;color:#F7F4ED;font-size:8px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 
-@media(max-width:1050px){
-  .journey-detail-grid{grid-template-columns:1fr 1fr}.journey-detail-card:first-child{grid-column:1/-1;min-height:390px}
-  .essentials{grid-template-columns:1fr 1fr;gap:0 40px}.stay-grid{grid-template-columns:1fr;gap:34px}.continue-grid{grid-template-columns:1fr 1fr;gap:30px 54px}
+@media(max-width:1100px){
+  .programme-grid{grid-template-columns:1fr 1fr}.north-track{grid-template-columns:1fr 1fr}.travel-notes-grid{grid-template-columns:1fr 1fr}.travel-note:last-child{grid-column:1/-1;max-width:52%}
+  .essentials{grid-template-columns:1fr 1fr;gap:0 40px}.stay-grid{grid-template-columns:1fr;gap:34px}
 }
 @media(max-width:760px){
-  .destination-hero{min-height:64vh}.destination-hero-inner{padding:56px 22px 40px}.destination-hero-copy,.destination-intro,.local-shortlist{grid-template-columns:1fr;gap:28px}.destination-hero-tags{justify-content:flex-start}.destination-intro,.destination-section{padding:60px 22px 66px}.destination-intro-copy{padding-top:0}
-  .experience-grid{grid-template-columns:1fr;gap:30px}.experience-card{padding:0}
-  .journey-detail-grid{grid-template-columns:1fr}.journey-detail-card:first-child{grid-column:auto;min-height:350px}.journey-detail-card{min-height:330px}
+  .destination-hero{min-height:64vh}.destination-hero-inner{padding:56px 22px 40px}.destination-hero-copy,.destination-intro,.hanoi-snapshot,.local-shortlist,.planning-block{grid-template-columns:1fr;gap:30px}.destination-hero-tags{justify-content:flex-start}.destination-intro,.destination-section,.hanoi-snapshot,.hanoi-programmes,.north-section,.travel-notes,.planning-block,.faq-section{padding-left:22px;padding-right:22px}.destination-intro{padding-top:60px;padding-bottom:62px}.destination-intro-copy{padding-top:0}
+  .hanoi-snapshot{padding-top:10px;padding-bottom:66px}.snapshot-panel{padding:24px}
+  .programme-heading,.north-heading{display:block}.programme-heading>p,.north-heading>p{margin:14px 0 0;text-align:left}.programme-grid{grid-template-columns:1fr}.programme-image{height:225px}.programme-body p{min-height:auto}
   .essentials{grid-template-columns:1fr;padding:12px 22px;gap:0}.essential-item{padding:15px 0}
-  .stay-grid{grid-template-columns:1fr;gap:30px}.shortlist-list{gap:24px}
-  .continue-grid{grid-template-columns:1fr;gap:24px}.continue-card{min-height:62px;padding-right:30px}
+  .stay-grid{grid-template-columns:1fr;gap:30px}.shortlist-list{grid-template-columns:1fr;gap:25px}
+  .north-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.north-card{min-width:78%;scroll-snap-align:start}
+  .travel-notes-grid{grid-template-columns:1fr}.travel-note:last-child{grid-column:auto;max-width:none}.travel-note-image{height:205px}
+  .planning-mini{padding:24px}.faq-heading{text-align:left}.faq-wrap{margin:0}
   .destination-final{grid-template-columns:1fr;padding:48px 22px}.destination-final a{justify-self:start}
 }
