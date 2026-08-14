@@ -55,6 +55,18 @@ buildNavDropdown(businessLink, "Business Travel", [
   { label: "Private Aviation & Yachts", href: "private-aviation-yachts.html" }
 ]);
 
+/* GOLF TRAVEL DROPDOWN */
+const golfLink = nav ? [...nav.children].find((item) =>
+  item.tagName === "A" && item.textContent.trim() === "Golf Travel"
+) : null;
+
+buildNavDropdown(golfLink, "Golf Travel", [
+  { label: "Golf Holidays & Journeys", href: "golf-holidays-journeys.html" },
+  { label: "Corporate & Client Golf", href: "corporate-client-golf.html" },
+  { label: "Golf Groups & Tournaments", href: "golf-groups-tournaments.html" },
+  { label: "Golf Resorts & Tee Times", href: "golf-resorts-tee-times.html" }
+]);
+
 /* MICE & EVENTS DROPDOWN */
 const miceLink = nav ? [...nav.children].find((item) =>
   item.tagName === "A" && item.textContent.trim() === "MICE & Events"
