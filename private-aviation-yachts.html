@@ -8,30 +8,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260818-private7" />
+  <link rel="stylesheet" href="styles.css?v=20260818-private9" />
   <style>
-    .private-page{--green:#263C32;--green2:#31493D;--cream:#F7F4ED;--sand:#E8DFD0;--paper:#FBF9F4;--muted:#68735A;--line:rgba(38,60,50,.16);--gold:#C7B89E;background:var(--cream);color:var(--green)}
-    .private-page .site-header{z-index:60}.private-label{margin:0 0 12px;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#758361}.private-title{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,3vw,42px);line-height:1.08;font-weight:500;letter-spacing:-.025em}.private-btn{display:inline-flex;min-height:46px;padding:0 20px;align-items:center;justify-content:center;gap:18px;border:1px solid currentColor;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.private-btn.dark{background:var(--green);border-color:var(--green);color:#fff}.private-btn.light{color:var(--green)}
+    .private-page{--green:#263C32;--green2:#31493D;--cream:#F7F4ED;--paper:#FBF9F4;--sand:#E8DFD0;--gold:#C7B89E;--muted:#68735A;background:var(--cream);color:var(--green)}
+    .private-page .site-header{z-index:60}
+    .private-label{margin:0 0 11px;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#758361}
+    .private-title{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(27px,2.6vw,38px);line-height:1.1;font-weight:500;letter-spacing:-.022em}
+    .private-btn{display:inline-flex;min-height:45px;padding:0 19px;align-items:center;justify-content:center;border:1px solid currentColor;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.private-btn.dark{background:var(--green);border-color:var(--green);color:#fff}.private-btn.light{color:var(--green)}
 
-    .private-hero{position:relative;min-height:660px;display:flex;align-items:flex-end;background:url('private-aviation-hero.jpg') center 52%/cover no-repeat;color:#fff;overflow:hidden}.private-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,58,46,.90) 0%,rgba(25,58,46,.55) 42%,rgba(25,58,46,.10) 76%),linear-gradient(180deg,rgba(25,58,46,.03),rgba(25,58,46,.32))}.private-hero-copy{position:relative;z-index:2;max-width:720px;padding:80px 6.4vw 72px}.private-hero .private-label{color:#D6DDD2}.private-hero h1{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(44px,4.7vw,68px);line-height:.99;font-weight:500;letter-spacing:-.038em}.private-hero h1 em{display:block;font-weight:500;color:#E8DFD0}.private-hero-copy>p:not(.private-label){max-width:590px;margin:21px 0 0;font-size:14px;line-height:1.7;color:#EDF0EC}.private-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}.private-hero .private-btn.dark{background:#F7F4ED;border-color:#F7F4ED;color:var(--green)}.private-hero .private-btn.light{border-color:rgba(255,255,255,.62);color:#fff}.hero-note{margin-top:30px;font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:#DEE5DC}
+    .private-hero{position:relative;min-height:610px;display:flex;align-items:flex-end;background:url('private-aviation-hero.jpg') center 52%/cover no-repeat;color:#fff;overflow:hidden}.private-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,58,46,.84) 0%,rgba(25,58,46,.46) 42%,rgba(25,58,46,.05) 78%),linear-gradient(180deg,rgba(25,58,46,.01),rgba(25,58,46,.28))}.private-hero-copy{position:relative;z-index:2;max-width:650px;padding:70px 6.4vw 62px}.private-hero .private-label{color:#D9E0D7}.private-hero h1{max-width:590px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(39px,4vw,58px);line-height:1;font-weight:500;letter-spacing:-.034em}.private-hero h1 em{display:block;font-weight:500;color:#E8DFD0}.private-hero-copy>p:not(.private-label){max-width:525px;margin:17px 0 0;font-size:13px;line-height:1.72;color:#EDF0EC}.private-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.private-hero .private-btn.dark{background:#fff;border-color:#fff;color:var(--green)}.private-hero .private-btn.light{border-color:rgba(255,255,255,.65);color:#fff}.hero-note{margin-top:24px;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#DEE5DC}
 
-    .private-intro,.aviation-copy,.private-purpose,.private-note,.private-final{padding-left:6.4vw;padding-right:6.4vw}.private-intro{padding-top:88px;padding-bottom:94px;background:var(--cream)}.private-intro-inner,.aviation-copy-inner,.purpose-inner{max-width:1040px;margin:0 auto}.private-intro p:last-child{max-width:680px;margin:20px 0 0;font-size:14px;line-height:1.78;color:#59655A}.intro-statement{max-width:720px;margin:38px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.5vw,34px);line-height:1.22;font-weight:500;letter-spacing:-.02em}
+    .intro{padding:70px 6.4vw 72px}.intro-inner{max-width:960px;margin:0 auto}.intro-row{display:flex;gap:8vw;align-items:flex-end}.intro-row h2{flex:1;max-width:480px}.intro-row p{max-width:410px;margin:0 0 2px;font-size:13px;line-height:1.78;color:var(--muted)}.intro-whisper{max-width:650px;margin:28px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,1.9vw,27px);line-height:1.25;color:#45554A}
 
-    .aviation-story,.yacht-story,.coordination{position:relative;display:flex;color:#fff}.aviation-story{min-height:590px;align-items:flex-end;background:url('private-aviation.jpg') center 50%/cover no-repeat}.aviation-story:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,58,46,.84) 0%,rgba(25,58,46,.47) 48%,rgba(25,58,46,.06) 80%)}.story-copy{position:relative;z-index:2;max-width:670px;padding:72px 6.4vw}.story-copy .private-label{color:#D6DDD2}.story-copy h2{color:#fff}.story-copy p:not(.private-label){max-width:570px;margin:18px 0 0;font-size:13px;line-height:1.76;color:#E5EAE5}.story-detail{margin-top:25px;font-size:8px;line-height:2;letter-spacing:.1em;text-transform:uppercase;color:#F5F6F4}
+    .split{display:flex;min-height:500px;background:var(--paper)}.split.reverse{flex-direction:row-reverse}.split-image,.split-copy{width:50%}.split-image{min-height:500px;background-position:center;background-size:cover;background-repeat:no-repeat}.split-copy{display:flex;align-items:center}.split-copy-inner{max-width:500px;padding:58px 7vw}.split-copy p:not(.private-label){max-width:450px;margin:16px 0 0;font-size:13px;line-height:1.78;color:var(--muted)}.split-meta{margin-top:22px;font-size:8px;line-height:1.9;letter-spacing:.1em;text-transform:uppercase;color:#71806F}.aviation-img{background-image:url('private-aviation.jpg')}.yacht-img{background-image:url('private-yacht-hero.jpg')}.hosting-img{background-image:url('private-yacht 1.jpg')}
 
-    .aviation-copy{padding-top:82px;padding-bottom:88px;background:var(--paper)}.aviation-copy-inner{margin:0 auto}.aviation-copy-inner>p:last-child{max-width:680px;margin:19px 0 0;font-size:13px;line-height:1.78;color:var(--muted)}.aviation-quote{max-width:690px;margin:36px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.4vw,33px);line-height:1.22;font-weight:500}
+    .quiet{padding:64px 6.4vw 68px;background:var(--cream)}.quiet-inner{max-width:960px;margin:0 auto}.quiet p:not(.private-label){max-width:650px;margin:16px 0 0;font-size:13px;line-height:1.78;color:var(--muted)}.quiet-line{max-width:650px;margin:27px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,1.9vw,27px);line-height:1.25}
 
-    .yacht-story{min-height:610px;align-items:flex-end;background:url('private-yacht-hero.jpg') center 50%/cover no-repeat}.yacht-story:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(19,52,42,.80) 0%,rgba(19,52,42,.43) 47%,rgba(19,52,42,.05) 80%),linear-gradient(180deg,rgba(19,52,42,.01),rgba(19,52,42,.22))}
+    .use-cases{padding:68px 6.4vw 70px;background:var(--sand)}.use-inner{max-width:960px;margin:0 auto}.use-intro{max-width:640px}.use-intro p:last-child{margin:15px 0 0;font-size:13px;line-height:1.76;color:var(--muted)}.use-flow{max-width:730px;margin:36px 0 0}.use-item{padding:0 0 25px;margin-bottom:25px;border-bottom:1px solid rgba(38,60,50,.14)}.use-item:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}.use-item h3{margin:0 0 6px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(21px,1.9vw,28px);line-height:1.13;font-weight:500}.use-item p{max-width:630px;margin:0;font-size:12.5px;line-height:1.74;color:var(--muted)}
 
-    .private-purpose{padding-top:86px;padding-bottom:94px;background:var(--cream)}.purpose-inner>.private-title{max-width:760px;font-size:clamp(30px,3vw,42px)}.purpose-inner>p:not(.private-label){max-width:650px;margin:19px 0 0;font-size:13px;line-height:1.75;color:var(--muted)}.purpose-visual{height:clamp(320px,42vw,520px);margin:44px 0 52px;overflow:hidden}.purpose-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 54%}.purpose-story{max-width:760px;margin:0}.purpose-item{max-width:720px;margin:0 0 34px}.purpose-item:last-child{margin-bottom:0}.purpose-item h3{margin:0 0 7px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.2vw,31px);line-height:1.12;font-weight:500;letter-spacing:-.018em}.purpose-item p{max-width:650px;margin:0;font-size:12.5px;line-height:1.74;color:var(--muted)}
+    .coordination{position:relative;min-height:480px;display:flex;align-items:center;background:url('private-yacht.jpg') center 55%/cover no-repeat;color:#fff}.coordination:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,60,50,.86),rgba(38,60,50,.62) 48%,rgba(38,60,50,.16) 82%)}.coord-copy{position:relative;z-index:2;max-width:620px;padding:64px 6.4vw}.coordination .private-label{color:#CBD5C2}.coordination h2{color:#fff}.coordination p:not(.private-label){max-width:520px;margin:16px 0 0;font-size:13px;line-height:1.78;color:#DFE5DF}.coord-line{margin-top:22px;font-size:8px;line-height:1.9;letter-spacing:.09em;text-transform:uppercase;color:#F0F2EF}
 
-    .coordination{min-height:540px;align-items:center;background:url('private-yacht.jpg') center 55%/cover no-repeat}.coordination:after{content:"";position:absolute;inset:0;background:rgba(38,60,50,.78)}.coord-copy{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:74px 6.4vw;text-align:left}.coordination .private-label{color:#CBD5C2}.coord-copy h2{color:#fff}.coord-copy>p:not(.private-label){max-width:650px;margin:19px 0 0;font-size:13px;line-height:1.78;color:#DCE2DD}.coord-line{margin:26px 0 0;max-width:680px;font-size:8px;line-height:2.05;letter-spacing:.09em;text-transform:uppercase;color:#F0F2EF}
+    .private-note{padding:52px 6.4vw 54px;background:var(--paper)}.private-note-inner{max-width:960px;margin:0 auto}.private-note p{max-width:650px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,1.9vw,27px);line-height:1.25}.private-note small{display:block;max-width:670px;margin:13px 0 0;font-size:10.5px;line-height:1.68;color:var(--muted)}
 
-    .private-note{padding-top:68px;padding-bottom:72px;background:var(--paper);text-align:left}.private-note p{max-width:720px;margin:0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.4vw,33px);line-height:1.22}.private-note small{display:block;max-width:720px;margin:15px auto 0;font-size:10.5px;line-height:1.68;color:var(--muted)}
+    .private-final{padding:60px 6.4vw 64px;background:var(--gold)}.private-final-inner{max-width:960px;margin:0 auto}.private-final h2{max-width:680px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(27px,2.6vw,38px);line-height:1.1;font-weight:500}.private-final p{max-width:600px;margin:13px 0 0;font-size:12.5px;line-height:1.72;color:#566255}.private-final-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 
-    .private-final{padding-top:70px;padding-bottom:76px;background:var(--gold);text-align:left}.private-final-inner{max-width:1040px;margin:0 auto}.private-final h2{max-width:760px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,3vw,42px);line-height:1.08;font-weight:500;letter-spacing:-.025em}.private-final p{max-width:650px;margin:15px 0 0;font-size:12.5px;line-height:1.7;color:#566255}.private-final-actions{display:flex;justify-content:flex-start;gap:10px;flex-wrap:wrap;margin-top:26px}
-
-    @media(max-width:760px){.private-hero{min-height:610px;background-position:62% center}.private-hero-copy,.story-copy,.coord-copy{padding-left:22px;padding-right:22px}.private-intro,.aviation-copy,.private-purpose,.private-note,.private-final{padding-left:22px;padding-right:22px}.private-intro,.aviation-copy,.private-purpose{padding-top:64px;padding-bottom:70px}.intro-statement{margin-top:30px}.aviation-story,.yacht-story{min-height:490px}.aviation-story{background-position:60% center}.yacht-story{background-position:58% center}.purpose-visual{height:330px;margin:34px 0 40px}.purpose-story{margin-left:0}.purpose-item{margin-bottom:28px}.private-actions,.private-final-actions{flex-direction:column;align-items:stretch}.private-btn{width:100%}.coordination{min-height:500px;background-position:58% center}.private-note,.private-final{padding-top:58px;padding-bottom:62px}}
+    @media(max-width:900px){.intro-row{display:block}.intro-row p{margin-top:18px}.split,.split.reverse{display:block;min-height:0}.split-image,.split-copy{width:100%}.split-image{min-height:410px}.split-copy-inner{max-width:650px;padding:50px 6.4vw}}
+    @media(max-width:620px){.private-hero{min-height:560px;background-position:62% center}.private-hero-copy,.intro,.quiet,.use-cases,.coord-copy,.private-note,.private-final{padding-left:22px;padding-right:22px}.private-hero-copy{padding-bottom:48px}.private-actions,.private-final-actions{flex-direction:column;align-items:stretch}.private-btn{width:100%}.intro{padding-top:54px;padding-bottom:56px}.intro-whisper{margin-top:23px}.split-image{min-height:310px}.split-copy-inner{padding:42px 22px 46px}.quiet,.use-cases{padding-top:50px;padding-bottom:52px}.use-flow{margin-top:30px}.coordination{min-height:440px;background-position:58% center}.coord-copy{padding-top:52px;padding-bottom:52px}.private-note{padding-top:44px;padding-bottom:46px}.private-final{padding-top:50px;padding-bottom:54px}}
   </style>
 </head>
 <body class="private-page">
@@ -40,18 +42,109 @@
     <nav class="desktop-nav" aria-label="Main navigation"><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="destinations.html">Destinations</a><a href="meetings-conferences.html">MICE & Events</a><a href="who-we-are.html">About</a></nav>
     <a class="outline-btn header-cta" href="contact.html">Talk to us</a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   </header>
+
   <main>
-    <section class="private-hero"><div class="private-hero-copy"><p class="private-label">Private Aviation & Yachts</p><h1>Travel with more freedom,<em>privacy and control.</em></h1><p>Private aviation, yacht charters and premium cruise arrangements coordinated around the wider journey — with the local details managed through one Pacific World team.</p><div class="private-actions"><a class="private-btn dark" href="contact.html">Discuss a private journey</a><a class="private-btn light" href="#private-aviation">Explore the journey</a></div><div class="hero-note">Specialist partners · Local coordination · One connected itinerary</div></div></section>
-    <section class="private-intro"><div class="private-intro-inner"><p class="private-label">Beyond the standard itinerary</p><h2 class="private-title">Sometimes the journey needs to work differently.</h2><p>Private travel becomes valuable when schedule, privacy or experience cannot be solved well by a standard itinerary. We coordinate the specialist segment and connect it to the hotels, chauffeurs, dining and onward travel around it.</p><div class="intro-statement">Not a separate booking. One considered journey from airside to waterside.</div></div></section>
-    <section class="aviation-story" id="private-aviation"><div class="story-copy"><p class="private-label">Private aviation</p><h2 class="private-title">When the schedule needs more control.</h2><p>For executive and high-touch journeys, Pacific World can coordinate private aviation through specialist partners and build the ground arrangements around departure and arrival.</p><div class="story-detail">Charter coordination · Airport transfers · Chauffeurs · Hotels · Onward travel</div></div></section>
-    <section class="aviation-copy"><div class="aviation-copy-inner"><p class="private-label">Designed around the traveller</p><h2 class="private-title">The value is in what the flexibility makes possible.</h2><p>A private segment may support a senior executive with a compressed schedule, a group moving between destinations, or a traveller who values discretion and control. The aircraft is one piece; our role is making the surrounding journey connect.</p><div class="aviation-quote">More control over the schedule. Less friction around everything before and after it.</div></div></section>
-    <section class="yacht-story"><div class="story-copy"><p class="private-label">Yachts & premium cruises</p><h2 class="private-title">When the journey itself becomes part of the experience.</h2><p>Private yacht charters and premium cruise arrangements can turn a destination extension, client-hosting moment or private celebration into something more considered.</p><div class="story-detail">Private charters · Premium cruises · Corporate hosting · Leisure extensions</div></div></section>
-    <section class="private-purpose"><div class="purpose-inner"><p class="private-label">Where private travel can fit</p><h2 class="private-title">Built for the moments a standard itinerary cannot solve well.</h2><p>We shape the arrangement around the purpose of the trip rather than forcing every traveller into the same format.</p><figure class="purpose-visual"><img src="private-yacht 1.jpg" alt="Private yacht journey" loading="lazy" /></figure><div class="purpose-story"><div class="purpose-item"><h3>Executive & VIP movement</h3><p>For senior travellers who need greater discretion, timing flexibility or a more controlled end-to-end journey.</p></div><div class="purpose-item"><h3>Corporate hosting</h3><p>Private yacht or premium cruise experiences that can sit naturally around meetings, client hosting or incentive programmes.</p></div><div class="purpose-item"><h3>Private leisure extensions</h3><p>Add a yacht, cruise or private segment before or after the main business or leisure itinerary without turning it into a separate planning exercise.</p></div></div></div></section>
-    <section class="coordination"><div class="coord-copy"><p class="private-label">One local team around the specialist segment</p><h2 class="private-title">The aircraft or yacht is only one part of the journey.</h2><p>Pacific World connects the private segment with airport movements, chauffeurs, hotels, dining, local assistance and onward travel so the traveller is not managing separate suppliers.</p><div class="coord-line">Private aviation coordination · Yacht charter coordination · Premium cruise arrangements · Ground transport · Hotels · Dining · Local support</div></div></section>
-    <section class="private-note"><p>Flexible where it matters. Coordinated where it counts.</p><small>Aircraft, yacht and cruise availability, operating conditions and final arrangements are confirmed through the relevant specialist partner for each request.</small></section>
-    <section class="private-final"><div class="private-final-inner"><p class="private-label">Start planning</p><h2>Have a journey that needs more flexibility or privacy?</h2><p>Share the route, dates, traveller profile and what the private segment needs to achieve. We will coordinate the next steps around the wider itinerary.</p><div class="private-final-actions"><a class="private-btn dark" href="contact.html">Discuss the journey</a><a class="private-btn light" href="corporate-executive-travel.html">View business travel</a></div></div></section>
+    <section class="private-hero">
+      <div class="private-hero-copy">
+        <p class="private-label">Private Aviation & Yachts</p>
+        <h1>Travel with more freedom,<em>privacy and control.</em></h1>
+        <p>Private aviation, yacht charters and premium cruise arrangements coordinated around the wider journey — with the local details managed through one Pacific World team.</p>
+        <div class="private-actions"><a class="private-btn dark" href="contact.html">Discuss a private journey</a><a class="private-btn light" href="#private-aviation">Explore the journey</a></div>
+        <div class="hero-note">Specialist partners · Local coordination · One connected itinerary</div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-inner">
+        <p class="private-label">Beyond the standard itinerary</p>
+        <div class="intro-row">
+          <h2 class="private-title">Private travel should create freedom, not another layer of planning.</h2>
+          <p>We coordinate the specialist segment and connect it to the chauffeur, hotel, dining and onward arrangements around it.</p>
+        </div>
+        <div class="intro-whisper">One considered journey from airside to waterside.</div>
+      </div>
+    </section>
+
+    <section class="split" id="private-aviation">
+      <div class="split-image aviation-img" role="img" aria-label="Private aviation journey"></div>
+      <div class="split-copy"><div class="split-copy-inner">
+        <p class="private-label">Private aviation</p>
+        <h2 class="private-title">More control when the schedule matters.</h2>
+        <p>For executives, VIP travellers and time-sensitive journeys, Pacific World can coordinate private aviation through specialist partners and shape the ground arrangements around departure and arrival.</p>
+        <div class="split-meta">Charter coordination · Airport transfer · Chauffeur · Hotel · Onward travel</div>
+      </div></div>
+    </section>
+
+    <section class="quiet">
+      <div class="quiet-inner">
+        <p class="private-label">Designed around the traveller</p>
+        <h2 class="private-title">The aircraft is one piece of the journey.</h2>
+        <p>The real value is what the flexibility makes possible: a compressed schedule, discreet movement, fewer hand-offs and a smoother transition between the private segment and everything around it.</p>
+        <div class="quiet-line">More control over the schedule. Less friction before and after it.</div>
+      </div>
+    </section>
+
+    <section class="split reverse">
+      <div class="split-image yacht-img" role="img" aria-label="Private yacht and premium cruise experience"></div>
+      <div class="split-copy"><div class="split-copy-inner">
+        <p class="private-label">Yachts & premium cruises</p>
+        <h2 class="private-title">Let the journey become part of the experience.</h2>
+        <p>Private yachts and premium cruises can add a quieter, more personal dimension to a Vietnam itinerary — whether for leisure, a private celebration or time with clients.</p>
+        <div class="split-meta">Private charter · Premium cruise · Client hosting · Leisure extension</div>
+      </div></div>
+    </section>
+
+    <section class="split">
+      <div class="split-image hosting-img" role="img" aria-label="Yacht experience in Vietnam"></div>
+      <div class="split-copy"><div class="split-copy-inner">
+        <p class="private-label">A private extension</p>
+        <h2 class="private-title">Add something memorable without creating a separate trip.</h2>
+        <p>A yacht or cruise can sit naturally before or after a business programme, between destinations, or as a private moment within a longer leisure journey.</p>
+      </div></div>
+    </section>
+
+    <section class="use-cases">
+      <div class="use-inner">
+        <div class="use-intro">
+          <p class="private-label">Where private travel can fit</p>
+          <h2 class="private-title">Different reasons. The same need for thoughtful coordination.</h2>
+          <p>We shape the arrangement around the purpose of the journey rather than forcing every traveller into the same format.</p>
+        </div>
+        <div class="use-flow">
+          <div class="use-item"><h3>Executive & VIP movement</h3><p>Greater discretion, timing flexibility and a more controlled end-to-end journey.</p></div>
+          <div class="use-item"><h3>Corporate hosting</h3><p>A private yacht or premium cruise around meetings, client hosting or incentive programmes.</p></div>
+          <div class="use-item"><h3>Private leisure extensions</h3><p>A private segment before or after the main itinerary, connected to the same travel plan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coordination">
+      <div class="coord-copy">
+        <p class="private-label">One local team</p>
+        <h2 class="private-title">The aircraft or yacht is only one part of the journey.</h2>
+        <p>Pacific World connects the specialist segment with airport movements, chauffeurs, hotels, dining, local assistance and onward travel.</p>
+        <div class="coord-line">Private aviation · Yacht & cruise coordination · Ground transport · Hotels · Dining · Local support</div>
+      </div>
+    </section>
+
+    <section class="private-note">
+      <div class="private-note-inner">
+        <p>Flexible where it matters. Coordinated where it counts.</p>
+        <small>Aircraft, yacht and cruise availability, operating conditions and final arrangements are confirmed through the relevant specialist partner for each request.</small>
+      </div>
+    </section>
+
+    <section class="private-final">
+      <div class="private-final-inner">
+        <p class="private-label">Start planning</p>
+        <h2>Have a journey that needs more flexibility or privacy?</h2>
+        <p>Share the route, dates, traveller profile and what the private segment needs to achieve. We will coordinate the next steps around the wider itinerary.</p>
+        <div class="private-final-actions"><a class="private-btn dark" href="contact.html">Discuss the journey</a><a class="private-btn light" href="corporate-executive-travel.html">View business travel</a></div>
+      </div>
+    </section>
   </main>
+
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260818-private7"></script><script src="nav-fix.js?v=20260818-private7"></script>
+  <script src="script.js?v=20260818-private9"></script><script src="nav-fix.js?v=20260818-private9"></script>
 </body>
 </html>
