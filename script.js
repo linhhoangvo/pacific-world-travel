@@ -1,6 +1,12 @@
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".desktop-nav");
 
+/* OFFICIAL PACIFIC WORLD LOGO — site-wide */
+document.querySelectorAll("a.brand").forEach((brand) => {
+  brand.innerHTML = '<img class="official-brand-logo" src="pacific-world-logo-white.svg" alt="Pacific World" />';
+  brand.setAttribute("aria-label", "Pacific World Travel home");
+});
+
 /* Remove standalone Why Us from top navigation; keep it inside About dropdown */
 const topLevelWhyUs = nav ? [...nav.children].find((item) =>
   item.tagName === "A" && item.textContent.trim() === "Why Us"
@@ -192,6 +198,11 @@ paletteStyle.textContent = `
 
 body { background: #F7F4ED; color: #263C32; }
 .site-header { background: rgba(38, 60, 50, .96); }
+.brand { display:flex !important; align-items:center !important; justify-content:flex-start !important; width:112px !important; height:64px !important; flex:0 0 112px !important; background:none !important; }
+.brand .brand-mark,.brand .brand-copy { display:none !important; }
+.official-brand-logo { display:block; width:auto; height:58px; max-width:108px; object-fit:contain; object-position:left center; }
+footer .brand { width:112px !important; height:72px !important; flex-basis:112px !important; }
+footer .official-brand-logo { height:64px; max-width:110px; }
 .desktop-nav { align-items:center; flex-wrap:nowrap; min-width:0; }
 .desktop-nav > a { display:inline-flex; align-items:center; height:72px; white-space:nowrap; flex:0 0 auto; }
 .desktop-nav > a:hover { color:#D4C5AD; }
@@ -256,6 +267,8 @@ footer { background:#263C32; }
   .nav-dropdown-menu a { padding:10px 16px; }
 }
 @media (max-width:760px) {
+  .brand { width:94px !important; height:58px !important; flex-basis:94px !important; }
+  .official-brand-logo { height:52px; max-width:92px; }
   .how-we-work { padding:70px 20px 76px; }
   .how-we-work-grid { grid-template-columns:1fr; }
   .how-step { min-height:220px; }
