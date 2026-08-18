@@ -8,89 +8,91 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260818-corporate7" />
+  <link rel="stylesheet" href="styles.css?v=20260818-corporate8" />
   <style>
     .corp{--green:#263C32;--green2:#31493D;--cream:#F7F4ED;--sand:#E8DFD0;--paper:#FBF9F4;--muted:#68735A;--gold:#C7B89E;background:var(--cream);color:var(--green)}
     .corp .site-header{z-index:60}
-    .corp-label{margin:0 0 14px;font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#71805F}
-    .corp-title{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,3.6vw,50px);line-height:1.07;font-weight:500;letter-spacing:-.03em}
-    .corp-body{font-size:14px;line-height:1.78;color:var(--muted)}
+    .corp-label{margin:0 0 12px;font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#71805F}
+    .corp-title{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(31px,3vw,44px);line-height:1.08;font-weight:500;letter-spacing:-.028em}
+    .corp-body{font-size:14px;line-height:1.76;color:var(--muted)}
     .corp-btn{display:inline-flex;min-height:47px;padding:0 21px;align-items:center;justify-content:center;gap:18px;border:1px solid var(--green);font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
     .corp-btn.dark{background:var(--green);color:#fff}.corp-btn.light{color:var(--green)}
 
-    .corp-hero{position:relative;min-height:720px;background:url('corporate-airport-arrival.jpg') center 42%/cover no-repeat;color:#fff;display:flex;align-items:flex-end;overflow:hidden}
-    .corp-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,43,34,.10) 18%,rgba(18,43,34,.38) 58%,rgba(18,43,34,.88) 100%)}
-    .corp-hero-inner{position:relative;z-index:2;width:min(860px,88vw);padding:0 6.4vw 74px}
+    .corp-hero{position:relative;min-height:700px;background:url('corporate-airport-arrival.jpg') center 42%/cover no-repeat;color:#fff;display:flex;align-items:flex-end;overflow:hidden}
+    .corp-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,43,34,.08) 18%,rgba(18,43,34,.34) 58%,rgba(18,43,34,.88) 100%)}
+    .corp-hero-inner{position:relative;z-index:2;width:min(820px,88vw);padding:0 6.4vw 68px}
     .corp-hero .corp-label{color:#D8DED4}
-    .corp-hero h1{max-width:790px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(48px,5.2vw,76px);line-height:.99;font-weight:500;letter-spacing:-.042em}
+    .corp-hero h1{max-width:760px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(46px,5vw,72px);line-height:.99;font-weight:500;letter-spacing:-.04em}
     .corp-hero h1 em{display:block;font-weight:500;color:#E8DFD0}
-    .corp-hero p:not(.corp-label){max-width:620px;margin:22px 0 0;font-size:15px;line-height:1.68;color:rgba(255,255,255,.88)}
-    .corp-hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:29px}
+    .corp-hero p:not(.corp-label){max-width:600px;margin:20px 0 0;font-size:15px;line-height:1.66;color:rgba(255,255,255,.88)}
+    .corp-hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}
     .corp-hero .corp-btn{border-color:rgba(255,255,255,.72)}.corp-hero .corp-btn.dark{background:#fff;color:var(--green);border-color:#fff}.corp-hero .corp-btn.light{color:#fff}
 
-    .intro{padding:108px 6.4vw 112px;background:var(--cream)}
-    .intro-inner{max-width:1180px;margin:0 auto}
-    .intro h2{max-width:820px}
-    .intro-copy{max-width:610px;margin:28px 0 0 auto;font-size:15px;line-height:1.82;color:#59655A}
-    .intro-note{max-width:830px;margin:62px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(27px,2.7vw,40px);line-height:1.2;font-weight:500;color:#45554A}
+    .intro{padding:82px 6.4vw 86px;background:var(--cream)}
+    .intro-inner{max-width:1080px;margin:0 auto}
+    .intro h2{max-width:680px}
+    .intro-copy{max-width:590px;margin:22px 0 0 auto;font-size:14px;line-height:1.8;color:#59655A}
+    .intro-note{max-width:720px;margin:36px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.35vw,34px);line-height:1.2;font-weight:500;color:#45554A}
 
-    .business-image{position:relative;min-height:640px;background:url('corporate-meeting.jpg') center/cover no-repeat;color:#fff;display:flex;align-items:flex-end}
-    .business-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,48,38,.04) 28%,rgba(20,48,38,.80) 100%)}
-    .business-caption{position:relative;z-index:2;max-width:840px;padding:0 6.4vw 58px}
+    .business-image{position:relative;min-height:580px;background:url('corporate-meeting.jpg') center/cover no-repeat;color:#fff;display:flex;align-items:flex-end}
+    .business-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,48,38,.03) 30%,rgba(20,48,38,.78) 100%)}
+    .business-caption{position:relative;z-index:2;max-width:800px;padding:0 6.4vw 50px}
     .business-caption .corp-label{color:#D4DDD1}
-    .business-caption h2{color:#fff}
-    .business-caption p{max-width:640px;margin:19px 0 0;font-size:13px;line-height:1.72;color:rgba(255,255,255,.84)}
+    .business-caption h2{max-width:670px;color:#fff}
+    .business-caption p{max-width:610px;margin:17px 0 0;font-size:13px;line-height:1.7;color:rgba(255,255,255,.84)}
 
-    .story{padding:110px 6.4vw 118px;background:var(--paper)}
-    .story-head{max-width:760px}
-    .story-head p:last-child{max-width:620px;margin:20px 0 0}
-    .story-list{max-width:1050px;margin:88px 0 0 auto}
-    .story-item{margin:0 0 78px}
-    .story-item:nth-child(2){max-width:760px;margin-left:12%}
-    .story-item:nth-child(3){max-width:900px;margin-left:3%}
-    .story-item small{display:block;margin-bottom:13px;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#7C8773}
-    .story-item h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(29px,3vw,43px);line-height:1.08;font-weight:500}
-    .story-item p{max-width:680px;margin:15px 0 0;font-size:13px;line-height:1.78;color:var(--muted)}
-    .story-route{margin-top:19px;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#788471}
+    .story{padding:86px 6.4vw 92px;background:var(--paper)}
+    .story-head{max-width:720px}
+    .story-head p:last-child{max-width:590px;margin:17px 0 0}
+    .story-visual{height:330px;max-width:1180px;margin:42px auto 0;background:url('corporate-hero 1.jpg') center 46%/cover no-repeat}
+    .story-list{max-width:860px;margin:48px auto 0}
+    .story-item{margin:0 0 42px;padding-bottom:42px;border-bottom:1px solid rgba(38,60,50,.13)}
+    .story-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+    .story-item small{display:block;margin-bottom:10px;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#7C8773}
+    .story-item h3{max-width:720px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(25px,2.35vw,34px);line-height:1.1;font-weight:500}
+    .story-item p{max-width:660px;margin:12px 0 0;font-size:13px;line-height:1.75;color:var(--muted)}
+    .story-route{margin-top:16px;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#788471}
 
-    .services{padding:96px 6.4vw 104px;background:var(--sand)}
-    .services-inner{max-width:1180px;margin:0 auto}
-    .services-copy{max-width:690px}
-    .service-sentence{max-width:1100px;margin:38px 0 0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.35vw,34px);line-height:1.62;color:#46564B}
+    .services{padding:78px 6.4vw 82px;background:var(--sand)}
+    .services-inner{max-width:1080px;margin:0 auto}
+    .services-copy{max-width:650px}
+    .service-sentence{max-width:850px;margin:27px 0 0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,1.85vw,27px);line-height:1.48;color:#46564B}
     .service-sentence em{font-style:normal;color:#7C826E}
-    .service-note{max-width:600px;margin:28px 0 0 auto;font-size:12px;line-height:1.75;color:#657064}
+    .service-note{max-width:590px;margin:20px 0 0 auto;font-size:12px;line-height:1.72;color:#657064}
 
-    .support{position:relative;min-height:650px;background:url('corporate-executive.jpg') center 42%/cover no-repeat;color:#fff;display:flex;align-items:center}
-    .support:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,62,50,.92) 0%,rgba(31,62,50,.70) 42%,rgba(31,62,50,.14) 78%)}
-    .support-copy{position:relative;z-index:2;max-width:760px;padding:86px 6.4vw}
-    .support .corp-label{color:#CCD6C8}.support h2{max-width:620px;color:#fff}.support p{max-width:580px;margin:22px 0 0;font-size:14px;line-height:1.8;color:#DEE4DE}
-    .support-line{margin-top:28px;font-size:9px;line-height:2.1;letter-spacing:.1em;text-transform:uppercase;color:#F0F2EF}
+    .support{position:relative;min-height:590px;background:url('corporate-executive.jpg') center 42%/cover no-repeat;color:#fff;display:flex;align-items:center}
+    .support:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,62,50,.92) 0%,rgba(31,62,50,.68) 42%,rgba(31,62,50,.12) 78%)}
+    .support-copy{position:relative;z-index:2;max-width:710px;padding:74px 6.4vw}
+    .support .corp-label{color:#CCD6C8}.support h2{max-width:570px;color:#fff}.support p{max-width:550px;margin:19px 0 0;font-size:14px;line-height:1.76;color:#DEE4DE}
+    .support-line{margin-top:25px;font-size:9px;line-height:2;letter-spacing:.1em;text-transform:uppercase;color:#F0F2EF}
 
-    .buyer{padding:112px 6.4vw 118px;background:var(--cream)}
-    .buyer-inner{max-width:1140px;margin:0 auto}
-    .buyer h2{max-width:740px}
-    .buyer-statement{max-width:820px;margin:52px 0 0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.8vw,42px);line-height:1.2;font-weight:500}
-    .buyer-copy{max-width:720px;margin:27px 0 0 auto;font-size:13px;line-height:1.9;color:var(--muted)}
-    .buyer-copy strong{color:var(--green);font-weight:600}
+    .buyer{position:relative;min-height:600px;background:url('corporate-business-dinner.jpg.jpg') center 50%/cover no-repeat;color:#fff;display:flex;align-items:flex-end}
+    .buyer:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,58,46,.90) 0%,rgba(25,58,46,.67) 45%,rgba(25,58,46,.16) 82%)}
+    .buyer-inner{position:relative;z-index:2;max-width:760px;margin:0;padding:0 6.4vw 64px}
+    .buyer .corp-label{color:#D4DDD1}
+    .buyer h2{max-width:620px;color:#fff}
+    .buyer-statement{max-width:650px;margin:26px 0 0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.3vw,34px);line-height:1.18;font-weight:500;color:#fff}
+    .buyer-copy{max-width:620px;margin:21px 0 0;font-size:13px;line-height:1.78;color:#E4E8E4}
+    .buyer-copy strong{color:#fff;font-weight:600}
 
-    .journey{position:relative;min-height:640px;background:url('corporate-hotel.jpg') center 45%/cover no-repeat;color:#fff;display:flex;align-items:flex-end}
-    .journey:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,58,46,.92) 0%,rgba(25,58,46,.66) 46%,rgba(25,58,46,.12) 80%)}
-    .journey-copy{position:relative;z-index:2;max-width:760px;padding:0 6.4vw 70px}
-    .journey .corp-label{color:#D3DBCF}.journey h2{max-width:620px;color:#fff}.journey p{max-width:610px;margin:20px 0 0;font-size:14px;line-height:1.76;color:#E1E5E1}
-    .route{margin-top:27px;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;line-height:2;color:#fff}
+    .journey{position:relative;min-height:590px;background:url('final-cta-lounge.jpg') center 48%/cover no-repeat;color:#fff;display:flex;align-items:flex-end}
+    .journey:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,58,46,.93) 0%,rgba(25,58,46,.64) 44%,rgba(25,58,46,.10) 80%)}
+    .journey-copy{position:relative;z-index:2;max-width:710px;padding:0 6.4vw 60px}
+    .journey .corp-label{color:#D3DBCF}.journey h2{max-width:560px;color:#fff}.journey p{max-width:570px;margin:18px 0 0;font-size:13px;line-height:1.74;color:#E1E5E1}
+    .route{margin-top:24px;font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.9;color:#fff}
 
-    .market{padding:50px 6.4vw;background:var(--green2);text-align:center;color:#fff}
-    .market p{max-width:900px;margin:0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,2.3vw,32px);line-height:1.28}
-    .market small{display:block;margin-top:12px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#CBD2CA}
+    .market{padding:36px 6.4vw;background:var(--green2);text-align:center;color:#fff}
+    .market p{max-width:860px;margin:0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,2vw,28px);line-height:1.26}
+    .market small{display:block;margin-top:10px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#CBD2CA}
 
-    .corp-final{padding:94px 6.4vw 98px;background:var(--gold)}
-    .corp-final-inner{max-width:1120px;margin:0 auto}
-    .corp-final h2{max-width:790px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,3.7vw,50px);line-height:1.06;font-weight:500}
-    .corp-final p{max-width:660px;margin:16px 0 0;font-size:13px;line-height:1.72;color:#586457}
-    .corp-final-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}
+    .corp-final{padding:76px 6.4vw 80px;background:var(--gold)}
+    .corp-final-inner{max-width:1060px;margin:0 auto}
+    .corp-final h2{max-width:720px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(31px,3.2vw,44px);line-height:1.08;font-weight:500}
+    .corp-final p{max-width:630px;margin:15px 0 0;font-size:13px;line-height:1.7;color:#586457}
+    .corp-final-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}
 
-    @media(max-width:900px){.corp-hero{min-height:650px}.business-image,.support,.journey{min-height:560px}.story-list{margin-top:64px}.story-item:nth-child(2),.story-item:nth-child(3){margin-left:0}.intro-copy,.service-sentence,.service-note,.buyer-statement,.buyer-copy{margin-left:0}}
-    @media(max-width:620px){.corp-hero{min-height:610px;background-position:58% center}.corp-hero-inner,.intro,.business-caption,.story,.services,.support-copy,.buyer,.journey-copy,.market,.corp-final{padding-left:22px;padding-right:22px}.corp-hero-inner{padding-bottom:52px}.corp-hero-actions,.corp-final-actions{flex-direction:column;align-items:stretch}.corp-btn{width:100%}.intro,.story,.services,.buyer,.corp-final{padding-top:70px;padding-bottom:74px}.intro-note{margin-top:42px}.business-image,.support,.journey{min-height:500px}.business-caption{padding-bottom:36px}.story-list{margin-top:50px}.story-item{margin-bottom:54px}.support-copy{padding-top:68px;padding-bottom:68px}.journey-copy{padding-bottom:48px}.service-sentence{line-height:1.5}}
+    @media(max-width:900px){.corp-hero{min-height:640px}.business-image,.support,.buyer,.journey{min-height:530px}.intro-copy,.service-sentence,.service-note{margin-left:0}.story-visual{height:280px}}
+    @media(max-width:620px){.corp-hero{min-height:600px;background-position:58% center}.corp-hero-inner,.intro,.business-caption,.story,.services,.support-copy,.buyer-inner,.journey-copy,.market,.corp-final{padding-left:22px;padding-right:22px}.corp-hero-inner{padding-bottom:48px}.corp-hero-actions,.corp-final-actions{flex-direction:column;align-items:stretch}.corp-btn{width:100%}.intro,.story,.services,.corp-final{padding-top:62px;padding-bottom:66px}.intro-note{margin-top:30px}.business-image,.support,.buyer,.journey{min-height:470px}.business-caption{padding-bottom:34px}.story-visual{height:220px;margin-top:32px}.story-list{margin-top:34px}.story-item{margin-bottom:32px;padding-bottom:32px}.support-copy{padding-top:58px;padding-bottom:58px}.buyer-inner,.journey-copy{padding-bottom:44px}.service-sentence{line-height:1.45}.market{padding-top:28px;padding-bottom:28px}}
   </style>
 </head>
 <body class="corp">
@@ -133,6 +135,7 @@
         <h2 class="corp-title">Different journeys need different levels of support.</h2>
         <p class="corp-body">We shape each programme around who is travelling, what the business day needs to achieve and how much local coordination sits behind it.</p>
       </div>
+      <div class="story-visual" role="img" aria-label="Executive business travel in Vietnam"></div>
       <div class="story-list">
         <article class="story-item">
           <small>Executive & VIP travel</small>
@@ -146,7 +149,7 @@
         </article>
         <article class="story-item">
           <small>Complex multi-city travel</small>
-          <h3>Vietnam should feel like one journey, even when the itinerary crosses the country.</h3>
+          <h3>One itinerary, even when the programme crosses the country.</h3>
           <p>We link flights, hotels, cars and meetings across Ho Chi Minh City, Da Nang, Hanoi and other destinations around the same traveller brief.</p>
           <div class="story-route">Ho Chi Minh City → Da Nang → Hanoi</div>
         </article>
@@ -156,8 +159,8 @@
     <section class="services">
       <div class="services-inner">
         <div class="services-copy"><p class="corp-label">What we can arrange</p><h2 class="corp-title">Everything around the journey.</h2></div>
-        <p class="service-sentence">Airport meet & greet <em>·</em> chauffeur & private car <em>·</em> domestic flights <em>·</em> hotels & extended stays <em>·</em> meeting logistics <em>·</em> visa support <em>·</em> dining reservations <em>·</em> local guides <em>·</em> group movements <em>·</em> emergency rebooking <em>·</em> 24/7 assistance.</p>
-        <p class="service-note">Use Pacific World for the full programme or only the Vietnam services your company, agency or TMC needs on the ground.</p>
+        <p class="service-sentence">From airport meet & greet and chauffeur service to flights, hotels, meeting logistics, visas, dining and last-minute rebooking, we coordinate the pieces that keep a business trip moving.</p>
+        <p class="service-note">Use Pacific World for the full programme or only the Vietnam services your company, agency or TMC needs on the ground — with 24/7 assistance available throughout the journey.</p>
       </div>
     </section>
 
@@ -174,8 +177,8 @@
       <div class="buyer-inner">
         <p class="corp-label">For the people arranging the trip</p>
         <h2 class="corp-title">A Vietnam partner behind your programme.</h2>
-        <p class="buyer-statement">Less supplier chasing. More confidence that the journey will work on the ground.</p>
-        <p class="buyer-copy"><strong>Executive assistants</strong> get one local contact for hotels, drivers, reservations and changes. <strong>Companies</strong> get travel shaped around schedules, traveller profiles and business requirements. <strong>Travel agencies & TMCs</strong> get dependable Vietnam execution behind the client itinerary.</p>
+        <p class="buyer-statement">Less supplier chasing. More confidence on the ground.</p>
+        <p class="buyer-copy"><strong>Executive assistants</strong>, <strong>companies</strong> and <strong>travel agencies or TMCs</strong> get one local team connecting hotels, drivers, reservations, meetings and changes around the same traveller brief.</p>
       </div>
     </section>
 
@@ -183,7 +186,7 @@
       <div class="journey-copy">
         <p class="corp-label">Example journey</p>
         <h2 class="corp-title">Ho Chi Minh City to Hanoi, without the hand-offs.</h2>
-        <p>A five-day executive visit can move from airport arrival and city meetings in Ho Chi Minh City to a domestic flight, Hanoi appointments and final departure — with each hotel, car, reservation and timing decision connected around the same brief.</p>
+        <p>A five-day executive visit can move from airport arrival and city meetings in Ho Chi Minh City to a domestic flight, Hanoi appointments and final departure — with every hotel, car and timing decision connected around the same brief.</p>
         <div class="route">Arrival → Hotel → Meetings → Client dinner → Hanoi flight → Corporate visits → Departure</div>
       </div>
     </section>
@@ -201,6 +204,6 @@
   </main>
 
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260818-corporate7"></script><script src="nav-fix.js?v=20260818-corporate7"></script>
+  <script src="script.js?v=20260818-corporate8"></script><script src="nav-fix.js?v=20260818-corporate8"></script>
 </body>
 </html>
