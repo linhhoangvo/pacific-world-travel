@@ -1,6 +1,6 @@
 @import url("styles-base.css");
 
-/* Homepage hero image override */
+/* Homepage hero image restored */
 .hero-image{
-  background:url("homepage hero.jpg") center 50%/cover no-repeat!important;
+  background:url("hero-golf.jpg") center 53%/cover no-repeat!important;
 }
