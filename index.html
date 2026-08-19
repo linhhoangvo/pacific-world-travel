@@ -11,19 +11,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260819-home-type3" />
+  <link rel="stylesheet" href="styles.css?v=20260819-home-type4" />
   <style>
     .signature-journeys{background:#E8DFD0;padding:82px 6.4vw}
     .signature-journeys .journey-intro{max-width:720px;margin:0 auto 40px;text-align:center}
-    .signature-journeys .journey-intro h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,3.4vw,46px);line-height:1.06;font-weight:500;letter-spacing:-.025em;color:#263C32}
-    .signature-journeys .journey-intro p:last-child{max-width:620px;margin:16px auto 0;font-size:14px;line-height:1.65;color:#68735A}
+    .signature-journeys .journey-intro h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(32px,3vw,42px);line-height:1.06;font-weight:500;letter-spacing:-.025em;color:#263C32}
+    .signature-journeys .journey-intro p:last-child{max-width:620px;margin:16px auto 0;font-size:13px;line-height:1.65;color:#68735A}
     .journey-teaser-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .journey-teaser{position:relative;min-height:365px;overflow:hidden;border-radius:4px;color:#fff;background-position:center;background-size:cover}
     .journey-teaser::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,60,50,.05) 28%,rgba(38,60,50,.92) 100%)}
     .journey-teaser-content{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:26px}
     .journey-teaser small{display:block;margin-bottom:8px;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#D4C5AD}
-    .journey-teaser h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:27px;line-height:1.06;font-weight:500}
-    .journey-teaser p{margin:0 0 16px;max-width:320px;font-size:12px;line-height:1.55;color:rgba(255,255,255,.82)}
+    .journey-teaser h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;font-size:24px;line-height:1.06;font-weight:500}
+    .journey-teaser p{margin:0 0 16px;max-width:320px;font-size:11px;line-height:1.55;color:rgba(255,255,255,.82)}
     .journey-teaser a{display:inline-flex;gap:12px;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
     .journey-vietnam{background-image:url("halong-bay.jpg")}
     .journey-golf{background-image:url("golf-travel.jpg");background-position:center 52%}
@@ -31,34 +31,34 @@
     .journey-all{display:flex;justify-content:center;margin-top:26px}
     .journey-all a{display:inline-flex;gap:14px;text-transform:uppercase;font-size:9px;font-weight:700;letter-spacing:.09em;color:#263C32}
 
-    .how-we-work.journey-process{padding:72px 6.4vw 76px;background:#F2EEE5;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(42px,6vw,96px);align-items:center;position:relative;overflow:hidden}
+    .how-we-work.journey-process{padding:68px 6.4vw 72px;background:#F2EEE5;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(42px,6vw,96px);align-items:center;position:relative;overflow:hidden}
     .process-left{max-width:610px}
-    .process-left>h2{margin:0 0 34px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,3.3vw,44px);line-height:1.04;font-weight:500;letter-spacing:-.03em;color:#263C32}
-    .process-list{display:flex;flex-direction:column;gap:24px;margin-bottom:30px}
+    .process-left>h2{margin:0 0 32px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.8vw,38px);line-height:1.06;font-weight:500;letter-spacing:-.025em;color:#263C32}
+    .process-list{display:flex;flex-direction:column;gap:22px;margin-bottom:28px}
     .process-step{display:grid;grid-template-columns:34px 1fr;gap:16px;align-items:start}
     .process-step-number{width:29px;height:29px;display:grid;place-items:center;border-radius:50%;background:#E5EED9;color:#688445;font-size:10px;font-weight:700}
-    .process-step h3{margin:1px 0 4px;font-size:15px;font-weight:600;color:#263C32}
-    .process-step p{margin:0;max-width:480px;font-size:12px;line-height:1.55;color:#68735A}
+    .process-step h3{margin:1px 0 4px;font-size:14px;font-weight:600;color:#263C32}
+    .process-step p{margin:0;max-width:480px;font-size:11.5px;line-height:1.55;color:#68735A}
     .process-cta{display:inline-flex;align-items:center;gap:18px;min-height:42px;padding:0 18px;border-radius:24px;background:#68735A;color:#F7F4ED;text-transform:uppercase;font-size:9px;font-weight:700;letter-spacing:.08em}
-    .client-panel{position:relative;min-height:390px;padding:34px 36px 30px;border-radius:20px;background:#F2EEE5;border:1px solid rgba(38,60,50,.08);box-shadow:none}
-    .client-panel-top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:20px;border-bottom:1px solid rgba(38,60,50,.11)}
-    .client-panel-kicker{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#68735A}
-    .client-panel-tag{padding:6px 9px;border-radius:5px;background:#EDF3E4;color:#688445;font-size:9px;font-weight:600;white-space:nowrap}
-    .client-panel-body{padding:26px 0 18px}
-    .client-panel-body h3{margin:0 0 14px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.5vw,36px);line-height:1.08;font-weight:500;color:#263C32}
-    .client-panel-body p{margin:0;max-width:660px;font-size:13px;line-height:1.72;color:#5E695E}
-    .client-panel-footer{position:absolute;left:36px;right:36px;bottom:28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .client-persona{display:flex;align-items:center;gap:10px;font-size:11px;color:#566255}
-    .client-persona-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#263C32;color:#F7F4ED;font-family:"Playfair Display",Georgia,serif;font-size:13px}
+    .client-panel{position:relative;min-height:360px;padding:30px 34px 28px;border-radius:20px;background:#F2EEE5;border:1px solid rgba(38,60,50,.08);box-shadow:none}
+    .client-panel-top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:8px;border-bottom:0}
+    .client-panel-kicker{font-size:9px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#7A846E}
+    .client-panel-tag{padding:6px 9px;border-radius:5px;background:#EDF3E4;color:#688445;font-size:9px;font-weight:500;white-space:nowrap}
+    .client-panel-body{padding:22px 0 18px}
+    .client-panel-body h3{margin:0 0 12px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,2vw,30px);line-height:1.12;font-weight:500;color:#263C32}
+    .client-panel-body p{margin:0;max-width:660px;font-size:12px;line-height:1.65;color:#5E695E}
+    .client-panel-footer{position:absolute;left:34px;right:34px;bottom:26px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .client-persona{display:flex;align-items:center;gap:10px;font-size:10.5px;color:#566255}
+    .client-persona-icon{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#263C32;color:#F7F4ED;font-family:"Playfair Display",Georgia,serif;font-size:12px}
     .client-arrows{display:flex;gap:8px}
-    .client-arrow{width:40px;height:40px;border:0;border-radius:50%;background:#68735A;color:#fff;cursor:pointer;font-size:16px;transition:transform .2s ease,background .2s ease}
+    .client-arrow{width:38px;height:38px;border:0;border-radius:50%;background:#68735A;color:#fff;cursor:pointer;font-size:15px;transition:transform .2s ease,background .2s ease}
     .client-arrow:hover{background:#263C32;transform:translateY(-2px)}
     .client-panel.fade .client-panel-body,.client-panel.fade .client-persona{opacity:.15;transition:opacity .15s ease}
     .client-panel .client-panel-body,.client-panel .client-persona{opacity:1;transition:opacity .22s ease}
 
     .why.why-compact{padding:58px 6.4vw;background:#F7F4ED;display:grid;grid-template-columns:.72fr 1.28fr;gap:50px;align-items:center;border-top:1px solid rgba(38,60,50,.10)}
     .why-compact-heading .eyebrow{margin-bottom:10px}
-    .why-compact-heading h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(32px,3.2vw,44px);line-height:1.04;font-weight:500;letter-spacing:-.03em;color:#263C32}
+    .why-compact-heading h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,3vw,40px);line-height:1.04;font-weight:500;letter-spacing:-.03em;color:#263C32}
     .why-compact-grid{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid rgba(38,60,50,.13)}
     .why-compact-grid article{min-height:145px;padding:18px 24px;border-right:1px solid rgba(38,60,50,.13);display:flex;flex-direction:column;justify-content:center}
     .why-compact-grid span{font-size:20px;color:#68735A;margin-bottom:14px}
@@ -66,24 +66,25 @@
     .why-compact-grid p{margin:0;font-size:11px;line-height:1.5;color:#68735A}
 
     /* Homepage typography refinement — layout intentionally unchanged */
-    main#top .hero-inner h1{font-size:clamp(42px,4vw,56px)!important;line-height:1!important;letter-spacing:-.03em!important}
-    main#top .hero-inner p{font-size:14px!important;line-height:1.55!important;max-width:620px!important}
+    main#top .hero-inner h1{font-size:clamp(38px,3.7vw,52px)!important;line-height:1!important;letter-spacing:-.028em!important}
+    main#top .hero-inner p{font-size:13px!important;line-height:1.55!important;max-width:600px!important}
     main#top .promise-heading h2,
     main#top .cg-copy h2,
-    main#top .center-heading h2,
-    main#top .final-copy h2{font-size:clamp(34px,3.4vw,46px)!important;line-height:1.05!important;letter-spacing:-.03em!important}
-    main#top .feature-copy h3{font-size:clamp(21px,1.9vw,26px)!important;line-height:1.08!important;letter-spacing:-.015em!important}
-    main#top .feature-copy p{font-size:14px!important;line-height:1.35!important}
-    main#top .feature-copy small{font-size:11px!important;line-height:1.5!important}
-    main#top .destination strong{font-size:15px!important}
-    main#top .center-heading{max-width:900px!important}
-    main#top .process-left>h2{font-size:clamp(34px,3.3vw,44px)!important}
-    main#top .client-panel-body h3{font-size:clamp(28px,2.5vw,36px)!important}
-    main#top .why-compact-heading h2{font-size:clamp(32px,3.2vw,44px)!important}
-    main#top .final-copy h2{max-width:560px!important}
+    main#top .final-copy h2{font-size:clamp(30px,3vw,40px)!important;line-height:1.06!important;letter-spacing:-.025em!important}
+    main#top .center-heading h2{font-size:clamp(28px,2.8vw,38px)!important;line-height:1.08!important;letter-spacing:-.025em!important}
+    main#top .feature-copy h3{font-size:clamp(20px,1.7vw,24px)!important;line-height:1.08!important;letter-spacing:-.01em!important}
+    main#top .feature-copy p{font-size:13px!important;line-height:1.35!important}
+    main#top .feature-copy small{font-size:10.5px!important;line-height:1.5!important}
+    main#top .destination strong{font-size:14px!important}
+    main#top .center-heading{max-width:820px!important}
+    main#top .process-left>h2{font-size:clamp(28px,2.8vw,38px)!important}
+    main#top .client-panel-body h3{font-size:clamp(22px,2vw,30px)!important}
+    main#top .client-panel-body p{font-size:12px!important;line-height:1.65!important}
+    main#top .why-compact-heading h2{font-size:clamp(30px,3vw,40px)!important}
+    main#top .final-copy h2{max-width:520px!important}
 
-    @media(max-width:980px){.journey-teaser-grid{grid-template-columns:1fr 1fr}.journey-teaser:last-child{grid-column:1/-1}.how-we-work.journey-process{grid-template-columns:1fr;gap:46px}.client-panel{min-height:350px}.why.why-compact{grid-template-columns:1fr;gap:30px}.why-compact-grid{border-top:1px solid rgba(38,60,50,.13)}}
-    @media(max-width:680px){.signature-journeys{padding:66px 20px}.journey-teaser-grid{grid-template-columns:1fr}.journey-teaser:last-child{grid-column:auto}.journey-teaser{min-height:330px}.how-we-work.journey-process{padding:60px 20px 64px}.client-panel{padding:28px 24px;min-height:390px}.client-panel-footer{left:24px;right:24px}.why.why-compact{padding:48px 20px}.why-compact-grid{grid-template-columns:1fr;border-left:0}.why-compact-grid article{min-height:auto;border-right:0;border-bottom:1px solid rgba(38,60,50,.13);padding:18px 0}main#top .hero-inner h1{font-size:clamp(36px,9vw,46px)!important}main#top .promise-heading h2,main#top .cg-copy h2,main#top .center-heading h2,main#top .final-copy h2,main#top .process-left>h2,main#top .why-compact-heading h2{font-size:clamp(30px,8vw,38px)!important}main#top .feature-copy h3{font-size:22px!important}main#top .feature-copy p{font-size:14px!important}main#top .client-panel-body h3{font-size:28px!important}}
+    @media(max-width:980px){.journey-teaser-grid{grid-template-columns:1fr 1fr}.journey-teaser:last-child{grid-column:1/-1}.how-we-work.journey-process{grid-template-columns:1fr;gap:42px}.client-panel{min-height:340px}.why.why-compact{grid-template-columns:1fr;gap:30px}.why-compact-grid{border-top:1px solid rgba(38,60,50,.13)}}
+    @media(max-width:680px){.signature-journeys{padding:60px 20px}.journey-teaser-grid{grid-template-columns:1fr}.journey-teaser:last-child{grid-column:auto}.journey-teaser{min-height:320px}.how-we-work.journey-process{padding:56px 20px 60px}.client-panel{padding:26px 22px;min-height:340px}.client-panel-footer{left:22px;right:22px}.why.why-compact{padding:46px 20px}.why-compact-grid{grid-template-columns:1fr;border-left:0}.why-compact-grid article{min-height:auto;border-right:0;border-bottom:1px solid rgba(38,60,50,.13);padding:18px 0}main#top .hero-inner h1{font-size:clamp(32px,8vw,42px)!important}main#top .promise-heading h2,main#top .cg-copy h2,main#top .center-heading h2,main#top .final-copy h2,main#top .process-left>h2,main#top .why-compact-heading h2{font-size:clamp(26px,7vw,34px)!important}main#top .feature-copy h3{font-size:20px!important}main#top .feature-copy p{font-size:12.5px!important}main#top .client-panel-body h3{font-size:24px!important}}
   </style>
 </head>
 <body>
@@ -103,7 +104,7 @@
     <section class="final-cta" id="contact"><div class="final-copy"><h2>Ready to plan<br>your next journey?</h2><p>Let’s create a travel experience that drives results and leaves a lasting impression.</p></div><div class="final-actions"><a class="lime-button" href="contact.html">Talk to an expert <span>→</span></a><a class="outline-btn light-outline" href="contact.html">Request a proposal <span>→</span></a></div><div class="final-photo"></div></section>
   </main>
   <footer><div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="#contact">Careers</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">FAQs</a><a href="contact.html">Travel Resources</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260819-home-type3"></script><script src="nav-fix.js?v=20260819-home-type3"></script>
+  <script src="script.js?v=20260819-home-type4"></script><script src="nav-fix.js?v=20260819-home-type4"></script>
   <script>
     const clientExperiences=[{tag:"Corporate Travel",title:"Everything feels taken care of.",copy:"Clear communication, thoughtful coordination and support at the right moments can make even complex business travel feel simple and well managed.",persona:"Business Traveller",icon:"B"},{tag:"Golf Journey",title:"Smooth from tee time to transfer.",copy:"Course bookings, hotels and transport are planned as one connected journey, leaving more time to enjoy the golf and the destination.",persona:"Golf Traveller",icon:"G"},{tag:"Corporate Retreat",title:"A programme that feels effortless.",copy:"Productive time, local experiences and restorative moments can be balanced into one well-paced retreat that helps teams reconnect.",persona:"Corporate Group",icon:"R"}];let clientIndex=0;const clientPanel=document.getElementById("client-panel"),clientTag=document.getElementById("client-tag"),clientTitle=document.getElementById("client-title"),clientCopy=document.getElementById("client-copy"),clientPersona=document.getElementById("client-persona"),clientIcon=document.getElementById("client-icon");function showClientExperience(nextIndex){if(!clientPanel)return;clientPanel.classList.add("fade");setTimeout(()=>{clientIndex=(nextIndex+clientExperiences.length)%clientExperiences.length;const item=clientExperiences[clientIndex];clientTag.textContent=item.tag;clientTitle.textContent=item.title;clientCopy.textContent=item.copy;clientPersona.textContent=item.persona;clientIcon.textContent=item.icon;clientPanel.classList.remove("fade")},150)}document.getElementById("client-prev")?.addEventListener("click",()=>showClientExperience(clientIndex-1));document.getElementById("client-next")?.addEventListener("click",()=>showClientExperience(clientIndex+1));let clientTimer=setInterval(()=>showClientExperience(clientIndex+1),6500);clientPanel?.addEventListener("mouseenter",()=>clearInterval(clientTimer));clientPanel?.addEventListener("mouseleave",()=>{clearInterval(clientTimer);clientTimer=setInterval(()=>showClientExperience(clientIndex+1),6500)});
   </script>
