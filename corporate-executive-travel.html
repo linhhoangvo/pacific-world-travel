@@ -93,6 +93,34 @@
 
     @media(max-width:900px){.corp-hero{min-height:640px}.business-image,.support,.buyer,.journey{min-height:530px}.intro-copy,.service-sentence,.service-note{margin-left:0}.story-visual{height:280px}}
     @media(max-width:620px){.corp-hero{min-height:600px;background-position:58% center}.corp-hero-inner,.intro,.business-caption,.story,.services,.support-copy,.buyer-inner,.journey-copy,.market,.corp-final{padding-left:22px;padding-right:22px}.corp-hero-inner{padding-bottom:48px}.corp-hero-actions,.corp-final-actions{flex-direction:column;align-items:stretch}.corp-btn{width:100%}.intro,.story,.services,.corp-final{padding-top:62px;padding-bottom:66px}.intro-note{margin-top:30px}.business-image,.support,.buyer,.journey{min-height:470px}.business-caption{padding-bottom:34px}.story-visual{height:220px;margin-top:32px}.story-list{margin-top:34px}.story-item{margin-bottom:32px;padding-bottom:32px}.support-copy{padding-top:58px;padding-bottom:58px}.buyer-inner,.journey-copy{padding-bottom:44px}.service-sentence{line-height:1.45}.market{padding-top:28px;padding-bottom:28px}}
+
+    /* Corporate layout refinement: smaller headings and one shared content edge */
+    .corp{--content-max:1080px;--page-x:max(6.4vw,calc((100vw - var(--content-max))/2))}
+    .corp-title{font-size:clamp(28px,2.5vw,38px);line-height:1.12;letter-spacing:-.025em}
+    .corp-hero h1{font-size:clamp(40px,4.4vw,60px);line-height:1.02}
+    .story-item h3{font-size:clamp(23px,2vw,30px);line-height:1.15}
+    .intro-note,.buyer-statement{font-size:clamp(21px,2vw,29px)}
+    .market p{font-size:clamp(18px,1.7vw,24px)}
+    .corp-final h2{font-size:clamp(28px,2.6vw,38px);line-height:1.12}
+
+    .intro,.story,.services,.corp-final{padding-left:var(--page-x);padding-right:var(--page-x)}
+    .corp-hero-inner,.business-caption,.support-copy,.buyer-inner,.journey-copy{width:100%;max-width:none;box-sizing:border-box;padding-left:var(--page-x);padding-right:var(--page-x)}
+    .intro-inner,.services-inner,.corp-final-inner{max-width:none;margin-left:0;margin-right:0}
+    .intro-copy,.service-sentence,.service-note{margin-left:0}
+    .story-list{max-width:860px;margin-left:0;margin-right:0}
+
+    .intro{padding-top:72px;padding-bottom:76px}
+    .story{padding-top:76px;padding-bottom:82px}
+    .services{padding-top:70px;padding-bottom:74px}
+    .corp-final{padding-top:68px;padding-bottom:72px}
+
+    @media(max-width:620px){
+      .corp{--page-x:22px}
+      .corp-title{font-size:27px}
+      .corp-hero h1{font-size:39px}
+      .story-item h3{font-size:23px}
+      .intro,.story,.services,.corp-final{padding-top:62px;padding-bottom:66px}
+    }
   </style>
 </head>
 <body class="corp">
