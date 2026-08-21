@@ -5,41 +5,45 @@
   background:url("hero-golf.jpg") center 53%/cover no-repeat!important;
 }
 
-/* Restrained typography for premium service pages */
-.corp .corp-hero h1,
-.ground-page .ground-hero h1,
-.hotel-page .hotel-hero h1{
-  font-size:clamp(32px,3.25vw,46px)!important;
-  line-height:1.06!important;
-  letter-spacing:-.03em!important;
+/* Site-wide restrained typography — inspired by the quieter editorial reference. */
+body h1{
+  font-size:clamp(34px,3.2vw,44px)!important;
+  line-height:1.08!important;
+  letter-spacing:-.025em!important;
 }
-/* Corporate hero needs a quieter scale than the other service pages */
+body h2{
+  font-size:clamp(26px,2.4vw,34px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.02em!important;
+}
+body h3{
+  font-size:clamp(20px,1.8vw,26px)!important;
+  line-height:1.18!important;
+  letter-spacing:-.012em!important;
+}
+
+/* Premium service pages keep their quieter, page-specific ceilings. */
 .corp .corp-hero h1{
   font-size:44px!important;
-  line-height:1.12!important;
+  line-height:1.1!important;
 }
-/* Ground transportation hero also needs a quieter scale */
 .ground-page .ground-hero h1{
-  font-size:clamp(28px,2.6vw,38px)!important;
-  line-height:1.08!important;
+  font-size:clamp(30px,2.6vw,38px)!important;
+  line-height:1.1!important;
 }
+.hotel-page .hotel-hero h1,
 .private-page .private-hero h1{
-  font-size:clamp(32px,3.15vw,44px)!important;
-  line-height:1.06!important;
-  letter-spacing:-.03em!important;
+  font-size:clamp(32px,3vw,44px)!important;
+  line-height:1.08!important;
 }
 
 .corp .section-title,
 .ground-page .ground-title,
-.hotel-page .hotel-title{
+.hotel-page .hotel-title,
+.private-page .private-title{
   font-size:clamp(23px,1.95vw,30px)!important;
   line-height:1.16!important;
   letter-spacing:-.02em!important;
-}
-.private-page .private-title{
-  font-size:clamp(22px,1.85vw,29px)!important;
-  line-height:1.17!important;
-  letter-spacing:-.018em!important;
 }
 
 .corp .pathway-copy h3,
@@ -48,9 +52,9 @@
 .ground-page .service-copy h3,
 .hotel-page .stay-item h3,
 .hotel-page .featured-copy h3{
-  font-size:clamp(21px,1.75vw,27px)!important;
+  font-size:clamp(20px,1.7vw,26px)!important;
   line-height:1.18!important;
-  letter-spacing:-.015em!important;
+  letter-spacing:-.012em!important;
 }
 
 .corp .opening-note,
@@ -63,8 +67,9 @@
 .hotel-page .process-line,
 .private-page .intro-whisper,
 .private-page .quiet-line,
-.private-page .private-note p{
-  font-size:clamp(18px,1.5vw,23px)!important;
+.private-page .private-note p,
+.private-page .fit-copy strong{
+  font-size:clamp(18px,1.45vw,22px)!important;
   line-height:1.34!important;
 }
 
@@ -74,25 +79,31 @@
   font-size:clamp(23px,1.95vw,30px)!important;
   line-height:1.17!important;
 }
-.private-page .fit-copy strong{
-  font-size:clamp(18px,1.55vw,23px)!important;
-  line-height:1.2!important;
-}
 
 @media(max-width:700px){
-  .corp .corp-hero h1,
-  .ground-page .ground-hero h1,
+  body h1{
+    font-size:34px!important;
+    line-height:1.08!important;
+  }
+  body h2{
+    font-size:28px!important;
+    line-height:1.14!important;
+  }
+  body h3{
+    font-size:22px!important;
+    line-height:1.2!important;
+  }
+  .corp .corp-hero h1{
+    font-size:34px!important;
+    line-height:1.1!important;
+  }
+  .ground-page .ground-hero h1{
+    font-size:30px!important;
+    line-height:1.1!important;
+  }
   .hotel-page .hotel-hero h1,
   .private-page .private-hero h1{
     font-size:34px!important;
-    line-height:1.06!important;
-  }
-  .corp .corp-hero h1{
-    font-size:25px!important;
-    line-height:1.12!important;
-  }
-  .ground-page .ground-hero h1{
-    font-size:29px!important;
     line-height:1.08!important;
   }
   .corp .section-title,
@@ -107,6 +118,6 @@
   .ground-page .service-copy h3,
   .hotel-page .stay-item h3,
   .hotel-page .featured-copy h3{
-    font-size:24px!important;
+    font-size:22px!important;
   }
 }
