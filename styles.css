@@ -24,7 +24,7 @@ body h3{
 
 /* Premium service pages keep their quieter, page-specific ceilings. */
 .corp .corp-hero h1{
-  font-size:44px!important;
+  font-size:36px!important;
   line-height:1.1!important;
 }
 .ground-page .ground-hero h1{
@@ -94,7 +94,7 @@ body h3{
     line-height:1.2!important;
   }
   .corp .corp-hero h1{
-    font-size:34px!important;
+    font-size:30px!important;
     line-height:1.1!important;
   }
   .ground-page .ground-hero h1{
