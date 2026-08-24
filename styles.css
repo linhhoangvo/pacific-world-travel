@@ -64,6 +64,13 @@ html body main#top section.how-we-work.journey-process .client-panel .client-pan
   letter-spacing:-.022em!important;
 }
 
+/* Homepage process and client-experience body copy use the same readable size. */
+html body main#top section.how-we-work.journey-process .process-step p,
+html body main#top section.how-we-work.journey-process .client-panel .client-panel-body p{
+  font-size:var(--type-body)!important;
+  line-height:1.65!important;
+}
+
 /* Readable body copy across all page templates. */
 main p,
 main li,
