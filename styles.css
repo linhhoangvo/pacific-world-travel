@@ -141,6 +141,268 @@ main small{
   line-height:1.5!important;
 }
 
+/* =========================================================
+   CORPORATE & EXECUTIVE TRAVEL — EDITORIAL POLISH
+   Photography-led, quiet luxury, no card/grid visual language.
+   ========================================================= */
+body.corp{
+  --corp-cream:#F3EEE4;
+  --corp-paper:#FBF9F4;
+  --corp-sand:#E7DFD1;
+}
+
+body.corp .corp-hero{
+  min-height:640px;
+  background-position:center 43%;
+}
+body.corp .corp-hero:after{
+  background:linear-gradient(180deg,rgba(18,39,31,.04) 12%,rgba(18,39,31,.23) 53%,rgba(18,39,31,.84) 100%);
+}
+body.corp .hero-inner{
+  padding-bottom:72px;
+}
+body.corp .corp-hero h1{
+  max-width:540px;
+}
+body.corp .hero-copy{
+  max-width:610px;
+  margin-top:18px;
+}
+body.corp .hero-actions{
+  margin-top:25px;
+}
+body.corp .corp-btn{
+  min-height:44px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+body.corp .opening{
+  padding-top:112px;
+  padding-bottom:112px;
+  background:var(--corp-cream);
+}
+body.corp .opening-inner{
+  gap:clamp(72px,10vw,150px);
+}
+body.corp .opening-title{
+  max-width:460px;
+}
+body.corp .opening-copy{
+  max-width:520px;
+  padding-top:44px;
+  position:relative;
+}
+body.corp .opening-copy:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:52px;
+  height:1px;
+  background:rgba(38,60,50,.34);
+}
+body.corp .opening-note{
+  max-width:500px;
+  border-top:0!important;
+  padding-top:0!important;
+  margin-top:30px!important;
+}
+
+/* Replace the busy three-image collage with one strong editorial photograph. */
+body.corp .editorial-media{
+  padding:0 0 124px;
+  background:var(--corp-cream);
+}
+body.corp .media-composition{
+  display:block;
+  height:min(64vw,720px);
+}
+body.corp .media-main{
+  width:calc(100% - (2 * var(--x)));
+  height:100%;
+  margin:0 auto;
+}
+body.corp .media-main img{
+  object-position:center 48%;
+}
+body.corp .media-side{
+  display:none;
+}
+
+body.corp .pathways{
+  padding-top:118px;
+  padding-bottom:138px;
+  background:var(--corp-paper);
+}
+body.corp .pathways-intro{
+  max-width:680px;
+  margin-bottom:92px;
+}
+body.corp .pathway-story{
+  gap:clamp(58px,8vw,120px);
+  margin-top:122px;
+}
+body.corp .pathway-media{
+  flex:1.16;
+  height:520px;
+}
+body.corp .pathway-copy{
+  flex:.72;
+  max-width:410px;
+}
+body.corp .pathway-copy p{
+  margin-top:15px;
+}
+body.corp .pathway-no{
+  margin-bottom:15px;
+}
+
+body.corp .services{
+  padding-top:116px;
+  padding-bottom:132px;
+  background:var(--corp-sand);
+}
+body.corp .services-intro{
+  max-width:650px;
+}
+body.corp .services-scene{
+  margin-top:66px;
+  padding-bottom:0;
+}
+body.corp .services-image{
+  width:100%;
+  height:620px;
+}
+body.corp .services-story{
+  position:relative;
+  right:auto;
+  bottom:auto;
+  width:min(690px,72%);
+  margin:-96px 0 0 auto;
+  padding:48px 0 0 54px;
+  background:var(--corp-sand);
+}
+
+body.corp .local-support{
+  min-height:690px;
+  background-position:center 44%;
+}
+body.corp .local-support:after{
+  background:linear-gradient(90deg,rgba(27,56,45,.94) 0%,rgba(27,56,45,.72) 40%,rgba(27,56,45,.10) 78%);
+}
+body.corp .support-content{
+  padding-top:92px;
+  padding-bottom:92px;
+}
+body.corp .support-content .body-copy{
+  max-width:540px;
+}
+
+body.corp .why{
+  padding-top:118px;
+  padding-bottom:126px;
+  background:var(--corp-cream);
+}
+body.corp .why-intro{
+  max-width:660px;
+}
+body.corp .why-scene{
+  min-height:690px;
+  margin-top:62px;
+}
+body.corp .why-overlay{
+  max-width:680px;
+  padding-left:54px;
+  padding-bottom:54px;
+}
+body.corp .why-manifesto{
+  max-width:650px;
+  margin-top:64px;
+  margin-left:auto;
+}
+
+/* Remove the boxed journey treatment; keep an editorial image/text split. */
+body.corp .journey{
+  padding:112px var(--x) 122px;
+  background:var(--corp-paper);
+}
+body.corp .journey-inner{
+  display:flex;
+  align-items:center;
+  gap:clamp(56px,8vw,112px);
+  background:transparent;
+}
+body.corp .journey-copy{
+  flex:.78;
+  max-width:470px;
+  padding:0;
+}
+body.corp .journey-image{
+  flex:1.12;
+  min-height:560px;
+}
+body.corp .journey-route{
+  margin-top:26px;
+  padding-top:20px;
+}
+
+body.corp .buyer-strip{
+  padding:70px var(--x);
+  background:var(--corp-sand);
+  color:#263C32;
+  text-align:left;
+}
+body.corp .buyer-strip p{
+  max-width:720px;
+  margin:0;
+}
+body.corp .buyer-audience{
+  color:#6D796F;
+  margin-top:14px;
+}
+
+body.corp .final{
+  padding-top:118px;
+  padding-bottom:124px;
+  background:var(--corp-cream);
+}
+body.corp .final-inner{
+  gap:clamp(62px,8vw,112px);
+  align-items:center;
+}
+body.corp .final-image{
+  order:-1;
+  flex:1.08;
+  height:500px;
+}
+body.corp .final-copy{
+  flex:.78;
+  max-width:500px;
+}
+
+@media(max-width:900px){
+  body.corp .opening-inner,
+  body.corp .final-inner{
+    gap:48px;
+  }
+  body.corp .pathway-story{
+    gap:46px;
+  }
+  body.corp .pathway-media{
+    height:450px;
+  }
+  body.corp .services-image{
+    height:540px;
+  }
+  body.corp .services-story{
+    width:82%;
+  }
+  body.corp .journey-inner{
+    gap:48px;
+  }
+}
+
 @media(max-width:700px){
   :root{
     --type-h1:32px;
@@ -163,5 +425,111 @@ main small{
   html body main#top section.how-we-work.journey-process .process-left>h2,
   html body main#top section.how-we-work.journey-process .client-panel .client-panel-body h3{
     font-size:clamp(23px,6vw,29px)!important;
+  }
+
+  body.corp .corp-hero{
+    min-height:590px;
+  }
+  body.corp .hero-inner{
+    padding-bottom:48px;
+  }
+  body.corp .opening{
+    padding-top:72px;
+    padding-bottom:76px;
+  }
+  body.corp .opening-inner{
+    gap:32px;
+  }
+  body.corp .opening-copy{
+    padding-top:30px;
+  }
+  body.corp .editorial-media{
+    padding-bottom:78px;
+  }
+  body.corp .media-composition{
+    height:360px;
+  }
+  body.corp .media-main{
+    width:100%;
+  }
+  body.corp .pathways{
+    padding-top:76px;
+    padding-bottom:84px;
+  }
+  body.corp .pathways-intro{
+    margin-bottom:56px;
+  }
+  body.corp .pathway-story,
+  body.corp .pathway-story.reverse{
+    flex-direction:column;
+    align-items:stretch;
+    gap:28px;
+    margin-top:72px;
+  }
+  body.corp .pathway-media{
+    height:340px;
+  }
+  body.corp .services{
+    padding-top:76px;
+    padding-bottom:82px;
+  }
+  body.corp .services-image{
+    height:350px;
+  }
+  body.corp .services-story{
+    width:100%;
+    margin:0;
+    padding:34px 0 0;
+  }
+  body.corp .local-support{
+    min-height:570px;
+  }
+  body.corp .support-content{
+    padding-top:64px;
+    padding-bottom:64px;
+  }
+  body.corp .why{
+    padding-top:76px;
+    padding-bottom:82px;
+  }
+  body.corp .why-scene{
+    min-height:470px;
+    margin-top:42px;
+  }
+  body.corp .why-overlay{
+    padding:0 24px 34px;
+  }
+  body.corp .why-manifesto{
+    margin-top:44px;
+  }
+  body.corp .journey{
+    padding-top:76px;
+    padding-bottom:82px;
+  }
+  body.corp .journey-inner{
+    flex-direction:column;
+    align-items:stretch;
+    gap:34px;
+  }
+  body.corp .journey-image{
+    order:-1;
+    min-height:360px;
+  }
+  body.corp .buyer-strip{
+    padding-top:48px;
+    padding-bottom:48px;
+  }
+  body.corp .final{
+    padding-top:76px;
+    padding-bottom:82px;
+  }
+  body.corp .final-inner{
+    flex-direction:column;
+    align-items:stretch;
+    gap:34px;
+  }
+  body.corp .final-image{
+    width:100%;
+    height:360px;
   }
 }
