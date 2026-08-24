@@ -1,4 +1,4 @@
-@import url("styles-base.css?v=20260824-type1");
+@import url("styles-base.css?v=20260824-type2");
 
 /* Homepage hero image restored */
 .hero-image{
@@ -7,14 +7,14 @@
 
 /* =========================================================
    SITE-WIDE TYPOGRAPHY SYSTEM
-   Main headline: 36px desktop / 32px mobile
+   Main headline: 38px desktop / 32px mobile
    Section heading: 30px desktop / 26px mobile
    Content subheading: 24px
    Body copy: 16px minimum
    Utility text remains intentionally smaller.
    ========================================================= */
 :root{
-  --type-h1:36px;
+  --type-h1:38px;
   --type-h2:30px;
   --type-h3:24px;
   --type-body:16px;
