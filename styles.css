@@ -56,6 +56,13 @@ html body.hotel-page main .hotel-hero h1{
   line-height:1.08!important;
 }
 
+/* Ground Transportation primary section headings match the requested 38px scale. */
+html body.ground-page main h2.ground-title{
+  font-size:38px!important;
+  line-height:1.08!important;
+  letter-spacing:-.025em!important;
+}
+
 /* Homepage process and client-experience headings use one matching scale. */
 html body main#top section.how-we-work.journey-process .process-left>h2,
 html body main#top section.how-we-work.journey-process .client-panel .client-panel-body h3{
@@ -146,6 +153,10 @@ main small{
   html body.corp main .corp-hero h1,
   html body.ground-page main .ground-hero h1,
   html body.hotel-page main .hotel-hero h1{
+    font-size:32px!important;
+  }
+
+  html body.ground-page main h2.ground-title{
     font-size:32px!important;
   }
 
