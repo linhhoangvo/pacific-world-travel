@@ -1,123 +1,115 @@
-@import url("styles-base.css");
+@import url("styles-base.css?v=20260824-type1");
 
 /* Homepage hero image restored */
 .hero-image{
   background:url("hero-golf.jpg") center 53%/cover no-repeat!important;
 }
 
-/* Site-wide restrained typography — inspired by the quieter editorial reference. */
-body h1{
-  font-size:clamp(34px,3.2vw,44px)!important;
+/* =========================================================
+   SITE-WIDE TYPOGRAPHY SYSTEM
+   Main headline: 36px desktop / 32px mobile
+   Section heading: 30px desktop / 26px mobile
+   Content subheading: 24px
+   Body copy: 16px minimum
+   Utility text remains intentionally smaller.
+   ========================================================= */
+:root{
+  --type-h1:36px;
+  --type-h2:30px;
+  --type-h3:24px;
+  --type-body:16px;
+  --type-callout:24px;
+}
+
+main h1{
+  font-size:var(--type-h1)!important;
   line-height:1.08!important;
   letter-spacing:-.025em!important;
 }
-body h2{
-  font-size:clamp(26px,2.4vw,34px)!important;
-  line-height:1.12!important;
+main h2{
+  font-size:var(--type-h2)!important;
+  line-height:1.14!important;
   letter-spacing:-.02em!important;
 }
-body h3{
-  font-size:clamp(20px,1.8vw,26px)!important;
-  line-height:1.18!important;
+main h3{
+  font-size:var(--type-h3)!important;
+  line-height:1.2!important;
   letter-spacing:-.012em!important;
 }
-
-/* Premium service pages keep their quieter, page-specific ceilings. */
-.corp .corp-hero h1{
-  font-size:36px!important;
-  line-height:1.1!important;
-}
-.ground-page .ground-hero h1{
-  font-size:clamp(30px,2.6vw,38px)!important;
-  line-height:1.1!important;
-}
-.hotel-page .hotel-hero h1,
-.private-page .private-hero h1{
-  font-size:clamp(32px,3vw,44px)!important;
-  line-height:1.08!important;
+main h4{
+  font-size:20px!important;
+  line-height:1.3!important;
 }
 
-.corp .section-title,
-.ground-page .ground-title,
-.hotel-page .hotel-title,
-.private-page .private-title{
-  font-size:clamp(23px,1.95vw,30px)!important;
-  line-height:1.16!important;
-  letter-spacing:-.02em!important;
+/* Readable body copy across all page templates. */
+main p,
+main li,
+main dd,
+main td,
+main th,
+main input,
+main textarea,
+main select{
+  font-size:var(--type-body)!important;
+  line-height:1.65!important;
 }
 
-.corp .pathway-copy h3,
-.corp .services-story h3,
-.corp .why-overlay h3,
-.ground-page .service-copy h3,
-.hotel-page .stay-item h3,
-.hotel-page .featured-copy h3{
-  font-size:clamp(20px,1.7vw,26px)!important;
-  line-height:1.18!important;
-  letter-spacing:-.012em!important;
+/* Editorial callouts use the subheading scale rather than body size. */
+main blockquote,
+main .opening-note,
+main .intro-note,
+main .intro-whisper,
+main .quiet-line,
+main .control-statement,
+main .process-line,
+main .why-lead,
+main .buyer-strip p,
+main .stay-principles>p,
+main .hotel-visual-copy strong,
+main .private-note p,
+main .fit-copy strong{
+  font-size:var(--type-callout)!important;
+  line-height:1.35!important;
 }
 
-.corp .opening-note,
-.corp .why-manifesto .why-lead,
-.corp .buyer-strip p,
-.ground-page .opening-note,
-.ground-page .control-statement,
-.hotel-page .stay-principles>p,
-.hotel-page .hotel-visual-copy strong,
-.hotel-page .process-line,
-.private-page .intro-whisper,
-.private-page .quiet-line,
-.private-page .private-note p,
-.private-page .fit-copy strong{
-  font-size:clamp(18px,1.45vw,22px)!important;
-  line-height:1.34!important;
+/* Small utility text is deliberately outside the body-copy scale. */
+main .eyebrow,
+main .corp-label,
+main .private-label,
+main .ground-label,
+main .hotel-label,
+main .region-label,
+main .pathway-no,
+main .hero-note,
+main .split-meta,
+main .route-mini,
+main .journey-route,
+main .service-detail,
+main .support-line,
+main .why-signals,
+main .buyer-audience,
+main .coord-line,
+main .breadcrumb,
+main .breadcrumbs{
+  font-size:10px!important;
+  line-height:1.5!important;
+  letter-spacing:.1em!important;
 }
 
-.ground-page .ground-cta h2,
-.hotel-page .hotel-final h2,
-.private-page .private-final h2{
-  font-size:clamp(23px,1.95vw,30px)!important;
-  line-height:1.17!important;
+/* Form labels and captions remain utility text; entered text stays 16px. */
+main label,
+main figcaption,
+main small{
+  font-size:12px!important;
+  line-height:1.5!important;
 }
 
 @media(max-width:700px){
-  body h1{
-    font-size:34px!important;
-    line-height:1.08!important;
-  }
-  body h2{
-    font-size:28px!important;
-    line-height:1.14!important;
-  }
-  body h3{
-    font-size:22px!important;
-    line-height:1.2!important;
-  }
-  .corp .corp-hero h1{
-    font-size:30px!important;
-    line-height:1.1!important;
-  }
-  .ground-page .ground-hero h1{
-    font-size:30px!important;
-    line-height:1.1!important;
-  }
-  .hotel-page .hotel-hero h1,
-  .private-page .private-hero h1{
-    font-size:34px!important;
-    line-height:1.08!important;
-  }
-  .corp .section-title,
-  .ground-page .ground-title,
-  .hotel-page .hotel-title,
-  .private-page .private-title{
-    font-size:26px!important;
-  }
-  .corp .pathway-copy h3,
-  .corp .services-story h3,
-  .corp .why-overlay h3,
-  .ground-page .service-copy h3,
-  .hotel-page .stay-item h3,
-  .hotel-page .featured-copy h3{
-    font-size:22px!important;
+  :root{
+    --type-h1:32px;
+    --type-h2:26px;
+    --type-h3:24px;
+    --type-body:16px;
+    --type-callout:24px;
   }
 }
