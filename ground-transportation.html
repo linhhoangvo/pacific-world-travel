@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260824-type2" />
+  <link rel="stylesheet" href="styles.css?v=20260824-ground-type3" />
   <style>
     .ground-page{--green:#263C32;--green2:#31493D;--cream:#F5F1E8;--paper:#FBF9F4;--sand:#E7DFD1;--muted:#667067;--line:rgba(38,60,50,.15);--content:1120px;--x:max(6vw,calc((100vw - var(--content))/2));background:var(--paper);color:var(--green)}
     .ground-page .site-header{z-index:60}.ground-page figure{margin:0}
     .ground-label{margin:0 0 14px;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#75806F}
     .ground-title,.display{margin:0;font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:-.028em}
-    .ground-title{font-size:clamp(28px,2.5vw,38px);line-height:1.12}
+    .ground-title{font-size:28px;line-height:1.16}
     .body-copy{font-size:14px;line-height:1.8;color:var(--muted)}
     .ground-btn{display:inline-flex;min-height:46px;padding:0 21px;align-items:center;justify-content:center;border:1px solid currentColor;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
     .ground-btn.dark{background:var(--green);color:#fff;border-color:var(--green)}.ground-btn.light{color:#fff}
@@ -23,7 +23,7 @@
     .ground-hero{position:relative;min-height:650px;display:flex;align-items:flex-end;background:url('corporate-airport-arrival.jpg') center 44%/cover no-repeat;color:#fff;overflow:hidden}
     .ground-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,42,34,.05) 16%,rgba(20,42,34,.30) 58%,rgba(20,42,34,.84) 100%)}
     .ground-hero-copy{position:relative;z-index:1;width:100%;padding:0 var(--x) 64px}
-    .ground-hero .ground-label{color:#D8DED4}.ground-hero h1{max-width:720px;font-size:clamp(40px,4.4vw,60px);line-height:1.02;color:#fff}
+    .ground-hero .ground-label{color:#D8DED4}.ground-hero h1{max-width:680px;font-size:36px;line-height:1.08;color:#fff}
     .ground-hero h1 em{display:block;font-weight:500;color:#E7DFD1}.hero-copy{max-width:580px;margin:20px 0 0;font-size:14px;line-height:1.72;color:rgba(255,255,255,.88)}
     .ground-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}.ground-hero .ground-btn{border-color:rgba(255,255,255,.75)}.ground-hero .ground-btn.dark{background:#fff;color:var(--green);border-color:#fff}
     .ground-hero-note{margin-top:27px;font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#E8ECE8}
@@ -40,7 +40,7 @@
     .services-intro{max-width:720px;margin-bottom:88px}.services-intro .body-copy{max-width:580px;margin:19px 0 0}
     .service-story{display:flex;align-items:center;gap:clamp(42px,7vw,100px);margin-top:104px}.service-story:first-of-type{margin-top:0}.service-story.reverse{flex-direction:row-reverse}
     .service-media{flex:1.08;height:470px;overflow:hidden}.service-media img{display:block;width:100%;height:100%;object-fit:cover}.service-copy{flex:.78;max-width:430px}
-    .service-no{display:block;margin-bottom:17px;font-size:9px;font-weight:700;letter-spacing:.16em;color:#879084}.service-copy h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(27px,2.35vw,36px);line-height:1.12;font-weight:500}
+    .service-no{display:block;margin-bottom:17px;font-size:9px;font-weight:700;letter-spacing:.16em;color:#879084}.service-copy h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:22px;line-height:1.22;font-weight:500}
     .service-copy p{margin:17px 0 0;font-size:13.5px;line-height:1.8;color:var(--muted)}.service-route{margin-top:22px;font-size:8.5px;font-weight:700;line-height:2;letter-spacing:.09em;text-transform:uppercase;color:#798478}
 
     .coordination{position:relative;min-height:650px;display:flex;align-items:flex-end;background:url('corporate-hero.jpg') center 44%/cover no-repeat;color:#fff}
@@ -57,17 +57,27 @@
     .audience-note{margin-top:27px;font-size:8.5px;font-weight:700;line-height:2;letter-spacing:.1em;text-transform:uppercase;color:#778177}
 
     .ground-cta{padding:92px var(--x);background:var(--green);color:#fff}.ground-cta-inner{display:flex;justify-content:space-between;align-items:flex-end;gap:70px}.ground-cta-copy{max-width:720px}.ground-cta .ground-label{color:#CBD3C8}
-    .ground-cta h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.6vw,39px);line-height:1.12;font-weight:500}.ground-cta p{max-width:610px;margin:18px 0 0;font-size:13.5px;line-height:1.75;color:#DDE3DE}
+    .ground-cta h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:28px;line-height:1.16;font-weight:500}.ground-cta p{max-width:610px;margin:18px 0 0;font-size:13.5px;line-height:1.75;color:#DDE3DE}
     .ground-cta-actions{display:flex;gap:10px;flex-wrap:wrap}.ground-cta .ground-btn{border-color:rgba(255,255,255,.72)}.ground-cta .ground-btn.dark{background:#fff;color:var(--green);border-color:#fff}.ground-cta .ground-btn.light{color:#fff}
+
+    /* Quieter Wide Eyed-inspired hierarchy for this page. */
+    html body.ground-page main .ground-hero h1{font-size:36px!important;line-height:1.08!important;letter-spacing:-.022em!important}
+    html body.ground-page main h2.ground-title,
+    html body.ground-page main .ground-cta h2{font-size:28px!important;line-height:1.16!important;letter-spacing:-.018em!important}
+    html body.ground-page main .service-copy h3{font-size:22px!important;line-height:1.22!important;letter-spacing:-.01em!important}
 
     @media(max-width:980px){.opening-inner,.control-inner{gap:52px}.arrival-inner,.service-story{gap:48px}.arrival-media{height:500px}.service-media{height:420px}.audience-inner{gap:54px}}
     @media(max-width:700px){
-      .ground-page{--x:22px}.ground-hero{min-height:600px;background-position:58% center}.ground-hero-copy{padding-bottom:46px}.ground-hero h1{font-size:39px}.ground-actions,.ground-cta-actions{flex-direction:column;align-items:stretch}.ground-btn{width:100%}
+      .ground-page{--x:22px}.ground-hero{min-height:600px;background-position:58% center}.ground-hero-copy{padding-bottom:46px}.ground-hero h1{font-size:32px}.ground-actions,.ground-cta-actions{flex-direction:column;align-items:stretch}.ground-btn{width:100%}
       .opening,.services,.control,.audience,.ground-cta{padding-top:66px;padding-bottom:72px}.opening-inner,.control-inner,.audience-inner{flex-direction:column;gap:30px}.opening-title,.opening-copy{max-width:none;flex:auto}
       .arrival-feature{padding-bottom:74px}.arrival-inner{flex-direction:column;align-items:stretch;gap:30px}.arrival-media{height:350px}.arrival-copy{max-width:none;padding-bottom:0}
       .services-intro{margin-bottom:58px}.service-story,.service-story.reverse{flex-direction:column;align-items:stretch;gap:28px;margin-top:68px}.service-media{height:330px}.service-copy{max-width:none}
       .coordination{min-height:560px;background-position:58% center}.coordination-copy{padding-top:60px;padding-bottom:60px}
       .control-statement{max-width:none;padding-top:0}.audience-image{width:100%;height:340px;order:-1}.ground-cta-inner{flex-direction:column;align-items:stretch;gap:32px}
+      html body.ground-page main .ground-hero h1{font-size:32px!important}
+      html body.ground-page main h2.ground-title,
+      html body.ground-page main .ground-cta h2{font-size:26px!important}
+      html body.ground-page main .service-copy h3{font-size:22px!important}
     }
   </style>
 </head>
