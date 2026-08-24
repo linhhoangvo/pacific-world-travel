@@ -41,6 +41,15 @@ main h4{
   line-height:1.3!important;
 }
 
+/* Legacy hero rules must defer to the shared H1 scale. */
+.corp .corp-hero h1,
+.ground-page .ground-hero h1,
+.hotel-page .hotel-hero h1,
+.private-page .private-hero h1{
+  font-size:var(--type-h1)!important;
+  line-height:1.08!important;
+}
+
 /* Readable body copy across all page templates. */
 main p,
 main li,
