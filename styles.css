@@ -56,6 +56,14 @@ html body.hotel-page main .hotel-hero h1{
   line-height:1.08!important;
 }
 
+/* Homepage process and client-experience headings use one matching scale. */
+html body main#top section.how-we-work.journey-process .process-left>h2,
+html body main#top section.how-we-work.journey-process .client-panel .client-panel-body h3{
+  font-size:clamp(25px,2.4vw,32px)!important;
+  line-height:1.08!important;
+  letter-spacing:-.022em!important;
+}
+
 /* Readable body copy across all page templates. */
 main p,
 main li,
@@ -132,5 +140,10 @@ main small{
   html body.ground-page main .ground-hero h1,
   html body.hotel-page main .hotel-hero h1{
     font-size:32px!important;
+  }
+
+  html body main#top section.how-we-work.journey-process .process-left>h2,
+  html body main#top section.how-we-work.journey-process .client-panel .client-panel-body h3{
+    font-size:clamp(23px,6vw,29px)!important;
   }
 }
