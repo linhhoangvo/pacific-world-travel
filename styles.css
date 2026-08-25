@@ -533,3 +533,29 @@ body.corp .final-copy{
     height:360px;
   }
 }
+
+/* Corporate hero refresh: calmer premium image and clearer copy. */
+body.corp .corp-hero{
+  min-height:590px!important;
+  background:url('final-cta-lounge.jpg') center 50%/cover no-repeat!important;
+}
+body.corp .corp-hero:after{
+  background:linear-gradient(90deg,rgba(18,39,31,.86) 0%,rgba(18,39,31,.68) 38%,rgba(18,39,31,.32) 66%,rgba(18,39,31,.12) 100%)!important;
+}
+body.corp .corp-hero h1{
+  max-width:470px!important;
+}
+body.corp .hero-copy{
+  max-width:540px!important;
+  margin-top:16px!important;
+}
+body.corp .hero-actions{
+  margin-top:24px!important;
+  gap:12px!important;
+}
+@media(max-width:700px){
+  body.corp .corp-hero{
+    min-height:560px!important;
+    background-position:center 48%!important;
+  }
+}
