@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260824-corporate16" />
+  <link rel="stylesheet" href="styles.css?v=20260825-corporate17" />
   <style>
     .corp{--green:#263C32;--green2:#31493D;--cream:#F5F1E8;--paper:#FBF9F4;--sand:#E7DFD1;--muted:#667067;--line:rgba(38,60,50,.16);--content:1120px;--x:max(6vw,calc((100vw - var(--content))/2));background:var(--paper);color:var(--green)}
     .corp .site-header{z-index:60}.corp figure{margin:0}
@@ -20,15 +20,17 @@
     .corp-btn.dark{background:var(--green);color:#fff}.corp-btn.light{color:var(--green)}
     .text-link{display:inline-block;margin-top:22px;padding-bottom:4px;border-bottom:1px solid currentColor;color:inherit;font-size:9px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;text-decoration:none}
 
-    .corp-hero{position:relative;min-height:650px;display:flex;align-items:flex-end;background:url('corporate-airport-arrival.jpg') center 43%/cover no-repeat;color:#fff;overflow:hidden}
-    .corp-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,38,30,.62) 0%,rgba(17,38,30,.50) 54%,rgba(17,38,30,.20) 82%,rgba(17,38,30,.10) 100%),linear-gradient(180deg,rgba(17,38,30,.10) 8%,rgba(17,38,30,.22) 50%,rgba(17,38,30,.78) 100%)}
-    .hero-inner{position:relative;z-index:1;width:100%;padding:0 var(--x) 64px}
-    .corp-hero .eyebrow{color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.42)}
-    .corp-hero h1{max-width:600px;font-size:32px!important;line-height:1.08!important;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.34)}
+    .corp-hero{position:relative;min-height:560px;display:flex;align-items:center;background:url('final-cta-lounge.jpg') 68% 50%/cover no-repeat;color:#fff;overflow:hidden}
+    .corp-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,38,30,.84) 0%,rgba(17,38,30,.70) 34%,rgba(17,38,30,.38) 56%,rgba(17,38,30,.10) 78%,rgba(17,38,30,.03) 100%),linear-gradient(180deg,rgba(17,38,30,.12) 0%,rgba(17,38,30,.08) 58%,rgba(17,38,30,.30) 100%)}
+    .hero-inner{position:relative;z-index:1;width:100%;padding:64px var(--x) 58px;text-align:left}
+    .corp-hero .eyebrow{margin-bottom:18px;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.34)}
+    .corp-hero h1{max-width:470px;font-size:36px!important;line-height:1.08!important;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.28)}
     .corp-hero h1 em{display:block;font-weight:500;color:#F3EBDD}
-    .hero-copy{max-width:570px;margin:20px 0 0;font-size:14px;line-height:1.72;color:#fff;text-shadow:0 1px 14px rgba(0,0,0,.42)}
-    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}
-    .corp-hero .corp-btn{border-color:rgba(255,255,255,.90);text-shadow:0 1px 8px rgba(0,0,0,.22)}.corp-hero .corp-btn.dark{background:#fff;color:var(--green);border-color:#fff;text-shadow:none}.corp-hero .corp-btn.light{color:#fff;background:rgba(23,48,38,.18)}
+    .hero-copy{max-width:500px;margin:16px 0 0;font-size:16px;line-height:1.62;color:rgba(255,255,255,.94);text-shadow:0 1px 12px rgba(0,0,0,.30)}
+    .hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:26px}
+    .corp-hero .corp-btn.dark{min-height:44px;background:#fff;color:var(--green);border-color:#fff;text-shadow:none}
+    .hero-link{display:inline-flex;align-items:center;gap:8px;padding:4px 0 5px;border-bottom:1px solid rgba(255,255,255,.7);color:#fff;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+    .hero-link:hover{border-color:#fff}
 
     .opening{padding:92px var(--x) 84px;background:var(--cream)}
     .opening-inner{display:flex;justify-content:space-between;gap:10vw;align-items:flex-start}
@@ -98,7 +100,7 @@
       .local-support{min-height:590px}.journey-inner{flex-direction:column}.journey-image{min-height:450px;order:-1}
     }
     @media(max-width:700px){
-      .corp{--x:22px}.corp-hero{min-height:600px;background-position:58% center}.hero-inner{padding-bottom:46px}.corp-hero h1{font-size:28px!important}.hero-actions,.final-actions{flex-direction:column;align-items:stretch}.corp-btn{width:100%}
+      .corp{--x:22px}.corp-hero{min-height:520px;background-position:62% center}.hero-inner{padding:70px var(--x) 48px}.corp-hero h1{font-size:32px!important;max-width:360px}.hero-copy{max-width:390px}.hero-actions{flex-direction:column;align-items:flex-start;gap:16px}.hero-actions .corp-btn{width:auto}.final-actions{flex-direction:column;align-items:stretch}.corp-btn{width:100%}
       .opening,.pathways,.services,.why,.final{padding-top:66px;padding-bottom:72px}.opening-inner,.final-inner{flex-direction:column;gap:28px}.opening-title,.opening-copy{max-width:none;flex:auto}
       .editorial-media{padding-bottom:72px}.media-composition{flex-direction:column;height:auto;gap:12px}.media-main{height:350px}.media-side{flex-direction:row;gap:12px}.media-side img{width:50%;height:210px}
       .pathways-intro{margin-bottom:54px}.pathway-story,.pathway-story.reverse{flex-direction:column;align-items:stretch;gap:28px;margin-top:64px}.pathway-media{height:330px}.pathway-copy{max-width:none}
@@ -121,8 +123,8 @@
       <div class="hero-inner">
         <p class="eyebrow">Corporate & Executive Travel · Vietnam</p>
         <h1 class="display">Business travel,<em>handled locally.</em></h1>
-        <p class="hero-copy">One Vietnam team coordinating the journey around your meetings, travellers and priorities — from airport arrival to final departure.</p>
-        <div class="hero-actions"><a class="corp-btn dark" href="contact.html">Request a travel proposal</a><a class="corp-btn light" href="#how-we-help">Explore how we help</a></div>
+        <p class="hero-copy">One Vietnam team coordinating hotels, transport and local support around your schedule.</p>
+        <div class="hero-actions"><a class="corp-btn dark" href="contact.html">Request a travel proposal</a><a class="hero-link" href="#how-we-help">Explore how we help →</a></div>
       </div>
     </section>
 
