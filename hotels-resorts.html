@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260826-hotels9" />
+  <link rel="stylesheet" href="styles.css?v=20260826-hotels10" />
   <style>
     .hotel-page{--green:#263C32;--cream:#F7F4ED;--sand:#E8DFD0;--paper:#FBF9F4;--muted:#68735A;--gold:#C7B89E;--content:1120px;--x:max(6vw,calc((100vw - var(--content))/2));background:var(--cream);color:var(--green)}
     .hotel-page .site-header{z-index:60}.hotel-page figure{margin:0}
@@ -40,9 +40,7 @@
     .featured{padding:96px var(--x) 108px;background:var(--cream)}.featured-head{max-width:680px;margin-bottom:68px}.featured-head>p:last-child{max-width:620px;margin:18px 0 0;font-size:13px;line-height:1.76;color:var(--muted)}
     .featured-story{display:flex;align-items:center;gap:clamp(44px,7vw,94px);margin-top:92px}.featured-story:first-of-type{margin-top:0}.featured-story.reverse{flex-direction:row-reverse}.featured-photo{flex:1.08;height:430px;background-size:cover;background-position:center}.photo-sofitel{background-image:url('Sofitel Legend Metropole Hanoi 2.jpg')}.photo-hue{background-image:url('Ancient Hue Garden Houses 2.jpg')}.photo-namia{background-image:url('Namia River Retreat 3.jpg')}.featured-copy{flex:.76;max-width:410px}.featured-copy small{display:block;margin-bottom:14px;font-size:8.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7B856F}.featured-copy h3{margin:0 0 12px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2.1vw,31px);line-height:1.12;font-weight:500}.featured-copy p{margin:0;font-size:12.5px;line-height:1.76;color:#657066}.featured-copy a{display:inline-block;margin-top:20px;padding-bottom:4px;border-bottom:1px solid currentColor;font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}.featured-note{max-width:620px;margin:54px 0 0;font-size:10px;line-height:1.65;color:#788076}
 
-    .hotel-process{display:flex;justify-content:space-between;gap:9vw;padding:88px var(--x) 94px;background:var(--sand)}.hotel-process-head{max-width:430px}.hotel-process-head>p:last-child{max-width:410px;margin:18px 0 0;font-size:13px;line-height:1.72;color:#5F6A5D}.process-story{max-width:600px;padding-top:28px}.process-line{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(23px,2.2vw,32px);line-height:1.32;font-weight:500}.process-line span{color:#758361}.process-detail{max-width:560px;margin:21px 0 0;font-size:12.5px;line-height:1.76;color:#5F6A5D}
-
-    .hotel-final{display:flex;justify-content:space-between;align-items:flex-end;gap:60px;padding:70px var(--x);background:var(--gold)}.hotel-final-copy{max-width:690px}.hotel-final h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.6vw,38px);line-height:1.12;font-weight:500}.hotel-final p{max-width:620px;margin:15px 0 0;font-size:12.5px;line-height:1.72;color:#566255}.hotel-final-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .hotel-process{display:flex;align-items:center;justify-content:space-between;gap:8vw;padding:78px var(--x);background:var(--green);color:#fff}.hotel-process-head{max-width:560px}.hotel-process .hotel-label{color:#BFCBBF}.hotel-process-head>p:last-child{max-width:520px;margin:17px 0 0;font-size:12.5px;line-height:1.72;color:#D6DED8}.process-story{flex:0 1 470px}.process-line{margin:0 0 25px;padding-bottom:19px;border-bottom:1px solid rgba(255,255,255,.22);font-size:9px;line-height:1.6;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#EEF2EE}.process-line span{margin:0 12px;color:#9FB09F}.process-detail{margin:0 0 27px;font-family:"Playfair Display",Georgia,serif;font-size:18px;line-height:1.45;color:#fff}.process-link{display:inline-flex;align-items:center;gap:12px;padding-bottom:5px;border-bottom:1px solid #fff;color:#fff;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}.process-link span{font-size:15px;transition:transform .2s ease}.process-link:hover span{transform:translateX(4px)}
 
     /* Compact reference typography — protected from shared type overrides. */
     html body.hotel-page main .hotel-hero h1{font-size:clamp(32px,2.9vw,38px)!important;line-height:1.08!important;letter-spacing:-.022em!important}
@@ -58,20 +56,18 @@
     html body.hotel-page main .stay-item h3{font-size:17px!important;line-height:1.25!important}
     html body.hotel-page main .stay-item p,
     html body.hotel-page main .featured-copy p,
-    html body.hotel-page main .process-detail,
-    html body.hotel-page main .hotel-final p{font-size:12px!important;line-height:1.68!important}
+    html body.hotel-page main .process-detail{font-size:18px!important;line-height:1.45!important}
     html body.hotel-page main .featured-copy h3{font-size:18px!important;line-height:1.25!important}
-    html body.hotel-page main .process-line{font-size:18px!important;line-height:1.45!important}
-    html body.hotel-page main .hotel-final h2{font-size:24px!important;line-height:1.2!important;letter-spacing:-.012em!important}
+    html body.hotel-page main .process-line{font-size:9px!important;line-height:1.6!important}
     html body.hotel-page main .stay-types-intro>p:last-child,
     html body.hotel-page main .selection-copy>p:not(.hotel-label),
     html body.hotel-page main .featured-head>p:last-child{font-size:12.5px!important;line-height:1.72!important}
     html body.hotel-page main .stay-item p,
     html body.hotel-page main .featured-copy p,
-    html body.hotel-page main .process-detail{font-size:12px!important;line-height:1.68!important}
+    html body.hotel-page main .process-detail{font-size:18px!important;line-height:1.45!important}
 
-    @media(max-width:900px){.hotel-hero,.selection{flex-direction:column}.hotel-hero-copy,.hotel-hero-image,.selection-copy,.selection-image{width:100%}.hotel-hero-image{min-height:450px}.selection-image{min-height:430px}.right-stay,.stay-types,.hotel-process{gap:50px}.visual-inset{right:24px;width:34%}.hotel-final{align-items:flex-start;flex-direction:column}}
-    @media(max-width:700px){.hotel-page{--x:22px}.hotel-hero-copy{padding:58px 22px 62px}.hotel-hero h1{font-size:39px}.hotel-actions,.hotel-final-actions{flex-direction:column;align-items:stretch}.hotel-btn{width:100%}.right-stay,.stay-types,.hotel-process{flex-direction:column;padding-top:64px;padding-bottom:70px;gap:30px}.stay-principles{padding-top:0}.hotel-visual{margin:0;min-height:520px}.visual-inset{width:42%;height:210px;right:20px;top:28px}.hotel-visual-copy{left:22px;right:22px;bottom:24px}.stay-types{padding-top:76px}.selection-copy{padding:64px 22px 68px}.featured{padding-top:70px;padding-bottom:78px}.featured-head{margin-bottom:50px}.featured-story,.featured-story.reverse{flex-direction:column;align-items:stretch;gap:27px;margin-top:64px}.featured-photo{height:320px;flex:auto}.featured-copy{max-width:none}.featured-note{margin-top:42px}.hotel-final{padding:58px 22px}}
+    @media(max-width:900px){.hotel-hero,.selection{flex-direction:column}.hotel-hero-copy,.hotel-hero-image,.selection-copy,.selection-image{width:100%}.hotel-hero-image{min-height:450px}.selection-image{min-height:430px}.right-stay,.stay-types,.hotel-process{gap:50px}.visual-inset{right:24px;width:34%}}
+    @media(max-width:700px){.hotel-page{--x:22px}.hotel-hero-copy{padding:58px 22px 62px}.hotel-hero h1{font-size:39px}.hotel-actions{flex-direction:column;align-items:stretch}.hotel-btn{width:100%}.right-stay,.stay-types,.hotel-process{flex-direction:column;align-items:flex-start;padding-top:64px;padding-bottom:70px;gap:38px}.stay-principles{padding-top:0}.hotel-visual{margin:0;min-height:520px}.visual-inset{width:42%;height:210px;right:20px;top:28px}.hotel-visual-copy{left:22px;right:22px;bottom:24px}.stay-types{padding-top:76px}.selection-copy{padding:64px 22px 68px}.featured{padding-top:70px;padding-bottom:78px}.featured-head{margin-bottom:50px}.featured-story,.featured-story.reverse{flex-direction:column;align-items:stretch;gap:27px;margin-top:64px}.featured-photo{height:320px;flex:auto}.featured-copy{max-width:none}.featured-note{margin-top:42px}.process-story{flex:auto;width:100%}}
   </style>
 </head>
 <body class="hotel-page">
@@ -120,14 +116,12 @@
     </section>
 
     <section class="hotel-process">
-      <div class="hotel-process-head"><p class="hotel-label">How it works</p><h2 class="hotel-title">Shortlist first. Book once it fits.</h2><p>Instead of sending a long hotel list, we narrow the options around the journey and explain why each one works.</p></div>
-      <div class="process-story"><p class="process-line">Tell us the trip <span>→</span> we shortlist the right options <span>→</span> we coordinate the stay.</p><p class="process-detail">Share the city, dates, meeting location, traveller profile, room needs and budget. We compare practical fit and availability, then connect the confirmed stay with transfers, flights and local support.</p></div>
+      <div class="hotel-process-head"><p class="hotel-label">A simpler way to book</p><h2 class="hotel-title">The right stay, without the endless hotel list.</h2><p>Tell us the essentials. We compare the options and return with a focused shortlist shaped around your trip.</p></div>
+      <div class="process-story"><p class="process-line">Your brief <span>→</span> Our shortlist <span>→</span> Confirmed stay</p><p class="process-detail">From the room to the airport transfer, every detail works as one journey.</p><a class="process-link" href="contact.html">Request hotel options <span>→</span></a></div>
     </section>
-
-    <section class="hotel-final"><div class="hotel-final-copy"><p class="hotel-label">Start planning</p><h2>Need the right hotel, not just another hotel list?</h2><p>Send us your city, dates, traveller profile and priorities. We will shape a shortlist around the trip.</p></div><div class="hotel-final-actions"><a class="hotel-btn dark" href="contact.html">Request hotel options</a><a class="hotel-btn light" href="corporate-executive-travel.html">View business travel</a></div></section>
   </main>
 
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260826-hotels9"></script><script src="nav-fix.js?v=20260826-hotels9"></script>
+  <script src="script.js?v=20260826-hotels10"></script><script src="nav-fix.js?v=20260826-hotels10"></script>
 </body>
 </html>
