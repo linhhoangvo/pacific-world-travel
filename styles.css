@@ -562,11 +562,11 @@ body.corp .hero-actions{
 
 /* =========================================================
    HOMEPAGE — BUSINESS + GOLF EDITORIAL GATEWAY
-   Photography-led, asymmetric, text outside the image.
+   Photography-led, equal columns.
    ========================================================= */
 html body main#top .promise.section{
   display:grid!important;
-  grid-template-columns:minmax(0,1.14fr) minmax(0,.86fr)!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
   column-gap:clamp(30px,4.4vw,76px)!important;
   row-gap:0!important;
   padding:108px 6.4vw 124px!important;
