@@ -8,17 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260907-ground-luxury" />
+  <link rel="stylesheet" href="styles.css?v=20260907-ground-editorial2" />
   <style>
     .ground-page{
-      --green:#22372e;
-      --deep:#182a23;
-      --paper:#faf8f3;
+      --green:#21372d;
+      --deep:#17271f;
+      --deep2:#1c3027;
+      --paper:#fbfaf6;
       --cream:#f2eee5;
-      --sand:#e8e0d3;
-      --ink:#26372f;
+      --sand:#e7dfd2;
+      --ink:#27372f;
       --muted:#6d756f;
-      --line:rgba(34,55,46,.14);
+      --line:rgba(33,55,45,.14);
       --content:1160px;
       --x:max(5.5vw,calc((100vw - var(--content))/2));
       background:var(--paper);
@@ -26,377 +27,131 @@
     }
     .ground-page .site-header{z-index:60}
     .ground-page main{overflow:hidden}
-    .ground-page figure{margin:0}
+    .ground-page *{box-sizing:border-box}
 
-    .eyebrow{
-      margin:0 0 12px;
-      font-size:8px;
-      line-height:1;
-      font-weight:600;
-      letter-spacing:.19em;
-      text-transform:uppercase;
-      color:#7d867f;
-    }
-    .editorial-title{
-      margin:0;
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:clamp(24px,2.1vw,30px);
-      line-height:1.16;
-      font-weight:500;
-      letter-spacing:-.025em;
-      color:var(--ink);
-    }
-    .body-copy{
-      margin:0;
-      font-size:13px;
-      line-height:1.78;
-      color:var(--muted);
-    }
-    .text-link{
-      display:inline-flex;
-      align-items:center;
-      gap:9px;
-      margin-top:22px;
-      padding-bottom:4px;
-      border-bottom:1px solid currentColor;
-      color:var(--ink);
-      font-size:8px;
-      font-weight:600;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-      text-decoration:none;
-    }
-    .ground-btn{
-      display:inline-flex;
-      min-height:42px;
-      padding:0 18px;
-      align-items:center;
-      justify-content:center;
-      border:1px solid currentColor;
-      font-size:8px;
-      line-height:1;
-      font-weight:600;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      text-decoration:none;
-      transition:background .25s ease,color .25s ease,border-color .25s ease;
-    }
+    .eyebrow{margin:0 0 13px;font-size:7.5px;line-height:1;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7e877f}
+    .serif{margin:0;font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:-.027em}
+    .section-title{font-size:clamp(24px,2.15vw,31px);line-height:1.14;color:var(--ink)}
+    .body-copy{margin:0;font-size:12.5px;line-height:1.78;color:var(--muted)}
+    .micro-link{display:inline-flex;align-items:center;gap:10px;margin-top:23px;padding-bottom:4px;border-bottom:1px solid currentColor;color:inherit;font-size:7.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+    .ground-btn{display:inline-flex;min-height:42px;padding:0 18px;align-items:center;justify-content:center;border:1px solid currentColor;font-size:7.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;transition:.25s ease}
 
     /* HERO */
-    .ground-hero{
-      position:relative;
-      min-height:700px;
-      display:flex;
-      align-items:flex-end;
-      background:url('corporate-airport-arrival.jpg') center 42%/cover no-repeat;
-      color:#fff;
-    }
-    .ground-hero:after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        linear-gradient(90deg,rgba(17,38,29,.76) 0%,rgba(17,38,29,.34) 49%,rgba(17,38,29,.05) 78%),
-        linear-gradient(180deg,rgba(17,38,29,.02) 36%,rgba(17,38,29,.48) 100%);
-    }
-    .hero-inner{
-      position:relative;
-      z-index:2;
-      width:100%;
-      padding:0 var(--x) 64px;
-    }
-    .ground-hero .eyebrow{color:rgba(255,255,255,.72)}
-    .ground-hero h1{
-      max-width:610px;
-      margin:0;
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:clamp(34px,3.35vw,46px);
-      line-height:1.04;
-      font-weight:500;
-      letter-spacing:-.032em;
-      color:#fff;
-    }
-    .ground-hero h1 em{font-weight:500;color:#e7dfd1}
-    .hero-copy{
-      max-width:520px;
-      margin:18px 0 0;
-      font-size:13px;
-      line-height:1.72;
-      color:rgba(255,255,255,.84);
-    }
-    .hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}
-    .hero-actions .primary{background:#fff;border-color:#fff;color:var(--green)}
-    .hero-actions .secondary{color:#fff;border-color:rgba(255,255,255,.62)}
+    .ground-hero{position:relative;min-height:760px;display:flex;align-items:flex-end;background:url('corporate-airport-arrival.jpg') center 41%/cover no-repeat;color:#fff}
+    .ground-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,36,28,.78) 0%,rgba(16,36,28,.37) 47%,rgba(16,36,28,.05) 76%),linear-gradient(180deg,rgba(15,34,26,.02) 33%,rgba(15,34,26,.50) 100%)}
+    .hero-inner{position:relative;z-index:2;width:100%;padding:0 var(--x) 70px}
+    .ground-hero .eyebrow{color:rgba(255,255,255,.68)}
+    .ground-hero h1{max-width:610px;font-size:clamp(35px,3.5vw,48px);line-height:1.02;color:#fff}
+    .ground-hero h1 em{font-weight:500;color:#e7dfd2}
+    .hero-copy{max-width:485px;margin:18px 0 0;font-size:12.5px;line-height:1.72;color:rgba(255,255,255,.82)}
+    .hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}
+    .hero-actions .primary{background:#fff;color:var(--green);border-color:#fff}
+    .hero-actions .secondary{color:#fff;border-color:rgba(255,255,255,.55)}
 
-    /* SERVICE STRIP */
-    .ground-strip{
-      display:grid;
-      grid-template-columns:repeat(5,1fr);
-      padding:0 var(--x);
-      background:var(--cream);
-      border-bottom:1px solid var(--line);
-    }
-    .ground-strip span{
-      min-height:68px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:0 15px;
-      border-right:1px solid var(--line);
-      text-align:center;
-      font-size:7.5px;
-      font-weight:600;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:#687169;
-    }
-    .ground-strip span:first-child{border-left:1px solid var(--line)}
+    /* INTRO */
+    .intro{padding:104px var(--x) 108px;background:var(--cream)}
+    .intro-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.72fr);gap:clamp(60px,9vw,135px);align-items:end}
+    .intro-copy{max-width:600px}
+    .intro-copy .section-title{max-width:560px}
+    .intro-side{max-width:420px;justify-self:end}
+    .intro-side .body-copy{margin-bottom:28px}
+    .capabilities{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line)}
+    .capabilities span{padding:13px 17px 0 0;margin:0 17px 0 0;font-size:7.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#788078;white-space:nowrap}
 
-    /* ARRIVAL STORY */
-    .arrival{
-      padding:112px var(--x) 118px;
-      background:var(--cream);
-    }
-    .arrival-grid{
-      display:grid;
-      grid-template-columns:minmax(0,1.42fr) minmax(290px,.72fr);
-      align-items:center;
-      gap:clamp(48px,7vw,96px);
-    }
-    .arrival-image{
-      height:585px;
-      overflow:hidden;
-      background:url('First-Track-Meet-and-Greet-Service.jpg') center/cover no-repeat;
-    }
-    .arrival-copy{max-width:390px}
-    .arrival-copy .body-copy{margin-top:19px}
-    .arrival-note{
-      margin-top:29px;
-      padding-top:19px;
-      border-top:1px solid var(--line);
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:17px;
-      line-height:1.45;
-      color:#4d5d53;
-    }
+    /* ARRIVAL */
+    .arrival{display:grid;grid-template-columns:minmax(0,63%) minmax(0,37%);min-height:650px;background:var(--paper)}
+    .arrival-image{min-height:650px;background:url('First-Track-Meet-and-Greet-Service.jpg') center/cover no-repeat}
+    .arrival-copy{display:flex;align-items:center;padding:78px clamp(48px,6vw,92px)}
+    .arrival-copy-inner{max-width:390px}
+    .arrival-copy .body-copy{margin-top:18px}
+    .arrival-note{margin:30px 0 0;padding-top:21px;border-top:1px solid var(--line);font-family:"Playfair Display",Georgia,serif;font-size:17px;line-height:1.45;color:#506057}
 
-    /* THREE SERVICES */
-    .service-collection{
-      padding:108px var(--x) 116px;
-      background:var(--paper);
-    }
-    .collection-head{
-      display:grid;
-      grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);
-      gap:70px;
-      align-items:end;
-      margin-bottom:50px;
-    }
-    .collection-head .body-copy{max-width:460px;justify-self:end}
-    .service-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-    }
-    .service-card{min-width:0}
-    .service-photo{
-      position:relative;
-      height:440px;
-      overflow:hidden;
-      background-position:center;
-      background-size:cover;
-    }
-    .service-photo:after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(180deg,rgba(20,42,33,0) 56%,rgba(20,42,33,.42) 100%);
-    }
-    .service-card:nth-child(1) .service-photo{background-image:url('corporate-executive.jpg')}
-    .service-card:nth-child(2) .service-photo{background-image:url('business-travel.jpg')}
-    .service-card:nth-child(3) .service-photo{background-image:url('danang-hoian.jpg')}
-    .service-card-content{padding:22px 4px 0}
-    .service-kicker{
-      display:block;
-      margin-bottom:8px;
-      font-size:7.5px;
-      font-weight:600;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-      color:#7e877f;
-    }
-    .service-card h3{
-      margin:0;
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:19px;
-      line-height:1.22;
-      font-weight:500;
-      letter-spacing:-.015em;
-      color:var(--ink);
-    }
-    .service-card p{
-      max-width:330px;
-      margin:11px 0 0;
-      font-size:12px;
-      line-height:1.68;
-      color:var(--muted);
-    }
+    /* MOVEMENT STORY */
+    .movement{background:var(--deep);color:#fff}
+    .movement-head{padding:100px var(--x) 56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.55fr);gap:70px;align-items:end}
+    .movement .eyebrow{color:#a9b4ac}
+    .movement .section-title{color:#fff;max-width:600px}
+    .movement-head .body-copy{max-width:390px;color:#bfc9c2;justify-self:end}
+    .movement-row{display:grid;grid-template-columns:62% 38%;min-height:540px;border-top:1px solid rgba(255,255,255,.09)}
+    .movement-row.reverse{grid-template-columns:38% 62%}
+    .movement-row.reverse .movement-image{order:2}
+    .movement-row.reverse .movement-copy{order:1}
+    .movement-image{min-height:540px;background-position:center;background-size:cover}
+    .movement-row:nth-of-type(2) .movement-image{background-image:url('corporate-executive.jpg')}
+    .movement-row:nth-of-type(3) .movement-image{background-image:url('business-travel.jpg')}
+    .movement-row:nth-of-type(4) .movement-image{background-image:url('danang-hoian.jpg')}
+    .movement-copy{display:flex;align-items:center;padding:72px clamp(48px,6vw,90px);background:var(--deep)}
+    .movement-row.reverse .movement-copy{background:var(--deep2)}
+    .movement-copy-inner{max-width:390px}
+    .movement-number{display:block;margin-bottom:18px;font-size:7px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#98a69d}
+    .movement-copy h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,1.8vw,28px);line-height:1.17;font-weight:500;letter-spacing:-.02em;color:#fff}
+    .movement-copy p{margin:17px 0 0;font-size:12px;line-height:1.74;color:#bdc7c0}
+    .movement-meta{margin-top:25px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:7.5px;font-weight:600;line-height:1.8;letter-spacing:.12em;text-transform:uppercase;color:#9eaaa2}
 
-    /* LIVE COORDINATION */
-    .coordination{
-      display:grid;
-      grid-template-columns:58% 42%;
-      min-height:650px;
-      background:var(--deep);
-      color:#fff;
-    }
-    .coordination-image{
-      min-height:650px;
-      background:url('corporate-hero.jpg') center 44%/cover no-repeat;
-    }
-    .coordination-copy{
-      display:flex;
-      align-items:center;
-      padding:80px clamp(46px,6vw,88px);
-    }
-    .coordination-copy-inner{max-width:430px}
-    .coordination .eyebrow{color:#aebbb1}
-    .coordination .editorial-title{color:#fff}
-    .coordination .body-copy{margin-top:20px;color:#cbd4cd}
-    .coordination-quote{
-      margin-top:32px;
-      padding-top:25px;
-      border-top:1px solid rgba(255,255,255,.16);
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:19px;
-      line-height:1.42;
-      color:#e6e0d6;
-    }
+    /* COORDINATION */
+    .coordination{position:relative;min-height:700px;display:flex;align-items:flex-end;background:url('corporate-hero.jpg') center 43%/cover no-repeat;color:#fff}
+    .coordination:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,40,31,.88) 0%,rgba(18,40,31,.58) 43%,rgba(18,40,31,.09) 78%),linear-gradient(180deg,rgba(18,40,31,.02) 42%,rgba(18,40,31,.38) 100%)}
+    .coordination-inner{position:relative;z-index:2;width:100%;padding:80px var(--x)}
+    .coordination-copy{max-width:485px}
+    .coordination .eyebrow{color:#b8c3bb}
+    .coordination .section-title{color:#fff;max-width:480px}
+    .coordination .body-copy{max-width:430px;margin-top:18px;color:#d0d8d2}
+    .coordination-line{max-width:430px;margin-top:28px;padding-top:21px;border-top:1px solid rgba(255,255,255,.18);font-family:"Playfair Display",Georgia,serif;font-size:18px;line-height:1.42;color:#eee8de}
 
-    /* RELATED */
-    .related{
-      padding:106px var(--x) 116px;
-      background:var(--paper);
-    }
-    .related-head{max-width:650px;margin-bottom:48px}
-    .related-head .body-copy{max-width:500px;margin-top:18px}
-    .related-grid{
-      display:grid;
-      grid-template-columns:1.12fr .88fr .88fr;
-      gap:14px;
-    }
-    .related-card{
-      position:relative;
-      min-height:365px;
-      display:flex;
-      align-items:flex-end;
-      overflow:hidden;
-      background-position:center;
-      background-size:cover;
-      color:#fff;
-      text-decoration:none;
-    }
-    .related-card:first-child{min-height:430px;background-image:url('final-cta-lounge.jpg')}
-    .related-card:nth-child(2){background-image:url('corporate-hotel.jpg')}
-    .related-card:nth-child(3){background-image:url('Business meeting- boardroom.jpg')}
-    .related-card:after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(180deg,rgba(15,33,26,.02) 38%,rgba(15,33,26,.82) 100%);
-    }
-    .related-content{position:relative;z-index:2;padding:25px}
-    .related-content small{
-      display:block;
-      margin-bottom:7px;
-      font-size:7.5px;
-      font-weight:600;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-      color:rgba(255,255,255,.75);
-    }
-    .related-content h3{
-      margin:0;
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:20px;
-      line-height:1.2;
-      font-weight:500;
-    }
-    .related-content span{
-      display:inline-block;
-      margin-top:15px;
-      font-size:7.5px;
-      font-weight:600;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-    }
+    /* CONTINUE */
+    .continue{padding:104px var(--x) 112px;background:var(--cream)}
+    .continue-head{display:grid;grid-template-columns:1fr .7fr;gap:70px;align-items:end;margin-bottom:48px}
+    .continue-head .body-copy{max-width:390px;justify-self:end}
+    .continue-links{border-top:1px solid var(--line)}
+    .continue-link{display:grid;grid-template-columns:50px 1fr auto;gap:24px;align-items:center;min-height:92px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;transition:padding .25s ease,opacity .25s ease}
+    .continue-link small{font-size:7px;font-weight:600;letter-spacing:.15em;color:#929991}
+    .continue-link strong{font-family:"Playfair Display",Georgia,serif;font-size:19px;line-height:1.2;font-weight:500}
+    .continue-link span{font-size:7.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#707970}
 
     /* CTA */
-    .ground-cta{
-      padding:82px var(--x) 86px;
-      background:var(--green);
-      color:#fff;
-    }
-    .ground-cta-inner{
-      display:grid;
-      grid-template-columns:minmax(0,1fr) auto;
-      gap:70px;
-      align-items:center;
-    }
-    .ground-cta-copy{max-width:690px}
-    .ground-cta .eyebrow{color:#aebbb1}
-    .ground-cta h2{
-      margin:0;
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:clamp(24px,2vw,29px);
-      line-height:1.18;
-      font-weight:500;
-      letter-spacing:-.02em;
-      color:#fff;
-    }
-    .ground-cta p{
-      max-width:570px;
-      margin:16px 0 0;
-      font-size:12.5px;
-      line-height:1.72;
-      color:#cad3cc;
-    }
+    .ground-cta{padding:86px var(--x) 90px;background:var(--green);color:#fff}
+    .ground-cta-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:70px;align-items:center}
+    .ground-cta-copy{max-width:680px}
+    .ground-cta .eyebrow{color:#adb9b0}
+    .ground-cta h2{font-size:clamp(24px,2.05vw,30px);line-height:1.16;color:#fff}
+    .ground-cta p{max-width:520px;margin:16px 0 0;font-size:12px;line-height:1.7;color:#c9d1cb}
     .ground-cta-actions{display:flex;gap:9px;flex-wrap:wrap}
-    .ground-cta .ground-btn.primary{background:#fff;border-color:#fff;color:var(--green)}
-    .ground-cta .ground-btn.secondary{color:#fff;border-color:rgba(255,255,255,.58)}
+    .ground-cta .primary{background:#fff;border-color:#fff;color:var(--green)}
+    .ground-cta .secondary{color:#fff;border-color:rgba(255,255,255,.55)}
 
-    @media (hover:hover){
-      .service-photo,.related-card{transition:transform .45s ease,filter .45s ease}
-      .service-card:hover .service-photo,.related-card:hover{filter:brightness(.94)}
-      .text-link:hover{opacity:.68}
-      .hero-actions .secondary:hover,.ground-cta .ground-btn.secondary:hover{background:#fff;color:var(--green);border-color:#fff}
+    @media(hover:hover){
+      .hero-actions .secondary:hover,.ground-cta .secondary:hover{background:#fff;border-color:#fff;color:var(--green)}
+      .micro-link:hover{opacity:.65}
+      .continue-link:hover{padding-left:10px}
     }
 
-    @media(max-width:920px){
-      .arrival-grid{grid-template-columns:1.18fr .82fr;gap:48px}.arrival-image{height:510px}
-      .service-photo{height:380px}
-      .coordination{grid-template-columns:54% 46%}.coordination-image{min-height:580px}.coordination{min-height:580px}
-      .related-grid{grid-template-columns:1fr 1fr}.related-card:first-child{grid-column:1/-1;min-height:390px}.related-card{min-height:340px}
+    @media(max-width:940px){
+      .intro-inner{grid-template-columns:1fr .8fr;gap:55px}
+      .arrival{grid-template-columns:57% 43%}.arrival-image{min-height:580px}.arrival{min-height:580px}
+      .movement-row{grid-template-columns:56% 44%;min-height:500px}.movement-row.reverse{grid-template-columns:44% 56%}.movement-image{min-height:500px}
+      .coordination{min-height:620px}
     }
 
     @media(max-width:700px){
       .ground-page{--x:22px}
-      .ground-hero{min-height:610px;background-position:61% center}
-      .hero-inner{padding-bottom:44px}
-      .ground-hero h1{font-size:32px;max-width:440px}
-      .hero-copy{max-width:420px;font-size:12.5px}
-      .hero-actions{flex-direction:column;align-items:stretch}.ground-btn{width:100%}
-      .ground-strip{grid-template-columns:1fr 1fr;padding:0 22px}
-      .ground-strip span{min-height:52px;border-bottom:1px solid var(--line)}
-      .ground-strip span:nth-child(odd){border-left:1px solid var(--line)}
-      .ground-strip span:last-child{grid-column:1/-1}
-      .arrival,.service-collection,.related{padding-top:68px;padding-bottom:72px}
-      .arrival-grid{grid-template-columns:1fr;gap:32px}.arrival-image{height:380px}.arrival-copy{max-width:none}
-      .collection-head{grid-template-columns:1fr;gap:17px;margin-bottom:34px}.collection-head .body-copy{justify-self:start}
-      .service-grid{grid-template-columns:1fr;gap:48px}.service-photo{height:390px}.service-card-content{padding-top:17px}
-      .coordination{grid-template-columns:1fr;min-height:0}.coordination-image{min-height:390px}.coordination-copy{padding:62px 22px 68px}.coordination-copy-inner{max-width:none}
-      .related-head{margin-bottom:34px}.related-grid{grid-template-columns:1fr;gap:12px}.related-card:first-child{grid-column:auto;min-height:350px}.related-card{min-height:330px}
-      .ground-cta{padding:64px 22px 68px}.ground-cta-inner{grid-template-columns:1fr;gap:30px}.ground-cta-actions{flex-direction:column;align-items:stretch}
+      .ground-hero{min-height:620px;background-position:60% center}
+      .hero-inner{padding-bottom:46px}
+      .ground-hero h1{font-size:32px;max-width:430px}
+      .hero-copy{font-size:12px;max-width:390px}
+      .hero-actions,.ground-cta-actions{flex-direction:column;align-items:stretch}.ground-btn{width:100%}
+
+      .intro{padding:66px 22px 70px}.intro-inner{grid-template-columns:1fr;gap:28px}.intro-side{justify-self:start;max-width:none}.intro-side .body-copy{margin-bottom:22px}.capabilities{gap:0}.capabilities span{padding-top:11px;margin-right:12px;padding-right:12px}
+
+      .arrival{grid-template-columns:1fr;min-height:0}.arrival-image{min-height:390px}.arrival-copy{padding:58px 22px 64px}.arrival-copy-inner{max-width:none}
+
+      .movement-head{padding:66px 22px 38px;grid-template-columns:1fr;gap:18px}.movement-head .body-copy{justify-self:start}
+      .movement-row,.movement-row.reverse{grid-template-columns:1fr;min-height:0}.movement-row.reverse .movement-image,.movement-row.reverse .movement-copy{order:initial}.movement-image{min-height:390px}.movement-copy{padding:54px 22px 60px}.movement-copy-inner{max-width:none}
+
+      .coordination{min-height:600px;background-position:60% center}.coordination:after{background:linear-gradient(90deg,rgba(18,40,31,.86),rgba(18,40,31,.38) 75%),linear-gradient(180deg,rgba(18,40,31,.05) 30%,rgba(18,40,31,.62) 100%)}.coordination-inner{padding:64px 22px}.coordination-copy{max-width:420px}
+
+      .continue{padding:66px 22px 72px}.continue-head{grid-template-columns:1fr;gap:18px;margin-bottom:34px}.continue-head .body-copy{justify-self:start}.continue-link{grid-template-columns:34px 1fr auto;gap:12px;min-height:78px}.continue-link strong{font-size:17px}.continue-link span{font-size:0}.continue-link span:after{content:'→';font-size:15px}
+
+      .ground-cta{padding:64px 22px 70px}.ground-cta-inner{grid-template-columns:1fr;gap:30px}
     }
   </style>
 </head>
@@ -411,8 +166,8 @@
     <section class="ground-hero">
       <div class="hero-inner">
         <p class="eyebrow">Ground Transportation · Vietnam</p>
-        <h1>Move through Vietnam <em>without the friction.</em></h1>
-        <p class="hero-copy">Private transfers and chauffeur-led travel, coordinated around your arrival, your schedule and the day ahead.</p>
+        <h1 class="serif">Move through Vietnam <em>without the friction.</em></h1>
+        <p class="hero-copy">Private transfers and chauffeur-led travel, coordinated around the day rather than simply the drive.</p>
         <div class="hero-actions">
           <a class="ground-btn primary" href="contact.html">Arrange transportation</a>
           <a class="ground-btn secondary" href="#services">Explore services</a>
@@ -420,95 +175,94 @@
       </div>
     </section>
 
-    <div class="ground-strip" aria-label="Ground transportation services">
-      <span>Airport meet & greet</span>
-      <span>Executive chauffeur</span>
-      <span>Corporate movement</span>
-      <span>Intercity travel</span>
-      <span>24/7 local support</span>
-    </div>
-
-    <section class="arrival">
-      <div class="arrival-grid">
-        <div class="arrival-image" role="img" aria-label="Airport meet and greet service in Vietnam"></div>
-        <div class="arrival-copy">
+    <section class="intro">
+      <div class="intro-inner">
+        <div class="intro-copy">
           <p class="eyebrow">From touchdown onward</p>
-          <h2 class="editorial-title">The journey is already moving when you land.</h2>
-          <p class="body-copy">We follow the real arrival time, meet the traveller, manage luggage and connect the airport transfer to whatever comes next.</p>
-          <p class="arrival-note">Less waiting. Fewer calls. One local team keeping the day connected.</p>
-          <a class="text-link" href="contact.html">Arrange an airport arrival <span>→</span></a>
+          <h2 class="serif section-title">The best transfer is the one you barely have to think about.</h2>
+        </div>
+        <div class="intro-side">
+          <p class="body-copy">We connect the arrival, the vehicle, the route and what happens next—so the journey feels continuous from the moment you land.</p>
+          <div class="capabilities" aria-label="Ground transportation services">
+            <span>Airport</span><span>Chauffeur</span><span>Groups</span><span>Intercity</span><span>24/7</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="service-collection" id="services">
-      <div class="collection-head">
-        <div>
-          <p class="eyebrow">Ways we move you</p>
-          <h2 class="editorial-title">One journey. Three ways to keep it seamless.</h2>
+    <section class="arrival">
+      <div class="arrival-image" role="img" aria-label="Airport meet and greet service in Vietnam"></div>
+      <div class="arrival-copy">
+        <div class="arrival-copy-inner">
+          <p class="eyebrow">Arrival, handled</p>
+          <h2 class="serif section-title">Your journey is already moving when you land.</h2>
+          <p class="body-copy">Real arrival time, traveller meet-up, luggage and onward transfer—kept in one local plan.</p>
+          <p class="arrival-note">Less waiting. Fewer calls. A calmer arrival.</p>
+          <a class="micro-link" href="contact.html">Arrange an airport arrival <span>→</span></a>
         </div>
-        <p class="body-copy">From a single executive transfer to a coordinated movement plan, every vehicle fits the wider itinerary.</p>
+      </div>
+    </section>
+
+    <section class="movement" id="services">
+      <div class="movement-head">
+        <div>
+          <p class="eyebrow">How we move you</p>
+          <h2 class="serif section-title">Transport shaped around the journey.</h2>
+        </div>
+        <p class="body-copy">One transfer or a full movement programme—the same attention to timing, comfort and continuity.</p>
       </div>
 
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="service-photo" role="img" aria-label="Executive chauffeur service"></div>
-          <div class="service-card-content">
-            <span class="service-kicker">01 · Executive chauffeur</span>
-            <h3>Quiet, discreet movement around a demanding day.</h3>
-            <p>Hotels, meetings, restaurants and appointments—without resetting the plan at every stop.</p>
-          </div>
-        </article>
+      <article class="movement-row">
+        <div class="movement-image" role="img" aria-label="Executive chauffeur service in Vietnam"></div>
+        <div class="movement-copy"><div class="movement-copy-inner">
+          <span class="movement-number">01 · Executive chauffeur</span>
+          <h3>Quiet movement around a demanding day.</h3>
+          <p>Hotel. Meeting. Dinner. Airport. Your driver stays aligned with the schedule as the day unfolds.</p>
+          <div class="movement-meta">Private · Discreet · Schedule-led</div>
+        </div></div>
+      </article>
 
-        <article class="service-card">
-          <div class="service-photo" role="img" aria-label="Corporate group transportation"></div>
-          <div class="service-card-content">
-            <span class="service-kicker">02 · Groups & events</span>
-            <h3>Every vehicle follows the same movement plan.</h3>
-            <p>Cars, vans and coaches coordinated across arrivals, venues and departures.</p>
-          </div>
-        </article>
+      <article class="movement-row reverse">
+        <div class="movement-image" role="img" aria-label="Corporate group and event transportation"></div>
+        <div class="movement-copy"><div class="movement-copy-inner">
+          <span class="movement-number">02 · Groups & events</span>
+          <h3>Many vehicles. One movement plan.</h3>
+          <p>Cars, vans and coaches coordinated across arrivals, hotels, venues and departures.</p>
+          <div class="movement-meta">Arrivals · Venues · Departures</div>
+        </div></div>
+      </article>
 
-        <article class="service-card">
-          <div class="service-photo" role="img" aria-label="Private intercity travel in Vietnam"></div>
-          <div class="service-card-content">
-            <span class="service-kicker">03 · Intercity travel</span>
-            <h3>When the road is the better way to travel.</h3>
-            <p>Private longer-distance transfers with timing, stops and onward arrangements connected.</p>
-          </div>
-        </article>
-      </div>
+      <article class="movement-row">
+        <div class="movement-image" role="img" aria-label="Private intercity transportation in Vietnam"></div>
+        <div class="movement-copy"><div class="movement-copy-inner">
+          <span class="movement-number">03 · Intercity travel</span>
+          <h3>When the road is the better way to travel.</h3>
+          <p>Private longer-distance journeys with timing, stops and the onward programme already connected.</p>
+          <div class="movement-meta">Private route · Flexible stops · Door to door</div>
+        </div></div>
+      </article>
     </section>
 
     <section class="coordination">
-      <div class="coordination-image" role="img" aria-label="Coordinated corporate ground transportation in Vietnam"></div>
-      <div class="coordination-copy">
-        <div class="coordination-copy-inner">
+      <div class="coordination-inner">
+        <div class="coordination-copy">
           <p class="eyebrow">24/7 local coordination</p>
-          <h2 class="editorial-title">When the schedule moves, the transport moves with it.</h2>
-          <p class="body-copy">Flight delay. Earlier meeting. Venue change. Extra passenger. One Pacific World contact coordinates the local response.</p>
-          <div class="coordination-quote">The vehicle matters. The coordination around it matters more.</div>
+          <h2 class="serif section-title">When the schedule moves, the transport moves with it.</h2>
+          <p class="body-copy">A delayed flight, an earlier meeting or an extra passenger should not become another chain of calls. One Pacific World contact coordinates the response.</p>
+          <div class="coordination-line">The vehicle matters. The coordination around it matters more.</div>
         </div>
       </div>
     </section>
 
-    <section class="related">
-      <div class="related-head">
-        <p class="eyebrow">Continue the journey</p>
-        <h2 class="editorial-title">Keep the rest of the programme with the same local team.</h2>
-        <p class="body-copy">Connect transportation with accommodation, meetings and wider executive travel across Vietnam.</p>
+    <section class="continue">
+      <div class="continue-head">
+        <div><p class="eyebrow">Continue with Pacific World</p><h2 class="serif section-title">Keep the wider programme connected.</h2></div>
+        <p class="body-copy">Transportation can sit inside a complete executive journey managed by the same local team.</p>
       </div>
-
-      <div class="related-grid">
-        <a class="related-card" href="corporate-executive-travel.html">
-          <div class="related-content"><small>Complete programme</small><h3>Corporate travel</h3><span>Explore service →</span></div>
-        </a>
-        <a class="related-card" href="hotels-resorts.html">
-          <div class="related-content"><small>Stay well</small><h3>Hotels & executive stays</h3><span>Explore service →</span></div>
-        </a>
-        <a class="related-card" href="meetings-conferences.html">
-          <div class="related-content"><small>Bring people together</small><h3>Meetings & events</h3><span>Explore service →</span></div>
-        </a>
+      <div class="continue-links">
+        <a class="continue-link" href="corporate-executive-travel.html"><small>01</small><strong>Corporate travel</strong><span>Explore service →</span></a>
+        <a class="continue-link" href="hotels-resorts.html"><small>02</small><strong>Hotels & executive stays</strong><span>Explore service →</span></a>
+        <a class="continue-link" href="meetings-conferences.html"><small>03</small><strong>Meetings & events</strong><span>Explore service →</span></a>
       </div>
     </section>
 
@@ -516,8 +270,8 @@
       <div class="ground-cta-inner">
         <div class="ground-cta-copy">
           <p class="eyebrow">Start with the route</p>
-          <h2>Tell us where your travellers need to be — and when.</h2>
-          <p>Share the cities, dates, traveller numbers and schedule. We will shape the movement around the journey.</p>
+          <h2 class="serif">Tell us where your travellers need to be — and when.</h2>
+          <p>Share the dates, cities, traveller numbers and schedule. We will shape the movement around the journey.</p>
         </div>
         <div class="ground-cta-actions">
           <a class="ground-btn primary" href="contact.html">Request transportation</a>
@@ -528,6 +282,6 @@
   </main>
 
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260907-ground-luxury"></script><script src="nav-fix.js?v=20260907-ground-luxury"></script>
+  <script src="script.js?v=20260907-ground-editorial2"></script><script src="nav-fix.js?v=20260907-ground-editorial2"></script>
 </body>
 </html>
