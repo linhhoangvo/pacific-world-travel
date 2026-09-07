@@ -8,151 +8,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260907-ground-editorial2" />
+  <link rel="stylesheet" href="styles.css?v=20260907-ground-artdirection" />
   <style>
-    .ground-page{
-      --green:#21372d;
-      --deep:#17271f;
-      --deep2:#1c3027;
-      --paper:#fbfaf6;
-      --cream:#f2eee5;
-      --sand:#e7dfd2;
-      --ink:#27372f;
-      --muted:#6d756f;
-      --line:rgba(33,55,45,.14);
-      --content:1160px;
-      --x:max(5.5vw,calc((100vw - var(--content))/2));
-      background:var(--paper);
-      color:var(--ink);
-    }
-    .ground-page .site-header{z-index:60}
-    .ground-page main{overflow:hidden}
-    .ground-page *{box-sizing:border-box}
+    .ground-page{--ivory:#f6f2e9;--paper:#fbfaf6;--green:#20372d;--deep:#17271f;--ink:#27372f;--muted:#6e756f;--line:rgba(32,55,45,.14);--content:1160px;--x:max(5.5vw,calc((100vw - var(--content))/2));background:var(--paper);color:var(--ink)}
+    .ground-page *{box-sizing:border-box}.ground-page main{overflow:hidden}.ground-page .site-header{z-index:60}
+    .eyebrow{margin:0 0 12px;font-size:7.5px;line-height:1;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7b847d}.serif{margin:0;font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:-.025em}.body-copy{margin:0;font-size:12.5px;line-height:1.76;color:var(--muted)}.small-link{display:inline-flex;gap:10px;align-items:center;margin-top:22px;padding-bottom:4px;border-bottom:1px solid currentColor;color:inherit;font-size:7.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;text-decoration:none}
 
-    .eyebrow{margin:0 0 13px;font-size:7.5px;line-height:1;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7e877f}
-    .serif{margin:0;font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:-.027em}
-    .section-title{font-size:clamp(24px,2.15vw,31px);line-height:1.14;color:var(--ink)}
-    .body-copy{margin:0;font-size:12.5px;line-height:1.78;color:var(--muted)}
-    .micro-link{display:inline-flex;align-items:center;gap:10px;margin-top:23px;padding-bottom:4px;border-bottom:1px solid currentColor;color:inherit;font-size:7.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
-    .ground-btn{display:inline-flex;min-height:42px;padding:0 18px;align-items:center;justify-content:center;border:1px solid currentColor;font-size:7.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;transition:.25s ease}
+    .hero{position:relative;min-height:790px;display:flex;align-items:flex-end;background:url('corporate-airport-arrival.jpg') center 42%/cover no-repeat;color:#fff}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,33,25,.76) 0%,rgba(14,33,25,.30) 49%,rgba(14,33,25,.03) 77%),linear-gradient(180deg,rgba(14,33,25,.03) 38%,rgba(14,33,25,.48) 100%)}.hero-inner{position:relative;z-index:2;width:100%;padding:0 var(--x) 72px}.hero .eyebrow{color:rgba(255,255,255,.68)}.hero h1{max-width:590px;font-size:clamp(36px,3.45vw,47px);line-height:1.03;color:#fff}.hero h1 em{font-weight:500;color:#e8e1d6}.hero p:not(.eyebrow){max-width:450px;margin:17px 0 0;font-size:12.5px;line-height:1.72;color:rgba(255,255,255,.82)}.hero .small-link{margin-top:24px;color:#fff}
 
-    /* HERO */
-    .ground-hero{position:relative;min-height:760px;display:flex;align-items:flex-end;background:url('corporate-airport-arrival.jpg') center 41%/cover no-repeat;color:#fff}
-    .ground-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,36,28,.78) 0%,rgba(16,36,28,.37) 47%,rgba(16,36,28,.05) 76%),linear-gradient(180deg,rgba(15,34,26,.02) 33%,rgba(15,34,26,.50) 100%)}
-    .hero-inner{position:relative;z-index:2;width:100%;padding:0 var(--x) 70px}
-    .ground-hero .eyebrow{color:rgba(255,255,255,.68)}
-    .ground-hero h1{max-width:610px;font-size:clamp(35px,3.5vw,48px);line-height:1.02;color:#fff}
-    .ground-hero h1 em{font-weight:500;color:#e7dfd2}
-    .hero-copy{max-width:485px;margin:18px 0 0;font-size:12.5px;line-height:1.72;color:rgba(255,255,255,.82)}
-    .hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}
-    .hero-actions .primary{background:#fff;color:var(--green);border-color:#fff}
-    .hero-actions .secondary{color:#fff;border-color:rgba(255,255,255,.55)}
+    .philosophy{padding:104px var(--x) 108px;background:var(--ivory)}.philosophy-inner{max-width:860px;margin:0 auto;text-align:center}.philosophy h2{font-size:clamp(25px,2.25vw,32px);line-height:1.18}.philosophy .body-copy{max-width:570px;margin:19px auto 0}.service-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:18px 28px;margin-top:32px}.service-tags span{font-size:7.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#737c74}
 
-    /* INTRO */
-    .intro{padding:104px var(--x) 108px;background:var(--cream)}
-    .intro-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.72fr);gap:clamp(60px,9vw,135px);align-items:end}
-    .intro-copy{max-width:600px}
-    .intro-copy .section-title{max-width:560px}
-    .intro-side{max-width:420px;justify-self:end}
-    .intro-side .body-copy{margin-bottom:28px}
-    .capabilities{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line)}
-    .capabilities span{padding:13px 17px 0 0;margin:0 17px 0 0;font-size:7.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#788078;white-space:nowrap}
+    .arrival-wrap{padding:0 var(--x) 120px;background:var(--ivory)}.arrival-stage{position:relative;max-width:1260px;margin:0 auto}.arrival-image{height:650px;background:url('First-Track-Meet-and-Greet-Service.jpg') center/cover no-repeat}.arrival-card{position:absolute;right:0;bottom:-1px;width:min(390px,36%);padding:38px 42px 40px;background:var(--paper)}.arrival-card h2{font-size:24px;line-height:1.18}.arrival-card .body-copy{margin-top:15px}.arrival-card .small-link{margin-top:19px}
 
-    /* ARRIVAL */
-    .arrival{display:grid;grid-template-columns:minmax(0,63%) minmax(0,37%);min-height:650px;background:var(--paper)}
-    .arrival-image{min-height:650px;background:url('First-Track-Meet-and-Greet-Service.jpg') center/cover no-repeat}
-    .arrival-copy{display:flex;align-items:center;padding:78px clamp(48px,6vw,92px)}
-    .arrival-copy-inner{max-width:390px}
-    .arrival-copy .body-copy{margin-top:18px}
-    .arrival-note{margin:30px 0 0;padding-top:21px;border-top:1px solid var(--line);font-family:"Playfair Display",Georgia,serif;font-size:17px;line-height:1.45;color:#506057}
+    .services{padding:118px 0 124px;background:var(--paper)}.services-intro{padding:0 var(--x);max-width:980px;margin:0 auto 74px;text-align:center}.services-intro h2{font-size:clamp(25px,2.1vw,31px);line-height:1.18}.services-intro .body-copy{max-width:520px;margin:17px auto 0}
+    .story{display:grid;grid-template-columns:58% 42%;align-items:center;min-height:590px;margin-top:86px}.story:first-of-type{margin-top:0}.story.reverse{grid-template-columns:42% 58%}.story.reverse .story-image{order:2}.story.reverse .story-copy{order:1}.story-image{min-height:590px;background-position:center;background-size:cover}.story.chauffeur .story-image{background-image:url('corporate-executive.jpg')}.story.group .story-image{background-image:url('business-travel.jpg')}.story-copy{padding:72px clamp(54px,7vw,105px)}.story-copy-inner{max-width:380px}.story-no{display:block;margin-bottom:16px;font-size:7px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#929990}.story-copy h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,1.9vw,28px);line-height:1.18;font-weight:500;letter-spacing:-.02em}.story-copy p{margin:15px 0 0;font-size:12px;line-height:1.73;color:var(--muted)}.story-meta{margin-top:22px;padding-top:17px;border-top:1px solid var(--line);font-size:7.5px;line-height:1.75;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7d857e}
 
-    /* MOVEMENT STORY */
-    .movement{background:var(--deep);color:#fff}
-    .movement-head{padding:100px var(--x) 56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.55fr);gap:70px;align-items:end}
-    .movement .eyebrow{color:#a9b4ac}
-    .movement .section-title{color:#fff;max-width:600px}
-    .movement-head .body-copy{max-width:390px;color:#bfc9c2;justify-self:end}
-    .movement-row{display:grid;grid-template-columns:62% 38%;min-height:540px;border-top:1px solid rgba(255,255,255,.09)}
-    .movement-row.reverse{grid-template-columns:38% 62%}
-    .movement-row.reverse .movement-image{order:2}
-    .movement-row.reverse .movement-copy{order:1}
-    .movement-image{min-height:540px;background-position:center;background-size:cover}
-    .movement-row:nth-of-type(2) .movement-image{background-image:url('corporate-executive.jpg')}
-    .movement-row:nth-of-type(3) .movement-image{background-image:url('business-travel.jpg')}
-    .movement-row:nth-of-type(4) .movement-image{background-image:url('danang-hoian.jpg')}
-    .movement-copy{display:flex;align-items:center;padding:72px clamp(48px,6vw,90px);background:var(--deep)}
-    .movement-row.reverse .movement-copy{background:var(--deep2)}
-    .movement-copy-inner{max-width:390px}
-    .movement-number{display:block;margin-bottom:18px;font-size:7px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#98a69d}
-    .movement-copy h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,1.8vw,28px);line-height:1.17;font-weight:500;letter-spacing:-.02em;color:#fff}
-    .movement-copy p{margin:17px 0 0;font-size:12px;line-height:1.74;color:#bdc7c0}
-    .movement-meta{margin-top:25px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:7.5px;font-weight:600;line-height:1.8;letter-spacing:.12em;text-transform:uppercase;color:#9eaaa2}
+    .intercity{padding:118px var(--x) 130px;background:var(--ivory)}.intercity-inner{position:relative;max-width:1110px;margin:0 auto}.intercity-image{height:620px;background:url('danang-hoian.jpg') center/cover no-repeat}.intercity-copy{position:absolute;left:-1px;bottom:-1px;width:min(430px,44%);padding:42px 44px;background:var(--ivory)}.intercity-copy h3{font-size:25px;line-height:1.2}.intercity-copy .body-copy{margin-top:15px}.intercity-copy .story-meta{margin-top:20px}
 
-    /* COORDINATION */
-    .coordination{position:relative;min-height:700px;display:flex;align-items:flex-end;background:url('corporate-hero.jpg') center 43%/cover no-repeat;color:#fff}
-    .coordination:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,40,31,.88) 0%,rgba(18,40,31,.58) 43%,rgba(18,40,31,.09) 78%),linear-gradient(180deg,rgba(18,40,31,.02) 42%,rgba(18,40,31,.38) 100%)}
-    .coordination-inner{position:relative;z-index:2;width:100%;padding:80px var(--x)}
-    .coordination-copy{max-width:485px}
-    .coordination .eyebrow{color:#b8c3bb}
-    .coordination .section-title{color:#fff;max-width:480px}
-    .coordination .body-copy{max-width:430px;margin-top:18px;color:#d0d8d2}
-    .coordination-line{max-width:430px;margin-top:28px;padding-top:21px;border-top:1px solid rgba(255,255,255,.18);font-family:"Playfair Display",Georgia,serif;font-size:18px;line-height:1.42;color:#eee8de}
+    .coordination{display:grid;grid-template-columns:58% 42%;min-height:650px;background:var(--deep);color:#fff}.coordination-image{min-height:650px;background:url('corporate-hero.jpg') center 44%/cover no-repeat}.coordination-copy{display:flex;align-items:center;padding:80px clamp(48px,6.2vw,92px)}.coordination-copy-inner{max-width:430px}.coordination .eyebrow{color:#aeb9b1}.coordination h2{font-size:clamp(24px,2vw,30px);line-height:1.18;color:#fff}.coordination .body-copy{margin-top:18px;color:#c6d0c8}.coordination-quote{margin-top:29px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);font-family:"Playfair Display",Georgia,serif;font-size:18px;line-height:1.44;color:#e8e2d9}
 
-    /* CONTINUE */
-    .continue{padding:104px var(--x) 112px;background:var(--cream)}
-    .continue-head{display:grid;grid-template-columns:1fr .7fr;gap:70px;align-items:end;margin-bottom:48px}
-    .continue-head .body-copy{max-width:390px;justify-self:end}
-    .continue-links{border-top:1px solid var(--line)}
-    .continue-link{display:grid;grid-template-columns:50px 1fr auto;gap:24px;align-items:center;min-height:92px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;transition:padding .25s ease,opacity .25s ease}
-    .continue-link small{font-size:7px;font-weight:600;letter-spacing:.15em;color:#929991}
-    .continue-link strong{font-family:"Playfair Display",Georgia,serif;font-size:19px;line-height:1.2;font-weight:500}
-    .continue-link span{font-size:7.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#707970}
+    .related{padding:108px var(--x) 116px;background:var(--paper)}.related-head{max-width:650px;margin-bottom:45px}.related-head h2{font-size:clamp(24px,2vw,30px);line-height:1.18}.related-head .body-copy{max-width:470px;margin-top:16px}.related-grid{display:grid;grid-template-columns:1.1fr .95fr .95fr;gap:14px}.related-item{text-decoration:none;color:var(--ink)}.related-image{height:300px;background-position:center;background-size:cover}.related-item:nth-child(1) .related-image{height:360px;background-image:url('final-cta-lounge.jpg')}.related-item:nth-child(2) .related-image{background-image:url('corporate-hotel.jpg')}.related-item:nth-child(3) .related-image{background-image:url('Business meeting- boardroom.jpg')}.related-copy{padding:18px 2px 0}.related-copy small{display:block;margin-bottom:7px;font-size:7px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8a918b}.related-copy strong{display:block;font-family:"Playfair Display",Georgia,serif;font-size:18px;font-weight:500;line-height:1.2}.related-copy span{display:inline-block;margin-top:10px;font-size:7.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#747c76}
 
-    /* CTA */
-    .ground-cta{padding:86px var(--x) 90px;background:var(--green);color:#fff}
-    .ground-cta-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:70px;align-items:center}
-    .ground-cta-copy{max-width:680px}
-    .ground-cta .eyebrow{color:#adb9b0}
-    .ground-cta h2{font-size:clamp(24px,2.05vw,30px);line-height:1.16;color:#fff}
-    .ground-cta p{max-width:520px;margin:16px 0 0;font-size:12px;line-height:1.7;color:#c9d1cb}
-    .ground-cta-actions{display:flex;gap:9px;flex-wrap:wrap}
-    .ground-cta .primary{background:#fff;border-color:#fff;color:var(--green)}
-    .ground-cta .secondary{color:#fff;border-color:rgba(255,255,255,.55)}
+    .cta{padding:88px var(--x) 92px;background:var(--ivory)}.cta-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:70px;align-items:end}.cta-copy{max-width:690px}.cta h2{font-size:clamp(25px,2.1vw,31px);line-height:1.17}.cta .body-copy{max-width:510px;margin-top:16px}.cta-btn{display:inline-flex;min-height:43px;padding:0 19px;align-items:center;justify-content:center;background:var(--green);border:1px solid var(--green);color:#fff;font-size:7.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;text-decoration:none}
 
-    @media(hover:hover){
-      .hero-actions .secondary:hover,.ground-cta .secondary:hover{background:#fff;border-color:#fff;color:var(--green)}
-      .micro-link:hover{opacity:.65}
-      .continue-link:hover{padding-left:10px}
-    }
-
-    @media(max-width:940px){
-      .intro-inner{grid-template-columns:1fr .8fr;gap:55px}
-      .arrival{grid-template-columns:57% 43%}.arrival-image{min-height:580px}.arrival{min-height:580px}
-      .movement-row{grid-template-columns:56% 44%;min-height:500px}.movement-row.reverse{grid-template-columns:44% 56%}.movement-image{min-height:500px}
-      .coordination{min-height:620px}
-    }
-
-    @media(max-width:700px){
-      .ground-page{--x:22px}
-      .ground-hero{min-height:620px;background-position:60% center}
-      .hero-inner{padding-bottom:46px}
-      .ground-hero h1{font-size:32px;max-width:430px}
-      .hero-copy{font-size:12px;max-width:390px}
-      .hero-actions,.ground-cta-actions{flex-direction:column;align-items:stretch}.ground-btn{width:100%}
-
-      .intro{padding:66px 22px 70px}.intro-inner{grid-template-columns:1fr;gap:28px}.intro-side{justify-self:start;max-width:none}.intro-side .body-copy{margin-bottom:22px}.capabilities{gap:0}.capabilities span{padding-top:11px;margin-right:12px;padding-right:12px}
-
-      .arrival{grid-template-columns:1fr;min-height:0}.arrival-image{min-height:390px}.arrival-copy{padding:58px 22px 64px}.arrival-copy-inner{max-width:none}
-
-      .movement-head{padding:66px 22px 38px;grid-template-columns:1fr;gap:18px}.movement-head .body-copy{justify-self:start}
-      .movement-row,.movement-row.reverse{grid-template-columns:1fr;min-height:0}.movement-row.reverse .movement-image,.movement-row.reverse .movement-copy{order:initial}.movement-image{min-height:390px}.movement-copy{padding:54px 22px 60px}.movement-copy-inner{max-width:none}
-
-      .coordination{min-height:600px;background-position:60% center}.coordination:after{background:linear-gradient(90deg,rgba(18,40,31,.86),rgba(18,40,31,.38) 75%),linear-gradient(180deg,rgba(18,40,31,.05) 30%,rgba(18,40,31,.62) 100%)}.coordination-inner{padding:64px 22px}.coordination-copy{max-width:420px}
-
-      .continue{padding:66px 22px 72px}.continue-head{grid-template-columns:1fr;gap:18px;margin-bottom:34px}.continue-head .body-copy{justify-self:start}.continue-link{grid-template-columns:34px 1fr auto;gap:12px;min-height:78px}.continue-link strong{font-size:17px}.continue-link span{font-size:0}.continue-link span:after{content:'→';font-size:15px}
-
-      .ground-cta{padding:64px 22px 70px}.ground-cta-inner{grid-template-columns:1fr;gap:30px}
-    }
+    @media(hover:hover){.small-link:hover,.related-item:hover{opacity:.72}.cta-btn:hover{background:transparent;color:var(--green)}}
+    @media(max-width:920px){.arrival-image{height:560px}.arrival-card{width:42%}.story,.story.reverse{grid-template-columns:55% 45%;min-height:520px}.story-image{min-height:520px}.intercity-image{height:540px}.coordination{grid-template-columns:54% 46%;min-height:580px}.coordination-image{min-height:580px}}
+    @media(max-width:700px){.ground-page{--x:22px}.hero{min-height:620px;background-position:60% center}.hero-inner{padding-bottom:46px}.hero h1{font-size:32px;max-width:430px}.hero p:not(.eyebrow){font-size:12px}.philosophy{padding:68px 22px 74px}.service-tags{gap:13px 18px}.arrival-wrap{padding:0 22px 72px}.arrival-image{height:390px}.arrival-card{position:relative;width:100%;padding:30px 0 0;background:transparent}.services{padding:72px 0 78px}.services-intro{padding:0 22px;margin-bottom:42px}.story,.story.reverse{grid-template-columns:1fr;min-height:0;margin-top:62px}.story.reverse .story-image,.story.reverse .story-copy{order:initial}.story-image{min-height:390px}.story-copy{padding:42px 22px 8px}.story-copy-inner{max-width:none}.intercity{padding:70px 22px 78px}.intercity-image{height:390px}.intercity-copy{position:relative;width:100%;padding:30px 0 0;background:transparent}.coordination{grid-template-columns:1fr;min-height:0}.coordination-image{min-height:390px}.coordination-copy{padding:58px 22px 64px}.coordination-copy-inner{max-width:none}.related{padding:70px 22px 78px}.related-grid{grid-template-columns:1fr;gap:42px}.related-item:nth-child(1) .related-image,.related-image{height:330px}.cta{padding:64px 22px 70px}.cta-inner{grid-template-columns:1fr;gap:28px}.cta-btn{width:100%}}
   </style>
 </head>
 <body class="ground-page">
@@ -163,125 +44,81 @@
   </header>
 
   <main>
-    <section class="ground-hero">
+    <section class="hero">
       <div class="hero-inner">
-        <p class="eyebrow">Ground Transportation · Vietnam</p>
-        <h1 class="serif">Move through Vietnam <em>without the friction.</em></h1>
-        <p class="hero-copy">Private transfers and chauffeur-led travel, coordinated around the day rather than simply the drive.</p>
-        <div class="hero-actions">
-          <a class="ground-btn primary" href="contact.html">Arrange transportation</a>
-          <a class="ground-btn secondary" href="#services">Explore services</a>
+        <p class="eyebrow">Private ground transport · Vietnam</p>
+        <h1 class="serif">A smoother way to move <em>through Vietnam.</em></h1>
+        <p>Private airport transfers, chauffeur service and coordinated movement for travellers who value time, discretion and a plan that simply works.</p>
+        <a class="small-link" href="contact.html">Plan your transfer <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="philosophy">
+      <div class="philosophy-inner">
+        <p class="eyebrow">From arrival to onward journey</p>
+        <h2 class="serif">Ground transport should feel almost invisible.</h2>
+        <p class="body-copy">The right vehicle, the right timing and one local team quietly connecting every movement around the day.</p>
+        <div class="service-tags"><span>Airport meet & greet</span><span>Executive chauffeur</span><span>Corporate groups</span><span>Intercity travel</span><span>24/7 support</span></div>
+      </div>
+    </section>
+
+    <section class="arrival-wrap">
+      <div class="arrival-stage">
+        <div class="arrival-image" role="img" aria-label="Airport meet and greet service in Vietnam"></div>
+        <div class="arrival-card">
+          <p class="eyebrow">Touchdown</p>
+          <h2 class="serif">Your journey is already moving when you land.</h2>
+          <p class="body-copy">We track the real arrival time, meet the traveller, handle the airport handover and connect the transfer to what comes next.</p>
+          <a class="small-link" href="contact.html">Arrange an arrival <span>→</span></a>
         </div>
       </div>
     </section>
 
-    <section class="intro">
-      <div class="intro-inner">
-        <div class="intro-copy">
-          <p class="eyebrow">From touchdown onward</p>
-          <h2 class="serif section-title">The best transfer is the one you barely have to think about.</h2>
-        </div>
-        <div class="intro-side">
-          <p class="body-copy">We connect the arrival, the vehicle, the route and what happens next—so the journey feels continuous from the moment you land.</p>
-          <div class="capabilities" aria-label="Ground transportation services">
-            <span>Airport</span><span>Chauffeur</span><span>Groups</span><span>Intercity</span><span>24/7</span>
-          </div>
-        </div>
+    <section class="services" id="services">
+      <div class="services-intro">
+        <p class="eyebrow">On the ground</p>
+        <h2 class="serif">Different journeys. The same quiet precision.</h2>
+        <p class="body-copy">From one executive to a full group movement plan, the experience stays connected.</p>
       </div>
+
+      <article class="story chauffeur">
+        <div class="story-image" role="img" aria-label="Executive chauffeur service in Vietnam"></div>
+        <div class="story-copy"><div class="story-copy-inner"><span class="story-no">01 · Executive chauffeur</span><h3>Discreet movement around a demanding day.</h3><p>Hotels, meetings, restaurants and appointments without rebuilding the plan at every stop.</p><div class="story-meta">Private car · Dedicated driver · Flexible timing</div></div></div>
+      </article>
+
+      <article class="story reverse group">
+        <div class="story-image" role="img" aria-label="Corporate group transportation in Vietnam"></div>
+        <div class="story-copy"><div class="story-copy-inner"><span class="story-no">02 · Groups & events</span><h3>One movement plan across every vehicle.</h3><p>Cars, vans and coaches coordinated across arrivals, hotels, venues and departures.</p><div class="story-meta">Airport waves · Venue movement · Group departures</div></div></div>
+      </article>
     </section>
 
-    <section class="arrival">
-      <div class="arrival-image" role="img" aria-label="Airport meet and greet service in Vietnam"></div>
-      <div class="arrival-copy">
-        <div class="arrival-copy-inner">
-          <p class="eyebrow">Arrival, handled</p>
-          <h2 class="serif section-title">Your journey is already moving when you land.</h2>
-          <p class="body-copy">Real arrival time, traveller meet-up, luggage and onward transfer—kept in one local plan.</p>
-          <p class="arrival-note">Less waiting. Fewer calls. A calmer arrival.</p>
-          <a class="micro-link" href="contact.html">Arrange an airport arrival <span>→</span></a>
-        </div>
+    <section class="intercity">
+      <div class="intercity-inner">
+        <div class="intercity-image" role="img" aria-label="Private intercity travel in Vietnam"></div>
+        <div class="intercity-copy"><span class="story-no">03 · Intercity travel</span><h3 class="serif">When the road is the better way to travel.</h3><p class="body-copy">Private longer-distance transfers with timing, stops and onward arrangements already connected.</p><div class="story-meta">Da Nang ↔ Hoi An · Hanoi ↔ Ninh Binh · Custom routes</div></div>
       </div>
-    </section>
-
-    <section class="movement" id="services">
-      <div class="movement-head">
-        <div>
-          <p class="eyebrow">How we move you</p>
-          <h2 class="serif section-title">Transport shaped around the journey.</h2>
-        </div>
-        <p class="body-copy">One transfer or a full movement programme—the same attention to timing, comfort and continuity.</p>
-      </div>
-
-      <article class="movement-row">
-        <div class="movement-image" role="img" aria-label="Executive chauffeur service in Vietnam"></div>
-        <div class="movement-copy"><div class="movement-copy-inner">
-          <span class="movement-number">01 · Executive chauffeur</span>
-          <h3>Quiet movement around a demanding day.</h3>
-          <p>Hotel. Meeting. Dinner. Airport. Your driver stays aligned with the schedule as the day unfolds.</p>
-          <div class="movement-meta">Private · Discreet · Schedule-led</div>
-        </div></div>
-      </article>
-
-      <article class="movement-row reverse">
-        <div class="movement-image" role="img" aria-label="Corporate group and event transportation"></div>
-        <div class="movement-copy"><div class="movement-copy-inner">
-          <span class="movement-number">02 · Groups & events</span>
-          <h3>Many vehicles. One movement plan.</h3>
-          <p>Cars, vans and coaches coordinated across arrivals, hotels, venues and departures.</p>
-          <div class="movement-meta">Arrivals · Venues · Departures</div>
-        </div></div>
-      </article>
-
-      <article class="movement-row">
-        <div class="movement-image" role="img" aria-label="Private intercity transportation in Vietnam"></div>
-        <div class="movement-copy"><div class="movement-copy-inner">
-          <span class="movement-number">03 · Intercity travel</span>
-          <h3>When the road is the better way to travel.</h3>
-          <p>Private longer-distance journeys with timing, stops and the onward programme already connected.</p>
-          <div class="movement-meta">Private route · Flexible stops · Door to door</div>
-        </div></div>
-      </article>
     </section>
 
     <section class="coordination">
-      <div class="coordination-inner">
-        <div class="coordination-copy">
-          <p class="eyebrow">24/7 local coordination</p>
-          <h2 class="serif section-title">When the schedule moves, the transport moves with it.</h2>
-          <p class="body-copy">A delayed flight, an earlier meeting or an extra passenger should not become another chain of calls. One Pacific World contact coordinates the response.</p>
-          <div class="coordination-line">The vehicle matters. The coordination around it matters more.</div>
-        </div>
+      <div class="coordination-image" role="img" aria-label="24 hour local ground transportation coordination"></div>
+      <div class="coordination-copy"><div class="coordination-copy-inner"><p class="eyebrow">24/7 local coordination</p><h2 class="serif">Plans change. Your transport changes with them.</h2><p class="body-copy">A delayed flight, earlier meeting, venue change or extra passenger should not create another chain of calls. One Pacific World contact coordinates the response.</p><div class="coordination-quote">The vehicle matters. The coordination around it matters more.</div></div></div>
+    </section>
+
+    <section class="related">
+      <div class="related-head"><p class="eyebrow">Complete the programme</p><h2 class="serif">Keep the rest of the journey with the same local team.</h2><p class="body-copy">Connect transport with accommodation, meetings and wider executive travel across Vietnam.</p></div>
+      <div class="related-grid">
+        <a class="related-item" href="corporate-executive-travel.html"><div class="related-image"></div><div class="related-copy"><small>Business travel</small><strong>Corporate programmes</strong><span>Explore →</span></div></a>
+        <a class="related-item" href="hotels-resorts.html"><div class="related-image"></div><div class="related-copy"><small>Accommodation</small><strong>Hotels & executive stays</strong><span>Explore →</span></div></a>
+        <a class="related-item" href="meetings-conferences.html"><div class="related-image"></div><div class="related-copy"><small>MICE</small><strong>Meetings & events</strong><span>Explore →</span></div></a>
       </div>
     </section>
 
-    <section class="continue">
-      <div class="continue-head">
-        <div><p class="eyebrow">Continue with Pacific World</p><h2 class="serif section-title">Keep the wider programme connected.</h2></div>
-        <p class="body-copy">Transportation can sit inside a complete executive journey managed by the same local team.</p>
-      </div>
-      <div class="continue-links">
-        <a class="continue-link" href="corporate-executive-travel.html"><small>01</small><strong>Corporate travel</strong><span>Explore service →</span></a>
-        <a class="continue-link" href="hotels-resorts.html"><small>02</small><strong>Hotels & executive stays</strong><span>Explore service →</span></a>
-        <a class="continue-link" href="meetings-conferences.html"><small>03</small><strong>Meetings & events</strong><span>Explore service →</span></a>
-      </div>
-    </section>
-
-    <section class="ground-cta">
-      <div class="ground-cta-inner">
-        <div class="ground-cta-copy">
-          <p class="eyebrow">Start with the route</p>
-          <h2 class="serif">Tell us where your travellers need to be — and when.</h2>
-          <p>Share the dates, cities, traveller numbers and schedule. We will shape the movement around the journey.</p>
-        </div>
-        <div class="ground-cta-actions">
-          <a class="ground-btn primary" href="contact.html">Request transportation</a>
-          <a class="ground-btn secondary" href="corporate-executive-travel.html">Corporate travel</a>
-        </div>
-      </div>
+    <section class="cta">
+      <div class="cta-inner"><div class="cta-copy"><p class="eyebrow">Start with the route</p><h2 class="serif">Tell us where your travellers need to be — and when.</h2><p class="body-copy">Share the cities, dates, traveller numbers and schedule. We will shape the movement around the journey.</p></div><a class="cta-btn" href="contact.html">Request transportation</a></div>
     </section>
   </main>
 
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-  <script src="script.js?v=20260907-ground-editorial2"></script><script src="nav-fix.js?v=20260907-ground-editorial2"></script>
+  <script src="script.js?v=20260907-ground-artdirection"></script><script src="nav-fix.js?v=20260907-ground-artdirection"></script>
 </body>
 </html>
