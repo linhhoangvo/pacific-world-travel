@@ -311,3 +311,72 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.head.appendChild(style);
 });
+
+/* Homepage How It Works / Client Experience — DM Sans to match site menu */
+document.addEventListener("DOMContentLoaded", () => {
+  if(document.getElementById("homepage-how-dm-sans")) return;
+  const style=document.createElement("style");
+  style.id="homepage-how-dm-sans";
+  style.textContent=`
+    html body main#top section.how-we-work.journey-process,
+    html body main#top section.how-we-work.journey-process *{
+      font-family:"DM Sans",sans-serif!important;
+    }
+    html body main#top section.how-we-work.journey-process .eyebrow,
+    html body main#top section.how-we-work.journey-process .client-panel-kicker,
+    html body main#top section.how-we-work.journey-process .client-panel-tag{
+      font-size:8px!important;
+      line-height:1.45!important;
+      letter-spacing:.08em!important;
+    }
+    html body main#top section.how-we-work.journey-process .process-left>h2,
+    html body main#top section.how-we-work.journey-process .client-panel .client-panel-body h3{
+      font-size:clamp(18px,1.8vw,22px)!important;
+      line-height:1.2!important;
+      letter-spacing:-.01em!important;
+      font-weight:600!important;
+    }
+    html body main#top section.how-we-work.journey-process .process-step h3{
+      font-size:16px!important;
+      line-height:1.28!important;
+      font-weight:600!important;
+      letter-spacing:-.005em!important;
+    }
+    html body main#top section.how-we-work.journey-process .process-step p,
+    html body main#top section.how-we-work.journey-process .client-panel .client-panel-body p{
+      font-size:11.5px!important;
+      line-height:1.65!important;
+      font-weight:400!important;
+    }
+    html body main#top section.how-we-work.journey-process .client-persona,
+    html body main#top section.how-we-work.journey-process #client-persona,
+    html body main#top section.how-we-work.journey-process #client-persona a{
+      font-size:10px!important;
+      line-height:1.4!important;
+      font-weight:400!important;
+    }
+    html body main#top section.how-we-work.journey-process .process-step-number{
+      font-size:8px!important;
+      font-weight:600!important;
+    }
+    html body main#top section.how-we-work.journey-process .process-cta{
+      font-size:7.5px!important;
+      letter-spacing:.08em!important;
+      min-height:36px!important;
+      padding:0 15px!important;
+    }
+    html body main#top section.how-we-work.journey-process .client-arrow{
+      width:32px!important;
+      height:32px!important;
+      font-size:13px!important;
+    }
+    @media(max-width:680px){
+      html body main#top section.how-we-work.journey-process .process-left>h2,
+      html body main#top section.how-we-work.journey-process .client-panel .client-panel-body h3{font-size:20px!important}
+      html body main#top section.how-we-work.journey-process .process-step h3{font-size:15px!important}
+      html body main#top section.how-we-work.journey-process .process-step p,
+      html body main#top section.how-we-work.journey-process .client-panel .client-panel-body p{font-size:11px!important}
+    }
+  `;
+  document.head.appendChild(style);
+});
