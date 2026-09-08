@@ -35,3 +35,53 @@ footer .socials span{
   footer .footer-column>strong{font-size:10px!important}
   footer .footer-column small{font-size:10px!important}
 }
+
+/* Homepage destinations — separate Da Nang and Hoi An */
+main#top .destination-grid{
+  grid-template-columns:repeat(7,minmax(0,1fr))!important;
+}
+main#top .destination.d1{order:1}
+main#top .destination.d2{order:2}
+main#top .destination.d3{
+  order:3;
+  background-image:url("golf-da-nang.jpg")!important;
+  background-position:center!important;
+}
+main#top .destination.d3 strong{
+  font-size:0!important;
+}
+main#top .destination.d3 strong::after{
+  content:"Da Nang";
+  font-size:13px;
+}
+main#top .destination-grid::after{
+  content:"Hoi An";
+  order:4;
+  min-height:230px;
+  position:relative;
+  overflow:hidden;
+  border-radius:3px;
+  display:flex;
+  align-items:flex-end;
+  padding:0 14px 13px;
+  text-align:left;
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  background:
+    linear-gradient(180deg,rgba(3,31,49,.03),rgba(3,31,49,.78)),
+    url("danang-hoian.jpg") center/cover no-repeat;
+}
+main#top .destination.d4{order:5}
+main#top .destination.d5{order:6}
+main#top .destination.d6{order:7}
+
+@media(max-width:1080px){
+  main#top .destination-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+@media(max-width:720px){
+  main#top .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:480px){
+  main#top .destination-grid{grid-template-columns:1fr!important}
+}
