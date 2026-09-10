@@ -138,7 +138,7 @@ const socialLinks = {
     label: "Pacific World Travel on LinkedIn"
   },
   f: {
-    href: "https://www.facebook.com/profile.php?id=61593539661203",
+    href: "https://www.facebook.com/profile.php?id=61594392774660",
     label: "Pacific World Travel on Facebook"
   }
 };
