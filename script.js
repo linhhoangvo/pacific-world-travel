@@ -140,6 +140,10 @@ const socialLinks = {
   f: {
     href: "https://www.facebook.com/profile.php?id=61594392774660",
     label: "Pacific World Travel on Facebook"
+  },
+  ig: {
+    href: "https://www.instagram.com/pacificworldtravel.vn/",
+    label: "Pacific World Travel on Instagram"
   }
 };
 
@@ -157,6 +161,16 @@ document.querySelectorAll("footer .socials").forEach((socials) => {
       item.replaceWith(link);
     }
   });
+
+  if (![...socials.querySelectorAll("a")].some((link) => link.href.includes("instagram.com"))) {
+    const instagramLink = document.createElement("a");
+    instagramLink.href = socialLinks.ig.href;
+    instagramLink.target = "_blank";
+    instagramLink.rel = "noopener noreferrer";
+    instagramLink.setAttribute("aria-label", socialLinks.ig.label);
+    instagramLink.textContent = "ig";
+    socials.appendChild(instagramLink);
+  }
 });
 
 /* MOBILE MAIN MENU */
