@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore golf courses by destination across Vietnam with Pacific World Travel." />
+  <title>Vietnam Golf Destination | Pacific World Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20260917-golf-destination" />
+  <link rel="stylesheet" href="golf-destination.css?v=20260917-golf-destination" />
+</head>
+<body class="golf-destination-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pacific World Travel home"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="destinations.html">Destinations</a><a href="meetings-conferences.html">MICE & Events</a><a href="who-we-are.html">About</a></nav>
+    <a class="outline-btn header-cta" href="contact.html">Talk to us</a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="destination-root"></main>
+
+  <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
+
+  <script>
+    const data = {
+      hanoi:{region:'North Vietnam',title:'Hanoi Golf Courses',hero:'hero-golf.jpg',intro:'A broad choice of established courses within easy reach of the capital, making Hanoi one of Vietnam’s most flexible golf bases.',meta:['City-access golf','Private transfers','Multi-round stays'],courses:[
+        {name:'Van Tri Golf Club',place:'Hanoi',tag:'Private club',img:'https://golfsavers.b-cdn.net/assets/images/van-tri-fairway.jpg?quality=70',copy:'A polished private-club experience close to the city, known for water features, mature landscaping and a calm setting.'},
+        {name:'Long Bien Golf Course',place:'Hanoi',tag:'27 holes',img:'https://tourgolf.vn/en/sites/default/files/inline/images/5_2.jpg',copy:'A convenient urban option near central Hanoi with floodlit play and easy access for business or short golf stays.'},
+        {name:'Sky Lake Resort & Golf Club',place:'Hanoi',tag:'36 holes',img:'https://www.vietleadingtravel.com/images/Vietnam/Golf/Sky%20Lake/Sky-Lake-Golf-Resort-6.JPG',copy:'Rolling terrain, lakes and mountain views west of Hanoi, well suited to full-day golf outings.'},
+        {name:'BRG Kings Island Golf Resort',place:'Hanoi',tag:'Resort golf',img:'https://en.tgroup.vn/uploads/images/golf/golf-ha-noi/brg-kings-island-kings-course-tgroup-travel-golf-2453.jpg',copy:'A long-established lake-side golf resort that pairs naturally with a Hanoi stay.'},
+        {name:'BRG Legend Hill Golf Resort',place:'Hanoi',tag:'Soc Son',img:'https://i0.wp.com/unigolf.vn/wp-content/uploads/2016/12/brg-legend-hill-golf-resort-1.jpg?fit=1012%2C500&ssl=1',copy:'A modern northern layout with water, elevation and a distinctive twin-green concept.'}
+      ]},
+      halong:{region:'North Vietnam',title:'Ha Long & Hai Phong Golf Courses',hero:'golf.jpg',intro:'Coastal and northern golf that combines naturally with Ha Long Bay, Hai Phong and wider northern itineraries.',meta:['Coastal golf','Ha Long extensions','Private transfers'],courses:[
+        {name:'FLC Golf Club Ha Long',place:'Quang Ninh',tag:'Bay views',img:'https://channel.mediacdn.vn/2021/3/13/photo-1-16156091139431909554753.jpg',copy:'Elevated fairways with broad views over Ha Long Bay and its limestone islands.'},
+        {name:'Chi Linh Golf Club',place:'Hai Phong region',tag:'Lake & hills',img:'https://golftravel.vn/pic/Product/chi-linh-_639047839887265916_HasThumb.jpg',copy:'A northern classic of rolling ground, lakes and mature landscaping between Hanoi and the coast.'},
+        {name:'Dragon Golf Links',place:'Hai Phong',tag:'Coastal',img:'https://cafefcdn.com/203337114487263232/2025/8/29/photo-2-1756364798819243690545-1756432565071-1756432565390675027676.jpg',copy:'Open coastal views and sea breezes give this Do Son layout a distinct character.'},
+        {name:'Silk Path Dong Trieu Golf & Country Club',place:'Quang Ninh',tag:'New generation',img:'https://en.tgroup.vn/uploads/images/golf/golf-halong-quangninh/tgroup-san-golf-dong-trieu%20%285%29.jpg',copy:'A newer course with rolling terrain and water, easily paired with a Ha Long itinerary.'}
+      ]},
+      ninhbinh:{region:'North Vietnam',title:'Ninh Binh Golf Courses',hero:'golf-travel.jpg',intro:'Golf among lakes, limestone formations and heritage landscapes, ideal for a slower northern extension from Hanoi.',meta:['Karst landscapes','Heritage stays','Private touring'],courses:[
+        {name:'Trang An Golf & Resort',place:'Ninh Binh',tag:'Lake setting',img:'https://tdtt.gov.vn/Portals/0/images/article/Golf%20Trabg%20an.jpg',copy:'A tranquil lake-and-forest course that pairs naturally with Ninh Binh’s heritage sites.'},
+        {name:'Royal Golf Course',place:'Ninh Binh',tag:'Karst landscape',img:'https://thanhcong.vn/wp-content/uploads/2024/04/anh_1.jpg',copy:'Golf beside water and limestone scenery in one of northern Vietnam’s most recognizable landscapes.'},
+        {name:'Legend Valley Country Club',place:'Northern Vietnam',tag:'Limestone valley',img:'https://www.golfasian.com/photos/golf-courses/legend-valley-country-club/legend-valley-country-club04.jpg',copy:'Sculpted fairways framed by dramatic limestone terrain.'}
+      ]},
+      hue:{region:'Central & Highlands',title:'Hue & Lang Co Golf Courses',hero:'golf-da-nang.jpg',intro:'A scenic golf stop between Hue and Da Nang, where mountains, sea and resort stays come together.',meta:['Sea & mountains','Luxury resorts','Central Vietnam'],courses:[
+        {name:'Laguna Golf Lang Co',place:'Hue / Lang Co',tag:'Sea & mountains',img:'https://i.ex-cdn.com/vntravellive.com/files/f1/uploaded/images/photo_news/800x800/news_20170720015924/LagunaGolfLangCo_Hole9.jpg.jpg',copy:'A memorable course set between the East Sea and the mountains, naturally paired with a luxury resort stay.'}
+      ]},
+      danang:{region:'Central & Highlands',title:'Da Nang & Hoi An Golf Courses',hero:'golf-da-nang.jpg',intro:'Vietnam’s strongest destination-golf corridor, with standout courses close to the coast, luxury resorts and Hoi An.',meta:['5 featured courses','Coastal & mountain golf','Best for multi-round stays'],courses:[
+        {name:'Ba Na Hills Golf Club',place:'Da Nang',tag:'Mountain course',img:'https://golfsavers.b-cdn.net/assets/images/ba-na-hills-aerial-view-h4.jpg?quality=70',copy:'A dramatic foothill layout west of Da Nang, combining elevation changes, forest and wide mountain views.'},
+        {name:'Legend Da Nang Golf Resort',place:'Da Nang',tag:'Coastal golf',img:'https://vietnam.golftours.co.kr/assets/img/upload/rolling/zP448ifq.png',copy:'Two contrasting championship layouts between Da Nang and Hoi An with the coast always close by.'},
+        {name:'Montgomerie Links Vietnam',place:'Da Nang / Hoi An',tag:'Central coast',img:'https://thegolftravelagency.com.au/wp-content/uploads/2020/05/Montgomerie-Links-9th-Green.jpg',copy:'A polished central-coast course that fits easily into a Da Nang or Hoi An golf stay.'},
+        {name:'Hoiana Shores Golf Club',place:'Hoi An',tag:'Links-style',img:'https://bqn.1cdn.vn/2021/01/11/images.baoquangnam.vn-storage-newsportal-2021-1-11-107387-_golff.jpg',copy:'A striking coastal course south of Hoi An, routed through natural dunes with broad sea and mountain views.'},
+        {name:'Vinpearl Golf Nam Hoi An',place:'Hoi An',tag:'Resort golf',img:'https://product.monkeytravel.com/1076778612/42f7cdcad46733cf4c1b768f56f1cefe.jpg_3.jpg',copy:'A resort-based course south of Hoi An with open fairways, water and an easy leisure extension.'}
+      ]},
+      quynhon:{region:'Central & Highlands',title:'Quy Nhon Golf Courses',hero:'golf-travel.jpg',intro:'A quieter central-coast golf destination with broad sea views and relaxed resort stays.',meta:['Coastal golf','Resort stays','Quieter destination'],courses:[
+        {name:'FLC Golf Links Quy Nhon',place:'Quy Nhon',tag:'Coastal resort',img:'https://file.hstatic.net/200000844097/file/flc-quy-nhon-goda-golf_4f70e3f21bd44d9bbc37fcc4ac7940e9.jpg',copy:'A broad coastal golf landscape with sea views and a relaxed resort setting.'}
+      ]},
+      camranh:{region:'Central & Highlands',title:'Cam Ranh & Nha Trang Golf Courses',hero:'golf-travel.jpg',intro:'Coastal golf with strong resort infrastructure and easy beach extensions around Cam Ranh Bay and Nha Trang.',meta:['Coastal links','Beach resorts','South-central coast'],courses:[
+        {name:'KN Golf Links Cam Ranh',place:'Cam Ranh',tag:'Coastal links',img:'https://cdn.tuoitre.vn/471584752817336320/2023/4/6/kn-links-2-17-16807787401211600653313.jpg',copy:'A Greg Norman coastal layout shaped through dunes on the Cam Ranh peninsula with sweeping ocean views.'},
+        {name:'Vinpearl Golf Nha Trang',place:'Nha Trang',tag:'Island golf',img:'https://owa.bestprice.vn/images/media/vinpearl-golf-nha-trang-655799b262563.jpeg',copy:'Island resort golf with bay views and an easy combination of golf, beach and resort time.'}
+      ]},
+      dalat:{region:'Central & Highlands',title:'Da Lat Golf Courses',hero:'golf-travel.jpg',intro:'Cooler highland weather, pine scenery and a classic golf atmosphere make Da Lat a distinctive Vietnam golf stop.',meta:['Highland climate','Pine scenery','Classic golf'],courses:[
+        {name:'Dalat Palace Golf Club',place:'Da Lat',tag:'Highland classic',img:'https://kampatour.com/pic/blog/images/Dalat-Palace-Golf-Club.jpg',copy:'A historic parkland course in Da Lat’s cool highland climate, framed by pine trees and classic scenery.'}
+      ]},
+      phanthiet:{region:'Central & Highlands',title:'Phan Thiet & Mui Ne Golf Courses',hero:'golf-travel.jpg',intro:'Modern resort golf on the south-central coast, easily combined with a beach stay or southern overland journey.',meta:['Resort golf','Beach extension','South-central coast'],courses:[
+        {name:'NovaWorld Phan Thiet Golf Club',place:'Phan Thiet',tag:'Resort golf',img:'https://tttctt.1cdn.vn/2023/10/11/1011-1-1.jpg',copy:'A large modern golf complex on the Phan Thiet coast with water, dunes and broad resort infrastructure.'}
+      ]},
+      hcmc:{region:'South & Islands',title:'Ho Chi Minh City & Dong Nai Golf Courses',hero:'hero-golf.jpg',intro:'Convenient golf for business trips, short stays and southern itineraries, with several courses reachable from the city.',meta:['City-access golf','Business travel','Day rounds'],courses:[
+        {name:'Long Thanh Golf Club',place:'Dong Nai',tag:'36 holes',img:'hero-golf.jpg',copy:'A popular southern golf option with rolling terrain and broad views, easily arranged from Ho Chi Minh City.'},
+        {name:'Tan Son Nhat Golf Course',place:'Ho Chi Minh City',tag:'City golf',img:'golf.jpg',copy:'One of the city’s most convenient golf options, suitable for shorter stays and business itineraries.'},
+        {name:'Vietnam Golf & Country Club',place:'Ho Chi Minh City',tag:'Established club',img:'golf-travel.jpg',copy:'An established club east of the city with two courses and straightforward city access.'},
+        {name:'Twin Doves Golf Club',place:'Binh Duong',tag:'Private club',img:'golf.jpg',copy:'A polished private-club setting north of Ho Chi Minh City, suited to corporate and leisure rounds.'}
+      ]},
+      hotram:{region:'South & Islands',title:'Ho Tram Golf Courses',hero:'golf-travel.jpg',intro:'A coastal golf escape from Ho Chi Minh City with dunes, sea air and one of Vietnam’s best-known golf experiences.',meta:['Coastal dunes','Resort escape','From Ho Chi Minh City'],courses:[
+        {name:'The Bluffs Grand Ho Tram',place:'Ho Tram',tag:'Dunes golf',img:'golf-travel.jpg',copy:'A dramatic coastal course routed through natural dunes, best paired with a resort stay on the Ho Tram coast.'}
+      ]},
+      phuquoc:{region:'South & Islands',title:'Phu Quoc Golf Courses',hero:'golf-travel.jpg',intro:'Island golf paired naturally with beach resorts, private transfers and longer leisure stays.',meta:['Island golf','Beach resorts','Leisure stays'],courses:[
+        {name:'Vinpearl Golf Phu Quoc',place:'Phu Quoc',tag:'Island resort',img:'golf.jpg',copy:'Resort golf in northern Phu Quoc with tropical surroundings and easy access from major beach resorts.'},
+        {name:'Eschuri Vung Bau Golf',place:'Phu Quoc',tag:'Coastal setting',img:'golf-travel.jpg',copy:'A newer island golf experience that adds another strong round to a longer Phu Quoc stay.'}
+      ]}
+    };
+
+    const params=new URLSearchParams(window.location.search);
+    const key=params.get('region') || 'danang';
+    const d=data[key] || data.danang;
+    document.title=`${d.title} | Pacific World Travel`;
+    const root=document.getElementById('destination-root');
+    const courseRows=d.courses.map((c,i)=>`<article class="gdest-course"><div class="gdest-media"><img loading="lazy" src="${c.img}" alt="${c.name}" onerror="this.onerror=null;this.src='hero-golf.jpg';"></div><div class="gdest-copy"><div class="gdest-kicker"><span>${c.place}</span><span>${c.tag}</span></div><h3>${c.name}</h3><p>${c.copy}</p><div class="gdest-actions"><a class="gdest-link" href="contact.html">Ask about tee times →</a></div></div></article>`).join('');
+    root.innerHTML=`
+      <section class="gdest-hero">
+        <div class="gdest-hero-media" style="background-image:url('${d.hero}')"></div>
+        <div class="gdest-hero-inner"><a class="gdest-back" href="golf-resorts-tee-times.html#map">← Back to Vietnam golf map</a><p class="gdest-label">${d.region}</p><h1>${d.title}</h1><p>${d.intro}</p></div>
+      </section>
+      <section class="gdest-intro"><div class="gdest-intro-inner"><div><p class="gdest-label" style="color:#858d87">Golf destination</p><h2>Choose your rounds. We can shape the stay around them.</h2></div><div><p>${d.intro}</p><span class="gdest-count">${d.courses.length} featured course${d.courses.length===1?'':'s'} · ${d.meta.join(' · ')}</span></div></div></section>
+      <section class="gdest-list"><div class="gdest-list-inner">${courseRows}</div></section>
+      <section class="gdest-cta"><div class="gdest-cta-inner"><p class="gdest-label light">Plan around the golf</p><h2>Need tee times, hotels and private transfers in ${d.title.replace(' Golf Courses','')}?</h2><p>Tell us the courses you want to play and your travel dates. We can coordinate the golf and the wider journey through one local team.</p><a class="gdest-link" href="contact.html">Plan this golf trip →</a></div></section>`;
+  </script>
+  <script src="script.js?v=20260917-golf-destination"></script><script src="nav-fix.js?v=20260917-golf-destination"></script>
+</body>
+</html>
