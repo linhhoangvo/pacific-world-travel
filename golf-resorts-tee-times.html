@@ -7,8 +7,8 @@
   <title>Golf Map of Vietnam | Pacific World Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260917-golf-map" />
-  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map" />
+  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v2" />
+  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v2" />
 </head>
 <body class="directory-page">
   <header class="site-header">
@@ -30,29 +30,32 @@
 
     <section class="map-intro">
       <div class="map-intro-inner">
-        <div><p class="gd-label">Vietnam golf map</p><h2>From Hanoi to Phu Quoc.</h2></div>
-        <p>Choose a destination on the map to see the golf courses nearby. The locations are grouped by the places travellers naturally use as a base.</p>
+        <div><p class="gd-label">Vietnam golf map</p><h2>Choose a destination. See the courses nearby.</h2></div>
+        <p>A simple geographic view of Vietnam’s main golf hubs, from Hanoi and Ha Long in the north to the central coast, Ho Chi Minh City and Phu Quoc.</p>
       </div>
     </section>
 
     <section class="golf-map-section" id="golf-map">
       <div class="golf-map-shell">
-        <div class="golf-map-visual" aria-label="Map of Vietnam with golf destinations">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Vietnam_map.svg" alt="Map of Vietnam" class="vietnam-map-base" />
-          <div class="region-wash north-wash"></div><div class="region-wash central-wash"></div><div class="region-wash south-wash"></div>
+        <div class="golf-map-visual" aria-label="Interactive map of Vietnam golf destinations">
+          <div class="map-stage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Vietnam_location_map.svg" alt="Geographic map of Vietnam" class="vietnam-map-base" />
 
-          <button class="map-pin north active" style="--x:58%;--y:13%" data-key="hanoi" aria-label="Hanoi"><span></span><b>Hanoi</b></button>
-          <button class="map-pin north" style="--x:69%;--y:19%" data-key="halong" aria-label="Ha Long and Hai Phong"><span></span><b>Ha Long / Hai Phong</b></button>
-          <button class="map-pin north" style="--x:60%;--y:27%" data-key="ninhbinh" aria-label="Ninh Binh"><span></span><b>Ninh Binh</b></button>
-          <button class="map-pin central" style="--x:61%;--y:42%" data-key="hue" aria-label="Hue and Lang Co"><span></span><b>Hue / Lang Co</b></button>
-          <button class="map-pin central" style="--x:67%;--y:49%" data-key="danang" aria-label="Da Nang and Hoi An"><span></span><b>Da Nang / Hoi An</b></button>
-          <button class="map-pin central" style="--x:69%;--y:60%" data-key="quynhon" aria-label="Quy Nhon"><span></span><b>Quy Nhon</b></button>
-          <button class="map-pin central" style="--x:67%;--y:69%" data-key="camranh" aria-label="Cam Ranh and Nha Trang"><span></span><b>Cam Ranh / Nha Trang</b></button>
-          <button class="map-pin central" style="--x:55%;--y:72%" data-key="dalat" aria-label="Da Lat"><span></span><b>Da Lat</b></button>
-          <button class="map-pin central" style="--x:62%;--y:78%" data-key="phanthiet" aria-label="Phan Thiet and Mui Ne"><span></span><b>Phan Thiet / Mui Ne</b></button>
-          <button class="map-pin south" style="--x:50%;--y:84%" data-key="hcmc" aria-label="Ho Chi Minh City and Dong Nai"><span></span><b>Ho Chi Minh City</b></button>
-          <button class="map-pin south" style="--x:61%;--y:87%" data-key="hotram" aria-label="Ho Tram"><span></span><b>Ho Tram</b></button>
-          <button class="map-pin south phuquoc" style="--x:24%;--y:89%" data-key="phuquoc" aria-label="Phu Quoc"><span></span><b>Phu Quoc</b></button>
+            <button class="map-pin north active" style="--x:47.7%;--y:18.6%" data-key="hanoi" aria-label="Hanoi"><span></span><b>Hanoi</b></button>
+            <button class="map-pin north" style="--x:61.7%;--y:18.9%" data-key="halong" aria-label="Ha Long and Hai Phong"><span></span><b>Ha Long / Hai Phong</b></button>
+            <button class="map-pin north" style="--x:49.1%;--y:23.4%" data-key="ninhbinh" aria-label="Ninh Binh"><span></span><b>Ninh Binh</b></button>
+            <button class="map-pin central" style="--x:68.1%;--y:47.1%" data-key="hue" aria-label="Hue and Lang Co"><span></span><b>Hue / Lang Co</b></button>
+            <button class="map-pin central" style="--x:75.3%;--y:49.7%" data-key="danang" aria-label="Da Nang and Hoi An"><span></span><b>Da Nang / Hoi An</b></button>
+            <button class="map-pin central" style="--x:87.3%;--y:63.9%" data-key="quynhon" aria-label="Quy Nhon"><span></span><b>Quy Nhon</b></button>
+            <button class="map-pin central" style="--x:86.6%;--y:75.6%" data-key="camranh" aria-label="Cam Ranh and Nha Trang"><span></span><b>Cam Ranh / Nha Trang</b></button>
+            <button class="map-pin central" style="--x:78.3%;--y:75.4%" data-key="dalat" aria-label="Da Lat"><span></span><b>Da Lat</b></button>
+            <button class="map-pin central" style="--x:74.1%;--y:81.7%" data-key="phanthiet" aria-label="Phan Thiet and Mui Ne"><span></span><b>Phan Thiet / Mui Ne</b></button>
+            <button class="map-pin south" style="--x:56.8%;--y:82.4%" data-key="hcmc" aria-label="Ho Chi Minh City and Dong Nai"><span></span><b>Ho Chi Minh City</b></button>
+            <button class="map-pin south" style="--x:66.7%;--y:84.6%" data-key="hotram" aria-label="Ho Tram"><span></span><b>Ho Tram</b></button>
+            <button class="map-pin south phuquoc" style="--x:25.7%;--y:85.7%" data-key="phuquoc" aria-label="Phu Quoc"><span></span><b>Phu Quoc</b></button>
+          </div>
+          <div class="map-key"><span><i class="north"></i>North</span><span><i class="central"></i>Central & Highlands</span><span><i class="south"></i>South & Islands</span></div>
+          <small class="map-credit">Map base: Uwe Dedering / Wikimedia Commons, CC BY-SA 3.0.</small>
         </div>
 
         <aside class="map-panel" aria-live="polite">
@@ -62,7 +65,6 @@
           <p id="map-copy">Vietnam's capital is the country's largest golf hub, with a wide choice of established courses within easy driving distance.</p>
           <div class="map-course-list" id="map-courses"></div>
           <a class="map-enquire" href="contact.html">Ask about tee times →</a>
-          <div class="map-legend"><span><i class="north"></i>North</span><span><i class="central"></i>Central & Highlands</span><span><i class="south"></i>South & Islands</span></div>
         </aside>
       </div>
     </section>
@@ -99,6 +101,6 @@
     document.querySelectorAll('.map-pin').forEach(pin=>pin.addEventListener('click',()=>showDestination(pin.dataset.key)));
     showDestination('hanoi');
   </script>
-  <script src="script.js?v=20260917-golf-map"></script><script src="nav-fix.js?v=20260917-golf-map"></script>
+  <script src="script.js?v=20260917-golf-map-v2"></script><script src="nav-fix.js?v=20260917-golf-map-v2"></script>
 </body>
 </html>
