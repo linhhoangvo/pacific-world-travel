@@ -7,8 +7,8 @@
   <title>Golf Map of Vietnam | Pacific World Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v5" />
-  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v5" />
+  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v6" />
+  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v6" />
   <style>
     .golf-map-shell{grid-template-columns:1fr!important;max-width:900px!important}
     .golf-map-visual{min-height:700px}
@@ -39,9 +39,8 @@
     </section>
 
     <section class="map-intro">
-      <div class="map-intro-inner">
+      <div class="map-intro-inner map-intro-single">
         <div><p class="gd-label">Vietnam golf map</p><h2>Choose a destination. Explore its courses.</h2></div>
-        <p>Click a golf destination on the map to open a dedicated page with the featured courses in that region.</p>
       </div>
     </section>
 
@@ -64,7 +63,32 @@
             <button class="map-pin south phuquoc" style="--x:33%;--y:87%" data-key="phuquoc" aria-label="View Phu Quoc golf courses"><span></span><b>Phu Quoc</b></button>
           </div>
           <div class="map-key"><span><i class="north"></i>North</span><span><i class="central"></i>Central & Highlands</span><span><i class="south"></i>South & Islands</span></div>
-          <small class="map-credit">Click a destination to view its golf courses.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="golf-featured">
+      <div class="golf-featured-inner">
+        <div class="golf-featured-head">
+          <div>
+            <p class="gd-label">Featured golf destinations</p>
+            <h2>A few places to begin.</h2>
+          </div>
+          <a class="gd-link" href="golf-holidays-journeys.html">Explore golf journeys →</a>
+        </div>
+        <div class="golf-featured-row">
+          <a class="golf-featured-item" href="golf-destination.html?region=hanoi">
+            <div class="golf-featured-media"><img src="golf-hanoi.jpg" alt="Golf course in Hanoi"></div>
+            <div class="golf-featured-copy"><span>North Vietnam</span><h3>Hanoi</h3><p>Established courses within easy reach of the capital.</p></div>
+          </a>
+          <a class="golf-featured-item featured" href="golf-destination.html?region=danang">
+            <div class="golf-featured-media"><img src="golf-course-hoiana-shores.jpg" alt="Golf course in Da Nang and Hoi An"></div>
+            <div class="golf-featured-copy"><span>Central Coast</span><h3>Da Nang & Hoi An</h3><p>Vietnam’s signature golf coast, shaped around beach and resort stays.</p></div>
+          </a>
+          <a class="golf-featured-item" href="golf-destination.html?region=hcmc">
+            <div class="golf-featured-media"><img src="golf-ho-chi-minh-city.jpg" alt="Golf course near Ho Chi Minh City"></div>
+            <div class="golf-featured-copy"><span>South Vietnam</span><h3>Ho Chi Minh City</h3><p>City-access golf with easy extensions to Ho Tram and the coast.</p></div>
+          </a>
         </div>
       </div>
     </section>
@@ -88,6 +112,6 @@
       });
     });
   </script>
-  <script src="script.js?v=20260917-golf-map-v5"></script><script src="nav-fix.js?v=20260917-golf-map-v5"></script>
+  <script src="script.js?v=20260917-golf-map-v6"></script><script src="nav-fix.js?v=20260917-golf-map-v6"></script>
 </body>
 </html>
