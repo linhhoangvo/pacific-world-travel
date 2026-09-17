@@ -1,6 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="760 394 25 48" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
-  <title id="title">Map of Vietnam</title>
-  <desc id="desc">Simplified geographic outline of Vietnam used for the Pacific World golf destination map.</desc>
-  <path d="M778.21,401.87L774.47,404.43L772.13,407.24L771.51,409.29L773.66,412.38L776.28,416.2L778.82,417.99L780.53,420.32L781.81,425.64L781.43,430.66L779.1,432.53L775.88,434.36L773.6,436.72L770.1,439.34L769.08,437.53L769.87,435.62L767.79,434.01L770.22,432.87L773.16,432.67L771.93,430.94L776.64,428.75L776.99,425.33L776.34,423.41L776.85,420.53L776.14,418.49L774.02,416.47L772.25,413.9L769.92,410.44L766.56,408.68L767.37,407.61L769.16,406.84L768.07,404.25L764.62,404.22L763.36,401.5L761.72,399.13L763.23,398.39L765.46,398.41L768.19,398.06L770.58,396.44L771.93,397.58L774.5,398.13L774.05,399.87L775.39,401.09z" fill="#d5ddd3" stroke="#ffffff" stroke-width="0.55" stroke-linejoin="round"/>
-  <ellipse cx="763.5" cy="437" rx="1.05" ry="1.65" fill="#d5ddd3" stroke="#ffffff" stroke-width="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="180 -8 450 900" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Vietnam golf map</title>
+  <desc id="desc">Detailed outline of Vietnam with subtle destination labels for Pacific World Travel.</desc>
+  <rect x="180" y="-8" width="450" height="900" fill="#f4efe7"/>
+  <path d="M 369.0 0.0 L 341.0 13.0 L 331.0 34.0 L 297.0 35.0 L 292.0 44.0 L 255.0 34.0 L 244.0 49.0 L 230.0 49.0 L 218.0 35.0 L 209.0 34.0 L 192.0 53.0 L 218.0 97.0 L 229.0 99.0 L 225.0 123.0 L 240.0 144.0 L 269.0 158.0 L 282.0 146.0 L 303.0 146.0 L 315.0 156.0 L 310.0 177.0 L 320.0 178.0 L 335.0 193.0 L 332.0 213.0 L 323.0 220.0 L 292.0 218.0 L 281.0 242.0 L 324.0 271.0 L 345.0 277.0 L 346.0 293.0 L 366.0 304.0 L 381.0 329.0 L 396.0 347.0 L 410.0 367.0 L 425.0 388.0 L 439.0 410.0 L 454.0 429.0 L 462.0 446.0 L 469.0 462.0 L 480.0 478.0 L 491.0 494.0 L 498.0 515.0 L 499.0 537.0 L 493.0 558.0 L 488.0 582.0 L 487.0 603.0 L 490.0 623.0 L 496.0 646.0 L 502.0 667.0 L 502.0 690.0 L 495.0 710.0 L 480.0 728.0 L 459.0 741.0 L 439.0 749.0 L 420.0 760.0 L 402.0 771.0 L 385.0 781.0 L 373.0 792.0 L 357.0 801.0 L 344.0 815.0 L 332.0 833.0 L 318.0 848.0 L 305.0 862.0 L 295.0 877.0 L 281.0 877.0 L 272.0 863.0 L 263.0 849.0 L 253.0 836.0 L 244.0 824.0 L 232.0 816.0 L 222.0 807.0 L 215.0 793.0 L 218.0 780.0 L 232.0 771.0 L 244.0 765.0 L 258.0 758.0 L 270.0 753.0 L 281.0 747.0 L 289.0 739.0 L 294.0 727.0 L 298.0 712.0 L 298.0 694.0 L 294.0 675.0 L 288.0 657.0 L 284.0 638.0 L 282.0 618.0 L 283.0 598.0 L 287.0 578.0 L 291.0 558.0 L 294.0 537.0 L 295.0 517.0 L 293.0 497.0 L 290.0 478.0 L 286.0 459.0 L 282.0 441.0 L 278.0 422.0 L 275.0 405.0 L 272.0 388.0 L 268.0 371.0 L 264.0 353.0 L 258.0 336.0 L 253.0 318.0 L 247.0 301.0 L 242.0 284.0 L 237.0 267.0 L 233.0 249.0 L 231.0 232.0 L 233.0 216.0 L 239.0 201.0 L 248.0 188.0 L 257.0 178.0 L 266.0 171.0 L 266.0 161.0 L 255.0 154.0 L 245.0 149.0 L 236.0 141.0 L 229.0 131.0 L 224.0 120.0 L 224.0 108.0 L 229.0 97.0 L 238.0 88.0 L 250.0 81.0 L 263.0 76.0 L 277.0 72.0 L 291.0 67.0 L 304.0 61.0 L 315.0 52.0 L 326.0 42.0 L 338.0 33.0 L 349.0 22.0 L 358.0 11.0 Z" fill="#d8e0d9" stroke="#b9c5bc" stroke-width="1.2" stroke-linejoin="round"/>
+  <ellipse cx="261" cy="796" rx="11" ry="18" fill="#d8e0d9" stroke="#b9c5bc" stroke-width="1"/>
+  <g fill="#8c958f" font-family="Arial, sans-serif" font-size="8" letter-spacing=".8">
+    <text x="378" y="142">HANOI</text>
+    <text x="493" y="128">QUANG NINH</text>
+    <text x="394" y="197">NINH BINH</text>
+    <text x="468" y="422">HUE</text>
+    <text x="505" y="459">DA NANG</text>
+    <text x="541" y="579">QUY NHON</text>
+    <text x="534" y="650">NHA TRANG</text>
+    <text x="475" y="650">DA LAT</text>
+    <text x="355" y="760">HO CHI MINH CITY</text>
+    <text x="239" y="825">PHU QUOC</text>
+  </g>
 </svg>
