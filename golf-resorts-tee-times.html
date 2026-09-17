@@ -7,8 +7,18 @@
   <title>Golf Map of Vietnam | Pacific World Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v3" />
-  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v3" />
+  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v4" />
+  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v4" />
+  <style>
+    .golf-map-shell{grid-template-columns:1fr!important;max-width:900px!important}
+    .golf-map-visual{min-height:700px}
+    .map-stage{height:620px}
+    .map-pin{cursor:pointer}
+    .map-pin b{opacity:0}
+    .map-pin:hover b,.map-pin:focus b{opacity:1}
+    .map-pin.active b{opacity:0}
+    @media(max-width:700px){.golf-map-visual{min-height:570px}.map-stage{height:490px}}
+  </style>
 </head>
 <body class="directory-page">
   <header class="site-header">
@@ -23,15 +33,15 @@
       <div class="gd-hero-inner"><div class="gd-hero-copy">
         <p class="gd-label light">Golf in Vietnam</p>
         <h1>Find your next round<br><em>across Vietnam.</em></h1>
-        <p>Explore the country by golf destination, then let us connect tee times, hotels and private transfers into one seamless journey.</p>
+        <p>Choose a destination on the map to explore the golf courses nearby, then let us connect tee times, hotels and private transfers into one seamless journey.</p>
         <a class="gd-btn light" href="#golf-map">Explore the map</a>
       </div></div>
     </section>
 
     <section class="map-intro">
       <div class="map-intro-inner">
-        <div><p class="gd-label">Vietnam golf map</p><h2>Choose a destination. See the courses nearby.</h2></div>
-        <p>A simple geographic view of Vietnam’s main golf hubs, from Hanoi and Ha Long in the north to the central coast, Ho Chi Minh City and Phu Quoc.</p>
+        <div><p class="gd-label">Vietnam golf map</p><h2>Choose a destination. Explore its courses.</h2></div>
+        <p>Click a golf destination on the map to open a dedicated page with the featured courses in that region.</p>
       </div>
     </section>
 
@@ -40,32 +50,22 @@
         <div class="golf-map-visual" aria-label="Interactive map of Vietnam golf destinations">
           <div class="map-stage">
             <img src="vietnam-golf-map.svg" alt="Map of Vietnam" class="vietnam-map-base" />
-
-            <button class="map-pin north active" style="--x:59%;--y:18%" data-key="hanoi" aria-label="Hanoi"><span></span><b>Hanoi</b></button>
-            <button class="map-pin north" style="--x:74%;--y:22%" data-key="halong" aria-label="Ha Long and Hai Phong"><span></span><b>Ha Long / Hai Phong</b></button>
-            <button class="map-pin north" style="--x:57%;--y:28%" data-key="ninhbinh" aria-label="Ninh Binh"><span></span><b>Ninh Binh</b></button>
-            <button class="map-pin central" style="--x:65%;--y:48%" data-key="hue" aria-label="Hue and Lang Co"><span></span><b>Hue / Lang Co</b></button>
-            <button class="map-pin central" style="--x:69%;--y:53%" data-key="danang" aria-label="Da Nang and Hoi An"><span></span><b>Da Nang / Hoi An</b></button>
-            <button class="map-pin central" style="--x:76%;--y:64%" data-key="quynhon" aria-label="Quy Nhon"><span></span><b>Quy Nhon</b></button>
-            <button class="map-pin central" style="--x:78%;--y:74%" data-key="camranh" aria-label="Cam Ranh and Nha Trang"><span></span><b>Cam Ranh / Nha Trang</b></button>
-            <button class="map-pin central" style="--x:64%;--y:75%" data-key="dalat" aria-label="Da Lat"><span></span><b>Da Lat</b></button>
-            <button class="map-pin central" style="--x:70%;--y:81%" data-key="phanthiet" aria-label="Phan Thiet and Mui Ne"><span></span><b>Phan Thiet / Mui Ne</b></button>
-            <button class="map-pin south" style="--x:55%;--y:84%" data-key="hcmc" aria-label="Ho Chi Minh City and Dong Nai"><span></span><b>Ho Chi Minh City</b></button>
-            <button class="map-pin south" style="--x:66%;--y:86%" data-key="hotram" aria-label="Ho Tram"><span></span><b>Ho Tram</b></button>
-            <button class="map-pin south phuquoc" style="--x:14%;--y:90%" data-key="phuquoc" aria-label="Phu Quoc"><span></span><b>Phu Quoc</b></button>
+            <button class="map-pin north" style="--x:59%;--y:18%" data-key="hanoi" aria-label="View Hanoi golf courses"><span></span><b>Hanoi</b></button>
+            <button class="map-pin north" style="--x:74%;--y:22%" data-key="halong" aria-label="View Ha Long and Hai Phong golf courses"><span></span><b>Ha Long / Hai Phong</b></button>
+            <button class="map-pin north" style="--x:57%;--y:28%" data-key="ninhbinh" aria-label="View Ninh Binh golf courses"><span></span><b>Ninh Binh</b></button>
+            <button class="map-pin central" style="--x:65%;--y:48%" data-key="hue" aria-label="View Hue and Lang Co golf courses"><span></span><b>Hue / Lang Co</b></button>
+            <button class="map-pin central" style="--x:69%;--y:53%" data-key="danang" aria-label="View Da Nang and Hoi An golf courses"><span></span><b>Da Nang / Hoi An</b></button>
+            <button class="map-pin central" style="--x:76%;--y:64%" data-key="quynhon" aria-label="View Quy Nhon golf courses"><span></span><b>Quy Nhon</b></button>
+            <button class="map-pin central" style="--x:78%;--y:74%" data-key="camranh" aria-label="View Cam Ranh and Nha Trang golf courses"><span></span><b>Cam Ranh / Nha Trang</b></button>
+            <button class="map-pin central" style="--x:64%;--y:75%" data-key="dalat" aria-label="View Da Lat golf courses"><span></span><b>Da Lat</b></button>
+            <button class="map-pin central" style="--x:70%;--y:81%" data-key="phanthiet" aria-label="View Phan Thiet and Mui Ne golf courses"><span></span><b>Phan Thiet / Mui Ne</b></button>
+            <button class="map-pin south" style="--x:55%;--y:84%" data-key="hcmc" aria-label="View Ho Chi Minh City and Dong Nai golf courses"><span></span><b>Ho Chi Minh City</b></button>
+            <button class="map-pin south" style="--x:66%;--y:86%" data-key="hotram" aria-label="View Ho Tram golf courses"><span></span><b>Ho Tram</b></button>
+            <button class="map-pin south phuquoc" style="--x:14%;--y:90%" data-key="phuquoc" aria-label="View Phu Quoc golf courses"><span></span><b>Phu Quoc</b></button>
           </div>
           <div class="map-key"><span><i class="north"></i>North</span><span><i class="central"></i>Central & Highlands</span><span><i class="south"></i>South & Islands</span></div>
-          <small class="map-credit">Illustrative map — destination positions are approximate.</small>
+          <small class="map-credit">Click a destination to view its golf courses.</small>
         </div>
-
-        <aside class="map-panel" aria-live="polite">
-          <div class="map-panel-top"><span class="map-region-dot north"></span><span id="map-region">North Vietnam</span></div>
-          <p class="gd-label">Selected destination</p>
-          <h2 id="map-title">Hanoi</h2>
-          <p id="map-copy">Vietnam's capital is the country's largest golf hub, with a wide choice of established courses within easy driving distance.</p>
-          <div class="map-course-list" id="map-courses"></div>
-          <a class="map-enquire" href="contact.html">Ask about tee times →</a>
-        </aside>
       </div>
     </section>
 
@@ -82,25 +82,12 @@
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
 
   <script>
-    const golfDestinations = {
-      hanoi:{region:'North Vietnam',tone:'north',title:'Hanoi',copy:"Vietnam's capital is the country's largest golf hub, with a wide choice of established courses within easy driving distance.",courses:['Van Tri Golf Club','Long Bien Golf Course','Sky Lake Resort & Golf Club','BRG Kings Island Golf Resort','BRG Legend Hill Golf Resort']},
-      halong:{region:'North Vietnam',tone:'north',title:'Ha Long / Hai Phong',copy:'Combine coastal golf with Ha Long Bay and the northern port city of Hai Phong.',courses:['FLC Golf Club Ha Long','Chi Linh Golf Club','Dragon Golf Links','Silk Path Dong Trieu Golf & Country Club']},
-      ninhbinh:{region:'North Vietnam',tone:'north',title:'Ninh Binh',copy:'Golf surrounded by lakes and limestone landscapes, easy to pair with a heritage stay.',courses:['Trang An Golf & Resort','Royal Golf Course','Legend Valley Country Club']},
-      hue:{region:'Central & Highlands',tone:'central',title:'Hue / Lang Co',copy:'A scenic golf stop between Hue and Da Nang, with mountains, sea and luxury resort stays.',courses:['Laguna Golf Lang Co']},
-      danang:{region:'Central & Highlands',tone:'central',title:'Da Nang / Hoi An',copy:'Vietnam’s strongest destination-golf corridor, with several standout courses close to the beach and Hoi An.',courses:['Ba Na Hills Golf Club','Legend Da Nang Golf Resort','Montgomerie Links Vietnam','Hoiana Shores Golf Club','Vinpearl Golf Nam Hoi An']},
-      quynhon:{region:'Central & Highlands',tone:'central',title:'Quy Nhon',copy:'A quieter central-coast golf destination with broad sea views and resort stays.',courses:['FLC Golf Links Quy Nhon']},
-      camranh:{region:'Central & Highlands',tone:'central',title:'Cam Ranh / Nha Trang',copy:'Coastal golf with strong resort infrastructure and easy beach extensions.',courses:['KN Golf Links Cam Ranh','Vinpearl Golf Nha Trang']},
-      dalat:{region:'Central & Highlands',tone:'central',title:'Da Lat',copy:'Cooler highland weather, pine scenery and one of Vietnam’s classic golf experiences.',courses:['Dalat Palace Golf Club']},
-      phanthiet:{region:'Central & Highlands',tone:'central',title:'Phan Thiet / Mui Ne',copy:'Modern resort golf on the south-central coast, easy to combine with a beach stay.',courses:['NovaWorld Phan Thiet Golf Club']},
-      hcmc:{region:'South & Islands',tone:'south',title:'Ho Chi Minh City / Dong Nai',copy:'Convenient city and suburban golf for business trips, short stays and southern itineraries.',courses:['Long Thanh Golf Club','Tan Son Nhat Golf Course','Vietnam Golf & Country Club','Twin Doves Golf Club']},
-      hotram:{region:'South & Islands',tone:'south',title:'Ho Tram',copy:'A coastal golf escape from Ho Chi Minh City with one of Vietnam’s best-known dunes courses.',courses:['The Bluffs Grand Ho Tram']},
-      phuquoc:{region:'South & Islands',tone:'south',title:'Phu Quoc',copy:'Island golf paired naturally with beach resorts and longer leisure stays.',courses:['Vinpearl Golf Phu Quoc','Eschuri Vung Bau Golf']}
-    };
-    const title=document.getElementById('map-title'),copy=document.getElementById('map-copy'),courses=document.getElementById('map-courses'),region=document.getElementById('map-region'),dot=document.querySelector('.map-region-dot');
-    function showDestination(key){const d=golfDestinations[key];if(!d)return;document.querySelectorAll('.map-pin').forEach(p=>p.classList.toggle('active',p.dataset.key===key));title.textContent=d.title;copy.textContent=d.copy;region.textContent=d.region;dot.className='map-region-dot '+d.tone;courses.innerHTML=d.courses.map(c=>`<div><span>${c}</span><a href="contact.html">Enquire</a></div>`).join('');}
-    document.querySelectorAll('.map-pin').forEach(pin=>pin.addEventListener('click',()=>showDestination(pin.dataset.key)));
-    showDestination('hanoi');
+    document.querySelectorAll('.map-pin').forEach(pin=>{
+      pin.addEventListener('click',()=>{
+        window.location.href=`golf-destination.html?region=${encodeURIComponent(pin.dataset.key)}`;
+      });
+    });
   </script>
-  <script src="script.js?v=20260917-golf-map-v3"></script><script src="nav-fix.js?v=20260917-golf-map-v3"></script>
+  <script src="script.js?v=20260917-golf-map-v4"></script><script src="nav-fix.js?v=20260917-golf-map-v4"></script>
 </body>
 </html>
