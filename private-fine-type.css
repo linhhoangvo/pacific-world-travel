@@ -1,0 +1,10 @@
+.pv-story-copy{width:min(390px,35vw)}
+.pv-story-copy-inner{padding:28px 30px 30px}
+.pv-story .pv-label{margin-bottom:10px;font-size:6px;letter-spacing:.18em}
+.pv-story h2{font-size:clamp(20px,1.75vw,24px);line-height:1.22;letter-spacing:-.004em}
+.pv-story p:not(.pv-label){margin-top:13px;font-size:11px;line-height:1.82}
+.pv-story-meta{margin-top:16px}
+.pv-story-meta span{font-size:6px;letter-spacing:.1em}
+
+@media(max-width:900px){.pv-story-copy{width:min(500px,72vw)}}
+@media(max-width:700px){.pv-story-copy{width:auto}.pv-story-copy-inner{padding:24px 22px 26px}.pv-story .pv-label{font-size:5.8px}.pv-story h2{font-size:19px;line-height:1.22}.pv-story p:not(.pv-label){font-size:10.8px;line-height:1.8}.pv-story-meta span{font-size:5.8px}}
