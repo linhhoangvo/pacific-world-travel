@@ -7,17 +7,17 @@
   <title>Golf Map of Vietnam | Pacific World Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v4" />
-  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v4" />
+  <link rel="stylesheet" href="styles.css?v=20260917-golf-map-v5" />
+  <link rel="stylesheet" href="golf-directory.css?v=20260917-golf-map-v5" />
   <style>
     .golf-map-shell{grid-template-columns:1fr!important;max-width:900px!important}
     .golf-map-visual{min-height:700px}
-    .map-stage{height:620px}
+    .map-stage{height:620px;aspect-ratio:6/11}
     .map-pin{cursor:pointer}
     .map-pin b{opacity:0}
     .map-pin:hover b,.map-pin:focus b{opacity:1}
     .map-pin.active b{opacity:0}
-    @media(max-width:700px){.golf-map-visual{min-height:570px}.map-stage{height:490px}}
+    @media(max-width:700px){.golf-map-visual{min-height:570px}.map-stage{height:490px;aspect-ratio:6/11}}
   </style>
 </head>
 <body class="directory-page">
@@ -49,19 +49,19 @@
       <div class="golf-map-shell">
         <div class="golf-map-visual" aria-label="Interactive map of Vietnam golf destinations">
           <div class="map-stage">
-            <img src="vietnam-golf-map.svg" alt="Map of Vietnam" class="vietnam-map-base" />
-            <button class="map-pin north" style="--x:59%;--y:18%" data-key="hanoi" aria-label="View Hanoi golf courses"><span></span><b>Hanoi</b></button>
-            <button class="map-pin north" style="--x:74%;--y:22%" data-key="halong" aria-label="View Ha Long and Hai Phong golf courses"><span></span><b>Ha Long / Hai Phong</b></button>
-            <button class="map-pin north" style="--x:57%;--y:28%" data-key="ninhbinh" aria-label="View Ninh Binh golf courses"><span></span><b>Ninh Binh</b></button>
-            <button class="map-pin central" style="--x:65%;--y:48%" data-key="hue" aria-label="View Hue and Lang Co golf courses"><span></span><b>Hue / Lang Co</b></button>
-            <button class="map-pin central" style="--x:69%;--y:53%" data-key="danang" aria-label="View Da Nang and Hoi An golf courses"><span></span><b>Da Nang / Hoi An</b></button>
-            <button class="map-pin central" style="--x:76%;--y:64%" data-key="quynhon" aria-label="View Quy Nhon golf courses"><span></span><b>Quy Nhon</b></button>
-            <button class="map-pin central" style="--x:78%;--y:74%" data-key="camranh" aria-label="View Cam Ranh and Nha Trang golf courses"><span></span><b>Cam Ranh / Nha Trang</b></button>
-            <button class="map-pin central" style="--x:64%;--y:75%" data-key="dalat" aria-label="View Da Lat golf courses"><span></span><b>Da Lat</b></button>
-            <button class="map-pin central" style="--x:70%;--y:81%" data-key="phanthiet" aria-label="View Phan Thiet and Mui Ne golf courses"><span></span><b>Phan Thiet / Mui Ne</b></button>
-            <button class="map-pin south" style="--x:55%;--y:84%" data-key="hcmc" aria-label="View Ho Chi Minh City and Dong Nai golf courses"><span></span><b>Ho Chi Minh City</b></button>
-            <button class="map-pin south" style="--x:66%;--y:86%" data-key="hotram" aria-label="View Ho Tram golf courses"><span></span><b>Ho Tram</b></button>
-            <button class="map-pin south phuquoc" style="--x:14%;--y:90%" data-key="phuquoc" aria-label="View Phu Quoc golf courses"><span></span><b>Phu Quoc</b></button>
+            <img src="vietnam-golf-map.svg?v=20260917-v2" alt="Map of Vietnam" class="vietnam-map-base" />
+            <button class="map-pin north" style="--x:51%;--y:16.5%" data-key="hanoi" aria-label="View Hanoi golf courses"><span></span><b>Hanoi</b></button>
+            <button class="map-pin north" style="--x:65%;--y:17%" data-key="halong" aria-label="View Ha Long and Hai Phong golf courses"><span></span><b>Ha Long / Hai Phong</b></button>
+            <button class="map-pin north" style="--x:52%;--y:22%" data-key="ninhbinh" aria-label="View Ninh Binh golf courses"><span></span><b>Ninh Binh</b></button>
+            <button class="map-pin central" style="--x:74%;--y:47%" data-key="hue" aria-label="View Hue and Lang Co golf courses"><span></span><b>Hue / Lang Co</b></button>
+            <button class="map-pin central" style="--x:82%;--y:50%" data-key="danang" aria-label="View Da Nang and Hoi An golf courses"><span></span><b>Da Nang / Hoi An</b></button>
+            <button class="map-pin central" style="--x:96%;--y:65%" data-key="quynhon" aria-label="View Quy Nhon golf courses"><span></span><b>Quy Nhon</b></button>
+            <button class="map-pin central" style="--x:95%;--y:77%" data-key="camranh" aria-label="View Cam Ranh and Nha Trang golf courses"><span></span><b>Cam Ranh / Nha Trang</b></button>
+            <button class="map-pin central" style="--x:86%;--y:77%" data-key="dalat" aria-label="View Da Lat golf courses"><span></span><b>Da Lat</b></button>
+            <button class="map-pin central" style="--x:81%;--y:84%" data-key="phanthiet" aria-label="View Phan Thiet and Mui Ne golf courses"><span></span><b>Phan Thiet / Mui Ne</b></button>
+            <button class="map-pin south" style="--x:61%;--y:84.5%" data-key="hcmc" aria-label="View Ho Chi Minh City and Dong Nai golf courses"><span></span><b>Ho Chi Minh City</b></button>
+            <button class="map-pin south" style="--x:73%;--y:87%" data-key="hotram" aria-label="View Ho Tram golf courses"><span></span><b>Ho Tram</b></button>
+            <button class="map-pin south phuquoc" style="--x:33%;--y:87%" data-key="phuquoc" aria-label="View Phu Quoc golf courses"><span></span><b>Phu Quoc</b></button>
           </div>
           <div class="map-key"><span><i class="north"></i>North</span><span><i class="central"></i>Central & Highlands</span><span><i class="south"></i>South & Islands</span></div>
           <small class="map-credit">Click a destination to view its golf courses.</small>
@@ -88,6 +88,6 @@
       });
     });
   </script>
-  <script src="script.js?v=20260917-golf-map-v4"></script><script src="nav-fix.js?v=20260917-golf-map-v4"></script>
+  <script src="script.js?v=20260917-golf-map-v5"></script><script src="nav-fix.js?v=20260917-golf-map-v5"></script>
 </body>
 </html>
