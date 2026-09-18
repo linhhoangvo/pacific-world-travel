@@ -320,3 +320,18 @@ body.destinations-page{
   .destinations-cta-inner{width:auto;margin:0;padding:0 22px 34px}
   .destinations-cta h2{font-size:27px}
 }
+
+/* CENTRAL FIVE-CARD FIT — keep every destination fully visible on desktop */
+@media(min-width:1000px){
+  .region-section.central .destination-rail{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:26px;
+    overflow:visible;
+  }
+  .region-section.central .destination-item{
+    width:auto;
+    min-width:0;
+    flex:none;
+  }
+}
