@@ -361,3 +361,36 @@ if (whySection && !document.querySelector(".client-stories-shell")) {
   stories.innerHTML = `<p class="eyebrow">CLIENT STORIES</p><h2>What our clients say.</h2>`;
   whySection.parentNode.insertBefore(stories, whySection);
 }
+
+/* SITE-WIDE DIRECT PAGE ROUTING + LIGHTWEIGHT UX POLISH */
+(() => {
+  const directRoutes = {
+    "business travel":"corporate-executive-travel.html",
+    "golf travel":"golf-holidays-journeys.html",
+    "destinations":"destinations.html",
+    "mice & events":"meetings-conferences.html",
+    "about":"who-we-are.html",
+    "why us":"why-us.html",
+    "our team":"team.html"
+  };
+
+  document.querySelectorAll("footer a, .desktop-nav > a").forEach((link) => {
+    const key = link.textContent.trim().toLowerCase();
+    if (directRoutes[key]) link.setAttribute("href", directRoutes[key]);
+  });
+
+  document.querySelectorAll("img").forEach((img) => {
+    img.setAttribute("decoding", "async");
+    const heroLike = img.closest(".hero,.team-hero,[class*='-hero']");
+    if (!heroLike && !img.classList.contains("official-brand-logo")) {
+      img.setAttribute("loading", "lazy");
+    }
+  });
+
+  document.querySelectorAll("a[target='_blank']").forEach((link) => {
+    const rel = new Set((link.getAttribute("rel") || "").split(/\s+/).filter(Boolean));
+    rel.add("noopener");
+    rel.add("noreferrer");
+    link.setAttribute("rel", [...rel].join(" "));
+  });
+})();
