@@ -102,22 +102,22 @@ body.destinations-page{
 
 /* restrained intro */
 .destinations-intro{
-  padding:72px 0 54px;
+  padding:58px 0 30px;
   background:var(--dest-paper);
 }
 .destinations-intro-inner{
-  width:min(1040px,82vw);
+  width:min(1180px,86vw);
   margin:0 auto;
   display:grid;
-  grid-template-columns:1fr .75fr;
-  gap:88px;
-  align-items:end;
+  grid-template-columns:1.1fr .62fr;
+  gap:110px;
+  align-items:center;
 }
 .destinations-intro-label{color:#999c96}
 .destinations-intro h2{
   margin:0;
   max-width:560px;
-  font:500 clamp(23px,2.1vw,30px)/1.22 'Cormorant Garamond',Georgia,serif;
+  font:500 clamp(22px,1.95vw,28px)/1.2 'Cormorant Garamond',Georgia,serif;
   color:var(--dest-ink);
 }
 .destinations-intro-copy{
@@ -130,16 +130,16 @@ body.destinations-page{
 
 /* region chapter */
 .region-section{
-  padding:64px 0 74px;
+  padding:42px 0 78px;
 }
-.region-section + .region-section{padding-top:58px}
+.region-section + .region-section{padding-top:68px}
 .region-section.central{background:var(--dest-soft)}
 .region-head{
   width:min(1180px,86vw);
-  margin:0 auto 28px;
+  margin:0 auto 24px;
   display:flex;
   justify-content:space-between;
-  gap:56px;
+  gap:72px;
   align-items:flex-end;
 }
 .region-kicker{color:#9a9d97}
@@ -149,7 +149,7 @@ body.destinations-page{
   color:var(--dest-ink);
 }
 .region-head>p{
-  max-width:320px;
+  max-width:300px;
   margin:0;
   font-size:8.9px;
   line-height:1.85;
@@ -162,7 +162,7 @@ body.destinations-page{
   width:min(1180px,86vw);
   margin:0 auto;
   display:flex;
-  gap:25px;
+  gap:28px;
   overflow-x:auto;
   padding:0 0 10px;
   scroll-snap-type:x proximity;
@@ -205,7 +205,7 @@ body.destinations-page{
   justify-content:space-between;
   gap:14px;
   align-items:flex-start;
-  padding-top:11px;
+  padding-top:10px;
 }
 .destination-copy-left span{
   display:block;
@@ -218,14 +218,14 @@ body.destinations-page{
 }
 .destination-copy h3{
   margin:0;
-  font:500 clamp(16px,1.2vw,19px)/1.12 'Cormorant Garamond',Georgia,serif;
+  font:500 clamp(15.5px,1.08vw,18px)/1.12 'Cormorant Garamond',Georgia,serif;
   color:var(--dest-ink);
 }
 .destination-arrow{
   padding-top:3px;
-  font-size:9px;
+  font-size:8px;
   color:#9ca098;
-  opacity:.8;
+  opacity:.48;
   transition:transform .22s ease,opacity .22s ease;
 }
 .destination-item:hover .destination-arrow{
