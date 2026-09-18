@@ -23,7 +23,6 @@ body.destinations-page{
 .destinations-page img{display:block;width:100%}
 .destinations-main{overflow:hidden}
 
-/* header over hero */
 .destinations-page .site-header{
   position:absolute;
   z-index:40;
@@ -35,7 +34,6 @@ body.destinations-page{
 .destinations-page .site-header a,
 .destinations-page .menu-toggle{color:#fff}
 
-/* hero */
 .destinations-hero{
   position:relative;
   height:68vh;
@@ -101,7 +99,6 @@ body.destinations-page{
   writing-mode:vertical-rl;
 }
 
-/* intro */
 .destinations-intro{
   padding:62px 8vw 48px;
   background:linear-gradient(180deg,#f3eee5,var(--dest-paper));
@@ -130,10 +127,7 @@ body.destinations-page{
   color:var(--dest-muted);
 }
 
-/* regional chapters */
-.region-section{
-  padding:54px 0 68px;
-}
+.region-section{padding:54px 0 68px}
 .region-section + .region-section{padding-top:34px}
 .region-head{
   max-width:1180px;
@@ -159,7 +153,6 @@ body.destinations-page{
   text-align:right;
 }
 
-/* image-led rail */
 .destination-rail{
   display:flex;
   gap:18px;
@@ -169,18 +162,18 @@ body.destinations-page{
   scrollbar-width:none;
 }
 .destination-rail::-webkit-scrollbar{display:none}
-.destination-item{
+.destination-item,
+.destination-item.wide{
   flex:0 0 clamp(270px,27vw,390px);
   scroll-snap-align:start;
   min-width:0;
 }
-.destination-item.wide{flex-basis:clamp(330px,36vw,500px)}
-.destination-media{
+.destination-media,
+.destination-item.wide .destination-media{
   height:330px;
   overflow:hidden;
   background:#e8e1d7;
 }
-.destination-item.wide .destination-media{height:390px}
 .destination-media img{
   width:100%;
   height:100%;
@@ -220,7 +213,6 @@ body.destinations-page{
 }
 .destination-item:hover .destination-arrow{transform:translate(3px,-2px)}
 
-/* subtle rhythm shift */
 .region-section.central{
   background:#f5f1e9;
   padding-top:62px;
@@ -229,7 +221,6 @@ body.destinations-page{
 .region-section.central .destination-rail{padding-bottom:14px}
 .region-section.south{padding-top:64px}
 
-/* final image CTA */
 .destinations-cta{
   position:relative;
   min-height:430px;
@@ -282,7 +273,6 @@ body.destinations-page{
   text-transform:uppercase;
 }
 
-/* footer */
 .destinations-page footer{margin-top:0}
 
 @media(max-width:900px){
@@ -290,8 +280,8 @@ body.destinations-page{
   .destinations-intro-copy{margin-left:0;padding-top:0}
   .region-head{align-items:flex-start;flex-direction:column;gap:12px}
   .region-head>p{text-align:left}
-  .destination-item{flex-basis:42vw}
-  .destination-item.wide{flex-basis:55vw}
+  .destination-item,
+  .destination-item.wide{flex-basis:42vw}
 }
 
 @media(max-width:700px){
