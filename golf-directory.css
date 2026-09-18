@@ -12,3 +12,29 @@
 .directory-page footer{padding:58px 5vw 30px;background:#182922;color:#eceee8;display:flex;gap:40px;flex-wrap:wrap}.directory-page footer .footer-brand{flex:1.7 1 320px}.directory-page footer .footer-brand p{max-width:300px;margin:18px 0 0;font-size:9.8px;line-height:1.7;color:rgba(255,255,255,.52)}.directory-page footer .footer-column{flex:1 1 150px;display:flex;flex-direction:column;gap:8px;font-size:9px}.directory-page footer .footer-column>strong{margin-bottom:5px;font-size:7px;letter-spacing:.15em;color:#d1d0c6}.directory-page footer .footer-column a{color:rgba(255,255,255,.65)}.directory-page footer .socials{display:flex;gap:12px;margin:2px 0 12px}.directory-page footer small{color:rgba(255,255,255,.4);line-height:1.6}
 @media(max-width:980px){.directory-page .desktop-nav,.directory-page .header-cta{display:none}.directory-page .menu-toggle{display:block}.golf-map-shell{grid-template-columns:1fr;gap:18px}.golf-map-visual{min-height:650px}.map-stage{height:560px}.map-panel{min-height:400px}.map-intro-inner{grid-template-columns:1fr;gap:18px}.golf-featured-head{align-items:flex-start}.golf-featured-row{grid-template-columns:1fr 1fr}.golf-featured-item.featured{grid-row:span 2}.golf-featured-item.featured .golf-featured-media{height:100%;min-height:360px}}
 @media(max-width:700px){.directory-page .site-header{height:65px;padding:0 20px}.gd-hero{height:470px;min-height:470px}.gd-hero-inner{padding:0 22px 32px}.gd-hero h1{font-size:24px}.gd-hero p:not(.gd-label){font-size:10.1px}.map-intro{padding:44px 22px 24px}.golf-map-section{padding:10px 14px 50px}.golf-map-visual{min-height:570px;padding:16px 10px}.map-stage{height:490px}.map-pin{width:11px;height:11px}.map-pin b{font-size:5.7px;max-width:105px}.map-panel{padding:28px 22px;min-height:380px}.map-panel h2{font-size:24px}.map-course-list span{font-size:14px}.golf-featured{padding:0 22px 54px}.golf-featured-head{display:block;margin-bottom:18px}.golf-featured-head .gd-link{display:none}.golf-featured-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}.golf-featured-row::-webkit-scrollbar{display:none}.golf-featured-item,.golf-featured-item.featured{min-width:78vw;scroll-snap-align:start}.golf-featured-media,.golf-featured-item.featured .golf-featured-media{height:230px;min-height:0}.map-support{padding:54px 22px 62px}.map-support-actions{flex-direction:column;align-items:stretch}.map-support-actions a{width:100%}.directory-page footer{padding:48px 22px 28px}}
+
+/* UNIFORM FEATURED DESTINATION IMAGES */
+.directory-page .golf-featured-row{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  align-items:start;
+}
+.directory-page .golf-featured-media,
+.directory-page .golf-featured-item.featured .golf-featured-media{
+  height:auto;
+  min-height:0;
+  aspect-ratio:4/3;
+}
+.directory-page .golf-featured-copy h3{
+  font-size:clamp(17px,1.4vw,20px);
+}
+@media(max-width:980px){
+  .directory-page .golf-featured-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .directory-page .golf-featured-item.featured{grid-row:auto}
+  .directory-page .golf-featured-item.featured .golf-featured-media{height:auto;min-height:0}
+}
+@media(max-width:700px){
+  .directory-page .golf-featured-row{display:flex}
+  .directory-page .golf-featured-media,
+  .directory-page .golf-featured-item.featured .golf-featured-media{height:auto;aspect-ratio:4/3}
+}
