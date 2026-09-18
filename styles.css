@@ -85,3 +85,58 @@ main#top .destination.d6{order:7}
 @media(max-width:480px){
   main#top .destination-grid{grid-template-columns:1fr!important}
 }
+
+
+/* HOMEPAGE DESTINATION LINKS — REAL MARKUP, NO GENERATED TILE */
+main#top .destination-grid{
+  grid-template-columns:repeat(7,minmax(0,1fr))!important;
+  gap:9px!important;
+}
+main#top .destination-grid::after{
+  content:none!important;
+  display:none!important;
+}
+main#top .destination{
+  display:block;
+  min-height:190px!important;
+  border-radius:0!important;
+  transition:transform .28s ease,filter .28s ease;
+}
+main#top .destination:hover{
+  transform:translateY(-2px);
+  filter:saturate(.96);
+}
+main#top .destination.d1{order:1;background-image:url("hanoi.jpg")!important}
+main#top .destination.d2{order:2;background-image:url("halong-bay.jpg")!important}
+main#top .destination.d3{order:3;background-image:url("golf-da-nang.jpg")!important;background-position:center!important}
+main#top .destination.d4{order:4;background-image:url("danang-hoian.jpg")!important;background-position:center!important}
+main#top .destination.d5{order:5;background-image:url("ho-chi-minh-city.jpg")!important}
+main#top .destination.d6{order:6;background-image:url("cam-ranh.jpg")!important}
+main#top .destination.d7{order:7;background-image:url("phu-quoc.jpg")!important}
+main#top .destination.d3 strong{font-size:13px!important}
+main#top .destination.d3 strong::after{content:none!important}
+main#top .destination strong{font-size:11px!important;font-weight:500!important;letter-spacing:.01em}
+main#top .destination div{left:12px;right:12px;bottom:11px}
+
+/* SITE-WIDE MICRO POLISH */
+a,button{transition:color .2s ease,background-color .2s ease,border-color .2s ease,opacity .2s ease}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+  outline:2px solid #B8A078;
+  outline-offset:3px;
+}
+.site-header{box-shadow:none!important}
+.desktop-nav{font-size:11px!important}
+.nav-dropdown-toggle{font-size:11px!important}
+.outline-btn,.header-cta{letter-spacing:.11em!important}
+footer{row-gap:32px!important}
+footer .footer-column a:hover{color:#D4C5AD!important}
+@media(max-width:1080px){
+  main#top .destination-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+}
+@media(max-width:720px){
+  main#top .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  main#top .destination{min-height:180px!important}
+}
+@media(max-width:480px){
+  main#top .destination-grid{grid-template-columns:1fr 1fr!important}
+}
