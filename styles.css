@@ -164,3 +164,21 @@ html body main#top .hero-actions{
     padding-bottom:34px!important;
   }
 }
+
+
+/* HOMEPAGE INSET HERO IMAGE — keep header/trust bar full width */
+@media(min-width:900px){
+  html body main#top .hero{
+    background:#F7F4ED!important;
+  }
+  html body main#top .hero-image,
+  html body main#top .hero-overlay{
+    left:7vw!important;
+    right:7vw!important;
+    width:auto!important;
+  }
+  html body main#top .hero-inner{
+    width:min(1180px,72vw)!important;
+    margin:0 auto!important;
+  }
+}
