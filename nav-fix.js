@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       .travel-gateway{
         position:relative;
-        min-height:580px;
+        min-height:430px;
         overflow:hidden;
         display:flex;
         align-items:flex-end;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         z-index:2;
         width:100%;
         max-width:650px;
-        padding:48px 5.2vw 52px;
+        padding:32px 4.2vw 36px;
       }
       .travel-gateway-kicker{
         display:block;
@@ -119,15 +119,15 @@ document.addEventListener("DOMContentLoaded", () => {
       .travel-gateway:hover .travel-gateway-link b{transform:translateX(5px)}
       @media(max-width:820px){
         .promise.section.gateway-promise{grid-template-columns:1fr !important;gap:14px !important;padding:18px !important}
-        .travel-gateway{min-height:490px;border-radius:6px}
-        .travel-gateway-copy{padding:34px 30px 38px}
+        .travel-gateway{min-height:390px;border-radius:6px}
+        .travel-gateway-copy{padding:28px 28px 32px}
       }
       @media(max-width:520px){
         .promise.section.gateway-promise{padding:14px !important;gap:14px !important}
-        .travel-gateway{min-height:440px}
-        .travel-gateway-copy{padding:28px 24px 32px}
-        .travel-gateway h2{font-size:42px}
-        .travel-gateway h3{font-size:18px}
+        .travel-gateway{min-height:340px}
+        .travel-gateway-copy{padding:24px 22px 27px}
+        .travel-gateway h2{font-size:30px}
+        .travel-gateway h3{font-size:16px}
         .travel-gateway p{font-size:12px;line-height:1.6}
       }
     `;
