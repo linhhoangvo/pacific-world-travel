@@ -140,3 +140,27 @@ footer .footer-column a:hover{color:#D4C5AD!important}
 @media(max-width:480px){
   main#top .destination-grid{grid-template-columns:1fr 1fr!important}
 }
+
+
+/* HOMEPAGE COMPACT HERO */
+html body main#top .hero{
+  height:68vh!important;
+  min-height:540px!important;
+  max-height:650px!important;
+}
+html body main#top .hero-inner{
+  padding-bottom:42px!important;
+}
+html body main#top .hero-actions{
+  margin-top:22px!important;
+}
+@media(max-width:720px){
+  html body main#top .hero{
+    height:520px!important;
+    min-height:520px!important;
+    max-height:520px!important;
+  }
+  html body main#top .hero-inner{
+    padding-bottom:34px!important;
+  }
+}
