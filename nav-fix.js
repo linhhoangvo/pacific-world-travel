@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       .travel-gateway{
         position:relative;
-        min-height:430px;
+        min-height:320px;
         overflow:hidden;
         display:flex;
         align-items:flex-end;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         z-index:2;
         width:100%;
         max-width:650px;
-        padding:32px 4.2vw 36px;
+        padding:24px 3.6vw 28px;
       }
       .travel-gateway-kicker{
         display:block;
@@ -119,13 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .travel-gateway:hover .travel-gateway-link b{transform:translateX(5px)}
       @media(max-width:820px){
         .promise.section.gateway-promise{grid-template-columns:1fr !important;gap:14px !important;padding:18px !important}
-        .travel-gateway{min-height:390px;border-radius:6px}
-        .travel-gateway-copy{padding:28px 28px 32px}
+        .travel-gateway{min-height:300px;border-radius:4px}
+        .travel-gateway-copy{padding:22px 24px 25px}
       }
       @media(max-width:520px){
         .promise.section.gateway-promise{padding:14px !important;gap:14px !important}
-        .travel-gateway{min-height:340px}
-        .travel-gateway-copy{padding:24px 22px 27px}
+        .travel-gateway{min-height:280px}
+        .travel-gateway-copy{padding:20px 20px 22px}
         .travel-gateway h2{font-size:30px}
         .travel-gateway h3{font-size:16px}
         .travel-gateway p{font-size:12px;line-height:1.6}
