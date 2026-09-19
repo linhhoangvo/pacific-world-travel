@@ -166,17 +166,25 @@ html body main#top .hero-actions{
 }
 
 
-/* HOMEPAGE EDITORIAL HERO — inspired by restrained travel layouts */
+/* HOMEPAGE EDITORIAL HERO — single framed layer, no edge mismatch */
 @media(min-width:900px){
   html body main#top .hero{
     background:#F7F4ED!important;
   }
-  html body main#top .hero-image,
-  html body main#top .hero-overlay{
+  html body main#top .hero-image{
+    top:0!important;
+    bottom:0!important;
     left:50%!important;
     right:auto!important;
     width:min(1180px,82vw)!important;
     transform:translateX(-50%)!important;
+    background:
+      linear-gradient(180deg,rgba(38,60,50,.46) 0%,rgba(38,60,50,.16) 46%,rgba(38,60,50,.38) 100%),
+      linear-gradient(90deg,rgba(38,60,50,.10),rgba(38,60,50,.02)),
+      url("hero-golf.jpg") center 53%/cover no-repeat!important;
+  }
+  html body main#top .hero-overlay{
+    display:none!important;
   }
   html body main#top .hero-inner{
     width:min(1020px,70vw)!important;
