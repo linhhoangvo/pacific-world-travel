@@ -248,3 +248,11 @@ html body main#top .hero-inner p{
     padding:0 22px 74px!important;
   }
 }
+
+
+/* HOMEPAGE GOLF INCENTIVES ALT IMAGE */
+html body main#top .corporate-golf .cg-image{
+  background-image:url("hero-golf.jpg")!important;
+  background-position:center 52%!important;
+  background-size:cover!important;
+}
