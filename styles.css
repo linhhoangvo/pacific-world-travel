@@ -166,19 +166,27 @@ html body main#top .hero-actions{
 }
 
 
-/* HOMEPAGE INSET HERO IMAGE — keep header/trust bar full width */
+/* HOMEPAGE EDITORIAL HERO — inspired by restrained travel layouts */
 @media(min-width:900px){
   html body main#top .hero{
     background:#F7F4ED!important;
   }
   html body main#top .hero-image,
   html body main#top .hero-overlay{
-    left:7vw!important;
-    right:7vw!important;
-    width:auto!important;
+    left:50%!important;
+    right:auto!important;
+    width:min(1180px,82vw)!important;
+    transform:translateX(-50%)!important;
   }
   html body main#top .hero-inner{
-    width:min(1180px,72vw)!important;
+    width:min(1020px,70vw)!important;
     margin:0 auto!important;
+  }
+  html body main#top .hero-inner h1{
+    font-size:clamp(31px,2.7vw,39px)!important;
+  }
+  html body main#top .hero-inner p{
+    max-width:500px!important;
+    font-size:11px!important;
   }
 }
