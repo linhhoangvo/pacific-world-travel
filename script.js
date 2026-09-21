@@ -30,21 +30,7 @@ function buildNavDropdown(sourceLink, label, items) {
   sourceLink.replaceWith(dropdown);
 
   const toggle = dropdown.querySelector(".nav-dropdown-toggle");
-  toggle?.addEventListener("click", (event) => {
-    event.stopPropagation();
-    document.querySelectorAll(".nav-dropdown.open").forEach((openDropdown) => {
-      if (openDropdown !== dropdown) openDropdown.classList.remove("open");
-    });
-    const open = dropdown.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(open));
-  });
-
-  dropdown.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      dropdown.classList.remove("open");
-      toggle?.setAttribute("aria-expanded", "false");
-    });
-  });
+  toggle?.setAttribute("aria-haspopup", "true");
 
   return dropdown;
 }
@@ -99,13 +85,43 @@ buildNavDropdown(aboutLink, "About", [
   { label: "Local Expertise", href: "local-expertise.html" }
 ]);
 
-document.addEventListener("click", (event) => {
+function closeAllNavDropdowns(except = null) {
   document.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
-    if (!dropdown.contains(event.target)) {
-      dropdown.classList.remove("open");
-      dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
-    }
+    if (dropdown === except) return;
+    dropdown.classList.remove("open");
+    dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
   });
+}
+
+document.addEventListener("click", (event) => {
+  const toggle = event.target.closest(".nav-dropdown-toggle");
+  if (toggle) {
+    event.preventDefault();
+    const dropdown = toggle.closest(".nav-dropdown");
+    if (!dropdown) return;
+
+    const shouldOpen = !dropdown.classList.contains("open");
+    closeAllNavDropdowns(dropdown);
+    dropdown.classList.toggle("open", shouldOpen);
+    toggle.setAttribute("aria-expanded", String(shouldOpen));
+    return;
+  }
+
+  const menuLink = event.target.closest(".nav-dropdown-menu a");
+  if (menuLink) {
+    closeAllNavDropdowns();
+    return;
+  }
+
+  if (!event.target.closest(".nav-dropdown")) {
+    closeAllNavDropdowns();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  closeAllNavDropdowns();
+  document.querySelector(".nav-dropdown-toggle:focus")?.blur();
 });
 
 /* SITE-WIDE CONTACT ROUTING */
