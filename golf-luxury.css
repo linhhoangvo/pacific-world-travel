@@ -23,3 +23,372 @@
 
 @media(max-width:980px){.golf-page .desktop-nav,.golf-page .header-cta{display:none}.golf-page .menu-toggle{display:block}.g-story{min-height:790px}.g-story-image{width:82%;height:520px}.g-story-copy{width:min(360px,36vw)}.g-story.course .g-story-copy{right:5vw}.g-story.stay .g-story-copy{left:5vw}}
 @media(max-width:700px){.golf-page .site-header{height:68px;padding:0 20px}.golf-page .brand-copy strong{font-size:10.5px}.g-hero{height:570px;min-height:570px}.g-hero-inner{padding:0 22px 40px}.g-hero h1{font-size:26px}.g-hero p:not(.g-label){font-size:11px}.g-hero-note{display:none}.g-intro{padding:68px 22px 76px}.g-intro h2{font-size:21px}.g-intro-copy{margin-top:28px}.g-intro-copy p:first-child{font-size:16px}.g-intro-meta{line-height:1.9}.g-story{min-height:0;padding:0 0 76px}.g-story-image{width:100%;height:370px}.g-story-copy{position:relative;top:auto;transform:none;left:auto!important;right:auto!important;width:auto;margin:0 22px;padding-top:28px}.g-story h2{font-size:20px}.g-story p:not(.g-label){font-size:10.8px}.g-story-meta{line-height:1.9}.g-between{min-height:520px;background-position:58% center}.g-between-inner{padding:0 22px 48px}.g-between h2{font-size:20px}.g-between p:not(.g-label){font-size:10.8px}.g-planning{padding:64px 22px 72px}.g-planning h2{font-size:20px}.g-planning p:not(.g-label){font-size:10.8px}.g-planning-line{line-height:1.9}.g-final{min-height:500px;background-position:58% center}.g-final-inner{padding:0 22px 46px}.g-final h2{font-size:21px}.g-final p:not(.g-label){font-size:10.8px}.g-final-actions{flex-direction:column;align-items:stretch}.g-final-actions a{width:100%}.golf-page footer{padding:50px 22px 26px}}
+
+
+/* =========================================================
+   2026-09-21 GOLF PAGE LUXURY FIX
+   Correct tiny typography, improve hierarchy and make the page flow as
+   one continuous premium golf journey.
+   ========================================================= */
+.golf-page{
+  --g-green:#2b4036;
+  --g-deep:#1a2d25;
+  --g-ivory:#f7f3eb;
+  --g-paper:#fbf9f4;
+  --g-sand:#e8dfd2;
+  --g-ink:#2e3b35;
+  --g-muted:#6e766f;
+  --g-warm:#bcae98;
+  background:var(--g-paper);
+}
+
+/* Header */
+.golf-page .site-header{
+  height:82px;
+  padding:0 5.5vw;
+  border-bottom-color:rgba(255,255,255,.12);
+  background:linear-gradient(180deg,rgba(8,20,15,.34),rgba(8,20,15,.08) 62%,transparent);
+}
+.golf-page .desktop-nav{
+  font-size:11px!important;
+}
+.golf-page .header-cta{
+  font-size:9px;
+}
+
+/* Shared type */
+.golf-page .g-label{
+  margin-bottom:14px;
+  font-size:9px!important;
+  line-height:1.45!important;
+  font-weight:500;
+  letter-spacing:.19em;
+}
+.golf-page .g-btn,
+.golf-page .g-link{
+  font-size:9px;
+}
+.golf-page .g-btn{
+  min-height:44px;
+  padding:0 20px;
+}
+
+/* Hero */
+.golf-page .g-hero{
+  height:88vh;
+  min-height:680px;
+  max-height:900px;
+}
+.golf-page .g-hero-media{
+  background-position:center 48%;
+  transform:scale(1.012);
+}
+.golf-page .g-hero:after{
+  background:
+    linear-gradient(90deg,rgba(15,35,27,.78) 0%,rgba(15,35,27,.47) 40%,rgba(15,35,27,.10) 75%,rgba(15,35,27,.03) 100%),
+    linear-gradient(180deg,rgba(10,25,19,.07) 0%,rgba(10,25,19,.03) 48%,rgba(10,25,19,.48) 100%);
+}
+.golf-page .g-hero-inner{
+  padding:0 7vw 84px;
+}
+.golf-page .g-hero-copy{
+  max-width:700px;
+}
+.golf-page .g-hero h1{
+  max-width:650px;
+  font-size:clamp(46px,5.1vw,68px)!important;
+  line-height:.99!important;
+  letter-spacing:-.025em!important;
+}
+.golf-page .g-hero p:not(.g-label){
+  max-width:540px;
+  margin-top:22px;
+  font-size:14px!important;
+  line-height:1.65!important;
+}
+.golf-page .g-hero-actions{
+  margin-top:28px;
+}
+.golf-page .g-btn.light{
+  background:rgba(255,255,255,.96);
+  box-shadow:0 12px 32px rgba(12,28,21,.08);
+}
+
+/* Quiet confidence strip */
+.golf-page .g-trust{
+  background:var(--g-deep);
+  color:#fff;
+}
+.golf-page .g-trust-inner{
+  width:min(1120px,84vw);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.golf-page .g-trust-inner>div{
+  position:relative;
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:18px 20px;
+}
+.golf-page .g-trust-inner>div+div:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:23px;
+  bottom:23px;
+  width:1px;
+  background:rgba(255,255,255,.12);
+}
+.golf-page .g-trust-inner small{
+  font:500 13px/1 'Cormorant Garamond',Georgia,serif;
+  color:#c9b99f;
+}
+.golf-page .g-trust-inner span{
+  font-size:10.5px;
+  line-height:1.45;
+  color:rgba(255,255,255,.72);
+}
+
+/* Intro */
+.golf-page .g-intro{
+  padding:124px 8vw 100px;
+  background:var(--g-ivory);
+}
+.golf-page .g-intro-inner{
+  max-width:1080px;
+}
+.golf-page .g-intro h2{
+  max-width:780px;
+  font-size:clamp(32px,3.1vw,43px)!important;
+  line-height:1.08!important;
+  letter-spacing:-.012em!important;
+}
+.golf-page .g-intro-copy{
+  max-width:600px;
+  margin-top:52px;
+}
+.golf-page .g-intro-copy:before{
+  content:"";
+  display:block;
+  width:44px;
+  height:1px;
+  margin-bottom:24px;
+  background:rgba(46,59,53,.24);
+}
+.golf-page .g-intro-copy p{
+  font-size:14px!important;
+  line-height:1.65!important;
+}
+.golf-page .g-intro-copy p:first-child{
+  font-size:20px!important;
+  line-height:1.5!important;
+}
+.golf-page .g-intro-meta{
+  margin-top:28px;
+  padding-top:18px;
+  border-top:1px solid rgba(46,59,53,.11);
+}
+.golf-page .g-intro-meta span,
+.golf-page .g-story-meta span,
+.golf-page .g-planning-line span{
+  font-size:9px!important;
+  line-height:1.5;
+}
+
+/* Stories — remove awkward floating overlap and make them editorial */
+@media(min-width:981px){
+  .golf-page .g-story{
+    width:min(1180px,86vw);
+    margin:0 auto;
+    min-height:0;
+    padding:86px 0 92px;
+    display:grid;
+    grid-template-columns:minmax(0,1.12fr) minmax(330px,.72fr);
+    gap:clamp(64px,7vw,110px);
+    align-items:center;
+    background:var(--g-paper);
+  }
+  .golf-page .g-story.alt{
+    grid-template-columns:minmax(330px,.72fr) minmax(0,1.12fr);
+    background:var(--g-paper);
+  }
+  .golf-page .g-story-image{
+    width:100%;
+    height:450px;
+    box-shadow:0 22px 55px rgba(30,44,37,.07);
+  }
+  .golf-page .g-story-copy{
+    position:static;
+    transform:none;
+    width:auto;
+  }
+  .golf-page .g-story.stay .g-story-image{
+    order:2;
+    margin-left:0;
+  }
+  .golf-page .g-story.stay .g-story-copy{
+    order:1;
+  }
+}
+.golf-page .g-story h2{
+  font-size:clamp(29px,2.8vw,38px)!important;
+  line-height:1.1!important;
+}
+.golf-page .g-story p:not(.g-label){
+  margin-top:18px;
+  font-size:14px!important;
+  line-height:1.65!important;
+}
+.golf-page .g-story-meta{
+  margin-top:24px;
+}
+
+/* Between rounds */
+.golf-page .g-between{
+  min-height:650px;
+  background-position:center 54%;
+}
+.golf-page .g-between:after{
+  background:
+    linear-gradient(90deg,rgba(18,40,31,.72) 0%,rgba(18,40,31,.38) 48%,rgba(18,40,31,.08) 80%),
+    linear-gradient(180deg,rgba(17,36,28,.03),rgba(17,36,28,.35));
+}
+.golf-page .g-between-inner{
+  max-width:650px;
+  padding:0 7vw 78px;
+}
+.golf-page .g-between h2{
+  font-size:clamp(31px,3vw,41px)!important;
+  line-height:1.08!important;
+}
+.golf-page .g-between p:not(.g-label){
+  max-width:520px;
+  margin-top:18px;
+  font-size:14px!important;
+  line-height:1.65!important;
+}
+
+/* Planning */
+.golf-page .g-planning{
+  padding:112px 8vw 118px;
+  background:var(--g-ivory);
+}
+.golf-page .g-planning-inner{
+  max-width:900px;
+}
+.golf-page .g-planning h2{
+  max-width:720px;
+  font-size:clamp(31px,3vw,41px)!important;
+  line-height:1.08!important;
+}
+.golf-page .g-planning p:not(.g-label){
+  max-width:610px;
+  margin-top:18px;
+  font-size:14px!important;
+  line-height:1.65!important;
+}
+.golf-page .g-planning-line{
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid rgba(46,59,53,.11);
+}
+
+/* Final */
+.golf-page .g-final{
+  min-height:610px;
+}
+.golf-page .g-final:after{
+  background:
+    linear-gradient(90deg,rgba(15,37,28,.75),rgba(15,37,28,.37) 52%,rgba(15,37,28,.07)),
+    linear-gradient(180deg,rgba(16,36,27,.02),rgba(16,36,27,.34));
+}
+.golf-page .g-final-inner{
+  max-width:720px;
+  padding:0 7vw 74px;
+}
+.golf-page .g-final h2{
+  font-size:clamp(31px,3vw,41px)!important;
+  line-height:1.08!important;
+}
+.golf-page .g-final p:not(.g-label){
+  max-width:560px;
+  margin-top:18px;
+  font-size:14px!important;
+  line-height:1.65!important;
+}
+.golf-page .g-final-actions{
+  margin-top:28px;
+}
+
+/* Responsive */
+@media(max-width:980px){
+  .golf-page .g-trust-inner{
+    width:100%;
+    grid-template-columns:1fr 1fr;
+  }
+  .golf-page .g-trust-inner>div+div:before{
+    display:none;
+  }
+}
+@media(max-width:700px){
+  .golf-page .g-hero{
+    height:700px;
+    min-height:700px;
+  }
+  .golf-page .g-hero-inner{
+    padding:0 22px 62px;
+  }
+  .golf-page .g-hero h1{
+    font-size:40px!important;
+    line-height:1.01!important;
+  }
+  .golf-page .g-hero p:not(.g-label){
+    font-size:14px!important;
+  }
+  .golf-page .g-trust-inner{
+    grid-template-columns:1fr;
+  }
+  .golf-page .g-trust-inner>div{
+    min-height:62px;
+    padding:14px 22px;
+  }
+  .golf-page .g-intro{
+    padding:82px 22px 72px;
+  }
+  .golf-page .g-intro h2{
+    font-size:31px!important;
+  }
+  .golf-page .g-story{
+    padding-bottom:84px;
+  }
+  .golf-page .g-story-image{
+    height:360px;
+  }
+  .golf-page .g-story-copy{
+    padding-top:34px;
+  }
+  .golf-page .g-story h2,
+  .golf-page .g-between h2,
+  .golf-page .g-planning h2,
+  .golf-page .g-final h2{
+    font-size:29px!important;
+  }
+  .golf-page .g-between{
+    min-height:580px;
+  }
+  .golf-page .g-between-inner{
+    padding:0 22px 58px;
+  }
+  .golf-page .g-planning{
+    padding:78px 22px 84px;
+  }
+  .golf-page .g-final{
+    min-height:560px;
+  }
+  .golf-page .g-final-inner{
+    padding:0 22px 56px;
+  }
+}
