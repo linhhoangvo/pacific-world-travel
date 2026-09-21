@@ -281,3 +281,31 @@ html body main#top .corporate-golf .cg-image{
     color:#263C32!important;
   }
 }
+
+
+/* SITE-WIDE BODY COPY BASELINE
+   Normal descriptive copy follows the compact size approved across the site.
+   Headings, labels, navigation, quotes and microcopy remain independently styled. */
+:root{
+  --pw-body-copy:14px;
+  --pw-card-copy:13px;
+  --pw-body-leading:1.68;
+}
+
+body main p:not(.eyebrow):not([class*="kicker"]):not([class*="crumb"]):not([class*="quote"]):not([class*="label"]):not([class*="role"]):not([class*="meta"]){
+  font-size:var(--pw-body-copy)!important;
+  line-height:var(--pw-body-leading)!important;
+}
+
+body main article p:not(.eyebrow):not([class*="kicker"]):not([class*="quote"]):not([class*="label"]):not([class*="role"]):not([class*="meta"]),
+body main details p{
+  font-size:var(--pw-card-copy)!important;
+  line-height:1.7!important;
+}
+
+@media(max-width:720px){
+  :root{
+    --pw-body-copy:13.5px;
+    --pw-card-copy:13px;
+  }
+}
