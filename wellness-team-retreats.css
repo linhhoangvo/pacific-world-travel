@@ -124,3 +124,38 @@ body.wellness-page{margin:0;background:var(--w-paper);color:var(--w-ink);font-fa
   .well-why,.well-faq{width:auto;margin-left:22px;margin-right:22px}.well-why{margin-bottom:72px}.well-faq{margin-bottom:78px}
   .well-final{width:auto;margin:0 22px 70px;padding:38px 26px;display:block}.well-final>div:last-child{margin-top:22px}
 }
+
+/* 2026-09-21 FAQ TYPOGRAPHY INCREASE */
+.wellness-page .well-faq summary{
+  padding:22px 58px 22px 24px;
+  font-size:12.5px!important;
+  line-height:1.5!important;
+  font-weight:400;
+}
+.wellness-page .well-faq summary::after{
+  right:24px;
+  font-size:20px!important;
+}
+.wellness-page .well-faq details p{
+  max-width:780px;
+  padding:0 24px 22px;
+  font-size:11.5px!important;
+  line-height:1.75!important;
+}
+.wellness-page .well-faq-list{
+  gap:14px;
+}
+.wellness-page .well-faq details{
+  border-radius:12px;
+}
+
+@media(max-width:700px){
+  .wellness-page .well-faq summary{
+    padding:20px 52px 20px 20px;
+    font-size:12px!important;
+  }
+  .wellness-page .well-faq details p{
+    padding:0 20px 20px;
+    font-size:11.5px!important;
+  }
+}
