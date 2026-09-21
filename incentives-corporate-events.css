@@ -141,3 +141,10 @@ body.incentive-page{margin:0;background:var(--i-paper);color:var(--i-ink);font-f
   .inc-types,.inc-destinations{margin-bottom:70px}
   .inc-approach{margin-bottom:70px}
 }
+
+
+/* REMOVE EDITORIAL BLOCK SPACING */
+.inc-types{margin-top:78px}
+@media(max-width:700px){
+  .inc-types{margin-top:58px}
+}
