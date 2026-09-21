@@ -84,8 +84,7 @@ const aboutLink = nav ? [...nav.children].find((item) =>
 buildNavDropdown(aboutLink, "About", [
   { label: "Why Us", href: "why-us.html" },
   { label: "Our Team", href: "team.html" },
-  { label: "Sustainability", href: "sustainability.html" },
-  { label: "Local Expertise", href: "local-expertise.html" }
+  { label: "Sustainability", href: "sustainability.html" }
 ]);
 
 function closeAllNavDropdowns(except = null) {
