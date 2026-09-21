@@ -792,3 +792,70 @@
     gap:18px;
   }
 }
+
+
+/* =========================================================
+   2026-09-21 LESS CONTENT / MORE SPACE
+   Simplify the corporate page so each section communicates one idea.
+   ========================================================= */
+.business-page .corp-intro{
+  padding-top:76px!important;
+  padding-bottom:78px!important;
+}
+.business-page .corp-intro-grid{
+  gap:clamp(48px,6vw,86px)!important;
+}
+.business-page .corp-intro-copy{
+  max-width:500px!important;
+}
+.business-page .corp-intro-copy .lead{
+  margin-bottom:12px!important;
+}
+
+.business-page .story{
+  padding-top:54px!important;
+  padding-bottom:54px!important;
+}
+.business-page .story-media{
+  height:370px!important;
+}
+.business-page .story-copy-inner{
+  max-width:420px!important;
+}
+
+.business-page .services-index{
+  padding-top:78px!important;
+  padding-bottom:82px!important;
+}
+.business-page .service-links-clean{
+  gap:4px!important;
+}
+.business-page .service-links-clean a{
+  min-height:56px!important;
+}
+
+.business-page .scenario{
+  padding-top:66px!important;
+  padding-bottom:66px!important;
+}
+.business-page .scenario-media{
+  height:390px!important;
+}
+.business-page .scenario-simple{
+  margin:24px 0 0!important;
+  max-width:430px;
+  font-size:13px!important;
+  line-height:1.65!important;
+  color:#69716b!important;
+}
+
+.business-page .local-promise{
+  min-height:440px!important;
+}
+.business-page .local-promise-inner{
+  max-width:650px!important;
+}
+.business-page .corp-final{
+  padding-top:64px!important;
+  padding-bottom:68px!important;
+}
