@@ -1,107 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore Hanoi with Pacific World Travel — executive travel, corporate golf, premium stays and tailored Northern Vietnam journeys." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore Hanoi with Pacific World Travel — tailored private journeys, premium stays and seamless local travel.">
   <title>Hanoi | Pacific World Travel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260814-hanoi9" />
-  <link rel="stylesheet" href="destination-detail.css?v=20260814-hanoi9" />
-  <style>
-    .stay-grid.real-hotels{gap:18px}
-    .stay-card.hotel-property{display:block;padding:24px 24px 26px;border-radius:16px;background:#fff;color:#263C32;box-shadow:0 10px 28px rgba(38,60,50,.06);transition:transform .22s ease,box-shadow .22s ease}
-    .stay-card.hotel-property:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(38,60,50,.10)}
-    .hotel-property small{display:block;margin-bottom:11px;font-size:8px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:#68735A}
-    .hotel-property h3{margin-bottom:10px}.hotel-property p{margin-bottom:18px}.hotel-property span{display:inline-flex;font-size:9px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#263C32}
-
-    .hanoi-overview{display:grid;grid-template-columns:.9fr 1.1fr;min-height:560px;background:#F7F4ED;color:#263C32}
-    .hanoi-overview-photo{min-height:560px;background:url('hanoi.jpg') center/cover no-repeat}
-    .hanoi-overview-copy{padding:78px 7vw 64px;display:flex;flex-direction:column;justify-content:center}
-    .hanoi-overview-copy .eyebrow{margin-bottom:14px}
-    .hanoi-overview-copy h2{max-width:760px;margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(42px,4.6vw,68px);line-height:.98;font-weight:500;letter-spacing:-.04em;color:#263C32}
-    .hanoi-overview-copy>p{max-width:720px;margin:24px 0 30px;font-size:14px;line-height:1.72;color:#5D695F}
-    .hanoi-overview-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px;padding-top:8px}
-    .hanoi-overview-point{padding:17px 0;border-top:1px solid rgba(38,60,50,.12)}
-    .hanoi-overview-point strong{display:block;margin-bottom:4px;font-size:12px;font-weight:600;color:#263C32}
-    .hanoi-overview-point span{display:block;font-size:10.5px;line-height:1.5;color:#68735A}
-    .hanoi-overview-link{display:inline-flex;margin-top:20px;font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#263C32}
-    .north-section .north-track{grid-template-columns:repeat(3,1fr)}
-
-    @media(max-width:900px){.hanoi-overview{grid-template-columns:1fr}.hanoi-overview-photo{min-height:390px}.hanoi-overview-copy{padding:58px 6.4vw}.hanoi-overview-points{grid-template-columns:1fr 1fr}}
-    @media(max-width:620px){.hanoi-overview-photo{min-height:300px}.hanoi-overview-copy{padding:48px 22px}.hanoi-overview-points{grid-template-columns:1fr;gap:0}.stay-card.hotel-property{padding:22px}}
-  </style>
+  <link rel="stylesheet" href="styles.css?v=20260921-destination-luxe">
+  <link rel="stylesheet" href="ha-long-bay.css?v=20260921-destination-luxe">
 </head>
-<body class="destination-detail-page">
+<body class="halong-page">
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Pacific World Travel home"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="destinations.html">Destinations</a><a href="meetings-conferences.html">MICE & Events</a><a href="who-we-are.html">About</a>
-    </nav>
-    <a class="outline-btn header-cta" href="contact.html">Talk to us</a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a>
+    <nav class="desktop-nav"><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="destinations.html">Destinations</a><a href="meetings-conferences.html">MICE & Events</a><a href="who-we-are.html">About</a></nav>
+    <a class="outline-btn header-cta" href="contact.html">Talk to us</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
   </header>
-
-  <main class="destination-detail-main">
-    <section class="destination-hero" style="background-image:url('hanoi.jpg')">
-      <div class="destination-hero-inner">
-        <p class="destination-crumbs"><a href="index.html">Home</a> / <a href="destinations.html">Destinations</a> / Hanoi</p>
-        <h1>Hanoi</h1>
-        <div class="destination-hero-copy"><p>Vietnam’s capital is a practical base for business and a rewarding place to spend time after the meetings are done. We manage executive travel, client programmes, golf days and onward journeys across Northern Vietnam from one local plan.</p><div class="destination-hero-tags"><span>Business Travel</span><span>Golf</span><span>Northern Vietnam</span></div></div>
+  <main>
+    <section class="hl-hero">
+      <figure class="hl-hero-media"><img src="hanoi.jpg" alt="Hanoi"><span class="hl-hero-shade"></span><figcaption>Northern Vietnam · Hanoi</figcaption></figure>
+      <div class="hl-hero-copy">
+        <p class="hl-breadcrumbs"><a href="destinations.html">Vietnam</a> / Northern Vietnam</p>
+        <p class="hl-kicker light">Hanoi</p>
+        <h1>A city of<br><em>layers and rhythm.</em></h1>
+        <p class="hl-deck">Old quarters, lakes, cafés and contemporary energy — a natural starting point for journeys through Northern Vietnam.</p>
+        <a class="hl-hero-link" href="contact.html">Begin your journey <span>→</span></a>
       </div>
     </section>
 
-    <section class="hanoi-overview">
-      <div class="hanoi-overview-photo" role="img" aria-label="Hanoi city scene"></div>
-      <div class="hanoi-overview-copy">
-        <p class="eyebrow">WHY HANOI</p>
-        <h2>Hanoi works around the schedule.</h2>
-        <p>A practical base for executive travel, with premium hotels, reliable private transport and easy access across the city. When time allows, add golf, client dining or a short Northern Vietnam extension without rebuilding the itinerary.</p>
-        <div class="hanoi-overview-points">
-          <div class="hanoi-overview-point"><strong>Business Travel</strong><span>Executive transport, hotels and meeting support.</span></div>
-          <div class="hanoi-overview-point"><strong>Corporate Golf</strong><span>Tee times and golf days fitted around the work schedule.</span></div>
-          <div class="hanoi-overview-point"><strong>Client Hosting</strong><span>Dining and local experiences that feel considered, not packaged.</span></div>
-          <div class="hanoi-overview-point"><strong>Northern Extensions</strong><span>Ha Long Bay, Ninh Binh and beyond from the same itinerary.</span></div>
-        </div>
-        <a class="hanoi-overview-link" href="contact.html">Plan Hanoi with us →</a>
-      </div>
+    <section class="hl-glance" aria-label="Hanoi essentials">
+      <div><span>Suggested stay</span><strong>2–4 nights</strong></div>
+      <div><span>Access</span><strong>Noi Bai International Airport</strong></div>
+      <div><span>Best for</span><strong>Business · Culture · Private journeys</strong></div>
+      <div><span>Pair with</span><strong>Ha Long Bay · Ninh Binh · Sapa</strong></div>
     </section>
 
-    <section class="hanoi-programmes">
-      <div class="programme-heading"><div><p class="eyebrow">HANOI PROGRAMMES</p><h2>Useful starting points.</h2></div><p>Every programme is customisable around your meetings, traveller profile, hotel level and preferred pace.</p></div>
-      <div class="programme-grid">
-        <article class="programme-card"><div class="programme-image" style="background-image:url('business-travel.jpg')"><span>Business</span></div><div class="programme-body"><small>3 DAYS · EXECUTIVE TRAVEL</small><h3>Hanoi Executive Stay</h3><p>Airport arrival, premium hotel, private transport and flexible support for a short business visit.</p><a href="contact.html">Tailor this programme ↗</a></div></article>
-        <article class="programme-card"><div class="programme-image" style="background-image:url('golf-travel.jpg');background-position:center 55%"><span>Golf</span></div><div class="programme-body"><small>4 DAYS · BUSINESS + GOLF</small><h3>Hanoi Golf & Client Day</h3><p>Meetings and city time paired with a curated golf day and seamless private transfers.</p><a href="contact.html">Tailor this programme ↗</a></div></article>
-        <article class="programme-card"><div class="programme-image" style="background-image:url('hanoi.jpg')"><span>Hosting</span></div><div class="programme-body"><small>3 DAYS · CLIENT PROGRAMME</small><h3>Meetings & Hanoi After Hours</h3><p>A business-ready city stay with a hosted local dinner or private experience once work is done.</p><a href="contact.html">Tailor this programme ↗</a></div></article>
-        <article class="programme-card"><div class="programme-image" style="background-image:url('halong-bay.jpg')"><span>Extension</span></div><div class="programme-body"><small>5 DAYS · NORTHERN VIETNAM</small><h3>Hanoi & Ha Long Bay</h3><p>Move from the capital to the bay with hotel, transport and timing managed as one itinerary.</p><a href="contact.html">Tailor this programme ↗</a></div></article>
-      </div>
+    <section class="hl-editorial">
+      <figure class="hl-editorial-image"><img src="hanoi.jpg" alt="Hanoi"></figure>
+      <div class="hl-editorial-copy"><p class="hl-kicker">City character</p><h2>Let Hanoi reveal itself slowly.</h2><p>Hanoi rewards travellers who leave room between the landmarks — time for an early coffee, a walk around the lake, a quiet temple courtyard and an evening that unfolds through food and conversation.</p></div>
     </section>
 
-    <section class="essentials" aria-label="Hanoi essentials"><div class="essential-item"><span>Best for</span><strong>Business trips, golf and short northern extensions</strong></div><div class="essential-item"><span>Typical stay</span><strong>2–4 nights</strong></div><div class="essential-item"><span>Airport</span><strong>Noi Bai International Airport</strong></div><div class="essential-item"><span>Easy add-ons</span><strong>Ha Long Bay · Ninh Binh · Northern Vietnam</strong></div></section>
-
-    <section class="destination-section">
-      <div class="section-heading"><p class="eyebrow">WHERE TO STAY</p><h2>Hotels we recommend in Hanoi.</h2><p>We match the property to the traveller, meeting location and style of trip. These are three useful starting points for Pacific World guests in Hanoi.</p></div>
-      <div class="stay-grid real-hotels">
-        <a class="stay-card hotel-property" href="hotels-resorts.html#hanoi-hotels"><small>HERITAGE LUXURY · HOAN KIEM</small><h3>Sofitel Legend Metropole Hanoi</h3><p>An iconic heritage choice for VIP travellers, senior executives and client hosting in central Hanoi.</p><span>View on Hotels & Resorts →</span></a>
-        <a class="stay-card hotel-property" href="hotels-resorts.html#hanoi-hotels"><small>CENTRAL HANOI</small><h3>The Theodore Hanoi</h3><p>A central option for travellers who want to stay close to Hoan Kiem and the heart of the city.</p><span>View on Hotels & Resorts →</span></a>
-        <a class="stay-card hotel-property" href="hotels-resorts.html#hanoi-hotels"><small>5-STAR · OLD QUARTER</small><h3>La Mejor Indochine Hotel</h3><p>A five-star Old Quarter stay with rooftop pool and spa facilities, well suited to a more relaxed extension.</p><span>View on Hotels & Resorts →</span></a>
-      </div><a class="section-text-link" href="hotels-resorts.html#hanoi-hotels">Explore our Hanoi hotel selection →</a>
+    <section class="hl-approach">
+      <div class="hl-approach-head"><p class="hl-kicker">The Pacific World approach</p><h2>Curated, connected and deliberately considered.</h2><p>We balance efficient city logistics with the details that make Hanoi feel personal, then connect the capital smoothly with the mountains, countryside or coast.</p></div>
+      <div class="hl-approach-cards"><article class="hl-approach-card"><figure><img src="hanoi.jpg" alt="Stay central"></figure><div><small>In the city</small><h3>Stay central</h3><p>Choose the right neighbourhood and hotel style so meetings, dining and exploration all feel easy.</p></div></article><article class="hl-approach-card"><figure><img src="halong-bay.jpg" alt="Continue to Ha Long Bay"></figure><div><small>Beyond the city</small><h3>Continue to Ha Long Bay</h3><p>Move from city energy to the water with private transfers and one connected itinerary.</p></div></article><article class="hl-approach-card"><figure><img src="ninh binh.jpg" alt="Add Ninh Binh"></figure><div><small>A slower extension</small><h3>Add Ninh Binh</h3><p>Pair Hanoi with rivers, limestone landscapes and a quieter countryside pace.</p></div></article></div>
     </section>
 
-    <section class="destination-section"><div class="local-shortlist"><div><p class="eyebrow">IF YOU HAVE A FEW HOURS</p><h2>Hanoi between meetings.</h2></div><div class="shortlist-list"><div class="shortlist-item"><div><strong>Coffee somewhere local</strong><p>An easy way to get a feel for Hanoi without turning a free hour into a full tour.</p></div></div><div class="shortlist-item"><div><strong>Walk Hoan Kiem and the Old Quarter</strong><p>A compact introduction to the city’s street life, architecture and pace.</p></div></div><div class="shortlist-item"><div><strong>Host dinner with a sense of place</strong><p>We can build a relaxed local food experience around clients, colleagues or a free evening.</p></div></div><div class="shortlist-item"><div><strong>Add a golf day</strong><p>Useful for client entertainment or simply extending the trip beyond the meeting room.</p></div></div><div class="shortlist-item"><div><strong>Leave the city for a night or two</strong><p>Ha Long Bay and Ninh Binh are natural next steps when the schedule allows.</p></div></div></div></div></section>
+    <section class="hl-quote"><p>“Hanoi is best when the itinerary leaves space for the city to surprise you.”</p></section>
 
-    <section class="north-section"><div class="north-heading"><div><p class="eyebrow">FROM HANOI</p><h2>Go further north.</h2></div><p>Keep the same local team and extend the itinerary when the schedule allows.</p></div><div class="north-track"><a class="north-card photo" href="destinations.html" style="background-image:url('halong-bay.jpg')"><span>Ha Long Bay</span><b>↗</b></a><a class="north-card photo" href="destinations.html" style="background-image:url('ninh binh.jpg')"><span>Ninh Binh</span><b>↗</b></a><a class="north-card editorial green" href="destinations.html"><small>Mountains</small><span>Sapa</span><b>↗</b></a></div></section>
+    <section class="hl-programmes">
+      <div class="hl-section-head"><div><p class="hl-kicker">Curated journeys</p><h2>Start with a rhythm, not a template.</h2></div><p>Each programme is adjusted around your dates, travellers, preferred stay style and wider Vietnam itinerary.</p></div>
+      <div class="hl-programme-cards"><a class="hl-programme-card" href="contact.html"><figure><img src="hanoi.jpg" alt="Hanoi, Seamlessly"></figure><div><small>Executive city stay</small><h3>Hanoi, Seamlessly</h3><p>Premium hotel, private transfers and flexible support shaped around your schedule.</p><span>Explore journey ↗</span></div></a><a class="hl-programme-card" href="contact.html"><figure><img src="halong-bay.jpg" alt="Hanoi &amp; Ha Long Bay"></figure><div><small>Northern extension</small><h3>Hanoi & Ha Long Bay</h3><p>Combine the capital with an overnight cruise for a complete change of rhythm.</p><span>Explore journey ↗</span></div></a><a class="hl-programme-card" href="contact.html"><figure><img src="ninh binh.jpg" alt="Hanoi &amp; Ninh Binh"></figure><div><small>Private journey</small><h3>Hanoi & Ninh Binh</h3><p>A city-and-countryside pairing with private transport and well-paced local experiences.</p><span>Explore journey ↗</span></div></a></div>
+    </section>
 
-    <section class="travel-notes"><div class="travel-notes-head"><p class="eyebrow">TRAVEL NOTES</p><h2>Useful before you go.</h2></div><div class="travel-notes-grid"><a class="travel-note" href="corporate-executive-travel.html"><div class="travel-note-image" style="background-image:url('business-travel.jpg')"></div><div><small>BUSINESS TRAVEL</small><h3>Hanoi for executive travellers</h3><p>What matters most when timing, transport and location need to work around a business schedule.</p><span>Explore →</span></div></a><a class="travel-note" href="golf-holidays-journeys.html"><div class="travel-note-image" style="background-image:url('golf-travel.jpg')"></div><div><small>GOLF TRAVEL</small><h3>Adding golf to a Hanoi trip</h3><p>Build a golf day around meetings, client entertainment or a longer Vietnam golf journey.</p><span>Explore →</span></div></a><a class="travel-note" href="hotels-resorts.html#hanoi-hotels"><div class="travel-note-image" style="background-image:url('hanoi.jpg')"></div><div><small>HOTELS & RESORTS</small><h3>Choosing where to stay in Hanoi</h3><p>See our real Hanoi hotel shortlist for executive stays, VIP hosting and private extensions.</p><span>Explore →</span></div></a></div></section>
+    <section class="hl-recommend">
+      <div class="hl-recommend-head"><div><p class="hl-kicker">You may also like</p><h2>More ways to shape the journey.</h2></div><p>Add another northern landscape, extend into the mountains or build in golf around the city stay.</p></div>
+      <div class="hl-recommend-track"><a class="hl-recommend-card" href="ha-long-bay.html"><figure><img src="halong-bay.jpg" alt="Ha Long Bay"></figure><span class="hl-recommend-shade"></span><div class="hl-recommend-caption"><small>Overnight cruise</small><strong>Ha Long Bay</strong><b>↗</b></div></a><a class="hl-recommend-card" href="ninh-binh.html"><figure><img src="ninh binh.jpg" alt="Ninh Binh"></figure><span class="hl-recommend-shade"></span><div class="hl-recommend-caption"><small>Private extension</small><strong>Ninh Binh</strong><b>↗</b></div></a><a class="hl-recommend-card" href="sapa.html"><figure><img src="Sapa.jpg" alt="Sapa"></figure><span class="hl-recommend-shade"></span><div class="hl-recommend-caption"><small>Mountain escape</small><strong>Sapa</strong><b>↗</b></div></a><a class="hl-recommend-card" href="golf-holidays-journeys.html"><figure><img src="BRG Legend Hill Golf Resort.jpg" alt="Northern Vietnam Golf"></figure><span class="hl-recommend-shade"></span><div class="hl-recommend-caption"><small>Golf add-on</small><strong>Northern Vietnam Golf</strong><b>↗</b></div></a></div>
+    </section>
 
-    <section class="faq-section"><div class="faq-heading"><p class="eyebrow">HANOI FAQS</p><h2>Frequently asked questions.</h2></div><div class="faq-wrap"><details><summary>How many nights should a business traveller spend in Hanoi?</summary><p>Two to four nights is a practical starting point for a focused programme. We build around meeting times, flight schedules and any golf or leisure extension you want to add.</p></details><details><summary>Can Pacific World manage airport transfers and executive transport?</summary><p>Yes. We coordinate airport transfers, private vehicles, drivers and local logistics as part of the wider travel programme.</p></details><details><summary>Can a Hanoi business trip include golf?</summary><p>Yes. Golf can work as client entertainment, a free-day activity or the start of a longer golf journey, with the logistics planned around the business schedule.</p></details><details><summary>Can Hanoi be combined with Ha Long Bay or Ninh Binh?</summary><p>Yes. Both work naturally as short extensions from Hanoi and can be managed as part of the same itinerary.</p></details><details><summary>Do you arrange programmes for corporate groups?</summary><p>Yes. We manage executive groups, client programmes, incentives and corporate teams, including hotels, vehicles, dining, golf and local experiences.</p></details></div></section>
+    <section class="hl-why">
+      <div class="hl-why-inner"><p class="hl-kicker">Why visit Hanoi</p><h2>A capital with enough depth to feel different every day.</h2><div class="hl-why-copy"><p>Hanoi brings together history, contemporary life and a strong sense of place in a compact city that works equally well for business stays and private travel.</p><p>Its real appeal often sits between the headline sights — in food, neighbourhoods, cafés, lakes and the slower moments that make the city feel lived-in rather than staged.</p><p>It is also the most natural gateway to Ha Long Bay, Ninh Binh and Sapa, making it easy to shape a wider northern Vietnam journey from one base.</p></div></div>
+    </section>
 
-    <section class="destination-final"><div><h2>Planning Hanoi?</h2><p>Tell us your dates, travellers and priorities. We’ll take care of the rest.</p></div><a href="contact.html">Start planning →</a></section>
+    <section class="hl-faq">
+      <div class="hl-faq-inner"><p class="hl-kicker">Good to know</p><h2>Frequently asked questions about Hanoi</h2><div class="hl-faq-list"><details class="hl-faq-item"><summary>How many days do you need in Hanoi?</summary><div class="hl-faq-answer"><p>Two or three days works well for a first stay, while a longer visit leaves more room for food, neighbourhoods, museums and onward excursions.</p></div></details><details class="hl-faq-item"><summary>Is Hanoi good for business travel?</summary><div class="hl-faq-answer"><p>Yes. The city has a broad range of international-standard hotels, meeting facilities and private transport options, while still offering distinctive local experiences around the working schedule.</p></div></details><details class="hl-faq-item"><summary>What can Hanoi be paired with?</summary><div class="hl-faq-answer"><p>Ha Long Bay, Ninh Binh and Sapa are natural additions, depending on whether you want coast, countryside or mountains.</p></div></details><details class="hl-faq-item"><summary>What is the best way to get around Hanoi?</summary><div class="hl-faq-answer"><p>For a tailored programme, private car and driver is the easiest option for airport transfers and scheduled movements, with walking used selectively in the historic centre.</p></div></details></div></div>
+    </section>
+
+    <section class="hl-final">
+      <div><p class="hl-kicker light">Tailored for you</p><h2>Let Hanoi be the beginning of the northern journey.</h2></div>
+      <div><p>Tell us your dates, travellers and priorities. We will shape the hotel, transport, experiences and onward journey around them.</p><a href="contact.html">Start planning <span>→</span></a></div>
+    </section>
   </main>
-
-  <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">Request a Proposal</a><a href="contact.html">24/7 Assistance</a></div><div class="footer-column"><strong>FOLLOW US</strong><div class="socials"><span>in</span><span>f</span><span>◎</span></div><small>© 2026 Pacific World Travel.<br>All rights reserved.</small></div></footer>
-
-  <script src="script.js?v=20260814-hanoi9"></script><script src="nav-fix.js?v=20260814-hanoi9"></script>
+  <footer>
+    <div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a></div>
+    <div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div>
+    <div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a></div>
+  </footer>
+  <script src="script.js?v=20260921-destination-luxe"></script>
+  <script src="nav-fix.js?v=20260921-destination-luxe"></script>
 </body>
 </html>
