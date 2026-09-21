@@ -3,17 +3,16 @@
 :root{
   --paper:#fbf9f5;
   --paper-soft:#f3eee6;
+  --ink:#354239;
+  --muted:#7f857f;
   --deep:#263c32;
-  --ink:#344139;
-  --muted:#818680;
-  --line:rgba(52,65,57,.105);
-  --warm:#b09b78;
+  --line:rgba(53,66,57,.12);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body.destinations-page{
   margin:0;
-  background:linear-gradient(180deg,#fbf9f5 0%,#f8f5ef 100%);
+  background:var(--paper);
   color:var(--ink);
   font-family:'DM Sans',Arial,sans-serif;
   -webkit-font-smoothing:antialiased;
@@ -21,7 +20,6 @@ body.destinations-page{
 .destinations-page a{text-decoration:none;color:inherit}
 .destinations-page img{display:block;width:100%}
 .destinations-main{overflow:hidden}
-
 .destinations-header{
   position:relative!important;
   background:var(--deep)!important;
@@ -30,310 +28,298 @@ body.destinations-page{
 }
 .destinations-header a,.destinations-header .menu-toggle{color:#fff!important}
 
-/* opening */
-.places-intro{
-  width:min(720px,76vw);
-  margin:0 auto;
-  padding:92px 0 64px;
-  text-align:center;
-}
-.places-kicker{
-  margin:0 0 13px;
+.dest-kicker{
+  margin:0 0 11px;
   font-size:6px;
   font-weight:500;
-  letter-spacing:.23em;
+  letter-spacing:.22em;
   text-transform:uppercase;
-  color:#999e98;
-}
-.places-intro h1{
-  margin:0;
-  font:500 clamp(34px,3.4vw,46px)/1 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.024em;
-}
-.places-intro>p:last-child{
-  max-width:500px;
-  margin:17px auto 0;
-  font-size:9.5px;
-  line-height:1.95;
-  color:var(--muted);
+  color:#969d96;
 }
 
-/* explorer */
-.place-explorer{
-  width:min(1120px,86vw);
-  margin:0 auto 112px;
+/* country opening */
+.country-hero{
+  padding:82px 0 0;
 }
-.region-tabs{
-  position:relative;
-  display:flex;
-  justify-content:center;
-  gap:42px;
-  margin-bottom:24px;
+.country-hero-copy{
+  width:min(760px,78vw);
+  margin:0 auto 38px;
+  text-align:center;
 }
-.region-tabs:after{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  height:1px;
-  background:var(--line);
+.country-hero h1{
+  margin:0;
+  font:500 clamp(38px,4vw,54px)/.96 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.025em;
 }
-.region-tab{
-  position:relative;
-  z-index:1;
-  appearance:none;
-  border:0;
-  padding:0 0 12px;
-  background:transparent;
-  color:#989d98;
-  font:500 6.2px/1 'DM Sans',Arial,sans-serif;
+.country-tagline{
+  margin:15px 0 0;
+  font-size:7px;
+  font-weight:500;
   letter-spacing:.17em;
   text-transform:uppercase;
-  cursor:pointer;
-  transition:color .28s ease;
+  color:#8b928c;
 }
-.region-tab:after{
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:0;
-  width:0;
-  height:1px;
-  transform:translateX(-50%);
-  background:var(--deep);
-  transition:width .28s ease;
-}
-.region-tab:hover,.region-tab.active{color:var(--ink)}
-.region-tab.active:after{width:100%}
-
-/* cinematic but restrained stage */
-.region-stage{
-  position:relative;
-  height:480px;
+.country-hero-image{
+  width:min(1120px,84vw);
+  height:410px;
+  margin:0 auto;
   overflow:hidden;
-  background:#e8e2d9;
 }
-.region-view{
-  position:absolute;
-  inset:0;
-  opacity:0;
-  visibility:hidden;
-  transform:scale(1.012);
-  transition:opacity .7s ease,visibility .7s ease,transform 1s cubic-bezier(.18,.72,.2,1);
-}
-.region-view.active{
-  opacity:1;
-  visibility:visible;
-  transform:scale(1);
-}
-.region-view img{
+.country-hero-image img{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:saturate(.91) contrast(.985);
-}
-.region-view:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(90deg,rgba(24,42,33,.63) 0%,rgba(24,42,33,.31) 35%,rgba(24,42,33,.06) 68%),
-    linear-gradient(180deg,transparent 58%,rgba(24,42,33,.16) 100%);
-}
-.region-overlay{
-  position:absolute;
-  z-index:2;
-  left:46px;
-  bottom:40px;
-  max-width:405px;
-  color:#fff;
-}
-.region-overlay .places-kicker{
-  color:rgba(255,255,255,.58);
-  margin-bottom:11px;
-}
-.region-overlay h2{
-  margin:0;
-  font:500 clamp(24px,2.4vw,32px)/1.1 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.018em;
-}
-.region-overlay>p:last-child{
-  max-width:345px;
-  margin:11px 0 0;
-  font-size:8.9px;
-  line-height:1.86;
-  color:rgba(255,255,255,.71);
+  filter:saturate(.92) contrast(.98);
 }
 
-/* destination names — no boxes */
-.destination-panel{
-  padding:34px 0 0;
+/* why */
+.why-vietnam{
+  width:min(950px,78vw);
+  margin:0 auto;
+  padding:94px 0 88px;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:clamp(70px,9vw,125px);
+  align-items:start;
 }
-.destination-panel-head{
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-  gap:30px;
-  margin-bottom:16px;
-}
-.destination-panel-head .places-kicker{margin:0}
-.destination-panel-note{
+.why-heading h2{
   margin:0;
-  font-size:8px;
-  color:#a1a5a0;
+  font:500 clamp(24px,2.2vw,30px)/1.14 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.018em;
 }
-.destination-set{
-  display:none;
+.why-copy p{
+  margin:0 0 13px;
+  font-size:9.5px;
+  line-height:1.92;
+  color:var(--muted);
 }
-.destination-set.active{
-  display:flex;
-  flex-wrap:wrap;
+.why-copy a{
+  display:inline-flex;
   align-items:center;
-  gap:0;
+  gap:14px;
+  margin-top:7px;
+  padding-bottom:4px;
+  border-bottom:1px solid rgba(53,66,57,.32);
+  font-size:6.3px;
+  font-weight:500;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+/* single statement */
+.experience-note{
+  width:min(880px,76vw);
+  margin:0 auto 98px;
+  padding:35px 0 38px;
+  text-align:center;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
-.destination-set a{
-  position:relative;
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:18px 26px 18px 0;
-  margin-right:26px;
-  font:500 clamp(17px,1.45vw,20px)/1.1 'Cormorant Garamond',Georgia,serif;
-  white-space:nowrap;
-  transition:color .24s ease,transform .24s ease;
-}
-.destination-set a:not(:last-child):after{
-  content:"";
-  position:absolute;
-  right:0;
-  top:50%;
-  width:1px;
-  height:15px;
-  transform:translateY(-50%);
-  background:var(--line);
-}
-.destination-set a:hover{
-  color:#203229;
-  transform:translateY(-1px);
-}
-.destination-set span{
-  font:400 6.6px/1 'DM Sans',Arial,sans-serif;
-  color:#a1a69f;
-  transition:transform .2s ease,color .2s ease;
-}
-.destination-set a:hover span{
-  transform:translate(2px,-2px);
-  color:#6f7b72;
+.experience-note .dest-kicker{margin-bottom:9px}
+.experience-note>p:last-child{
+  max-width:650px;
+  margin:0 auto;
+  font:500 clamp(20px,1.85vw,25px)/1.28 'Cormorant Garamond',Georgia,serif;
+  color:#4b574f;
 }
 
-/* ending */
-.places-story{
-  width:min(900px,82vw);
-  margin:0 auto 94px;
-  padding:48px 54px;
-  background:var(--deep);
-  color:#fff;
-  display:grid;
-  grid-template-columns:1fr auto;
-  gap:44px;
-  align-items:center;
+/* explore */
+.explore-vietnam{
+  width:min(1080px,82vw);
+  margin:0 auto;
 }
-.places-story .places-kicker{
-  grid-column:1/-1;
-  margin-bottom:-26px;
-  color:rgba(255,255,255,.48);
+.explore-heading{
+  max-width:590px;
+  margin-bottom:72px;
 }
-.places-story h2{
+.explore-heading h2{
   margin:0;
-  max-width:560px;
-  font:500 clamp(22px,2.1vw,28px)/1.14 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.016em;
+  font:500 clamp(27px,2.6vw,35px)/1.08 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.022em;
 }
-.places-story>p:not(.places-kicker){
-  display:none;
+.explore-heading>p:last-child{
+  margin:11px 0 0;
+  font-size:9.3px;
+  color:var(--muted);
 }
-.places-story>a{
+
+.region-row{
+  display:grid;
+  grid-template-columns:minmax(250px,.72fr) minmax(330px,1fr);
+  gap:clamp(70px,10vw,135px);
+  align-items:center;
+  padding:0 0 112px;
+}
+.region-row.reverse{
+  grid-template-columns:minmax(330px,1fr) minmax(250px,.72fr);
+}
+.region-row.reverse .region-photo{order:2}
+.region-row.reverse .region-copy{order:1}
+.region-photo{
+  height:300px;
+  margin:0;
+  overflow:hidden;
+  background:#e9e3da;
+}
+.region-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:saturate(.92) contrast(.985);
+  transition:transform .8s cubic-bezier(.2,.68,.2,1),filter .35s ease;
+}
+.region-row:hover .region-photo img{
+  transform:scale(1.014);
+  filter:saturate(.98) contrast(1);
+}
+.region-copy{position:relative;max-width:470px}
+.region-number{
+  position:absolute;
+  right:0;
+  top:-7px;
+  margin:0;
+  font:500 33px/1 'Cormorant Garamond',Georgia,serif;
+  color:rgba(53,66,57,.09);
+}
+.region-copy h3{
+  max-width:430px;
+  margin:0;
+  font:500 clamp(22px,2.05vw,28px)/1.14 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.018em;
+}
+.region-note{
+  max-width:400px;
+  margin:13px 0 24px;
+  font-size:9.3px;
+  line-height:1.88;
+  color:var(--muted);
+}
+
+/* destination navigation */
+.region-links{
+  border-top:1px solid var(--line);
+}
+.region-links a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:43px;
+  border-bottom:1px solid var(--line);
+  transition:padding-left .23s ease,color .23s ease;
+}
+.region-links a:hover{
+  padding-left:6px;
+  color:#203229;
+}
+.region-links span{
+  font:500 17.5px/1.1 'Cormorant Garamond',Georgia,serif;
+}
+.region-links b{
+  font:400 7px/1 'DM Sans',Arial,sans-serif;
+  color:#a0a6a0;
+  transition:transform .2s ease;
+}
+.region-links a:hover b{transform:translate(2px,-2px)}
+
+/* closing */
+.destination-close{
+  width:min(760px,76vw);
+  margin:6px auto 96px;
+  padding:52px 0 0;
+  text-align:center;
+  border-top:1px solid var(--line);
+}
+.destination-close h2{
+  margin:0;
+  font:500 clamp(23px,2.15vw,29px)/1.13 'Cormorant Garamond',Georgia,serif;
+}
+.destination-close>p:not(.dest-kicker){
+  max-width:510px;
+  margin:14px auto 0;
+  font-size:9.3px;
+  line-height:1.9;
+  color:var(--muted);
+}
+.destination-close a{
   display:inline-flex;
   align-items:center;
-  gap:16px;
-  min-height:36px;
-  padding:0 15px;
-  border:1px solid rgba(255,255,255,.36);
-  font-size:6.2px;
+  gap:15px;
+  margin-top:21px;
+  padding-bottom:5px;
+  border-bottom:1px solid rgba(53,66,57,.34);
+  font-size:6.3px;
   font-weight:500;
   letter-spacing:.16em;
   text-transform:uppercase;
-  white-space:nowrap;
-  transition:background .25s ease,color .25s ease,border-color .25s ease;
-}
-.places-story>a:hover{
-  background:#fff;
-  color:var(--deep);
-  border-color:#fff;
 }
 .destinations-page footer{margin-top:0}
 
+/* subtle motion */
+body.dest-motion .why-vietnam,
+body.dest-motion .experience-note,
+body.dest-motion .region-row,
+body.dest-motion .destination-close{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);
+}
+body.dest-motion .why-vietnam.visible,
+body.dest-motion .experience-note.visible,
+body.dest-motion .region-row.visible,
+body.dest-motion .destination-close.visible{
+  opacity:1;
+  transform:none;
+}
+
 @media(max-width:900px){
-  .place-explorer{width:90vw}
-  .region-stage{height:430px}
-  .region-overlay{left:34px;bottom:34px}
-  .destination-set a{font-size:18px}
-  .places-story{width:86vw}
+  .country-hero-image{width:88vw;height:360px}
+  .why-vietnam{width:84vw;gap:55px}
+  .explore-vietnam{width:86vw}
+  .region-row,.region-row.reverse{grid-template-columns:1fr 1fr;gap:50px}
+  .region-photo{height:280px}
 }
 
 @media(max-width:700px){
-  .places-intro{width:auto;padding:62px 22px 46px}
-  .places-intro h1{font-size:31px}
-  .place-explorer{width:auto;margin:0 22px 72px}
-  .region-tabs{
-    justify-content:flex-start;
-    gap:24px;
-    overflow-x:auto;
-    padding-bottom:1px;
-    scrollbar-width:none;
-  }
-  .region-tabs::-webkit-scrollbar{display:none}
-  .region-tab{white-space:nowrap}
-  .region-stage{height:370px}
-  .region-overlay{
-    left:22px;
-    right:22px;
-    bottom:24px;
-  }
-  .region-overlay h2{font-size:24px}
-  .region-overlay>p:last-child{font-size:8.7px}
-  .destination-panel{padding-top:24px}
-  .destination-panel-note{display:none}
-  .destination-set.active{
-    display:block;
-    border-top:1px solid var(--line);
-    border-bottom:0;
-  }
-  .destination-set a{
-    display:flex;
-    justify-content:space-between;
-    width:100%;
-    margin:0;
-    padding:14px 0;
-    font-size:18px;
-    border-bottom:1px solid var(--line);
-  }
-  .destination-set a:not(:last-child):after{display:none}
-  .places-story{
+  .country-hero{padding-top:58px}
+  .country-hero-copy{width:auto;margin:0 22px 30px}
+  .country-hero h1{font-size:36px}
+  .country-hero-image{width:auto;height:270px;margin:0 22px}
+  .why-vietnam{
     width:auto;
-    margin:0 22px 68px;
-    padding:36px 26px;
+    margin:0 22px;
+    padding:66px 0 62px;
     display:block;
   }
-  .places-story .places-kicker{margin-bottom:11px}
-  .places-story h2{font-size:23px}
-  .places-story>a{margin-top:22px}
+  .why-heading{margin-bottom:24px}
+  .why-heading h2{font-size:24px}
+  .experience-note{width:auto;margin:0 22px 72px;padding:28px 0 30px}
+  .experience-note>p:last-child{font-size:20px}
+  .explore-vietnam{width:auto;margin:0 22px}
+  .explore-heading{margin-bottom:48px}
+  .explore-heading h2{font-size:27px}
+  .region-row,.region-row.reverse{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    padding-bottom:72px;
+    align-items:stretch;
+  }
+  .region-row.reverse .region-photo,
+  .region-row.reverse .region-copy{order:initial}
+  .region-photo{height:235px}
+  .region-copy{max-width:none}
+  .region-copy h3{font-size:23px}
+  .region-number{font-size:28px}
+  .destination-close{width:auto;margin:0 22px 68px;padding-top:42px}
+  .destination-close h2{font-size:24px}
 }
-
 @media(prefers-reduced-motion:reduce){
-  .region-view{transition:none!important;transform:none!important}
-  .destination-set a,.region-tab,.places-story>a{transition:none!important}
+  body.dest-motion .why-vietnam,
+  body.dest-motion .experience-note,
+  body.dest-motion .region-row,
+  body.dest-motion .destination-close{
+    opacity:1!important;
+    transform:none!important;
+    transition:none!important;
+  }
 }
