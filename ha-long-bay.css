@@ -156,3 +156,92 @@ body.halong-page{margin:0;background:var(--paper);color:var(--ink);font-family:'
   .hl-final{width:auto;margin:0 22px 70px;padding:38px 26px;display:block}
   .hl-final>div:last-child{margin-top:22px}
 }
+
+/* Why visit + FAQ */
+.hl-why{
+  width:min(980px,78vw);
+  margin:0 auto 96px;
+}
+.hl-why-inner{
+  max-width:900px;
+}
+.hl-why h2,
+.hl-faq h2{
+  margin:0 0 22px;
+  font:500 clamp(23px,2.1vw,29px)/1.16 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.016em;
+}
+.hl-why-copy{
+  max-width:880px;
+}
+.hl-why-copy p{
+  margin:0 0 15px;
+  font-size:9px;
+  line-height:1.9;
+  color:var(--muted);
+}
+.hl-faq{
+  width:min(980px,78vw);
+  margin:0 auto 108px;
+}
+.hl-faq-inner{
+  max-width:900px;
+}
+.hl-faq-list{
+  margin-top:28px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.hl-faq-item{
+  background:#edf2e9;
+  border-radius:10px;
+  overflow:hidden;
+}
+.hl-faq-item summary{
+  list-style:none;
+  cursor:pointer;
+  position:relative;
+  padding:18px 54px 18px 21px;
+  font-size:9px;
+  font-weight:400;
+  line-height:1.5;
+  color:var(--ink);
+}
+.hl-faq-item summary::-webkit-details-marker{display:none}
+.hl-faq-item summary::after{
+  content:"+";
+  position:absolute;
+  right:20px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:16px;
+  font-weight:300;
+  color:#536057;
+}
+.hl-faq-item[open] summary::after{content:"−"}
+.hl-faq-answer{
+  padding:0 21px 19px;
+}
+.hl-faq-answer p{
+  max-width:760px;
+  margin:0;
+  font-size:8.6px;
+  line-height:1.82;
+  color:var(--muted);
+}
+
+@media(max-width:700px){
+  .hl-why,
+  .hl-faq{
+    width:auto;
+    margin-left:22px;
+    margin-right:22px;
+  }
+  .hl-why{margin-bottom:72px}
+  .hl-faq{margin-bottom:78px}
+  .hl-why h2,
+  .hl-faq h2{font-size:24px}
+  .hl-faq-item summary{padding:17px 48px 17px 18px}
+  .hl-faq-answer{padding:0 18px 18px}
+}
