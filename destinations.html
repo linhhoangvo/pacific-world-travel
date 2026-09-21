@@ -7,8 +7,8 @@
   <title>Vietnam Destinations | Pacific World Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260921-destinations-wideeyed" />
-  <link rel="stylesheet" href="destinations.css?v=20260921-destinations-wideeyed" />
+  <link rel="stylesheet" href="styles.css?v=20260921-destination-index" />
+  <link rel="stylesheet" href="destinations.css?v=20260921-destination-index" />
 </head>
 <body class="destinations-page">
   <header class="site-header destinations-header">
@@ -18,116 +18,125 @@
   </header>
 
   <main class="destinations-main">
-    <section class="country-hero">
-      <div class="country-hero-copy">
-        <p class="dest-kicker">Destinations</p>
-        <h1>Vietnam</h1>
-        <p class="country-tagline">Cities · Coastlines · Highlands · Islands</p>
+    <section class="destinations-opening">
+      <div class="opening-copy">
+        <p class="dest-kicker">Vietnam</p>
+        <h1>Places worth<br><em>travelling for.</em></h1>
+        <p>From northern mountains to heritage coastlines, river country and islands — explore Vietnam through places we know well.</p>
       </div>
-      <figure class="country-hero-image">
-        <img src="halong-bay.jpg" alt="Ha Long Bay in Vietnam">
+      <figure class="opening-image">
+        <img src="halong-bay.jpg" alt="Ha Long Bay, Vietnam">
       </figure>
     </section>
 
-    <section class="why-vietnam">
-      <div class="why-heading">
-        <p class="dest-kicker">Why Vietnam</p>
-        <h2>One country,<br>many different journeys.</h2>
+    <section class="destination-index">
+      <div class="index-preview" aria-hidden="true">
+        <div class="preview-frame">
+          <img id="destination-preview-image" src="hanoi.jpg" alt="">
+        </div>
+        <div class="preview-caption">
+          <span id="destination-preview-region">Northern Vietnam</span>
+          <strong id="destination-preview-name">Hanoi</strong>
+        </div>
       </div>
-      <div class="why-copy">
-        <p>Vietnam moves effortlessly between old cities, mountain landscapes, heritage towns, resort coastlines and tropical islands.</p>
-        <p>Choose one place or connect several. We shape the hotels, private transport, golf and local experiences around the way you want to travel.</p>
-        <a href="contact.html">Plan a Vietnam journey <span>→</span></a>
+
+      <div class="index-content">
+        <div class="index-heading">
+          <p class="dest-kicker">Explore Vietnam</p>
+          <h2>Choose a place to begin.</h2>
+          <p>Move through the country by region, or simply start with the destination that feels right.</p>
+        </div>
+
+        <section class="region-index">
+          <div class="region-intro">
+            <span>01</span>
+            <div>
+              <p class="dest-kicker">Northern Vietnam</p>
+              <p>Historic cities, mountain landscapes and limestone country.</p>
+            </div>
+          </div>
+          <nav class="destination-links" aria-label="Northern Vietnam destinations">
+            <a href="hanoi.html" data-image="hanoi.jpg" data-name="Hanoi" data-region="Northern Vietnam">Hanoi <span>↗</span></a>
+            <a href="ha-long-bay.html" data-image="halong-bay.jpg" data-name="Ha Long Bay" data-region="Northern Vietnam">Ha Long Bay <span>↗</span></a>
+            <a href="ninh-binh.html" data-image="ninh binh.jpg" data-name="Ninh Binh" data-region="Northern Vietnam">Ninh Binh <span>↗</span></a>
+            <a href="sapa.html" data-image="Sapa.jpg" data-name="Sapa" data-region="Northern Vietnam">Sapa <span>↗</span></a>
+          </nav>
+        </section>
+
+        <section class="region-index">
+          <div class="region-intro">
+            <span>02</span>
+            <div>
+              <p class="dest-kicker">Central Vietnam</p>
+              <p>Heritage towns, resort coastlines and cooler highlands.</p>
+            </div>
+          </div>
+          <nav class="destination-links" aria-label="Central Vietnam destinations">
+            <a href="da-nang-hoi-an.html" data-image="danang-hoian.jpg" data-name="Da Nang & Hoi An" data-region="Central Vietnam">Da Nang & Hoi An <span>↗</span></a>
+            <a href="hue.html" data-image="Hue.jpg" data-name="Hue" data-region="Central Vietnam">Hue <span>↗</span></a>
+            <a href="nha-trang.html" data-image="Nha Trang.jpg" data-name="Nha Trang" data-region="Central Vietnam">Nha Trang <span>↗</span></a>
+            <a href="cam-ranh.html" data-image="cam-ranh.jpg" data-name="Cam Ranh" data-region="Central Vietnam">Cam Ranh <span>↗</span></a>
+            <a href="da-lat.html" data-image="da lat.jpg" data-name="Da Lat" data-region="Central Vietnam">Da Lat <span>↗</span></a>
+          </nav>
+        </section>
+
+        <section class="region-index">
+          <div class="region-intro">
+            <span>03</span>
+            <div>
+              <p class="dest-kicker">Southern Vietnam</p>
+              <p>Fast-moving cities, river life and island escapes.</p>
+            </div>
+          </div>
+          <nav class="destination-links" aria-label="Southern Vietnam destinations">
+            <a href="ho-chi-minh-city.html" data-image="ho-chi-minh-city.jpg" data-name="Ho Chi Minh City" data-region="Southern Vietnam">Ho Chi Minh City <span>↗</span></a>
+            <a href="mekong-delta.html" data-image="mekong delta.jpg" data-name="Mekong Delta" data-region="Southern Vietnam">Mekong Delta <span>↗</span></a>
+            <a href="phu-quoc.html" data-image="phu-quoc.jpg" data-name="Phu Quoc" data-region="Southern Vietnam">Phu Quoc <span>↗</span></a>
+          </nav>
+        </section>
       </div>
     </section>
 
-    <section class="experience-note">
-      <p class="dest-kicker">Travel deeper</p>
-      <p>Local knowledge makes the difference between simply visiting Vietnam and experiencing it well.</p>
-    </section>
-
-    <section class="explore-vietnam">
-      <header class="explore-heading">
-        <p class="dest-kicker">Explore Vietnam</p>
-        <h2>Start with a place.</h2>
-        <p>Browse our key destinations from north to south.</p>
-      </header>
-
-      <article class="region-row" id="north">
-        <figure class="region-photo"><img src="ninh binh.jpg" alt="Northern Vietnam"></figure>
-        <div class="region-copy">
-          <p class="region-number">01</p>
-          <p class="dest-kicker">Northern Vietnam</p>
-          <h3>Old cities, mountain air and limestone landscapes.</h3>
-          <p class="region-note">A slower, more atmospheric side of Vietnam — from Hanoi to the northern highlands.</p>
-          <nav class="region-links" aria-label="Northern Vietnam destinations">
-            <a href="hanoi.html"><span>Hanoi</span><b>↗</b></a>
-            <a href="ha-long-bay.html"><span>Ha Long Bay</span><b>↗</b></a>
-            <a href="ninh-binh.html"><span>Ninh Binh</span><b>↗</b></a>
-            <a href="sapa.html"><span>Sapa</span><b>↗</b></a>
-          </nav>
-        </div>
-      </article>
-
-      <article class="region-row reverse" id="central">
-        <figure class="region-photo"><img src="danang-hoian.jpg" alt="Central Vietnam"></figure>
-        <div class="region-copy">
-          <p class="region-number">02</p>
-          <p class="dest-kicker">Central Vietnam</p>
-          <h3>Heritage towns, easy coastlines and resort stays.</h3>
-          <p class="region-note">Culture, beach time and golf sit naturally together across Vietnam’s central coast and highlands.</p>
-          <nav class="region-links" aria-label="Central Vietnam destinations">
-            <a href="da-nang-hoi-an.html"><span>Da Nang & Hoi An</span><b>↗</b></a>
-            <a href="hue.html"><span>Hue</span><b>↗</b></a>
-            <a href="nha-trang.html"><span>Nha Trang</span><b>↗</b></a>
-            <a href="cam-ranh.html"><span>Cam Ranh</span><b>↗</b></a>
-            <a href="da-lat.html"><span>Da Lat</span><b>↗</b></a>
-          </nav>
-        </div>
-      </article>
-
-      <article class="region-row" id="south">
-        <figure class="region-photo"><img src="phu-quoc.jpg" alt="Southern Vietnam"></figure>
-        <div class="region-copy">
-          <p class="region-number">03</p>
-          <p class="dest-kicker">Southern Vietnam</p>
-          <h3>City energy, river country and island time.</h3>
-          <p class="region-note">Begin with Ho Chi Minh City, slow down in the Mekong Delta, then continue towards the sea.</p>
-          <nav class="region-links" aria-label="Southern Vietnam destinations">
-            <a href="ho-chi-minh-city.html"><span>Ho Chi Minh City</span><b>↗</b></a>
-            <a href="mekong-delta.html"><span>Mekong Delta</span><b>↗</b></a>
-            <a href="phu-quoc.html"><span>Phu Quoc</span><b>↗</b></a>
-          </nav>
-        </div>
-      </article>
-    </section>
-
-    <section class="destination-close">
-      <p class="dest-kicker">Your Vietnam</p>
-      <h2>Not sure where to begin?</h2>
-      <p>Tell us what kind of journey you have in mind. Our team can connect the right places into one seamless itinerary.</p>
-      <a href="contact.html">Talk to our team <span>→</span></a>
+    <section class="destination-ending">
+      <div>
+        <p class="dest-kicker">Made around you</p>
+        <h2>One country. Your way through it.</h2>
+      </div>
+      <div>
+        <p>Tell us the pace, places and experiences you have in mind. We will connect the details into one seamless journey.</p>
+        <a href="contact.html">Start planning <span>→</span></a>
+      </div>
     </section>
   </main>
 
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">Request a Proposal</a><a href="contact.html">24/7 Assistance</a></div></footer>
 
-  <script src="script.js?v=20260921-destinations-wideeyed"></script>
-  <script src="nav-fix.js?v=20260921-destinations-wideeyed"></script>
+  <script src="script.js?v=20260921-destination-index"></script>
+  <script src="nav-fix.js?v=20260921-destination-index"></script>
   <script>
     (() => {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      const sections = [...document.querySelectorAll('.why-vietnam, .experience-note, .region-row, .destination-close')];
-      document.body.classList.add('dest-motion');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: .12, rootMargin: '0px 0px -7% 0px' });
-      sections.forEach((section) => observer.observe(section));
+      const image = document.getElementById('destination-preview-image');
+      const name = document.getElementById('destination-preview-name');
+      const region = document.getElementById('destination-preview-region');
+      const links = [...document.querySelectorAll('.destination-links a')];
+
+      function preview(link) {
+        const nextImage = link.dataset.image;
+        if (!nextImage || image.dataset.current === nextImage) return;
+        image.classList.add('changing');
+        window.setTimeout(() => {
+          image.src = nextImage;
+          image.dataset.current = nextImage;
+          name.textContent = link.dataset.name || '';
+          region.textContent = link.dataset.region || '';
+          image.classList.remove('changing');
+        }, 150);
+      }
+
+      links.forEach((link) => {
+        link.addEventListener('mouseenter', () => preview(link));
+        link.addEventListener('focus', () => preview(link));
+      });
     })();
   </script>
 </body>
