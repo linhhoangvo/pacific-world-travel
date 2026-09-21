@@ -283,29 +283,35 @@ html body main#top .corporate-golf .cg-image{
 }
 
 
-/* SITE-WIDE BODY COPY BASELINE
-   Normal descriptive copy follows the compact size approved across the site.
-   Headings, labels, navigation, quotes and microcopy remain independently styled. */
+/* SITE-WIDE TYPOGRAPHY BASELINE
+   Keep descriptive copy consistent across every page, using the same compact
+   scale as the homepage Golf & Incentives section. Headings and utility labels
+   keep their existing hierarchy. */
 :root{
   --pw-body-copy:14px;
-  --pw-card-copy:13px;
-  --pw-body-leading:1.68;
+  --pw-body-leading:1.6;
 }
 
-body main p:not(.eyebrow):not([class*="kicker"]):not([class*="crumb"]):not([class*="quote"]):not([class*="label"]):not([class*="role"]):not([class*="meta"]){
+body main p:not(.eyebrow):not([class*="kicker"]):not([class*="crumb"]):not([class*="quote"]):not([class*="label"]):not([class*="role"]):not([class*="meta"]),
+body main li,
+body main dd,
+body main td,
+body main th{
   font-size:var(--pw-body-copy)!important;
   line-height:var(--pw-body-leading)!important;
 }
 
+/* Keep cards, articles and detail panels on the same body-copy size too. */
 body main article p:not(.eyebrow):not([class*="kicker"]):not([class*="quote"]):not([class*="label"]):not([class*="role"]):not([class*="meta"]),
 body main details p{
-  font-size:var(--pw-card-copy)!important;
-  line-height:1.7!important;
+  font-size:var(--pw-body-copy)!important;
+  line-height:var(--pw-body-leading)!important;
 }
 
-@media(max-width:720px){
-  :root{
-    --pw-body-copy:13.5px;
-    --pw-card-copy:13px;
-  }
+/* Form controls use the same readable copy size without changing compact labels. */
+body main input,
+body main textarea,
+body main select{
+  font-size:var(--pw-body-copy)!important;
+  line-height:1.5!important;
 }
