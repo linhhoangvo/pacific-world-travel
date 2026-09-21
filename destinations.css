@@ -294,3 +294,18 @@ body.destinations-page{
 @media(prefers-reduced-motion:reduce){
   .destination-card img,.card-caption span,.carousel-controls button,.carousel-dots button{transition:none!important}
 }
+
+/* DESTINATIONS NAV DROPDOWN CONTRAST */
+.destinations-header .nav-dropdown-menu{
+  background:#F7F4ED!important;
+  color:#263C32!important;
+}
+.destinations-header .nav-dropdown-menu a{
+  color:#263C32!important;
+  opacity:1!important;
+}
+.destinations-header .nav-dropdown-menu a:hover,
+.destinations-header .nav-dropdown-menu a:focus-visible{
+  background:#E8DFD0!important;
+  color:#263C32!important;
+}
