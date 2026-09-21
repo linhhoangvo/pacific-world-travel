@@ -52,13 +52,13 @@ body.why-page{margin:0;background:var(--why-paper);color:var(--why-ink);font-fam
 .why-proof-notes .with-thumb img{width:100%;height:100%;object-fit:cover;filter:saturate(.88) contrast(.98)}
 .why-proof-notes .with-thumb>div{padding:20px 22px 22px;margin-top:auto}
 
-.why-change{width:min(1180px,88vw);margin:0 auto 120px;display:grid;grid-template-columns:.9fr 1.1fr;min-height:430px;background:var(--why-deep);color:#fff;overflow:hidden}
-.why-change-copy{padding:56px 60px;display:flex;flex-direction:column;justify-content:center;max-width:520px}
+.why-change{width:min(1040px,82vw);margin:0 auto 104px;display:grid;grid-template-columns:1fr 1fr;height:330px;background:var(--why-deep);color:#fff;overflow:hidden}
+.why-change-copy{padding:38px 44px;display:flex;flex-direction:column;justify-content:center;max-width:460px}
 .why-change h2{margin:0;font:500 clamp(33px,3.4vw,48px)/1.04 'Cormorant Garamond',Georgia,serif;letter-spacing:-.026em}
 .why-change-copy>p:last-of-type{margin:19px 0 0;font-size:9px;line-height:1.88;color:rgba(255,255,255,.68)}
 .why-change a{display:inline-flex;gap:14px;align-items:center;margin-top:24px;font-size:5.8px;letter-spacing:.15em;text-transform:uppercase}
-.why-change figure{margin:0;height:100%;overflow:hidden}
-.why-change img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(.98)}
+.why-change figure{margin:0;height:330px;overflow:hidden}
+.why-change img{width:100%;height:100%;object-fit:cover;object-position:center 46%;filter:saturate(.78) contrast(.98)}
 
 .why-team{width:min(1120px,86vw);margin:0 auto 118px;display:grid;grid-template-columns:.72fr 1.28fr;gap:84px;align-items:end}
 .why-team-copy{max-width:380px;padding-bottom:8px}
@@ -92,8 +92,8 @@ body.why-page{margin:0;background:var(--why-paper);color:var(--why-ink);font-fam
 @media(max-width:900px){
   .why-proof-layout{grid-template-columns:1fr}
   .why-proof-feature{min-height:520px}
-  .why-change{grid-template-columns:1fr}
-  .why-change figure{height:340px}
+  .why-change{grid-template-columns:1fr;height:auto}
+  .why-change figure{height:280px}
   .why-team{grid-template-columns:1fr;gap:28px}
 }
 @media(max-width:700px){
@@ -105,7 +105,7 @@ body.why-page{margin:0;background:var(--why-paper);color:var(--why-ink);font-fam
   .why-proof-feature{min-height:460px}
   .why-proof-notes{grid-template-columns:1fr}
   .why-proof-notes>article{min-height:220px}
-  .why-change{width:auto;margin:0 22px 82px}
+  .why-change{width:auto;margin:0 22px 76px}
   .why-change-copy{padding:38px 28px}
   .why-change h2{font-size:34px}
   .why-team{width:auto;margin:0 22px 82px}
