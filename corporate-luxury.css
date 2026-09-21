@@ -859,3 +859,321 @@
   padding-top:64px!important;
   padding-bottom:68px!important;
 }
+
+
+/* =========================================================
+   2026-09-21 ULTRA-LUXURY CORPORATE PASS
+   Quieter palette, more breathing room, restrained motion,
+   editorial typography and cleaner visual transitions.
+   ========================================================= */
+.business-page{
+  --lux-forest:#183027;
+  --lux-deep:#10251e;
+  --lux-ivory:#f7f3eb;
+  --lux-paper:#fbf9f4;
+  --lux-sand:#e5dacb;
+  --lux-gold:#b6a189;
+  --lux-ink:#24322c;
+  --lux-muted:#68716b;
+  background:var(--lux-paper);
+}
+
+/* Header: understated and polished */
+.business-page .site-header{
+  height:84px;
+  padding:0 5.5vw;
+  border-bottom:1px solid rgba(255,255,255,.09);
+  background:linear-gradient(180deg,rgba(7,18,14,.30),rgba(7,18,14,.08) 64%,transparent);
+}
+.business-page .desktop-nav{
+  font-size:10.5px!important;
+  gap:clamp(20px,2.2vw,34px);
+}
+.business-page .desktop-nav a{
+  opacity:.84;
+}
+.business-page .header-cta{
+  font-size:8.5px;
+  letter-spacing:.15em;
+}
+
+/* Hero: more cinematic, less busy */
+.business-page .corp-hero{
+  height:86vh;
+  min-height:660px;
+  max-height:880px;
+  background:var(--lux-deep);
+}
+.business-page .corp-hero-media{
+  background-position:center 45%;
+  transform:scale(1.012);
+}
+.business-page .corp-hero:after{
+  background:
+    linear-gradient(90deg,rgba(11,27,21,.76) 0%,rgba(11,27,21,.44) 42%,rgba(11,27,21,.08) 78%),
+    linear-gradient(180deg,rgba(9,21,17,.06) 0%,rgba(9,21,17,.02) 46%,rgba(9,21,17,.44) 100%);
+}
+.business-page .corp-hero-inner{
+  padding:0 7vw 84px;
+}
+.business-page .corp-hero-copy{
+  max-width:600px;
+}
+.business-page .corp-hero h1{
+  max-width:520px;
+  font-size:clamp(30px,3.15vw,42px)!important;
+  line-height:1.03!important;
+  letter-spacing:-.024em!important;
+}
+.business-page .corp-hero p:not(.eyebrow){
+  max-width:500px;
+  margin-top:20px;
+  font-size:13.5px!important;
+  line-height:1.66!important;
+  color:rgba(255,255,255,.78);
+}
+.business-page .corp-hero-actions{
+  margin-top:26px;
+}
+.business-page .primary-link,
+.business-page .ghost-link{
+  min-height:42px;
+  padding:0 18px;
+  font-size:8.5px;
+  letter-spacing:.13em;
+}
+.business-page .primary-link{
+  background:rgba(255,255,255,.96);
+}
+.business-page .ghost-link{
+  border-color:rgba(255,255,255,.42);
+}
+
+/* Intro: editorial whitespace */
+.business-page .corp-intro{
+  padding:100px 8vw 108px!important;
+  background:var(--lux-ivory);
+}
+.business-page .corp-intro-grid{
+  max-width:1120px;
+  grid-template-columns:.92fr 1.08fr;
+  gap:clamp(70px,9vw,140px)!important;
+}
+.business-page .corp-intro h2{
+  max-width:420px;
+  font-size:clamp(21px,1.95vw,27px)!important;
+  line-height:1.14!important;
+}
+.business-page .corp-intro-copy{
+  max-width:490px!important;
+  padding-top:8px;
+}
+.business-page .corp-intro-copy .lead{
+  font-size:16px!important;
+  line-height:1.55!important;
+  color:#334039;
+}
+.business-page .corp-intro-copy>p:not(.lead){
+  font-size:13.5px!important;
+  line-height:1.7!important;
+  color:var(--lux-muted);
+}
+
+/* Executive story: refined proportions */
+@media(min-width:1001px){
+  .business-page .story{
+    width:min(1120px,84vw)!important;
+    padding:76px 0!important;
+    grid-template-columns:minmax(0,1.15fr) minmax(320px,.7fr)!important;
+    gap:clamp(66px,7vw,110px)!important;
+  }
+  .business-page .story-media{
+    height:410px!important;
+    box-shadow:0 24px 60px rgba(28,42,35,.07);
+  }
+  .business-page .story-copy-inner{
+    max-width:390px!important;
+  }
+}
+.business-page .story-copy h2{
+  font-size:clamp(20px,1.8vw,25px)!important;
+  line-height:1.14!important;
+}
+.business-page .story-copy p:not(.eyebrow){
+  margin-top:18px;
+  font-size:13.5px!important;
+  line-height:1.7!important;
+  color:var(--lux-muted);
+}
+.business-page .text-link{
+  margin-top:22px;
+  font-size:8.5px;
+  border-bottom-color:rgba(36,50,44,.28);
+}
+
+/* Services: quiet luxury, no dividers */
+.business-page .services-index{
+  padding:96px 7vw 102px!important;
+  background:var(--lux-forest)!important;
+}
+.business-page .services-index-inner{
+  max-width:1120px;
+  grid-template-columns:.78fr 1.22fr;
+  gap:clamp(72px,9vw,138px);
+}
+.business-page .services-intro{
+  max-width:390px;
+  padding-top:8px;
+}
+.business-page .services-intro h2{
+  max-width:350px;
+  font-size:clamp(19px,1.7vw,24px)!important;
+  line-height:1.18!important;
+}
+.business-page .services-intro p{
+  max-width:340px;
+  font-size:12.5px!important;
+  line-height:1.7!important;
+  color:rgba(255,255,255,.58)!important;
+}
+.business-page .service-links-clean{
+  gap:6px!important;
+}
+.business-page .service-links-clean a{
+  min-height:58px!important;
+  padding:12px 0!important;
+}
+.business-page .service-links-clean strong{
+  font-size:clamp(15px,1.3vw,18px)!important;
+  font-weight:500;
+}
+.business-page .service-links-clean span{
+  font-size:11px;
+  color:rgba(255,255,255,.58);
+}
+
+/* Scenario: softer, calmer and less corporate-heavy */
+.business-page .scenario{
+  padding:84px 7vw!important;
+  background:var(--lux-sand)!important;
+  grid-template-columns:minmax(0,1.07fr) minmax(320px,.78fr)!important;
+  gap:clamp(70px,7.5vw,118px)!important;
+}
+.business-page .scenario-media{
+  height:400px!important;
+  box-shadow:0 24px 60px rgba(34,43,38,.06);
+}
+.business-page .scenario-inner{
+  max-width:430px!important;
+}
+.business-page .scenario-inner h2{
+  font-size:clamp(20px,1.8vw,25px)!important;
+  line-height:1.16!important;
+}
+.business-page .scenario-inner>p:not(.eyebrow),
+.business-page .scenario-simple{
+  font-size:13.5px!important;
+  line-height:1.68!important;
+  color:var(--lux-muted)!important;
+}
+.business-page .scenario-simple{
+  margin-top:22px!important;
+}
+
+/* Local promise: premium image chapter */
+.business-page .local-promise{
+  min-height:500px!important;
+  background-position:center 48%;
+}
+.business-page .local-promise:after{
+  background:linear-gradient(90deg,rgba(14,33,26,.82) 0%,rgba(14,33,26,.53) 50%,rgba(14,33,26,.12) 82%);
+}
+.business-page .local-promise-inner{
+  max-width:620px!important;
+  padding:84px 7vw;
+}
+.business-page .local-promise h2{
+  max-width:500px;
+  font-size:clamp(21px,1.9vw,27px)!important;
+}
+.business-page .local-promise p:not(.eyebrow){
+  max-width:520px;
+  font-size:13.5px!important;
+  line-height:1.68!important;
+  color:rgba(255,255,255,.78)!important;
+}
+
+/* Final CTA: elegant landing */
+.business-page .corp-final{
+  padding:84px 7vw 90px!important;
+  background:#ded2c2;
+}
+.business-page .corp-final-inner{
+  max-width:900px;
+}
+.business-page .corp-final h2{
+  max-width:650px;
+  font-size:clamp(21px,1.9vw,27px)!important;
+  line-height:1.14!important;
+}
+.business-page .corp-final p:not(.eyebrow){
+  max-width:560px;
+  font-size:13.5px!important;
+  line-height:1.68!important;
+  color:#5e6760;
+}
+.business-page .corp-final-actions{
+  margin-top:26px;
+}
+
+/* Footer slightly more refined */
+.business-page footer{
+  padding-top:66px;
+  background:#12271f;
+}
+
+/* Smooth, subtle motion only */
+.business-page .reveal{
+  transform:translateY(12px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+@media(max-width:1000px){
+  .business-page .scenario{
+    grid-template-columns:1fr!important;
+    gap:42px!important;
+  }
+}
+@media(max-width:700px){
+  .business-page .corp-hero{
+    height:680px;
+    min-height:680px;
+  }
+  .business-page .corp-hero h1{
+    font-size:28px!important;
+  }
+  .business-page .corp-intro{
+    padding:76px 22px 80px!important;
+  }
+  .business-page .story{
+    padding-bottom:66px!important;
+  }
+  .business-page .services-index{
+    padding:70px 22px 76px!important;
+  }
+  .business-page .scenario{
+    padding:0 0 70px!important;
+  }
+  .business-page .scenario-media{
+    height:340px!important;
+  }
+  .business-page .scenario-copy{
+    padding:0 22px;
+  }
+  .business-page .local-promise{
+    min-height:470px!important;
+  }
+  .business-page .corp-final{
+    padding:70px 22px 76px!important;
+  }
+}
