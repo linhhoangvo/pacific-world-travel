@@ -2,22 +2,15 @@
 
 :root{
   --paper:#faf8f4;
-  --paper-soft:#f2ede5;
-  --ink:#334239;
-  --muted:#7f857f;
+  --soft:#f1ece3;
   --deep:#263c32;
-  --line:rgba(51,66,57,.12);
+  --ink:#35423a;
+  --muted:#7e847e;
+  --line:rgba(53,66,58,.13);
 }
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body.destinations-page{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font-family:'DM Sans',Arial,sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
+body.destinations-page{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
 .destinations-page a{text-decoration:none;color:inherit}
 .destinations-page img{display:block;width:100%}
 .destinations-main{overflow:hidden}
@@ -30,192 +23,183 @@ body.destinations-page{
 }
 .destinations-header a,.destinations-header .menu-toggle{color:#fff!important}
 
-/* Minimal opening */
-.journal-hero{
+.places-intro{
   width:min(760px,78vw);
   margin:0 auto;
-  padding:92px 0 72px;
+  padding:82px 0 58px;
   text-align:center;
 }
-.journal-kicker{
-  margin:0 0 13px;
-  font-size:6.3px;
+.places-kicker{
+  margin:0 0 12px;
+  font-size:6.2px;
   font-weight:500;
-  letter-spacing:.22em;
+  letter-spacing:.21em;
   text-transform:uppercase;
-  color:#969c96;
+  color:#979c97;
 }
-.journal-hero h1{
+.places-intro h1{
   margin:0;
-  font:500 clamp(34px,3.5vw,48px)/1.03 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.025em;
+  font:500 clamp(34px,3.6vw,48px)/1 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.024em;
 }
-.journal-hero h1 em{
-  font-weight:500;
-  color:#6d796f;
-}
-.journal-lead{
-  max-width:470px;
+.places-intro>p:last-child{
+  max-width:530px;
   margin:17px auto 0;
   font-size:9.7px;
-  line-height:1.9;
+  line-height:1.92;
   color:var(--muted);
 }
-.region-nav{
+
+.place-explorer{
+  width:min(1180px,88vw);
+  margin:0 auto 98px;
+}
+.region-tabs{
   display:flex;
   justify-content:center;
-  gap:30px;
-  margin-top:28px;
+  gap:38px;
+  margin-bottom:22px;
 }
-.region-nav a{
-  padding-bottom:4px;
+.region-tab{
+  appearance:none;
+  border:0;
   border-bottom:1px solid transparent;
-  font-size:6.5px;
-  font-weight:500;
+  padding:0 0 7px;
+  background:transparent;
+  color:#8c938d;
+  font:500 6.5px/1 'DM Sans',Arial,sans-serif;
   letter-spacing:.16em;
   text-transform:uppercase;
-  color:#707970;
-  transition:border-color .2s ease,color .2s ease;
+  cursor:pointer;
+  transition:color .22s ease,border-color .22s ease;
 }
-.region-nav a:hover{
+.region-tab:hover,.region-tab.active{
   color:var(--ink);
-  border-color:#8f9a90;
+  border-color:#879188;
 }
 
-.opening-landscape{
-  width:min(1180px,86vw);
-  height:410px;
-  margin:0 auto 118px;
+.region-stage{
+  position:relative;
+  height:500px;
   overflow:hidden;
+  background:#e5dfd6;
 }
-.opening-landscape img{
+.region-view{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .55s ease,visibility .55s ease;
+}
+.region-view.active{opacity:1;visibility:visible}
+.region-view img{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:saturate(.92) contrast(.98);
+  filter:saturate(.93) contrast(.98);
 }
-
-/* Journal regions */
-.journal-region{
-  width:min(1080px,82vw);
-  margin:0 auto;
-  padding:96px 0 108px;
-}
-.journal-region-soft{
-  position:relative;
-}
-.journal-region-soft:before{
+.region-view:after{
   content:"";
   position:absolute;
-  z-index:-1;
-  top:0;
-  bottom:0;
-  left:50%;
-  width:100vw;
-  transform:translateX(-50%);
-  background:var(--paper-soft);
+  inset:0;
+  background:linear-gradient(90deg,rgba(22,40,31,.66) 0%,rgba(22,40,31,.24) 45%,rgba(22,40,31,.03) 75%);
 }
-.journal-region-head{
-  display:flex;
-  justify-content:space-between;
-  gap:80px;
-  align-items:flex-end;
-  margin-bottom:34px;
+.region-overlay{
+  position:absolute;
+  z-index:2;
+  left:48px;
+  bottom:42px;
+  max-width:430px;
+  color:#fff;
 }
-.journal-region-head h2{
+.region-overlay .places-kicker{color:rgba(255,255,255,.62)}
+.region-overlay h2{
   margin:0;
-  font:500 clamp(23px,2.15vw,29px)/1.13 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.018em;
+  font:500 clamp(25px,2.6vw,35px)/1.08 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.02em;
 }
-.journal-region-head>p{
-  max-width:340px;
-  margin:0 0 2px;
-  font-size:9.4px;
-  line-height:1.88;
-  color:var(--muted);
-  text-align:right;
-}
-.journal-image{
-  width:90%;
-  height:390px;
-  overflow:hidden;
-}
-.journal-region:nth-of-type(even) .journal-image{
-  margin-left:auto;
-}
-.journal-image-wide{
-  width:100%;
-  height:420px;
-}
-.journal-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  filter:saturate(.92) contrast(.98);
-  transition:transform .8s cubic-bezier(.18,.72,.2,1),filter .35s ease;
-}
-.journal-region:hover .journal-image img{
-  transform:scale(1.012);
-  filter:saturate(.98) contrast(1);
+.region-overlay>p:last-child{
+  max-width:360px;
+  margin:12px 0 0;
+  font-size:9.2px;
+  line-height:1.82;
+  color:rgba(255,255,255,.73);
 }
 
-/* Destination names, not cards */
-.journal-destinations{
+.destination-panel{
+  padding:28px 0 0;
+}
+.destination-panel-head{
   display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:0;
-  margin-top:30px;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:8px;
+}
+.destination-panel-head .places-kicker{margin:0}
+.destination-panel-note{
+  margin:0;
+  font-size:8.5px;
+  color:#9a9f9a;
+}
+.destination-set{
+  display:none;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
-.journal-destinations a{
-  position:relative;
-  padding:17px 26px 17px 0;
-  margin-right:26px;
-  font:500 18px/1.1 'Cormorant Garamond',Georgia,serif;
-  white-space:nowrap;
-  transition:color .2s ease,transform .2s ease;
+.destination-set.active{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
 }
-.journal-destinations a:not(:last-child):after{
-  content:"";
-  position:absolute;
-  top:50%;
-  right:0;
-  width:1px;
-  height:16px;
-  transform:translateY(-50%);
-  background:var(--line);
+.destination-set a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  min-height:58px;
+  padding:0 18px;
+  border-right:1px solid var(--line);
+  font:500 clamp(16px,1.35vw,19px)/1.1 'Cormorant Garamond',Georgia,serif;
+  transition:background .22s ease,padding-left .22s ease;
 }
-.journal-destinations a span{
-  margin-left:6px;
-  font-family:'DM Sans',Arial,sans-serif;
-  font-size:7px;
-  color:#9aa19a;
+.destination-set a:first-child{padding-left:0}
+.destination-set a:last-child{border-right:0}
+.destination-set a:hover{background:rgba(53,66,58,.025);padding-left:22px}
+.destination-set a:first-child:hover{padding-left:6px}
+.destination-set span{
+  flex:0 0 auto;
+  font:400 7px/1 'DM Sans',Arial,sans-serif;
+  color:#a0a5a0;
 }
-.journal-destinations a:hover{
-  color:#1f3329;
-  transform:translateY(-1px);
-}
+.destination-set[data-set="north"]{grid-template-columns:repeat(4,minmax(0,1fr))}
+.destination-set[data-set="south"]{grid-template-columns:repeat(3,minmax(0,1fr))}
 
-/* closing */
-.journal-cta{
-  width:min(760px,78vw);
-  margin:78px auto 96px;
+.places-story{
+  width:min(720px,76vw);
+  margin:0 auto;
+  padding:0 0 98px;
   text-align:center;
 }
-.journal-cta h2{
+.places-story h2{
   margin:0;
-  font:500 clamp(23px,2.15vw,29px)/1.14 'Cormorant Garamond',Georgia,serif;
+  font:500 clamp(23px,2.25vw,30px)/1.14 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.018em;
 }
-.journal-cta>a{
+.places-story>p:not(.places-kicker){
+  max-width:500px;
+  margin:15px auto 0;
+  font-size:9.4px;
+  line-height:1.9;
+  color:var(--muted);
+}
+.places-story>a{
   display:inline-flex;
   align-items:center;
-  gap:17px;
+  gap:16px;
   margin-top:22px;
   padding-bottom:5px;
-  border-bottom:1px solid rgba(51,66,57,.34);
-  font-size:6.5px;
+  border-bottom:1px solid rgba(53,66,58,.34);
+  font-size:6.4px;
   font-weight:500;
   letter-spacing:.16em;
   text-transform:uppercase;
@@ -223,55 +207,49 @@ body.destinations-page{
 .destinations-page footer{margin-top:0}
 
 @media(max-width:900px){
-  .opening-landscape{height:360px}
-  .journal-region{width:88vw}
-  .journal-region-head{gap:40px}
-  .journal-image,.journal-image-wide{width:100%;height:360px}
+  .region-stage{height:430px}
+  .region-overlay{left:34px;bottom:34px}
+  .destination-set.active{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .destination-set[data-set="south"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .destination-set a:nth-child(2n){border-right:0}
+  .destination-set[data-set="south"] a:nth-child(2n){border-right:1px solid var(--line)}
+  .destination-set[data-set="south"] a:last-child{border-right:0}
 }
 
 @media(max-width:700px){
-  .journal-hero{width:auto;padding:60px 22px 54px}
-  .journal-hero h1{font-size:31px}
-  .region-nav{gap:20px}
-  .opening-landscape{
-    width:auto;
-    height:280px;
-    margin:0 22px 76px;
+  .places-intro{width:auto;padding:58px 22px 44px}
+  .places-intro h1{font-size:31px}
+  .place-explorer{width:auto;margin:0 22px 68px}
+  .region-tabs{
+    justify-content:flex-start;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:2px;
+    scrollbar-width:none;
   }
-  .journal-region{
-    width:auto;
-    margin:0 22px;
-    padding:68px 0 78px;
-  }
-  .journal-region-head{
+  .region-tabs::-webkit-scrollbar{display:none}
+  .region-tab{white-space:nowrap}
+  .region-stage{height:390px}
+  .region-overlay{left:22px;right:22px;bottom:24px}
+  .region-overlay h2{font-size:25px}
+  .destination-panel{padding-top:22px}
+  .destination-panel-note{display:none}
+  .destination-set.active,
+  .destination-set[data-set="north"],
+  .destination-set[data-set="south"]{
     display:block;
-    margin-bottom:24px;
   }
-  .journal-region-head h2{font-size:24px}
-  .journal-region-head>p{
-    max-width:none;
-    margin-top:14px;
-    text-align:left;
-  }
-  .journal-image,.journal-image-wide{
-    width:100%;
-    height:270px;
-  }
-  .journal-destinations{
-    display:block;
-    margin-top:22px;
-  }
-  .journal-destinations a{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:0;
-    padding:14px 0;
-    font-size:18px;
+  .destination-set a,
+  .destination-set a:first-child{
+    min-height:52px;
+    padding:0;
+    border-right:0!important;
     border-bottom:1px solid var(--line);
+    font-size:18px;
   }
-  .journal-destinations a:last-child{border-bottom:0}
-  .journal-destinations a:not(:last-child):after{display:none}
-  .journal-cta{width:auto;margin:58px 22px 68px}
-  .journal-cta h2{font-size:24px}
+  .destination-set a:last-child{border-bottom:0}
+  .destination-set a:hover,
+  .destination-set a:first-child:hover{padding-left:5px}
+  .places-story{width:auto;padding:0 22px 68px}
+  .places-story h2{font-size:24px}
 }
