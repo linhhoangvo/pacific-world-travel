@@ -124,3 +124,20 @@ body.incentive-page{margin:0;background:var(--i-paper);color:var(--i-ink);font-f
   .inc-why,.inc-faq{width:auto;margin-left:22px;margin-right:22px}.inc-why{margin-bottom:72px}.inc-faq{margin-bottom:78px}
   .inc-final{width:auto;margin:0 22px 70px;padding:38px 26px;display:block}.inc-final>div:last-child{margin-top:22px}
 }
+
+/* SIMPLIFIED INCENTIVES PAGE */
+.inc-type-card{flex:0 0 calc((100% - 36px)/3)}
+.inc-types{margin-bottom:104px}
+.inc-editorial{margin-top:82px;margin-bottom:100px}
+.inc-approach{margin-bottom:104px}
+.inc-destinations{margin-bottom:96px}
+.inc-final{margin-top:0}
+@media(max-width:1000px){
+  .inc-type-card{flex-basis:calc((100% - 18px)/2)}
+}
+@media(max-width:700px){
+  .inc-type-card{flex-basis:78vw}
+  .inc-editorial{margin-top:62px;margin-bottom:72px}
+  .inc-types,.inc-destinations{margin-bottom:70px}
+  .inc-approach{margin-bottom:70px}
+}
