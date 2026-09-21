@@ -309,3 +309,23 @@ body.destinations-page{
   background:#E8DFD0!important;
   color:#263C32!important;
 }
+
+
+/* DESTINATIONS DROPDOWN LAYER FIX */
+.destinations-header{
+  z-index:1000!important;
+  overflow:visible!important;
+}
+.destinations-header .desktop-nav,
+.destinations-header .nav-dropdown{
+  overflow:visible!important;
+}
+.destinations-header .nav-dropdown-menu{
+  z-index:1100!important;
+}
+.destinations-header .nav-dropdown.open .nav-dropdown-menu{
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  transform:translate(-50%,0)!important;
+}
