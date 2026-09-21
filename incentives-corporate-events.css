@@ -148,3 +148,46 @@ body.incentive-page{margin:0;background:var(--i-paper);color:var(--i-ink);font-f
 @media(max-width:700px){
   .inc-types{margin-top:58px}
 }
+
+
+/* REFINED SMALLER TYPOGRAPHY */
+.inc-kicker{font-size:4.9px;letter-spacing:.20em}
+.inc-crumbs{font-size:4.8px}
+.inc-hero h1{font-size:clamp(28px,2.75vw,36px);line-height:1}
+.inc-hero-copy>p:last-of-type{font-size:8px;line-height:1.82;max-width:330px}
+.inc-hero-link{font-size:5.3px}
+
+.inc-types h2,
+.inc-approach h2,
+.inc-destinations h2,
+.inc-final h2{font-size:clamp(18px,1.72vw,23px);line-height:1.16}
+
+.inc-types-head>p:last-child,
+.inc-approach-head>p:last-child{font-size:7.7px;line-height:1.76}
+
+.inc-type-card small,
+.inc-destination-card small{font-size:4.6px}
+.inc-type-card strong,
+.inc-destination-card strong{font-size:14.5px;line-height:1.12}
+.inc-type-card b,
+.inc-destination-card b{font-size:7px}
+
+.inc-approach-cards small{font-size:4.6px}
+.inc-approach-cards h3{font-size:15.5px;line-height:1.13}
+.inc-approach-cards p{font-size:7.6px;line-height:1.7}
+
+.inc-destinations-head>p{font-size:7.7px;line-height:1.72}
+
+.inc-final>div:last-child>p{font-size:7.8px;line-height:1.78}
+.inc-final a{font-size:5.2px}
+
+@media(max-width:700px){
+  .inc-hero h1{font-size:28px}
+  .inc-types h2,
+  .inc-approach h2,
+  .inc-destinations h2,
+  .inc-final h2{font-size:20px}
+  .inc-hero-copy>p:last-of-type{font-size:8px}
+  .inc-type-card strong,
+  .inc-destination-card strong{font-size:15px}
+}
