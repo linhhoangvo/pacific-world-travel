@@ -256,3 +256,28 @@ html body main#top .corporate-golf .cg-image{
   background-position:center 50%!important;
   background-size:cover!important;
 }
+
+
+/* SITE-WIDE NAV DROPDOWN CONTRAST
+   Page-level dark-header rules make top-level links white; dropdown links must remain dark on ivory. */
+.site-header .nav-dropdown-menu{
+  background:#F7F4ED!important;
+  color:#263C32!important;
+}
+.site-header .nav-dropdown-menu a{
+  color:#263C32!important;
+  opacity:1!important;
+}
+.site-header .nav-dropdown-menu a:hover,
+.site-header .nav-dropdown-menu a:focus-visible{
+  background:#E8DFD0!important;
+  color:#263C32!important;
+}
+@media(max-width:1080px){
+  .site-header .nav-dropdown-menu{
+    background:#F7F4ED!important;
+  }
+  .site-header .nav-dropdown-menu a{
+    color:#263C32!important;
+  }
+}
