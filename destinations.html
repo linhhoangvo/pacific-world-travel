@@ -7,8 +7,8 @@
   <title>Destinations | Pacific World Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260921-destinations-explorer" />
-  <link rel="stylesheet" href="destinations.css?v=20260921-destinations-explorer" />
+  <link rel="stylesheet" href="styles.css?v=20260921-destinations-luxury2" />
+  <link rel="stylesheet" href="destinations.css?v=20260921-destinations-luxury2" />
 </head>
 <body class="destinations-page">
   <header class="site-header destinations-header">
@@ -26,65 +26,36 @@
 
     <section class="place-explorer" aria-label="Explore Vietnam by region">
       <nav class="region-tabs" aria-label="Vietnam regions">
-        <button class="region-tab active" type="button" data-region="north">Northern Vietnam</button>
-        <button class="region-tab" type="button" data-region="central">Central Vietnam</button>
-        <button class="region-tab" type="button" data-region="south">Southern Vietnam</button>
+        <button class="region-tab active" type="button" data-region="north" aria-selected="true">Northern Vietnam</button>
+        <button class="region-tab" type="button" data-region="central" aria-selected="false">Central Vietnam</button>
+        <button class="region-tab" type="button" data-region="south" aria-selected="false">Southern Vietnam</button>
       </nav>
 
       <div class="region-stage">
         <article class="region-view active" data-view="north">
           <img src="ninh binh.jpg" alt="Northern Vietnam landscape">
-          <div class="region-overlay">
-            <p class="places-kicker">Northern Vietnam</p>
-            <h2>Mountains, old cities and limestone landscapes.</h2>
-            <p>Historic Hanoi opens the door to dramatic bays, rice country and the northern highlands.</p>
-          </div>
+          <div class="region-overlay"><p class="places-kicker">Northern Vietnam</p><h2>Mountains, old cities and limestone landscapes.</h2><p>Historic Hanoi opens the door to dramatic bays, rice country and the northern highlands.</p></div>
         </article>
-
         <article class="region-view" data-view="central">
           <img src="danang-hoian.jpg" alt="Central Vietnam coastline">
-          <div class="region-overlay">
-            <p class="places-kicker">Central Vietnam</p>
-            <h2>Heritage, coastlines and slower resort days.</h2>
-            <p>Culture, beaches, golf and highlands come together in one of Vietnam’s easiest regions to combine.</p>
-          </div>
+          <div class="region-overlay"><p class="places-kicker">Central Vietnam</p><h2>Heritage, coastlines and slower resort days.</h2><p>Culture, beaches, golf and highlands come together in one of Vietnam’s easiest regions to combine.</p></div>
         </article>
-
         <article class="region-view" data-view="south">
           <img src="mekong delta.jpg" alt="Southern Vietnam river landscape">
-          <div class="region-overlay">
-            <p class="places-kicker">Southern Vietnam</p>
-            <h2>City energy, river life and island escapes.</h2>
-            <p>Move from Ho Chi Minh City into the Mekong Delta, then finish with time by the coast or on Phu Quoc.</p>
-          </div>
+          <div class="region-overlay"><p class="places-kicker">Southern Vietnam</p><h2>City energy, river life and island escapes.</h2><p>Move from Ho Chi Minh City into the Mekong Delta, then finish with time by the coast or on Phu Quoc.</p></div>
         </article>
       </div>
 
       <div class="destination-panel">
-        <div class="destination-panel-head">
-          <p class="places-kicker">Top destinations</p>
-          <p class="destination-panel-note">Choose a place to explore.</p>
-        </div>
-
+        <div class="destination-panel-head"><p class="places-kicker">Top destinations</p><p class="destination-panel-note">Choose a place to explore.</p></div>
         <nav class="destination-set active" data-set="north" aria-label="Northern Vietnam destinations">
-          <a href="hanoi.html">Hanoi <span>↗</span></a>
-          <a href="ha-long-bay.html">Ha Long Bay <span>↗</span></a>
-          <a href="ninh-binh.html">Ninh Binh <span>↗</span></a>
-          <a href="sapa.html">Sapa <span>↗</span></a>
+          <a href="hanoi.html">Hanoi <span>↗</span></a><a href="ha-long-bay.html">Ha Long Bay <span>↗</span></a><a href="ninh-binh.html">Ninh Binh <span>↗</span></a><a href="sapa.html">Sapa <span>↗</span></a>
         </nav>
-
         <nav class="destination-set" data-set="central" aria-label="Central Vietnam destinations">
-          <a href="da-nang-hoi-an.html">Da Nang & Hoi An <span>↗</span></a>
-          <a href="hue.html">Hue <span>↗</span></a>
-          <a href="nha-trang.html">Nha Trang <span>↗</span></a>
-          <a href="cam-ranh.html">Cam Ranh <span>↗</span></a>
-          <a href="da-lat.html">Da Lat <span>↗</span></a>
+          <a href="da-nang-hoi-an.html">Da Nang & Hoi An <span>↗</span></a><a href="hue.html">Hue <span>↗</span></a><a href="nha-trang.html">Nha Trang <span>↗</span></a><a href="cam-ranh.html">Cam Ranh <span>↗</span></a><a href="da-lat.html">Da Lat <span>↗</span></a>
         </nav>
-
         <nav class="destination-set" data-set="south" aria-label="Southern Vietnam destinations">
-          <a href="ho-chi-minh-city.html">Ho Chi Minh City <span>↗</span></a>
-          <a href="mekong-delta.html">Mekong Delta <span>↗</span></a>
-          <a href="phu-quoc.html">Phu Quoc <span>↗</span></a>
+          <a href="ho-chi-minh-city.html">Ho Chi Minh City <span>↗</span></a><a href="mekong-delta.html">Mekong Delta <span>↗</span></a><a href="phu-quoc.html">Phu Quoc <span>↗</span></a>
         </nav>
       </div>
     </section>
@@ -99,14 +70,13 @@
 
   <footer><div class="footer-brand"><a class="brand inverse" href="index.html"><span class="brand-mark">PW</span><span class="brand-copy"><strong>PACIFIC WORLD</strong><small>TRAVEL</small></span></a><p>Business travel management and premium golf experiences across Vietnam and Southeast Asia.</p></div><div class="footer-column"><strong>COMPANY</strong><a href="who-we-are.html">About</a><a href="why-us.html">Why Us</a><a href="team.html">Our Team</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><strong>SERVICES</strong><a href="corporate-executive-travel.html">Business Travel</a><a href="golf-holidays-journeys.html">Golf Travel</a><a href="meetings-conferences.html">MICE & Events</a><a href="destinations.html">Destinations</a></div><div class="footer-column"><strong>SUPPORT</strong><a href="contact.html">Traveller Support</a><a href="contact.html">Request a Proposal</a><a href="contact.html">24/7 Assistance</a></div></footer>
 
-  <script src="script.js?v=20260921-destinations-explorer"></script>
-  <script src="nav-fix.js?v=20260921-destinations-explorer"></script>
+  <script src="script.js?v=20260921-destinations-luxury2"></script>
+  <script src="nav-fix.js?v=20260921-destinations-luxury2"></script>
   <script>
     (() => {
       const tabs = [...document.querySelectorAll('.region-tab')];
       const views = [...document.querySelectorAll('.region-view')];
       const sets = [...document.querySelectorAll('.destination-set')];
-
       function showRegion(region) {
         tabs.forEach((tab) => {
           const active = tab.dataset.region === region;
@@ -116,7 +86,6 @@
         views.forEach((view) => view.classList.toggle('active', view.dataset.view === region));
         sets.forEach((set) => set.classList.toggle('active', set.dataset.set === region));
       }
-
       tabs.forEach((tab) => tab.addEventListener('click', () => showRegion(tab.dataset.region)));
     })();
   </script>
