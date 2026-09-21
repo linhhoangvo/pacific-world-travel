@@ -594,3 +594,57 @@
     font-size:20px!important;
   }
 }
+
+
+/* =========================================================
+   CLEAN CORPORATE DETAILS — no divider lines, no numbering
+   ========================================================= */
+
+/* Trust strip: remove numbers and separators */
+.business-page .corp-trust-inner small{
+  display:none!important;
+}
+.business-page .corp-trust-inner>div{
+  border:0!important;
+}
+.business-page .corp-trust-inner>div:first-child{
+  border-left:0!important;
+}
+
+/* Services list: remove numbering and horizontal rules */
+.business-page .service-list{
+  border-top:0!important;
+}
+.business-page .service-row{
+  grid-template-columns:1fr auto!important;
+  border-bottom:0!important;
+  padding:17px 0!important;
+}
+.business-page .service-row small{
+  display:none!important;
+}
+
+/* Remove decorative divider lines elsewhere for a cleaner luxury look */
+.business-page .corp-intro-meta{
+  border-top:0!important;
+  padding-top:0!important;
+}
+.business-page .story-details{
+  border-top:0!important;
+  padding-top:0!important;
+}
+.business-page .scenario-flow{
+  border-top:0!important;
+}
+.business-page .scenario-step{
+  grid-template-columns:1fr!important;
+  border-bottom:0!important;
+  padding:13px 0!important;
+}
+.business-page .scenario-step>span{
+  display:none!important;
+}
+.business-page .support-copy:before,
+.business-page .corp-intro-copy:before{
+  display:none!important;
+}
