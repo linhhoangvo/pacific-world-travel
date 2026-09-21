@@ -32,6 +32,11 @@ function buildNavDropdown(sourceLink, label, items) {
   const toggle = dropdown.querySelector(".nav-dropdown-toggle");
   toggle?.setAttribute("aria-haspopup", "true");
 
+  dropdown.querySelectorAll(".nav-dropdown-menu a").forEach((link) => {
+    link.style.setProperty("color", "#263C32", "important");
+    link.style.setProperty("opacity", "1", "important");
+  });
+
   return dropdown;
 }
 
@@ -239,8 +244,9 @@ footer .official-brand-logo { height:64px; max-width:110px; }
 .nav-dropdown { position:relative; display:flex; align-items:center; height:72px; flex:0 0 auto; }
 .nav-dropdown-toggle { display:inline-flex; align-items:center; padding:0; border:0; background:transparent; color:#fff; font:inherit; font-weight:500; white-space:nowrap; cursor:pointer; }
 .nav-dropdown-menu { position:absolute; z-index:9999; top:72px; left:50%; width:270px; padding:18px 0 22px; background:#F7F4ED !important; color:#263C32 !important; border-radius:0 0 22px 22px; box-shadow:0 18px 40px rgba(38,60,50,.18); opacity:0; visibility:hidden; pointer-events:none; transform:translate(-50%,-8px); transition:opacity .2s ease,transform .2s ease,visibility .2s ease; }
-.nav-dropdown-menu a { display:block; padding:10px 28px; color:#263C32 !important; opacity:1 !important; font-size:13px; line-height:1.25; white-space:nowrap; }
-.nav-dropdown-menu a:hover,.nav-dropdown-menu a:focus-visible { background:#E8DFD0 !important; color:#263C32 !important; }
+html body .site-header .desktop-nav .nav-dropdown .nav-dropdown-menu a { display:block; padding:10px 28px; color:#263C32 !important; opacity:1 !important; font-size:13px; line-height:1.25; white-space:nowrap; }
+html body .site-header .desktop-nav .nav-dropdown .nav-dropdown-menu a:hover,
+html body .site-header .desktop-nav .nav-dropdown .nav-dropdown-menu a:focus-visible { background:#E8DFD0 !important; color:#263C32 !important; }
 .nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu,.nav-dropdown.open .nav-dropdown-menu { opacity:1; visibility:visible; pointer-events:auto; transform:translate(-50%,0); }
 .hero-overlay { background:linear-gradient(180deg,rgba(38,60,50,.70) 0%,rgba(38,60,50,.27) 46%,rgba(38,60,50,.52) 100%),linear-gradient(90deg,rgba(38,60,50,.18),rgba(38,60,50,.05)); }
 .hero h1 em { color:#E8DFD0; }
