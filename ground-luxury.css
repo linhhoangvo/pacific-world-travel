@@ -703,3 +703,268 @@
     padding:84px 22px 90px;
   }
 }
+
+
+/* =========================================================
+   2026-09-21 MATCH CORPORATE LUXURY DIRECTION
+   Less information, smaller typography, no numbering or divider lines.
+   ========================================================= */
+.ground-page{
+  --lux-forest:#183027;
+  --lux-deep:#10251e;
+  --lux-ivory:#f7f3eb;
+  --lux-paper:#fbf9f4;
+  --lux-sand:#e5dacb;
+  --lux-ink:#24322c;
+  --lux-muted:#68716b;
+}
+
+/* Smaller, quieter typography */
+.ground-page .hero h1{
+  max-width:520px;
+  font-size:clamp(30px,3.15vw,42px)!important;
+  line-height:1.03!important;
+  letter-spacing:-.024em!important;
+}
+.ground-page .intro h2,
+.ground-page .arrival h2,
+.ground-page .services h2,
+.ground-page .support h2,
+.ground-page .final h2{
+  font-size:clamp(20px,1.9vw,27px)!important;
+  line-height:1.15!important;
+}
+.ground-page .hero-copy>p:not(.eyebrow),
+.ground-page .intro-copy p,
+.ground-page .arrival p:not(.eyebrow),
+.ground-page .services-head>p:not(.eyebrow),
+.ground-page .support p:not(.eyebrow),
+.ground-page .final p:not(.eyebrow){
+  font-size:13.5px!important;
+  line-height:1.68!important;
+}
+.ground-page .intro-copy p:first-child{
+  font-size:16px!important;
+  line-height:1.55!important;
+}
+.ground-page .eyebrow{
+  font-size:8.5px!important;
+}
+
+/* Cinematic but restrained hero */
+.ground-page .hero{
+  height:86vh;
+  min-height:660px;
+  max-height:880px;
+}
+.ground-page .hero:after{
+  background:
+    linear-gradient(90deg,rgba(11,27,21,.76) 0%,rgba(11,27,21,.44) 42%,rgba(11,27,21,.08) 78%),
+    linear-gradient(180deg,rgba(9,21,17,.06) 0%,rgba(9,21,17,.02) 46%,rgba(9,21,17,.44) 100%);
+}
+.ground-page .hero-inner{
+  padding-bottom:84px;
+}
+.ground-page .hero-copy{
+  max-width:600px;
+}
+
+/* Intro: fewer elements, more whitespace */
+.ground-page .intro{
+  padding:100px 8vw 92px!important;
+  background:var(--lux-ivory)!important;
+}
+.ground-page .intro-inner{
+  max-width:980px;
+}
+.ground-page .intro h2{
+  max-width:650px;
+}
+.ground-page .intro-copy{
+  max-width:500px;
+  margin-top:46px;
+  padding-left:0!important;
+  border:0!important;
+}
+.ground-page .intro-copy:before,
+.ground-page .arrival-copy-inner:before{
+  display:none!important;
+}
+.ground-page .intro-meta{
+  display:none!important;
+}
+
+/* Arrival feature */
+@media(min-width:901px){
+  .ground-page .arrival{
+    padding-top:54px!important;
+    padding-bottom:96px!important;
+    grid-template-columns:minmax(0,1.15fr) minmax(320px,.7fr)!important;
+    gap:clamp(66px,7vw,110px)!important;
+  }
+  .ground-page .arrival-image{
+    height:410px!important;
+    box-shadow:0 24px 60px rgba(28,42,35,.07);
+  }
+  .ground-page .arrival-copy-inner{
+    padding-left:0!important;
+    border:0!important;
+  }
+}
+.ground-page .arrival-copy{
+  background:transparent!important;
+}
+.ground-page .text-link{
+  font-size:8.5px;
+  border-bottom-color:rgba(36,50,44,.26);
+}
+
+/* Services: no numbers, no lines, quieter layout */
+.ground-page .services{
+  padding:92px 8vw 98px!important;
+  background:var(--lux-forest)!important;
+}
+.ground-page .services:before{
+  display:none!important;
+}
+.ground-page .services-inner{
+  max-width:1080px;
+  grid-template-columns:.78fr 1.22fr;
+  gap:clamp(72px,9vw,132px);
+}
+.ground-page .services-head{
+  position:static!important;
+  max-width:380px;
+}
+.ground-page .services-head p{
+  max-width:330px!important;
+  color:rgba(255,255,255,.58)!important;
+}
+.ground-page .ground-service-links{
+  display:grid;
+  gap:6px;
+}
+.ground-page .ground-service-links>div{
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  min-height:58px;
+  padding:12px 0;
+  border:0!important;
+}
+.ground-page .ground-service-links strong{
+  font:500 clamp(15px,1.3vw,18px)/1.2 'Playfair Display',Georgia,serif;
+  color:#fff;
+}
+.ground-page .ground-service-links span{
+  font-size:9.5px;
+  color:rgba(255,255,255,.48);
+}
+.ground-page .service-list,
+.ground-page .service-item{
+  border:0!important;
+}
+.ground-page .service-item small{
+  display:none!important;
+}
+
+/* Support: less copy, more image */
+.ground-page .support{
+  min-height:500px!important;
+  background-position:center 44%;
+}
+.ground-page .support:after{
+  background:linear-gradient(90deg,rgba(14,33,26,.10) 0%,rgba(14,33,26,.34) 48%,rgba(14,33,26,.86) 100%);
+}
+.ground-page .support-inner{
+  padding:84px 8vw!important;
+}
+.ground-page .support-copy{
+  max-width:420px!important;
+  padding-left:0!important;
+  border:0!important;
+}
+.ground-page .support-copy:before,
+.ground-page .support-quote{
+  display:none!important;
+}
+
+/* Final CTA */
+.ground-page .final{
+  padding:82px 8vw 88px!important;
+  background:#ded2c2!important;
+}
+.ground-page .final-inner{
+  max-width:860px;
+}
+.ground-page .final h2{
+  max-width:620px;
+}
+.ground-page .final p:not(.eyebrow){
+  max-width:520px;
+}
+.ground-page .final-actions{
+  margin-top:26px;
+}
+.ground-page .button.dark{
+  background:var(--lux-forest);
+}
+
+/* Remove all decorative rules from main content */
+.ground-page main .intro-copy,
+.ground-page main .arrival-copy-inner,
+.ground-page main .service-list,
+.ground-page main .service-item,
+.ground-page main .support-copy,
+.ground-page main .support-quote{
+  border:0!important;
+}
+
+@media(max-width:900px){
+  .ground-page .services-inner{
+    display:block;
+  }
+  .ground-page .services-head{
+    margin-bottom:36px;
+  }
+}
+@media(max-width:700px){
+  .ground-page .hero{
+    height:680px;
+    min-height:680px;
+  }
+  .ground-page .hero h1{
+    font-size:28px!important;
+  }
+  .ground-page .intro{
+    padding:76px 22px 64px!important;
+  }
+  .ground-page .intro h2,
+  .ground-page .arrival h2,
+  .ground-page .services h2,
+  .ground-page .support h2,
+  .ground-page .final h2{
+    font-size:23px!important;
+  }
+  .ground-page .arrival{
+    padding-bottom:70px!important;
+  }
+  .ground-page .arrival-image{
+    height:340px!important;
+  }
+  .ground-page .services{
+    padding:70px 22px 76px!important;
+  }
+  .ground-page .ground-service-links strong{
+    font-size:17px!important;
+  }
+  .ground-page .ground-service-links span{
+    display:none;
+  }
+  .ground-page .support{
+    min-height:470px!important;
+  }
+  .ground-page .final{
+    padding:70px 22px 76px!important;
+  }
+}
