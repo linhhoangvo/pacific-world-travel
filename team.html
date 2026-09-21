@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260921-team-smalltype3" />
-  <link rel="stylesheet" href="about-pages.css?v=20260921-team-smalltype3" />
+  <link rel="stylesheet" href="styles.css?v=20260921-team-luxurycta" />
+  <link rel="stylesheet" href="about-pages.css?v=20260921-team-luxurycta" />
   <style>
     body.team-page{background:#F7F4ED;color:#263C32}
     .team-page .site-header{position:sticky;top:0}
@@ -84,10 +84,14 @@
     .review-switch button:hover{background:#263C32}
 
     /* CTA */
-    .team-cta{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center;padding:48px 6.4vw;background:#D4C5AD;color:#263C32}
-    .team-cta h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,3.2vw,40px);line-height:1.05;font-weight:500}
-    .team-cta p{max-width:680px;margin:12px 0 0;font-size:10.5px;line-height:1.72;color:#566255}
-    .team-cta a{display:inline-flex;align-items:center;min-height:40px;padding:0 18px;background:#263C32;color:#F7F4ED;font-size:8px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .team-cta-wrap{padding:70px 6.4vw 78px;background:#F7F4ED}
+    .team-cta{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center;padding:38px 42px;background:#DDD2BF;border-radius:22px;color:#263C32}
+    .team-cta .cta-eyebrow{display:block;margin-bottom:10px;font-size:6px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#71806F}
+    .team-cta h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,2.5vw,31px);line-height:1.08;font-weight:500;letter-spacing:-.025em}
+    .team-cta p{max-width:620px;margin:11px 0 0;font-size:9px;line-height:1.72;color:#566255}
+    .team-cta a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 22px;border:1px solid rgba(38,60,50,.35);border-radius:999px;background:#263C32;color:#F7F4ED;font-size:7px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+    .team-cta a:hover{background:#304A3F}
+    .team-cta small{display:block;margin-top:10px;font-size:6.5px;letter-spacing:.08em;text-transform:uppercase;color:#778077}
 
     @media(max-width:980px){
       .team-hero{grid-template-columns:1fr}.team-hero-copy{min-height:480px}.team-hero-images{min-height:520px;padding:8px}
@@ -100,7 +104,7 @@
       .team-intro,.people-section,.team-client{padding-left:22px;padding-right:22px}.team-intro{padding-top:62px;padding-bottom:52px}
       .people-heading{display:block}.people-heading p{margin-top:14px;text-align:left}.people-grid{grid-template-columns:1fr;gap:34px}.person-photo{aspect-ratio:4/4.6}
       .team-working{padding:58px 22px 62px}.working-points{grid-template-columns:1fr;gap:30px}.working-point:last-child{grid-column:auto;max-width:none}
-      .team-cta{grid-template-columns:1fr;padding:48px 22px}.team-cta a{justify-self:start}
+      .team-cta-wrap{padding:54px 22px 60px}.team-cta{grid-template-columns:1fr;gap:24px;padding:30px 26px;border-radius:18px}.team-cta a{justify-self:start}
     }
   </style>
 </head>
@@ -184,9 +188,18 @@
       </div>
     </section>
 
-    <section class="team-cta">
-      <div><h2>Tell us what you’re planning.</h2><p>You’ll speak with someone who knows Vietnam and can take responsibility for the details — from business travel and golf to corporate programmes and private extensions.</p></div>
-      <a href="contact.html">Talk to our team →</a>
+    <section class="team-cta-wrap">
+      <div class="team-cta">
+        <div>
+          <span class="cta-eyebrow">Start the conversation</span>
+          <h2>Tell us what you’re planning.</h2>
+          <p>You’ll speak with someone who knows Vietnam and can take responsibility for the details — from business travel and golf to corporate programmes and private extensions.</p>
+        </div>
+        <div>
+          <a href="contact.html">Talk to our team&nbsp;&nbsp;→</a>
+          <small>Business · Golf · MICE · Private journeys</small>
+        </div>
+      </div>
     </section>
   </main>
 
