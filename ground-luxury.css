@@ -310,3 +310,396 @@
     min-height:520px;
   }
 }
+
+
+/* =========================================================
+   2026-09-21 LUXURY + SEAMLESS PASS
+   Softer transitions, restrained detailing, more whitespace and less
+   segmented UI. The page should read as one continuous editorial journey.
+   ========================================================= */
+.ground-page{
+  --lux-ivory:#f7f3eb;
+  --lux-paper:#fbf9f4;
+  --lux-green:#1c3028;
+  --lux-gold:#b7a58e;
+  --lux-ink:#24322c;
+  background:var(--lux-paper);
+}
+
+/* Quiet header over photography */
+.ground-page .site-header{
+  height:82px;
+  padding-left:5.5vw;
+  padding-right:5.5vw;
+  border-bottom-color:rgba(255,255,255,.12);
+  background:linear-gradient(180deg,rgba(8,20,15,.34),rgba(8,20,15,.08) 62%,transparent);
+}
+.ground-page .desktop-nav{
+  font-size:11px!important;
+  letter-spacing:.01em;
+}
+.ground-page .header-cta{
+  font-size:9px;
+  letter-spacing:.14em;
+}
+
+/* Hero: deeper image treatment and quieter CTA */
+.ground-page .hero{
+  height:88vh;
+  min-height:680px;
+  max-height:900px;
+}
+.ground-page .hero-media{
+  background-position:center 43%;
+  transform:scale(1.015);
+}
+.ground-page .hero:after{
+  background:
+    linear-gradient(90deg,rgba(10,26,20,.82) 0%,rgba(10,26,20,.50) 40%,rgba(10,26,20,.12) 74%,rgba(10,26,20,.04) 100%),
+    linear-gradient(180deg,rgba(8,20,15,.08) 0%,rgba(8,20,15,.04) 45%,rgba(8,20,15,.52) 100%);
+}
+.ground-page .hero-inner{
+  padding:0 7vw 84px;
+}
+.ground-page .hero-copy{
+  max-width:690px;
+}
+.ground-page .hero h1{
+  font-size:clamp(46px,5.15vw,68px)!important;
+  font-weight:500;
+  line-height:.98!important;
+  letter-spacing:-.035em!important;
+}
+.ground-page .hero h1 em{
+  color:#ede5d9;
+}
+.ground-page .hero-copy>p:not(.eyebrow){
+  max-width:520px;
+  margin-top:24px;
+  color:rgba(255,255,255,.78);
+}
+.ground-page .button.light{
+  background:rgba(250,248,242,.96);
+  color:#1c3028;
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:0 10px 30px rgba(8,20,15,.08);
+}
+.ground-page .button.light:hover{
+  background:#fff;
+}
+.ground-page .hero-note{
+  right:3.2vw;
+  bottom:7vh;
+  opacity:.8;
+}
+
+/* Trust strip: no card feeling, just a calm continuation of the hero */
+.ground-page .ground-trust{
+  background:var(--lux-green);
+  border:0;
+}
+.ground-page .ground-trust-inner{
+  width:min(1120px,84vw);
+  padding:0;
+}
+.ground-page .ground-trust-inner>div{
+  min-height:76px;
+  gap:12px;
+  padding:18px 20px;
+  border:0;
+  position:relative;
+}
+.ground-page .ground-trust-inner>div+div:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:24px;
+  bottom:24px;
+  width:1px;
+  background:rgba(255,255,255,.12);
+}
+.ground-page .ground-trust-inner small{
+  font-size:12px;
+  color:#bda98f;
+}
+.ground-page .ground-trust-inner span{
+  font-size:10.5px;
+  letter-spacing:.01em;
+  color:rgba(255,255,255,.72);
+}
+
+/* One continuous warm editorial canvas */
+.ground-page .intro,
+.ground-page .arrival{
+  background:var(--lux-ivory);
+}
+.ground-page .intro{
+  padding:126px 8vw 86px;
+}
+.ground-page .intro-inner{
+  max-width:1100px;
+}
+.ground-page .intro h2{
+  max-width:800px;
+  font-size:clamp(32px,3.15vw,43px)!important;
+  line-height:1.07!important;
+}
+.ground-page .intro-copy{
+  max-width:590px;
+  margin-top:54px;
+  padding-left:0;
+  border-left:0;
+  margin-left:auto;
+}
+.ground-page .intro-copy:before{
+  content:"";
+  display:block;
+  width:44px;
+  height:1px;
+  margin-bottom:24px;
+  background:rgba(36,50,44,.25);
+}
+.ground-page .intro-copy p:first-child{
+  font-size:20px!important;
+  line-height:1.48!important;
+}
+.ground-page .intro-meta{
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid rgba(36,50,44,.11);
+}
+.ground-page .intro-meta span{
+  color:#6d756f;
+  letter-spacing:.12em;
+}
+
+/* Arrival story blends directly out of intro */
+@media(min-width:901px){
+  .ground-page .arrival{
+    width:100%;
+    margin:0;
+    padding:34px max(7vw,calc((100vw - 1180px)/2)) 126px;
+    grid-template-columns:minmax(0,1.12fr) minmax(330px,.72fr);
+    gap:clamp(70px,7.5vw,120px);
+  }
+  .ground-page .arrival-image{
+    height:470px;
+    box-shadow:0 22px 55px rgba(31,45,38,.08);
+  }
+  .ground-page .arrival-copy-inner{
+    padding-left:0;
+    border-left:0;
+  }
+  .ground-page .arrival-copy-inner:before{
+    content:"";
+    display:block;
+    width:44px;
+    height:1px;
+    margin-bottom:24px;
+    background:rgba(36,50,44,.25);
+  }
+}
+.ground-page .arrival h2{
+  font-size:clamp(30px,2.9vw,39px)!important;
+}
+
+/* Services: editorial list instead of a boxed dark block */
+.ground-page .services{
+  position:relative;
+  padding:122px 8vw 126px;
+  background:#1b2f27;
+}
+.ground-page .services:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:42px;
+  background:linear-gradient(180deg,rgba(247,243,235,.12),transparent);
+  pointer-events:none;
+}
+.ground-page .services-inner{
+  max-width:1120px;
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:clamp(70px,9vw,140px);
+  align-items:start;
+}
+.ground-page .services-head{
+  max-width:430px;
+  position:sticky;
+  top:110px;
+}
+.ground-page .services h2{
+  font-size:clamp(30px,3vw,40px)!important;
+}
+.ground-page .services-head>p:not(.eyebrow){
+  max-width:390px;
+  color:rgba(255,255,255,.62);
+}
+.ground-page .service-list{
+  margin-top:0;
+  border-top-color:rgba(255,255,255,.16);
+}
+.ground-page .service-item{
+  min-height:88px;
+  padding:24px 0;
+  border-bottom-color:rgba(255,255,255,.14);
+}
+.ground-page .service-item:hover{
+  padding-left:0;
+}
+.ground-page .service-item small{
+  color:#bda98f;
+  opacity:.9;
+}
+.ground-page .service-item strong{
+  font-size:clamp(21px,2vw,27px)!important;
+  font-weight:500;
+}
+.ground-page .service-item span{
+  font-size:10px;
+  color:rgba(255,255,255,.5);
+}
+
+/* Support image now feels like the next chapter of the same dark section */
+.ground-page .support{
+  min-height:650px;
+  background-position:center 42%;
+}
+.ground-page .support:after{
+  background:
+    linear-gradient(90deg,rgba(18,39,31,.10) 0%,rgba(18,39,31,.30) 44%,rgba(18,39,31,.88) 100%),
+    linear-gradient(180deg,rgba(27,47,39,.35) 0%,transparent 18%,rgba(17,34,27,.12) 100%);
+}
+.ground-page .support-inner{
+  padding:100px 8vw;
+}
+.ground-page .support-copy{
+  max-width:520px;
+  padding-left:0;
+  border-left:0;
+}
+.ground-page .support-copy:before{
+  content:"";
+  display:block;
+  width:44px;
+  height:1px;
+  margin-bottom:24px;
+  background:rgba(255,255,255,.35);
+}
+.ground-page .support h2{
+  font-size:clamp(31px,3vw,41px)!important;
+}
+.ground-page .support-quote{
+  max-width:410px;
+  font-size:19px;
+  color:#eee7dc;
+}
+
+/* Final section: softer landing, not another hard block */
+.ground-page .final{
+  padding:110px 8vw 116px;
+  background:#e8dfd1;
+}
+.ground-page .final-inner{
+  max-width:980px;
+}
+.ground-page .final h2{
+  max-width:760px;
+  font-size:clamp(31px,3vw,41px)!important;
+}
+.ground-page .final-actions{
+  margin-top:32px;
+  align-items:center;
+}
+.ground-page .button.dark{
+  background:#1c3028;
+  padding-left:22px;
+  padding-right:22px;
+}
+.ground-page .final .text-link{
+  border-bottom-color:rgba(36,50,44,.38);
+}
+
+/* Typography feels quieter and more crafted */
+.ground-page .eyebrow{
+  letter-spacing:.2em;
+  font-weight:500;
+}
+.ground-page .arrival p:not(.eyebrow),
+.ground-page .services-head>p:not(.eyebrow),
+.ground-page .support p:not(.eyebrow),
+.ground-page .final p:not(.eyebrow),
+.ground-page .intro-copy p{
+  color:#68716a;
+}
+.ground-page .services-head>p:not(.eyebrow),
+.ground-page .support p:not(.eyebrow){
+  color:rgba(255,255,255,.68);
+}
+
+/* Mobile: preserve the luxury rhythm without oversized gaps */
+@media(max-width:900px){
+  .ground-page .services-inner{
+    display:block;
+  }
+  .ground-page .services-head{
+    position:static;
+    max-width:620px;
+    margin-bottom:48px;
+  }
+  .ground-page .ground-trust-inner>div+div:before{
+    display:none;
+  }
+}
+@media(max-width:700px){
+  .ground-page .hero{
+    height:700px;
+    min-height:700px;
+  }
+  .ground-page .hero-inner{
+    padding:0 22px 62px;
+  }
+  .ground-page .hero h1{
+    font-size:40px!important;
+    line-height:1.01!important;
+  }
+  .ground-page .ground-trust-inner>div{
+    min-height:62px;
+    padding:14px 22px;
+  }
+  .ground-page .intro{
+    padding:82px 22px 58px;
+  }
+  .ground-page .intro h2{
+    font-size:31px!important;
+  }
+  .ground-page .arrival{
+    background:var(--lux-ivory);
+    padding-bottom:86px;
+  }
+  .ground-page .arrival-image{
+    height:360px;
+  }
+  .ground-page .arrival-copy{
+    margin:-10px 22px 0;
+    background:var(--lux-ivory);
+  }
+  .ground-page .services{
+    padding:82px 22px 90px;
+  }
+  .ground-page .service-item{
+    min-height:74px;
+  }
+  .ground-page .support{
+    min-height:590px;
+  }
+  .ground-page .support-inner{
+    padding:76px 22px;
+  }
+  .ground-page .final{
+    padding:84px 22px 90px;
+  }
+}
