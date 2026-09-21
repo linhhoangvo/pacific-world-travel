@@ -460,3 +460,73 @@
     font-size:13px!important;
   }
 }
+
+
+/* =========================================================
+   2026-09-21 REDUCED GOLF TYPOGRAPHY — FINAL TIGHTER SCALE
+   ========================================================= */
+.golf-page .g-hero h1{
+  max-width:520px;
+  font-size:clamp(27px,2.7vw,36px)!important;
+  line-height:1.05!important;
+}
+.golf-page .g-intro h2{
+  max-width:600px;
+  font-size:clamp(19px,1.7vw,24px)!important;
+  line-height:1.17!important;
+}
+.golf-page .g-story h2,
+.golf-page .g-between h2,
+.golf-page .g-planning h2,
+.golf-page .g-final h2{
+  font-size:clamp(18px,1.55vw,22px)!important;
+  line-height:1.18!important;
+}
+.golf-page .g-intro-copy p:first-child{
+  font-size:15px!important;
+}
+.golf-page .g-hero p:not(.g-label),
+.golf-page .g-intro-copy p,
+.golf-page .g-story p:not(.g-label),
+.golf-page .g-between p:not(.g-label),
+.golf-page .g-planning p:not(.g-label),
+.golf-page .g-final p:not(.g-label){
+  font-size:12.5px!important;
+  line-height:1.65!important;
+}
+.golf-page .g-label{
+  font-size:8px!important;
+}
+.golf-page .g-btn,
+.golf-page .g-link{
+  font-size:8px!important;
+}
+.golf-page .g-trust-inner span{
+  font-size:9px!important;
+}
+.golf-page .g-intro-meta span,
+.golf-page .g-story-meta span,
+.golf-page .g-planning-line span{
+  font-size:8px!important;
+}
+
+@media(max-width:700px){
+  .golf-page .g-hero h1{
+    font-size:25px!important;
+  }
+  .golf-page .g-intro h2,
+  .golf-page .g-story h2,
+  .golf-page .g-between h2,
+  .golf-page .g-planning h2,
+  .golf-page .g-final h2{
+    font-size:20px!important;
+  }
+  .golf-page .g-hero p:not(.g-label),
+  .golf-page .g-intro-copy p,
+  .golf-page .g-story p:not(.g-label),
+  .golf-page .g-between p:not(.g-label),
+  .golf-page .g-planning p:not(.g-label),
+  .golf-page .g-final p:not(.g-label){
+    font-size:12.5px!important;
+  }
+}
