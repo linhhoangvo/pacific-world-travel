@@ -471,3 +471,64 @@
     font-size:24px!important;
   }
 }
+
+
+/* =========================================================
+   2026-09-21 EVEN SMALLER CORPORATE TYPOGRAPHY
+   Tighter, quieter display scale across the page.
+   ========================================================= */
+.business-page .corp-hero h1{
+  max-width:560px;
+  font-size:clamp(32px,3.5vw,46px)!important;
+  line-height:1.04!important;
+}
+
+.business-page .corp-intro h2,
+.business-page .services-intro h2,
+.business-page .local-promise h2,
+.business-page .corp-final h2{
+  font-size:clamp(23px,2.15vw,30px)!important;
+  line-height:1.12!important;
+}
+
+.business-page .story-copy h2,
+.business-page .scenario-inner h2{
+  font-size:clamp(21px,1.95vw,27px)!important;
+  line-height:1.14!important;
+}
+
+.business-page .service-row strong{
+  font-size:clamp(16px,1.45vw,20px)!important;
+}
+
+.business-page .manifesto blockquote{
+  max-width:720px;
+  font-size:clamp(21px,2.05vw,28px)!important;
+  line-height:1.22!important;
+}
+
+.business-page .corp-intro-copy .lead{
+  font-size:17px!important;
+}
+
+@media(max-width:700px){
+  .business-page .corp-hero h1{
+    font-size:29px!important;
+  }
+  .business-page .corp-intro h2,
+  .business-page .services-intro h2,
+  .business-page .local-promise h2,
+  .business-page .corp-final h2{
+    font-size:23px!important;
+  }
+  .business-page .story-copy h2,
+  .business-page .scenario-inner h2{
+    font-size:22px!important;
+  }
+  .business-page .service-row strong{
+    font-size:18px!important;
+  }
+  .business-page .manifesto blockquote{
+    font-size:22px!important;
+  }
+}
