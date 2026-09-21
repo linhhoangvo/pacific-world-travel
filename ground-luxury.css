@@ -968,3 +968,223 @@
     padding:70px 22px 76px!important;
   }
 }
+
+
+/* =========================================================
+   2026-09-21 BEAUTIFUL GROUND PAGE PASS
+   Softer editorial composition, rounded photography, warmer surfaces
+   and more graceful section transitions.
+   ========================================================= */
+.ground-page{
+  background:#F8F5EF;
+}
+
+/* Softer hero framing */
+.ground-page .hero{
+  width:calc(100% - 36px);
+  margin:18px auto 0;
+  border-radius:20px;
+  overflow:hidden;
+}
+.ground-page .hero-media{
+  background-position:center 45%;
+}
+.ground-page .hero:after{
+  background:
+    linear-gradient(90deg,rgba(14,30,24,.72) 0%,rgba(14,30,24,.42) 40%,rgba(14,30,24,.07) 78%),
+    linear-gradient(180deg,rgba(8,20,15,.02) 0%,rgba(8,20,15,.02) 48%,rgba(8,20,15,.36) 100%);
+}
+.ground-page .hero-copy>p:not(.eyebrow){
+  max-width:470px;
+  color:rgba(255,255,255,.82);
+}
+.ground-page .button.light{
+  border-radius:999px;
+  box-shadow:none;
+}
+
+/* Intro: calmer centered composition */
+.ground-page .intro{
+  padding:112px 8vw 88px!important;
+  background:#F8F5EF!important;
+}
+.ground-page .intro-inner{
+  max-width:900px;
+}
+.ground-page .intro h2{
+  max-width:620px;
+}
+.ground-page .intro-copy{
+  max-width:470px;
+  margin-top:38px;
+  margin-left:auto;
+}
+.ground-page .intro-copy p{
+  color:#747C76!important;
+}
+
+/* Arrival: premium inset photography */
+@media(min-width:901px){
+  .ground-page .arrival{
+    width:min(1180px,88vw)!important;
+    margin:0 auto!important;
+    padding:34px 0 108px!important;
+    background:#F8F5EF!important;
+    grid-template-columns:minmax(0,1.15fr) minmax(310px,.72fr)!important;
+    gap:clamp(72px,8vw,120px)!important;
+  }
+  .ground-page .arrival-image{
+    height:430px!important;
+    border-radius:18px;
+    box-shadow:0 20px 50px rgba(36,50,44,.08);
+  }
+}
+.ground-page .arrival-copy-inner{
+  max-width:390px;
+}
+.ground-page .arrival h2{
+  max-width:360px;
+}
+.ground-page .arrival p:not(.eyebrow){
+  color:#727A74!important;
+}
+
+/* Services: elegant dark capsule rather than a hard full-width band */
+.ground-page .services{
+  width:min(1180px,calc(100% - 36px));
+  margin:0 auto 18px;
+  padding:88px clamp(28px,5vw,72px) 94px!important;
+  border-radius:20px;
+  background:#1C332A!important;
+}
+.ground-page .services-inner{
+  max-width:none;
+}
+.ground-page .services-head{
+  max-width:350px;
+}
+.ground-page .services h2{
+  max-width:320px;
+}
+.ground-page .services-head p{
+  max-width:300px!important;
+}
+.ground-page .ground-service-links{
+  gap:10px;
+}
+.ground-page .ground-service-links>div{
+  min-height:54px;
+  padding:10px 0;
+}
+.ground-page .ground-service-links strong{
+  font-size:clamp(15px,1.2vw,17px)!important;
+}
+.ground-page .ground-service-links span{
+  font-size:9px;
+  color:rgba(255,255,255,.44);
+}
+
+/* Support image becomes a softer cinematic chapter */
+.ground-page .support{
+  width:min(1180px,calc(100% - 36px));
+  margin:0 auto 18px;
+  min-height:500px!important;
+  border-radius:20px;
+  overflow:hidden;
+}
+.ground-page .support:after{
+  background:linear-gradient(90deg,rgba(16,35,27,.08) 0%,rgba(16,35,27,.25) 46%,rgba(16,35,27,.78) 100%);
+}
+.ground-page .support-copy{
+  max-width:390px!important;
+}
+.ground-page .support h2{
+  max-width:350px;
+}
+
+/* Final CTA: light, warm, and spacious */
+.ground-page .final{
+  width:min(1180px,calc(100% - 36px));
+  margin:0 auto 18px;
+  padding:82px clamp(28px,5vw,72px) 88px!important;
+  border-radius:20px;
+  background:#E9E0D4!important;
+}
+.ground-page .final-inner{
+  max-width:760px;
+}
+.ground-page .final h2{
+  max-width:560px;
+}
+.ground-page .final p:not(.eyebrow){
+  color:#6E756F!important;
+}
+.ground-page .button.dark{
+  border-radius:999px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.ground-page .final .text-link{
+  border-bottom-color:rgba(36,50,44,.2);
+}
+
+/* Footer transition */
+.ground-page footer{
+  margin-top:42px;
+  background:#162B23;
+}
+
+/* Refined micro-details */
+.ground-page .eyebrow{
+  letter-spacing:.18em;
+  color:#8A918B;
+}
+.ground-page .eyebrow.light{
+  color:rgba(255,255,255,.7)!important;
+}
+.ground-page .text-link{
+  letter-spacing:.1em;
+}
+
+/* Mobile keeps the same softer composition */
+@media(max-width:700px){
+  .ground-page .hero{
+    width:calc(100% - 20px);
+    margin-top:10px;
+    border-radius:14px;
+  }
+  .ground-page .intro{
+    padding:82px 22px 58px!important;
+  }
+  .ground-page .arrival{
+    background:#F8F5EF!important;
+    padding-bottom:76px!important;
+  }
+  .ground-page .arrival-image{
+    width:calc(100% - 20px);
+    margin:0 auto;
+    height:340px!important;
+    border-radius:14px;
+  }
+  .ground-page .arrival-copy{
+    margin:0 22px!important;
+    padding-top:30px;
+  }
+  .ground-page .services,
+  .ground-page .support,
+  .ground-page .final{
+    width:calc(100% - 20px);
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:14px;
+  }
+  .ground-page .services{
+    padding:64px 22px 70px!important;
+  }
+  .ground-page .support{
+    min-height:460px!important;
+  }
+  .ground-page .final{
+    padding:66px 22px 72px!important;
+  }
+}
