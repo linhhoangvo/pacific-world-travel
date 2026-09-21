@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@300;400;500&display=swap');
 
 :root{
-  --dest-paper:#f8f5ef;
-  --dest-paper-2:#f1ece3;
+  --dest-paper:#faf8f4;
+  --dest-paper-2:#f3eee6;
   --dest-deep:#243a30;
-  --dest-ink:#334139;
-  --dest-muted:#7b827c;
-  --dest-line:rgba(47,64,55,.14);
+  --dest-ink:#344139;
+  --dest-muted:#7d837d;
+  --dest-line:rgba(47,64,55,.105);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -15,221 +15,83 @@ body.destinations-page{margin:0;background:var(--dest-paper);color:var(--dest-in
 .destinations-page img{display:block;width:100%}
 .destinations-main{overflow:hidden}
 
-.destinations-header{
-  position:relative!important;
-  background:var(--dest-deep)!important;
-  color:#fff!important;
-  border-bottom:1px solid rgba(255,255,255,.08)!important;
-}
+.destinations-header{position:relative!important;background:var(--dest-deep)!important;color:#fff!important;border-bottom:1px solid rgba(255,255,255,.07)!important}
 .destinations-header a,.destinations-header .menu-toggle{color:#fff!important}
 
-/* split hero */
-.destinations-hero{
-  min-height:520px;
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  background:var(--dest-paper);
-}
-.destinations-hero-copy{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  padding:68px 7vw 72px 8vw;
-}
-.destinations-eyebrow,.region-kicker,.destinations-intro-label{
-  margin:0 0 12px;
-  font-size:6.5px;
-  font-weight:500;
-  letter-spacing:.20em;
-  text-transform:uppercase;
-  color:#949a94;
-}
-.destinations-hero h1{
-  max-width:480px;
-  margin:0;
-  font:500 clamp(34px,3.5vw,48px)/1.02 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.025em;
-}
-.destinations-hero h1 em{font-weight:500;color:#667368}
-.destinations-hero-copy>p:not(.destinations-eyebrow){
-  max-width:390px;
-  margin:17px 0 0;
-  font-size:10px;
-  line-height:1.85;
-  color:var(--dest-muted);
-}
-.hero-text-link{
-  display:inline-flex;
-  align-items:center;
-  gap:14px;
-  width:max-content;
-  margin-top:25px;
-  padding-bottom:4px;
-  border-bottom:1px solid rgba(51,65,57,.38);
-  font-size:7px;
-  font-weight:500;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-}
-.destinations-hero-media{
-  min-height:520px;
-  background:url('halong-bay.jpg') center 48%/cover no-repeat;
-}
+.destinations-hero{min-height:540px;display:grid;grid-template-columns:.88fr 1.12fr;padding:34px 34px 34px 0;background:var(--dest-paper)}
+.destinations-hero-copy{display:flex;flex-direction:column;justify-content:center;padding:72px 6vw 72px 8vw}
+.destinations-eyebrow,.region-kicker,.destinations-intro-label{margin:0 0 12px;font-size:6.2px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#989d97}
+.destinations-hero h1{max-width:470px;margin:0;font:500 clamp(32px,3.15vw,44px)/1.04 'Cormorant Garamond',Georgia,serif;letter-spacing:-.022em}
+.destinations-hero h1 em{font-weight:500;color:#6e786f}
+.destinations-hero-copy>p:not(.destinations-eyebrow){max-width:370px;margin:16px 0 0;font-size:9.7px;line-height:1.92;color:var(--dest-muted)}
+.hero-text-link{display:inline-flex;align-items:center;gap:14px;width:max-content;margin-top:25px;padding-bottom:4px;border-bottom:1px solid rgba(51,65,57,.28);font-size:6.6px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;transition:gap .25s ease,border-color .25s ease}
+.hero-text-link:hover{gap:18px;border-color:rgba(51,65,57,.58)}
+.destinations-hero-media{min-height:472px;align-self:center;background:url('halong-bay.jpg') center 48%/cover no-repeat;filter:saturate(.93) contrast(.98)}
 
-/* intro */
-.destinations-intro{
-  width:min(960px,82vw);
-  margin:0 auto;
-  padding:84px 0 96px;
-  text-align:center;
-}
-.destinations-intro h2{
-  max-width:670px;
-  margin:0 auto;
-  font:500 clamp(24px,2.3vw,31px)/1.16 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.018em;
-}
-.destinations-intro>p:last-child{
-  max-width:540px;
-  margin:16px auto 0;
-  font-size:9.7px;
-  line-height:1.9;
-  color:var(--dest-muted);
-}
+.destinations-intro{width:min(880px,78vw);margin:0 auto;padding:96px 0 104px;text-align:center}
+.destinations-intro h2{max-width:650px;margin:0 auto;font:500 clamp(23px,2.05vw,29px)/1.18 'Cormorant Garamond',Georgia,serif;letter-spacing:-.016em}
+.destinations-intro>p:last-child{max-width:510px;margin:15px auto 0;font-size:9.4px;line-height:1.92;color:var(--dest-muted)}
 
-/* regional chapters */
-.region-chapter{
-  width:min(1180px,86vw);
-  margin:0 auto;
-  padding:76px 0 92px;
-  display:grid;
-  grid-template-columns:minmax(0,1.08fr) minmax(320px,.72fr);
-  gap:clamp(58px,8vw,118px);
-  align-items:center;
-  border-top:1px solid var(--dest-line);
-}
-.region-chapter.reverse{
-  grid-template-columns:minmax(320px,.72fr) minmax(0,1.08fr);
-}
+.region-chapter{position:relative;z-index:0;width:min(1120px,84vw);margin:0 auto;padding:88px 0 108px;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(320px,.72fr);gap:clamp(64px,8vw,118px);align-items:center}
+.region-chapter + .region-chapter{margin-top:18px}
+.region-chapter.central:before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--dest-paper-2)}
+.region-chapter.reverse{grid-template-columns:minmax(320px,.72fr) minmax(0,1.02fr)}
 .region-chapter.reverse .region-visual{order:2}
 .region-chapter.reverse .region-content{order:1}
-.region-visual{height:470px;overflow:hidden;background:#e5dfd5}
-.region-visual img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  filter:saturate(.92) contrast(.98);
-  transition:transform .7s cubic-bezier(.2,.65,.25,1),filter .4s ease;
-}
-.region-chapter:hover .region-visual img{transform:scale(1.018);filter:saturate(1) contrast(1)}
-.region-content{max-width:430px}
-.region-kicker{margin-bottom:15px}
-.region-content h2{
-  margin:0;
-  font:500 clamp(24px,2.35vw,32px)/1.12 'Cormorant Garamond',Georgia,serif;
-  letter-spacing:-.022em;
-}
-.region-description{
-  margin:15px 0 30px;
-  max-width:390px;
-  font-size:9.8px;
-  line-height:1.85;
-  color:var(--dest-muted);
-}
+.region-visual{height:420px;overflow:hidden;background:#e7e1d8}
+.region-visual img{width:100%;height:100%;object-fit:cover;filter:saturate(.91) contrast(.985);transform:scale(1.001);transition:transform .9s cubic-bezier(.18,.72,.2,1),filter .5s ease}
+.region-chapter:hover .region-visual img{transform:scale(1.017);filter:saturate(.98) contrast(1)}
+.region-content{max-width:410px}
+.region-kicker{margin-bottom:14px;color:#959b95}
+.region-content h2{margin:0;font:500 clamp(23px,2.15vw,29px)/1.15 'Cormorant Garamond',Georgia,serif;letter-spacing:-.019em}
+.region-description{margin:14px 0 27px;max-width:380px;font-size:9.5px;line-height:1.9;color:var(--dest-muted)}
 
-/* vertical destination list */
 .destination-list{display:block;border-top:1px solid var(--dest-line)}
-.destination-list a{
-  display:grid;
-  grid-template-columns:1fr auto 18px;
-  gap:16px;
-  align-items:center;
-  padding:15px 0;
-  border-bottom:1px solid var(--dest-line);
-  transition:padding-left .22s ease,color .22s ease;
-}
-.destination-list a:hover{padding-left:6px;color:#1f3329}
-.destination-list span{
-  font:500 19px/1.1 'Cormorant Garamond',Georgia,serif;
-}
-.destination-list small{
-  font-size:5.9px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:#999e99;
-  white-space:nowrap;
-}
-.destination-list b{
-  font-size:9px;
-  font-weight:400;
-  color:#9aa099;
-  transition:transform .2s ease;
-}
-.destination-list a:hover b{transform:translate(2px,-2px)}
+.destination-list a{display:grid;grid-template-columns:1fr auto 18px;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--dest-line);transition:padding-left .26s ease,color .26s ease}
+.destination-list a:hover{padding-left:7px;color:#1f3329}
+.destination-list span{font:500 18px/1.12 'Cormorant Garamond',Georgia,serif}
+.destination-list small{font-size:5.5px;letter-spacing:.15em;text-transform:uppercase;color:#9ba09b;white-space:nowrap}
+.destination-list b{font-size:8px;font-weight:400;color:#a1a6a0;transition:transform .24s ease,color .24s ease}
+.destination-list a:hover b{transform:translate(3px,-2px);color:#53645a}
 
-/* final CTA */
-.destinations-cta{
-  margin-top:28px;
-  padding:54px 7vw;
-  background:var(--dest-deep);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
-}
-.destinations-cta .destinations-intro-label{color:rgba(255,255,255,.55);margin-bottom:8px}
-.destinations-cta h2{
-  margin:0;
-  font:500 clamp(24px,2.3vw,31px)/1.1 'Cormorant Garamond',Georgia,serif;
-}
-.destinations-cta>a{
-  display:inline-flex;
-  align-items:center;
-  gap:20px;
-  min-height:38px;
-  padding:0 17px;
-  border:1px solid rgba(255,255,255,.54);
-  font-size:6.5px;
-  font-weight:500;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  white-space:nowrap;
-}
+.destinations-cta{width:min(1120px,84vw);margin:62px auto 84px;padding:44px 48px;background:var(--dest-deep);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.destinations-cta .destinations-intro-label{color:rgba(255,255,255,.50);margin-bottom:8px}
+.destinations-cta h2{margin:0;font:500 clamp(22px,2.05vw,28px)/1.12 'Cormorant Garamond',Georgia,serif}
+.destinations-cta>a{display:inline-flex;align-items:center;gap:18px;min-height:36px;padding:0 15px;border:1px solid rgba(255,255,255,.38);font-size:6.2px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap;transition:background .25s ease,color .25s ease,border-color .25s ease}
+.destinations-cta>a:hover{background:#fff;color:var(--dest-deep);border-color:#fff}
 .destinations-page footer{margin-top:0}
 
+body.motion-ready .destinations-intro,body.motion-ready .region-chapter,body.motion-ready .destinations-cta{opacity:0;transform:translateY(22px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)}
+body.motion-ready .destinations-intro.is-visible,body.motion-ready .region-chapter.is-visible,body.motion-ready .destinations-cta.is-visible{opacity:1;transform:none}
+
 @media(max-width:900px){
-  .destinations-hero{grid-template-columns:1fr 1.15fr}
-  .destinations-hero-copy{padding-left:6vw;padding-right:5vw}
-  .region-chapter,.region-chapter.reverse{grid-template-columns:1fr 1fr;gap:42px}
-  .region-visual{height:400px}
+  .destinations-hero{grid-template-columns:1fr 1.05fr;padding-right:22px}
+  .destinations-hero-copy{padding-left:5vw;padding-right:5vw}
+  .region-chapter,.region-chapter.reverse{width:min(92vw,900px);grid-template-columns:1fr 1fr;gap:42px}
+  .region-visual{height:380px}
   .destination-list a{grid-template-columns:1fr 18px}
   .destination-list small{display:none}
+  .destinations-cta{width:92vw}
 }
-
 @media(max-width:700px){
-  .destinations-hero{display:block;min-height:0}
-  .destinations-hero-copy{padding:52px 22px 44px}
-  .destinations-hero h1{font-size:32px}
-  .destinations-hero-media{min-height:320px}
-  .destinations-intro{width:auto;padding:56px 22px 62px}
-  .destinations-intro h2{font-size:24px}
-  .region-chapter,.region-chapter.reverse{
-    width:auto;
-    margin:0 22px;
-    padding:56px 0 66px;
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-    align-items:stretch;
-  }
-  .region-chapter.reverse .region-visual,
-  .region-chapter.reverse .region-content{order:initial}
-  .region-visual{height:300px}
+  .destinations-hero{display:block;min-height:0;padding:0}
+  .destinations-hero-copy{padding:54px 22px 46px}
+  .destinations-hero h1{font-size:31px}
+  .destinations-hero-media{min-height:300px}
+  .destinations-intro{width:auto;padding:64px 22px 68px}
+  .destinations-intro h2{font-size:23px}
+  .region-chapter,.region-chapter.reverse{width:auto;margin:0 22px;padding:62px 0 72px;display:flex;flex-direction:column;gap:30px;align-items:stretch}
+  .region-chapter + .region-chapter{margin-top:0}
+  .region-chapter.reverse .region-visual,.region-chapter.reverse .region-content{order:initial}
+  .region-visual{height:285px}
   .region-content{max-width:none}
-  .region-content h2{font-size:25px}
-  .region-description{font-size:9.5px}
-  .destination-list span{font-size:18px}
-  .destinations-cta{padding:42px 22px;align-items:flex-start;flex-direction:column;gap:24px}
-  .destinations-cta h2{font-size:25px}
+  .region-content h2{font-size:24px}
+  .region-description{font-size:9.3px}
+  .destination-list span{font-size:17.5px}
+  .destinations-cta{width:auto;margin:42px 22px 58px;padding:38px 24px;align-items:flex-start;flex-direction:column;gap:22px}
+  .destinations-cta h2{font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  body.motion-ready .destinations-intro,body.motion-ready .region-chapter,body.motion-ready .destinations-cta{opacity:1!important;transform:none!important;transition:none!important}
 }
