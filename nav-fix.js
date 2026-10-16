@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactLink=[...companyColumn.querySelectorAll("a")].find((link)=>link.textContent.trim()==="Contact Us");
     if(contactLink)contactLink.href="contact.html";
     if(!companyColumn.querySelector(".footer-contact-details")){
-      const details=document.createElement("div");details.className="footer-contact-details";details.innerHTML=`<a href="tel:+84388855913" title="Zalo +84388855913">+84 388 855 913</a><a href="mailto:rosie.pacificworld@gmail.com">rosie.pacificworld@gmail.com</a>`;companyColumn.appendChild(details)
+      const details=document.createElement("div");details.className="footer-contact-details";details.innerHTML=`<a href="tel:+84388855913" title="Zalo +84388855913">+84 388 855 913</a><a href="mailto:sales@pacificworldtravel.com">sales@pacificworldtravel.com</a>`;companyColumn.appendChild(details)
     }
   });
   if(!document.getElementById("footer-contact-style")){
