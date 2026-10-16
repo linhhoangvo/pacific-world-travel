@@ -143,8 +143,8 @@ document.querySelectorAll("a").forEach((link) => {
     text === "contact us" ||
     text === "traveller support" ||
     text === "24/7 assistance" ||
-    href === "mailto:info@pacificworldtravel.com" ||
-    href.startsWith("mailto:info@pacificworldtravel.com?");
+    href === "mailto:sales@pacificworldtravel.com" ||
+    href.startsWith("mailto:sales@pacificworldtravel.com?");
 
   if (shouldRouteToContact) link.setAttribute("href", contactPage);
 });
