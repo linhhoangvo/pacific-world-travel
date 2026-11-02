@@ -1,0 +1,32 @@
+name: Publish CMS Journal
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/posts/**'
+      - 'media/blog/**'
+      - 'scripts/build_blog.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Markdown renderer
+        run: pip install 'PyYAML>=6,<7' 'Markdown>=3.7,<4'
+      - name: Generate blog pages
+        run: python scripts/build_blog.py
+      - name: Commit generated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add journal.html journal-*.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish CMS blog articles"
+            git push
+          fi
