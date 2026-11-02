@@ -413,3 +413,13 @@ if (whySection && !document.querySelector(".client-stories-shell")) {
     link.setAttribute("rel", [...rel].join(" "));
   });
 })();
+
+/* Journal navigation across existing pages */
+if (nav && !nav.querySelector('a[href="journal.html"]')) {
+  const journalLink = document.createElement("a");
+  journalLink.href = "journal.html";
+  journalLink.textContent = "Journal";
+  const aboutEntry = [...nav.children].find(el => el.classList.contains("nav-dropdown") && el.textContent.includes("About"));
+  if (aboutEntry) nav.insertBefore(journalLink, aboutEntry);
+  else nav.appendChild(journalLink);
+}
