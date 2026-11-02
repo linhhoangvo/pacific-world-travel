@@ -9,6 +9,7 @@ content:
     path: content/posts
     format: yaml-frontmatter
     filename: "{primary}.md"
+    exclude: [".gitkeep"]
     fields:
       - name: title
         label: Article Title
