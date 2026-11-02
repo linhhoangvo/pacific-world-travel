@@ -9,6 +9,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,6 +23,8 @@ jobs:
         run: pip install 'PyYAML>=6,<7' 'Markdown>=3.7,<4'
       - name: Generate blog pages
         run: python scripts/build_blog.py
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Commit generated pages
         run: |
           git config user.name "github-actions[bot]"
@@ -30,3 +34,9 @@ jobs:
             git commit -m "Publish CMS blog articles"
             git push
           fi
+      - name: Upload generated website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Deploy website
+        uses: actions/deploy-pages@v4
