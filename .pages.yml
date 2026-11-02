@@ -1,0 +1,40 @@
+media:
+  input: media/blog
+  output: /media/blog
+  rename: safe
+content:
+  - name: blog
+    label: Blog Articles
+    type: collection
+    path: content/posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    fields:
+      - name: title
+        label: Article Title
+        type: string
+        required: true
+      - name: description
+        label: Short Introduction / SEO Description
+        type: text
+        required: true
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - Golf destinations
+            - Hotels & resorts
+            - Business travel
+            - Lifestyle
+            - Meetings & incentives
+            - Travel advice
+        required: true
+      - name: image
+        label: Featured Image
+        type: image
+        required: true
+      - name: body
+        label: Article Content
+        type: rich-text
+        required: true
